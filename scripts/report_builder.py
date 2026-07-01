@@ -15,6 +15,7 @@ A "report" is a dict:
 }
 """
 from pathlib import Path
+from datetime import datetime
 from reportlab.lib.pagesizes import letter
 from reportlab.lib.units import inch
 from reportlab.lib import colors as rl_colors_mod
@@ -29,6 +30,16 @@ from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
 
 from branding import TM_BLUE, TM_MAROON, TM_GRAY, TM_LIGHT_GRAY
+
+
+def format_generated_at(iso_ts):
+    if not iso_ts:
+        return "—"
+    try:
+        dt = datetime.fromisoformat(iso_ts)
+        return dt.strftime("%d %b %Y, %H:%M")
+    except ValueError:
+        return iso_ts
 
 
 def hexc(h):
@@ -68,8 +79,8 @@ def build_pdf(report, out_path):
         Paragraph(report["title"], title_style),
         Paragraph(report.get("subtitle", ""), subtitle_style),
         Paragraph(
-            f"District 82 Toastmasters &bull; Snapshot as of {report['snapshot_date']} "
-            f"&bull; Pathways Chair Dashboard",
+            f"District 82 Toastmasters &bull; Data as of {report['snapshot_date']} "
+            f"&bull; Report generated {format_generated_at(report.get('generated_at'))}",
             meta_style,
         ),
     ]
@@ -138,7 +149,8 @@ def build_xlsx(report, out_path):
         ws["A1"].font = title_font
         ws["A2"] = report.get("subtitle", "")
         ws["A2"].font = subtitle_font
-        ws["A3"] = f"Snapshot as of {report['snapshot_date']}  |  District 82 Toastmasters Pathways Dashboard"
+        ws["A3"] = (f"Data as of {report['snapshot_date']}  |  Report generated {format_generated_at(report.get('generated_at'))}"
+                    f"  |  District 82 Toastmasters Pathways Dashboard")
         ws["A3"].font = meta_font
         ws["A4"] = block["heading"]
         ws["A4"].font = subtitle_font

@@ -290,7 +290,7 @@ def build_dashboard_json(clubs, snapshot_date, award_info):
         area_list = []
         for area, arows in areas.items():
             at = totals(arows)
-            clubs_sorted = sorted(arows, key=lambda r: r["total_levels"], reverse=True)
+            clubs_sorted = sorted(arows, key=lambda r: (-r["total_levels"], r["club_name"]))
             area_list.append({
                 "area": area,
                 **at,
@@ -310,7 +310,7 @@ def build_dashboard_json(clubs, snapshot_date, award_info):
                     for r in clubs_sorted
                 ],
             })
-        area_list.sort(key=lambda a: a["total"], reverse=True)
+        area_list.sort(key=lambda a: (-a["total"], a["area"]))
         for i, a in enumerate(area_list, start=1):
             a["rank_in_division"] = i
 
@@ -320,7 +320,7 @@ def build_dashboard_json(clubs, snapshot_date, award_info):
             "club_count": len(rows),
             "areas": area_list,
         })
-    division_list.sort(key=lambda d: d["total"], reverse=True)
+    division_list.sort(key=lambda d: (-d["total"], d["division"]))
     for i, d in enumerate(division_list, start=1):
         d["rank"] = i
 
@@ -351,13 +351,16 @@ def build_dashboard_json(clubs, snapshot_date, award_info):
     }
     for d in division_list:
         d.update(rank_fields(division_rank_maps, d["division"]))
+        d["rank"] = d["rank_total"]  # keep the single "rank" field consistent with rank_total everywhere
 
-    # Club leaderboard (district-wide)
-    club_leaderboard = sorted(active_clubs, key=lambda r: r["total_levels"], reverse=True)
+    # Club leaderboard (district-wide) — same tie-break as club_rank_maps so
+    # "rank" and "rank_total" are always the same number for a given club
+    club_leaderboard = sorted(active_clubs, key=lambda r: (-r["total_levels"], r["club_name"]))
     club_leaderboard_out = []
-    for i, r in enumerate(club_leaderboard, start=1):
+    for r in club_leaderboard:
+        ranks = rank_fields(club_rank_maps, r["club_number"])
         club_leaderboard_out.append({
-            "rank": i,
+            "rank": ranks["rank_total"],
             "club_number": r["club_number"],
             "club_name": r["club_name"],
             "division": r["division"],
@@ -369,7 +372,7 @@ def build_dashboard_json(clubs, snapshot_date, award_info):
             "total": r["total_levels"],
             "active_members": r["active_members"],
             "distinguished_status": r["distinguished_status"],
-            **rank_fields(club_rank_maps, r["club_number"]),
+            **ranks,
         })
 
     return {

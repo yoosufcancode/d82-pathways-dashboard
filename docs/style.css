@@ -252,16 +252,14 @@ main {
 
 /* area group header */
 .area-group-title {
-  font-family: 'Montserrat', sans-serif; font-weight: 800;
-  font-size: 14px;
-  margin: 22px 0 10px;
-  display: flex; align-items: center; gap: 8px;
+  font-family: 'Montserrat', sans-serif; font-weight: 700;
+  font-size: 13px; text-transform: uppercase; letter-spacing: .04em;
+  color: var(--tm-blue);
+  margin: 20px 0 10px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--border);
 }
 .area-group-title:first-child { margin-top: 0; }
-.area-group-chip {
-  color: #fff; font-size: 11px; font-weight: 700;
-  padding: 2px 10px; border-radius: 999px;
-}
 
 .area-card-grid {
   display: grid;
@@ -270,7 +268,7 @@ main {
 }
 .area-card {
   border: 1px solid var(--border);
-  border-top: 4px solid var(--tm-blue);
+  border-top: 3px solid var(--tm-blue);
   border-radius: 10px;
   padding: 14px 16px;
   background: #fff;
@@ -284,6 +282,7 @@ main {
 }
 .area-card-total {
   font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 22px;
+  color: var(--tm-blue);
 }
 .stackbar-lg { height: 12px; border-radius: 6px; margin: 8px 0; }
 .area-card-metrics {
@@ -328,7 +327,7 @@ main {
 
 .award-row {
   display: grid;
-  grid-template-columns: 36px 1fr 130px;
+  grid-template-columns: 36px 1fr;
   align-items: center;
   gap: 10px;
   padding: 9px 4px;

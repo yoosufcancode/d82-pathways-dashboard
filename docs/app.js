@@ -176,20 +176,17 @@ function paintAreas(divFilter) {
   const content = document.getElementById('areas-content');
   const divs = divFilter === '__all__' ? DATA.divisions : DATA.divisions.filter(d => d.division === divFilter);
   content.innerHTML = divs.map(d => `
-    <div class="area-group-title" style="color:${divColor(d.division)}">
-      <span class="area-group-chip" style="background:${divColor(d.division)}">Div ${d.division}</span>
-      Division ${d.division}
-    </div>
+    <div class="area-group-title">Division ${d.division}</div>
     <div class="area-card-grid">
       ${d.areas.map(a => `
-        <div class="area-card" style="border-top-color:${divColor(d.division)}">
+        <div class="area-card">
           <div class="area-card-head">
             <div class="rank-badge ${rankBadgeClass(a.rank_in_division)}">${a.rank_in_division}</div>
             <div class="area-card-title">
               Area ${a.area}
               <span class="club-sub">${a.clubs.length} clubs &middot; district rank #${a.rank_in_district}</span>
             </div>
-            <div class="area-card-total" style="color:${divColor(d.division)}">${a.total}</div>
+            <div class="area-card-total">${a.total}</div>
           </div>
           ${stackBarHTML(a, 'stackbar stackbar-lg')}
           <div class="area-card-metrics">
@@ -253,8 +250,8 @@ function renderAward() {
     banner.innerHTML = `
       <strong>Official result — locked as of ${fmtDate(AWARD_DATA.cutoff_snapshot_date)}.</strong>
       This reflects completions recorded through the Dec 31, 2026 award cutoff, reviewed by the
-      District Pathways Chair and District Awards Chair. Ovation 2027 recognition shown here has
-      been through formal review.
+      District Pathways Chair and District Awards Chair. Ovation 2027 recognition is announced
+      separately by the District.
     `;
   } else {
     banner.className = 'award-banner award-banner-provisional';
@@ -279,7 +276,6 @@ function renderAward() {
           Area ${e.area} &middot; L1 ${e.level1} / L3 ${e.level3}
         </div>
       </div>
-      <div>${e.ovation_recognized ? `<span class="award-ovation">${AWARD_IS_LOCKED ? 'Ovation 2027' : 'Projected Top 20'}</span>` : ''}</div>
     </div>
   `).join('') || '<p class="dl-empty">No clubs have qualified yet.</p>';
 
