@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>District 82 &mdash; Pathways Performance Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <div class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="34" height="34">
+          <circle cx="20" cy="20" r="19" fill="none" stroke="#F2DF74" stroke-width="2"/>
+          <circle cx="20" cy="20" r="13" fill="#004165"/>
+          <path d="M20 10 L23 17 L30.5 17.7 L25 22.8 L26.7 30 L20 26.1 L13.3 30 L15 22.8 L9.5 17.7 L17 17 Z" fill="#F2DF74"/>
+        </svg>
+      </div>
+      <div class="brand-text">
+        <span class="eyebrow">District 82 &bull; Toastmasters International</span>
+        <h1>Pathways Performance Dashboard</h1>
+      </div>
+    </div>
+    <div class="meta-pills">
+      <div class="pill" id="pill-updated">
+        <span class="pill-label">Snapshot as of</span>
+        <span class="pill-value" id="snapshot-date">&mdash;</span>
+      </div>
+      <div class="pill pill-ghost" id="pill-generated">
+        <span class="pill-label">Dashboard built</span>
+        <span class="pill-value" id="generated-date">&mdash;</span>
+      </div>
+    </div>
+  </div>
+  <nav class="tabs" id="tabs">
+    <button class="tab active" data-tab="overview">Overview</button>
+    <button class="tab" data-tab="divisions">Divisions</button>
+    <button class="tab" data-tab="areas">Areas</button>
+    <button class="tab" data-tab="clubs">Clubs</button>
+    <button class="tab" data-tab="award">Pathways Quality Award</button>
+    <button class="tab" data-tab="downloads">Downloads</button>
+  </nav>
+</div>
+
+<main id="app">
+  <div class="loading" id="loading">Loading district data&hellip;</div>
+</main>
+
+<template id="tpl-overview">
+  <section class="panel" data-panel="overview">
+    <div class="kpi-row" id="kpi-row"></div>
+    <div class="grid-2">
+      <div class="card">
+        <h2>District-Wide Level Composition</h2>
+        <div class="chart-wrap"><canvas id="chart-district-levels"></canvas></div>
+      </div>
+      <div class="card">
+        <h2>Division Leaderboard <span class="card-sub">Total levels completed</span></h2>
+        <div class="chart-wrap"><canvas id="chart-division-leaderboard"></canvas></div>
+      </div>
+    </div>
+    <div class="card">
+      <h2>District Summary <span class="card-sub">Every level counts toward the total shown here</span></h2>
+      <p class="legend-note">
+        <span class="swatch swatch-l1"></span>Level 1
+        <span class="swatch swatch-l2"></span>Level 2
+        <span class="swatch swatch-l3"></span>Level 3
+        <span class="swatch swatch-l4"></span>Level 4+ / Path / DTM
+      </p>
+    </div>
+  </section>
+</template>
+
+<template id="tpl-divisions">
+  <section class="panel" data-panel="divisions">
+    <div class="card">
+      <h2>Division Leaderboard <span class="card-sub">Click a division to see its area &amp; club breakdown</span></h2>
+      <div id="division-accordion"></div>
+    </div>
+  </section>
+</template>
+
+<template id="tpl-areas">
+  <section class="panel" data-panel="areas">
+    <div class="card">
+      <div class="card-header-row">
+        <h2>Area Leaderboards <span class="card-sub">Ranked within each division</span></h2>
+        <select id="area-division-filter" class="select"></select>
+      </div>
+      <div id="areas-content"></div>
+    </div>
+  </section>
+</template>
+
+<template id="tpl-clubs">
+  <section class="panel" data-panel="clubs">
+    <div class="card">
+      <div class="card-header-row">
+        <h2>Club Leaderboard <span class="card-sub">District-wide, ranked by total levels completed</span></h2>
+        <input type="search" id="club-search" class="select" placeholder="Search club name&hellip;">
+      </div>
+      <p class="legend-note">
+        <span class="swatch swatch-l1"></span>Level 1
+        <span class="swatch swatch-l2"></span>Level 2
+        <span class="swatch swatch-l3"></span>Level 3
+        <span class="swatch swatch-l4"></span>Level 4+ / Path / DTM
+      </p>
+      <div id="club-leaderboard"></div>
+    </div>
+  </section>
+</template>
+
+<template id="tpl-award">
+  <section class="panel" data-panel="award">
+    <div class="card award-intro">
+      <h2>Pathways Quality Award</h2>
+      <p>
+        <strong>Star</strong> requires at least 3 Level&nbsp;1 and 2 Level&nbsp;3 completions by Dec&nbsp;31, 2026.
+        <strong>Excellence</strong> requires at least 4 Level&nbsp;1 and 3 Level&nbsp;3 completions by Dec&nbsp;31, 2026.
+        Clubs achieving Excellence are not also counted for Star. Qualifying date is the earliest snapshot date on
+        which a club's completions first met its current tier &mdash; the first 20 Excellence clubs by qualifying
+        date are recognized at Ovation 2027.
+      </p>
+    </div>
+    <div class="grid-2">
+      <div class="card">
+        <h2><span class="ribbon-dot ribbon-excellence"></span>Excellence Tier <span class="card-sub" id="excellence-count"></span></h2>
+        <div id="award-excellence"></div>
+      </div>
+      <div class="card">
+        <h2><span class="ribbon-dot ribbon-star"></span>Star Tier <span class="card-sub" id="star-count"></span></h2>
+        <div id="award-star"></div>
+      </div>
+    </div>
+  </section>
+</template>
+
+<template id="tpl-downloads">
+  <section class="panel" data-panel="downloads">
+    <div class="card">
+      <h2>Officer Breakdown Downloads</h2>
+      <p class="card-sub" style="margin-bottom:16px;display:block;">
+        Pick your role and unit to download a ready-to-send PDF or Excel summary.
+      </p>
+      <div class="download-role-tabs" id="download-role-tabs">
+        <button class="role-tab active" data-role="district">District Director</button>
+        <button class="role-tab" data-role="division">Division Director</button>
+        <button class="role-tab" data-role="area">Area Director</button>
+        <button class="role-tab" data-role="club">Club President</button>
+      </div>
+      <div id="download-picker" class="download-picker"></div>
+      <div id="download-links" class="download-links"></div>
+    </div>
+  </section>
+</template>
+
+<script src="vendor/chart.umd.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

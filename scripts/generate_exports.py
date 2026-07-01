@@ -1,0 +1,315 @@
+"""
+Generates per-unit PDF + Excel breakdown reports (District Director, Division
+Directors, Area Directors, Club Presidents) from docs/data.json.
+
+Usage:
+    python scripts/generate_exports.py
+"""
+import json
+import re
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from report_builder import render_report
+from branding import LEVEL_LABELS
+
+ROOT = Path(__file__).resolve().parent.parent
+DOCS_DIR = ROOT / "docs"
+DATA_JSON = DOCS_DIR / "data.json"
+EXPORTS_DIR = DOCS_DIR / "exports"
+
+LEVEL_HEADERS = ["Level 1", "Level 2", "Level 3", "Level 4+/Path/DTM", "Total"]
+
+
+def slugify(s):
+    s = re.sub(r"[^A-Za-z0-9]+", "_", s).strip("_")
+    return s[:60]
+
+
+def level_row(prefix_cols, obj):
+    return prefix_cols + [obj["level1"], obj["level2"], obj["level3"], obj["level4"], obj["total"]]
+
+
+def award_note(club_number, award):
+    for tier_key, label in (("excellence", "Pathways Quality EXCELLENCE"), ("star", "Pathways Quality STAR")):
+        for e in award[tier_key]:
+            if e["club_number"] == club_number:
+                return f"{label} — qualified {e['qualifying_date']} (rank #{e['rank']} district-wide" + \
+                       (", Ovation 2027 recognized" if tier_key == "excellence" and e["ovation_recognized"] else "") + ")"
+    return None
+
+
+def award_progress_text(club, crit):
+    l1, l3 = club["level1"], club["level3"]
+    exc = crit["excellence"]
+    star = crit["star"]
+    if l1 >= exc["level1"] and l3 >= exc["level3"]:
+        return None  # already covered by award_note
+    if l1 >= star["level1"] and l3 >= star["level3"]:
+        need1, need3 = max(0, exc["level1"] - l1), max(0, exc["level3"] - l3)
+        return (f"Qualified for Pathways Quality STAR. Needs {need1} more Level 1(s) and "
+                f"{need3} more Level 3(s) to reach EXCELLENCE tier.")
+    need1, need3 = max(0, star["level1"] - l1), max(0, star["level3"] - l3)
+    return (f"Not yet qualified for the Pathways Quality Award. Needs {need1} more Level 1(s) "
+            f"and {need3} more Level 3(s) to reach STAR tier (min. {star['level1']} L1 / {star['level3']} L3).")
+
+
+def district_leaderboard_rows(clubs):
+    return [
+        [c["rank"], c["club_name"], f"{c['division']}-{c['area']}",
+         c["level1"], c["level2"], c["level3"], c["level4"], c["total"]]
+        for c in clubs
+    ]
+
+
+def award_rows(entries):
+    return [
+        [e["rank"], e["club_name"], f"{e['division']}-{e['area']}", e["level1"], e["level3"],
+         e["qualifying_date"], ("Yes" if e.get("ovation_recognized") else "")]
+        for e in entries
+    ]
+
+
+def build_district_report(data):
+    meta = data["meta"]
+    snap = meta["snapshot_date"]
+    dt = data["district_totals"]
+
+    div_rows = [
+        [d["rank"], f"Division {d['division']}", d["level1"], d["level2"], d["level3"], d["level4"], d["total"], d["club_count"]]
+        for d in data["divisions"]
+    ]
+
+    blocks = [
+        {
+            "type": "table",
+            "heading": "District-Wide Level Totals",
+            "headers": ["Level 1", "Level 2", "Level 3", "Level 4+/Path/DTM", "Total"],
+            "rows": [[dt["level1"], dt["level2"], dt["level3"], dt["level4"], dt["total"]]],
+            "note": f"Across {meta['total_active_clubs']} active clubs (of {meta['total_clubs']} total).",
+        },
+        {
+            "type": "table",
+            "heading": "Division Leaderboard (Total Levels Completed)",
+            "headers": ["Rank", "Division", "Level 1", "Level 2", "Level 3", "Level 4+", "Total", "# Clubs"],
+            "rows": div_rows,
+        },
+        {
+            "type": "table",
+            "heading": "Club Leaderboard — District-Wide",
+            "headers": ["Rank", "Club", "Div-Area", "Level 1", "Level 2", "Level 3", "Level 4+", "Total"],
+            "rows": district_leaderboard_rows(data["club_leaderboard"]),
+        },
+        {
+            "type": "table",
+            "heading": "Pathways Quality EXCELLENCE Leaderboard",
+            "headers": ["Rank", "Club", "Div-Area", "Level 1", "Level 3", "Qualifying Date", "Ovation 2027"],
+            "rows": award_rows(data["pathways_award"]["excellence"]),
+            "note": "First 20 clubs (by qualifying date) recognized at Ovation 2027. All qualifying clubs recognized on District social media.",
+        },
+        {
+            "type": "table",
+            "heading": "Pathways Quality STAR Leaderboard",
+            "headers": ["Rank", "Club", "Div-Area", "Level 1", "Level 3", "Qualifying Date", ""],
+            "rows": [r[:-1] + [""] for r in award_rows(data["pathways_award"]["star"])],
+            "note": "Clubs achieving Excellence tier are shown only in the Excellence leaderboard, per award rules.",
+        },
+    ]
+    return {
+        "title": f"District {meta['district_number']} — District Director Summary",
+        "subtitle": "Pathways Education Performance — District-Wide",
+        "snapshot_date": snap,
+        "blocks": blocks,
+    }
+
+
+def build_division_report(data, div):
+    meta = data["meta"]
+    snap = meta["snapshot_date"]
+    area_rows = [
+        [a["rank_in_division"], f"Area {a['area']}", a["level1"], a["level2"], a["level3"], a["level4"], a["total"], len(a["clubs"])]
+        for a in div["areas"]
+    ]
+    div_clubs = sorted(
+        [c for c in data["club_leaderboard"] if c["division"] == div["division"]],
+        key=lambda c: c["total"], reverse=True,
+    )
+    club_rows = [
+        [i + 1, c["club_name"], c["area"], c["level1"], c["level2"], c["level3"], c["level4"], c["total"]]
+        for i, c in enumerate(div_clubs)
+    ]
+    exc = [e for e in data["pathways_award"]["excellence"] if e["division"] == div["division"]]
+    star = [e for e in data["pathways_award"]["star"] if e["division"] == div["division"]]
+
+    blocks = [
+        {
+            "type": "table",
+            "heading": f"Division {div['division']} — Level Totals (District Rank #{div['rank']} of {len(data['divisions'])})",
+            "headers": ["Level 1", "Level 2", "Level 3", "Level 4+/Path/DTM", "Total"],
+            "rows": [[div["level1"], div["level2"], div["level3"], div["level4"], div["total"]]],
+        },
+        {
+            "type": "table",
+            "heading": "Area Leaderboard (within Division)",
+            "headers": ["Rank", "Area", "Level 1", "Level 2", "Level 3", "Level 4+", "Total", "# Clubs"],
+            "rows": area_rows,
+        },
+        {
+            "type": "table",
+            "heading": "Club Leaderboard (within Division)",
+            "headers": ["Rank", "Club", "Area", "Level 1", "Level 2", "Level 3", "Level 4+", "Total"],
+            "rows": club_rows,
+        },
+        {
+            "type": "table",
+            "heading": "Pathways Quality Award — Excellence (this Division)",
+            "headers": ["District Rank", "Club", "Area", "Level 1", "Level 3", "Qualifying Date", "Ovation 2027"],
+            "rows": award_rows(exc) or [["—", "No clubs yet", "", "", "", "", ""]],
+        },
+        {
+            "type": "table",
+            "heading": "Pathways Quality Award — Star (this Division)",
+            "headers": ["District Rank", "Club", "Area", "Level 1", "Level 3", "Qualifying Date", ""],
+            "rows": [r[:-1] + [""] for r in award_rows(star)] or [["—", "No clubs yet", "", "", "", "", ""]],
+        },
+    ]
+    return {
+        "title": f"District {meta['district_number']} — Division {div['division']} Director Summary",
+        "subtitle": f"Pathways Education Performance — Division {div['division']}",
+        "snapshot_date": snap,
+        "blocks": blocks,
+    }
+
+
+def build_area_report(data, div, area):
+    meta = data["meta"]
+    snap = meta["snapshot_date"]
+    club_rows = [
+        [i + 1, c["club_name"], c["level1"], c["level2"], c["level3"], c["level4"], c["total"], c["active_members"]]
+        for i, c in enumerate(area["clubs"])
+    ]
+    exc = [e for e in data["pathways_award"]["excellence"] if e["division"] == div["division"] and e["area"] == area["area"]]
+    star = [e for e in data["pathways_award"]["star"] if e["division"] == div["division"] and e["area"] == area["area"]]
+
+    blocks = [
+        {
+            "type": "table",
+            "heading": f"Area {area['area']} — Level Totals (Division Rank #{area['rank_in_division']} of {len(div['areas'])})",
+            "headers": ["Level 1", "Level 2", "Level 3", "Level 4+/Path/DTM", "Total"],
+            "rows": [[area["level1"], area["level2"], area["level3"], area["level4"], area["total"]]],
+        },
+        {
+            "type": "table",
+            "heading": "Club Leaderboard (within Area)",
+            "headers": ["Rank", "Club", "Level 1", "Level 2", "Level 3", "Level 4+", "Total", "Active Members"],
+            "rows": club_rows,
+        },
+        {
+            "type": "table",
+            "heading": "Pathways Quality Award — Excellence (this Area)",
+            "headers": ["District Rank", "Club", "Level 1", "Level 3", "Qualifying Date", "Ovation 2027", ""],
+            "rows": [[e["rank"], e["club_name"], e["level1"], e["level3"], e["qualifying_date"],
+                      ("Yes" if e["ovation_recognized"] else ""), ""] for e in exc] or [["—", "No clubs yet", "", "", "", "", ""]],
+        },
+        {
+            "type": "table",
+            "heading": "Pathways Quality Award — Star (this Area)",
+            "headers": ["District Rank", "Club", "Level 1", "Level 3", "Qualifying Date", "", ""],
+            "rows": [[e["rank"], e["club_name"], e["level1"], e["level3"], e["qualifying_date"], "", ""] for e in star]
+                    or [["—", "No clubs yet", "", "", "", "", ""]],
+        },
+    ]
+    return {
+        "title": f"District {meta['district_number']} — Division {div['division']}, Area {area['area']} Director Summary",
+        "subtitle": f"Pathways Education Performance — Area {area['area']}",
+        "snapshot_date": snap,
+        "blocks": blocks,
+    }
+
+
+def build_club_report(data, div, area, club):
+    meta = data["meta"]
+    snap = meta["snapshot_date"]
+    crit = data["pathways_award"]["criteria"]
+
+    club_lb = next(c for c in data["club_leaderboard"] if c["club_number"] == club["club_number"])
+    div_clubs = sorted([c for c in data["club_leaderboard"] if c["division"] == div["division"]],
+                        key=lambda c: c["total"], reverse=True)
+    div_rank = next(i + 1 for i, c in enumerate(div_clubs) if c["club_number"] == club["club_number"])
+    area_rank = next(i + 1 for i, c in enumerate(area["clubs"]) if c["club_number"] == club["club_number"])
+
+    note = award_note(club["club_number"], data["pathways_award"])
+    if not note:
+        note = award_progress_text(club_lb, crit)
+
+    blocks = [
+        {
+            "type": "table",
+            "heading": "Level Completions",
+            "headers": ["Level 1", "Level 2", "Level 3", "Level 4+/Path/DTM", "Total"],
+            "rows": [[club["level1"], club["level2"], club["level3"], club["level4"], club["total"]]],
+        },
+        {
+            "type": "table",
+            "heading": "Standing",
+            "headers": ["District Rank", "Division Rank", "Area Rank", "Active Members", "Distinguished Status"],
+            "rows": [[club_lb["rank"], div_rank, area_rank, club["active_members"], club["distinguished_status"] or "—"]],
+        },
+        {
+            "type": "text",
+            "heading": "Pathways Quality Award Status",
+            "body": note or "No award status available.",
+        },
+    ]
+    return {
+        "title": club["club_name"],
+        "subtitle": f"Club Performance Summary — Division {div['division']}, Area {area['area']}",
+        "snapshot_date": snap,
+        "blocks": blocks,
+    }
+
+
+def main():
+    data = json.loads(DATA_JSON.read_text())
+
+    # Clear old exports so removed/renamed clubs don't leave stale files
+    if EXPORTS_DIR.exists():
+        import shutil
+        shutil.rmtree(EXPORTS_DIR)
+
+    # District
+    report = build_district_report(data)
+    render_report(report, EXPORTS_DIR / "district", "District_82_Summary")
+
+    manifest = {"district": ["District_82_Summary"], "divisions": {}, "areas": {}, "clubs": {}}
+
+    for div in data["divisions"]:
+        dslug = f"Division_{div['division']}"
+        report = build_division_report(data, div)
+        render_report(report, EXPORTS_DIR / "division", dslug)
+        manifest["divisions"][div["division"]] = dslug
+
+        for area in div["areas"]:
+            aslug = f"Division_{div['division']}_Area_{area['area']}"
+            report = build_area_report(data, div, area)
+            render_report(report, EXPORTS_DIR / "area", aslug)
+            manifest["areas"][f"{div['division']}-{area['area']}"] = aslug
+
+            for club in area["clubs"]:
+                cslug = f"{club['club_number']}_{slugify(club['club_name'])}"
+                report = build_club_report(data, div, area, club)
+                render_report(report, EXPORTS_DIR / "club", cslug)
+                manifest["clubs"][club["club_number"]] = {
+                    "slug": cslug, "division": div["division"], "area": area["area"],
+                    "club_name": club["club_name"],
+                }
+
+    (EXPORTS_DIR / "manifest.json").write_text(json.dumps(manifest, indent=2))
+    print(f"Generated district(1) + division({len(data['divisions'])}) + "
+          f"area({sum(len(d['areas']) for d in data['divisions'])}) + "
+          f"club({sum(len(a['clubs']) for d in data['divisions'] for a in d['areas'])}) reports.")
+
+
+if __name__ == "__main__":
+    main()
