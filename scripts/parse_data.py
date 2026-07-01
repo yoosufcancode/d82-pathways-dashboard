@@ -180,6 +180,76 @@ def rank_fields(rank_maps, key):
     }
 
 
+CLOSE_TO_STAR_LIMIT = 30
+
+
+def compute_close_to_star(clubs, award_info, limit=CLOSE_TO_STAR_LIMIT):
+    """Active clubs that have NOT yet qualified for Star/Excellence, ranked by
+    how few additional Level 1 / Level 3 completions they'd need to reach Star."""
+    close = []
+    for c in clubs:
+        if c["club_number"] in award_info:
+            continue  # already Star or Excellence
+        need1 = max(0, STAR_L1 - c["level1"])
+        need3 = max(0, STAR_L3 - c["level3"])
+        if need1 == 0 and need3 == 0:
+            continue
+        close.append({
+            "club_number": c["club_number"],
+            "club_name": c["club_name"],
+            "division": c["division"],
+            "area": c["area"],
+            "level1": c["level1"],
+            "level3": c["level3"],
+            "need_l1": need1,
+            "need_l3": need3,
+            "gap": need1 + need3,
+        })
+    close.sort(key=lambda x: (x["gap"], x["club_name"]))
+    top = close[:limit]
+    for i, c in enumerate(top, start=1):
+        c["rank"] = i
+    return top
+
+
+def build_award_payload(clubs, active_clubs, award_info):
+    """clubs = full club list (for name/division lookup), active_clubs = Active-status only."""
+    club_lookup = {c["club_number"]: c for c in clubs}
+    excellence, star = [], []
+    for club_number, info in award_info.items():
+        c = club_lookup.get(club_number)
+        if not c:
+            continue
+        entry = {
+            "club_number": club_number,
+            "club_name": c["club_name"],
+            "division": c["division"],
+            "area": c["area"],
+            "level1": info["level1"],
+            "level3": info["level3"],
+            "qualifying_date": info["qualifying_date"],
+        }
+        (excellence if info["tier"] == "excellence" else star).append(entry)
+
+    excellence.sort(key=lambda e: (e["qualifying_date"], e["club_name"]))
+    star.sort(key=lambda e: (e["qualifying_date"], e["club_name"]))
+    for i, e in enumerate(excellence, start=1):
+        e["rank"] = i
+        e["ovation_recognized"] = i <= 20
+    for i, e in enumerate(star, start=1):
+        e["rank"] = i
+
+    return {
+        "excellence": excellence,
+        "star": star,
+        "close_to_star": compute_close_to_star(active_clubs, award_info),
+        "criteria": {
+            "star": {"level1": STAR_L1, "level3": STAR_L3},
+            "excellence": {"level1": EXCELLENCE_L1, "level3": EXCELLENCE_L3},
+        },
+    }
+
+
 def build_dashboard_json(clubs, snapshot_date, award_info):
     active_clubs = [c for c in clubs if c["status"] == "Active"]
 
@@ -302,32 +372,6 @@ def build_dashboard_json(clubs, snapshot_date, award_info):
             **rank_fields(club_rank_maps, r["club_number"]),
         })
 
-    # Pathways Quality Award leaderboards
-    club_lookup = {c["club_number"]: c for c in clubs}
-    excellence, star = [], []
-    for club_number, info in award_info.items():
-        c = club_lookup.get(club_number)
-        if not c:
-            continue
-        entry = {
-            "club_number": club_number,
-            "club_name": c["club_name"],
-            "division": c["division"],
-            "area": c["area"],
-            "level1": info["level1"],
-            "level3": info["level3"],
-            "qualifying_date": info["qualifying_date"],
-        }
-        (excellence if info["tier"] == "excellence" else star).append(entry)
-
-    excellence.sort(key=lambda e: (e["qualifying_date"], e["club_name"]))
-    star.sort(key=lambda e: (e["qualifying_date"], e["club_name"]))
-    for i, e in enumerate(excellence, start=1):
-        e["rank"] = i
-        e["ovation_recognized"] = i <= 20
-    for i, e in enumerate(star, start=1):
-        e["rank"] = i
-
     return {
         "meta": {
             "district_number": district_number,
@@ -339,14 +383,7 @@ def build_dashboard_json(clubs, snapshot_date, award_info):
         "district_totals": district_totals,
         "divisions": division_list,
         "club_leaderboard": club_leaderboard_out,
-        "pathways_award": {
-            "excellence": excellence,
-            "star": star,
-            "criteria": {
-                "star": {"level1": STAR_L1, "level3": STAR_L3},
-                "excellence": {"level1": EXCELLENCE_L1, "level3": EXCELLENCE_L3},
-            },
-        },
+        "pathways_award": build_award_payload(clubs, active_clubs, award_info),
         "all_clubs": clubs,
     }
 

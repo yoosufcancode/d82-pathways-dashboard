@@ -14,6 +14,7 @@ data/
 scripts/
   parse_data.py           <- reads the CSV, writes docs/data.json, updates history.json
   generate_exports.py     <- builds every PDF/Excel breakdown into docs/exports/
+  build_award_snapshot.py <- locks the Award tab from a final cutoff CSV (see below)
   report_builder.py       <- shared PDF/Excel rendering helpers
   branding.py             <- shared brand colors
   update_dashboard.sh     <- convenience wrapper: run this each month
@@ -21,6 +22,7 @@ scripts/
 docs/                      <- THIS is the folder GitHub Pages publishes
   index.html, style.css, app.js
   data.json                <- generated dashboard data (do not hand-edit)
+  award_data.json          <- OPTIONAL: only exists once you lock the Award tab (see below)
   vendor/chart.umd.js      <- self-hosted Chart.js (no external CDN dependency)
   exports/
     district/  Division-wide PDF+XLSX for the District Director
@@ -111,24 +113,54 @@ The Club Performance CSV is a snapshot — it doesn't include the exact date eac
 individual Level 1 / Level 3 was completed. To work around this without needing
 Base Camp email timestamps, the dashboard tracks the date a club's Level 1 / Level 3
 *counts* first crossed the Star or Excellence thresholds, based on your successive
-CSV uploads (stored in `data/history.json`).
+CSV uploads (stored in `data/history.json`). This date is used internally to order
+the leaderboard and determine the Excellence Top 20, but is **not shown** on the
+dashboard or in downloaded reports — those only state whether a club currently
+qualifies for Star or Excellence.
 
-- The **first time** you run this (with your June 30 snapshot), any club already
-  meeting the criteria is dated 2026-06-30 — the earliest date we actually know.
-- From your **next upload onward**, dates become precise to whichever snapshot a
-  club first crossed the line.
-- **Keep `data/history.json` in your git repo** (it already is) — don't delete it,
-  or you'll lose the accumulated qualifying-date history.
-- If you want month-by-month precision from day one, you could backfill by running
-  `parse_data.py` once for each past month's CSV export you may have saved, in
-  chronological order, before your first live push.
+## Locking the Award tab after Dec 31, 2026
 
-This is an approximation of "date of final qualifying completion" per the award
-rules — it's accurate to the month you update, which should be more than enough
-precision for ranking and Ovation 2027 recognition purposes. If a tiebreaker ever
-comes down to two clubs qualifying in the exact same reporting window, you'll want
-to fall back to the official VP Education Base Camp confirmation email timestamps
-as described in the award rules PDF.
+The regular monthly update (`update_dashboard.sh`) is meant to keep running all year,
+including after Dec 31 — but Pathways Quality Award completions recorded after Dec 31,
+2026 must **not** count toward the award. If you kept computing the Award tab from
+the same ever-changing monthly data, it would silently become wrong once you upload
+a January or February 2027 export.
+
+To prevent that, the Award tab has two states:
+
+- **Provisional / running** (default): computed live from whatever CSV you last fed
+  the regular dashboard. The tab shows an amber banner explaining this is for
+  planning purposes only, based on the current snapshot date, not the official
+  Dec 31 cutoff.
+- **Locked / official**: once you run the separate award-lock script below, the tab
+  switches to a green "official result" banner and stops changing, no matter how
+  many more times you update the regular dashboard afterward.
+
+To lock in the official result once you have the final Dec 31, 2026 (or later,
+corrected) export:
+
+```bash
+python scripts/build_award_snapshot.py /path/to/dec31_export.csv
+git add docs/award_data.json data/history.json
+git commit -m "Lock official Pathways Quality Award result"
+git push
+```
+
+This writes `docs/award_data.json` — as long as that file exists, the Award tab
+always uses it instead of recalculating from `docs/data.json`. To go back to live/
+running data (e.g. if you need to correct something), delete `docs/award_data.json`,
+commit, and push.
+
+You can re-run `build_award_snapshot.py` as many times as you like (e.g. once
+after District Pathways Chair review, again after District Awards Chair sign-off)
+— each run overwrites `docs/award_data.json` with the latest result.
+
+## Clubs Close to Star
+
+The Award tab also lists the ~30 active clubs nearest to qualifying for Star
+(ranked by how few more Level 1 / Level 3 completions they need), to help those
+clubs see their potential. Adjust how many clubs are shown by changing
+`CLOSE_TO_STAR_LIMIT` at the top of `scripts/parse_data.py`.
 
 ## Definitions used in this dashboard
 

@@ -20,6 +20,8 @@ function rankBadgeClass(rank) {
 
 let DATA = null;
 let MANIFEST = null;
+let AWARD_DATA = null;   // locked award_data.json, if present
+let AWARD_IS_LOCKED = false;
 
 function fmtDate(iso) {
   if (!iso) return '—';
@@ -41,6 +43,21 @@ async function loadData() {
   ]);
   DATA = await dataRes.json();
   MANIFEST = await manifestRes.json();
+
+  try {
+    const awardRes = await fetch('award_data.json', { cache: 'no-store' });
+    if (awardRes.ok) {
+      AWARD_DATA = await awardRes.json();
+      AWARD_IS_LOCKED = true;
+    }
+  } catch (e) {
+    AWARD_DATA = null;
+    AWARD_IS_LOCKED = false;
+  }
+}
+
+function currentAward() {
+  return AWARD_IS_LOCKED ? AWARD_DATA : DATA.pathways_award;
 }
 
 function stackBarHTML(obj, heightClass) {
@@ -221,10 +238,36 @@ function paintClubs(query) {
 
 /* ---------------- PATHWAYS AWARD ---------------- */
 function renderAward() {
-  const exc = DATA.pathways_award.excellence;
-  const star = DATA.pathways_award.star;
+  const award = currentAward();
+  const exc = award.excellence;
+  const star = award.star;
+  const close = award.close_to_star || [];
+
   document.getElementById('excellence-count').textContent = `${exc.length} club${exc.length !== 1 ? 's' : ''}`;
   document.getElementById('star-count').textContent = `${star.length} club${star.length !== 1 ? 's' : ''}`;
+
+  // Disclaimer banner — differs depending on whether results are locked/official
+  const banner = document.getElementById('award-disclaimer');
+  if (AWARD_IS_LOCKED) {
+    banner.className = 'award-banner award-banner-locked';
+    banner.innerHTML = `
+      <strong>Official result — locked as of ${fmtDate(AWARD_DATA.cutoff_snapshot_date)}.</strong>
+      This reflects completions recorded through the Dec 31, 2026 award cutoff, reviewed by the
+      District Pathways Chair and District Awards Chair. Ovation 2027 recognition shown here has
+      been through formal review.
+    `;
+  } else {
+    banner.className = 'award-banner award-banner-provisional';
+    banner.innerHTML = `
+      <strong>Provisional — for planning purposes only.</strong>
+      This tab currently shows clubs that qualify based on completions recorded as of
+      <b>${fmtDate(DATA.meta.snapshot_date)}</b>, not the official Dec&nbsp;31, 2026 award cutoff.
+      It's meant to help clubs gauge their potential standing, not to confirm results.
+      This tab does <b>not</b> show which clubs will be recognized at Ovation 2027 &mdash; that will be
+      published on this same tab after formal review by the District Pathways Chair and District
+      Awards Chair, on or after <b>January 15, 2027</b>.
+    `;
+  }
 
   const renderList = (list, tier) => list.map(e => `
     <div class="award-row">
@@ -236,12 +279,38 @@ function renderAward() {
           Area ${e.area} &middot; L1 ${e.level1} / L3 ${e.level3}
         </div>
       </div>
-      <div>${e.ovation_recognized ? '<span class="award-ovation">Ovation 2027</span>' : ''}</div>
+      <div>${e.ovation_recognized ? `<span class="award-ovation">${AWARD_IS_LOCKED ? 'Ovation 2027' : 'Projected Top 20'}</span>` : ''}</div>
     </div>
   `).join('') || '<p class="dl-empty">No clubs have qualified yet.</p>';
 
   document.getElementById('award-excellence').innerHTML = renderList(exc, 'excellence');
   document.getElementById('award-star').innerHTML = renderList(star, 'star');
+
+  const closeSection = document.getElementById('award-close-section');
+  if (close.length === 0) {
+    closeSection.innerHTML = '';
+  } else {
+    closeSection.innerHTML = `
+      <div class="card">
+        <h2>Clubs Close to Star <span class="card-sub">${close.length} clubs nearest to qualifying — a head start list, not a guarantee</span></h2>
+        <table class="rank-table">
+          <thead><tr><th>Rank</th><th>Club</th><th>Div-Area</th><th>Level 1</th><th>Level 3</th><th>Still Needs</th></tr></thead>
+          <tbody>
+            ${close.map(c => `
+              <tr>
+                <td class="rank-num">${c.rank}</td>
+                <td>${c.club_name}</td>
+                <td><span class="div-chip" style="background:${divColor(c.division)}">Div ${c.division}</span> Area ${c.area}</td>
+                <td>${c.level1}</td>
+                <td>${c.level3}</td>
+                <td>${[c.need_l1 ? `${c.need_l1} more L1` : null, c.need_l3 ? `${c.need_l3} more L3` : null].filter(Boolean).join(', ')}</td>
+              </tr>
+            `).join('')}
+          </tbody>
+        </table>
+      </div>
+    `;
+  }
 }
 
 /* ---------------- DOWNLOADS ---------------- */

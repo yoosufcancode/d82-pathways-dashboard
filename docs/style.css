@@ -304,6 +304,23 @@ main {
 }
 
 /* Pathways award */
+.award-banner {
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  font-size: 13px;
+  line-height: 1.55;
+  border: 1px solid transparent;
+}
+.award-banner-provisional {
+  background: #FEF8E7;
+  border-color: #F0DCA0;
+  color: #6B5410;
+}
+.award-banner-locked {
+  background: #EAF4EE;
+  border-color: #B9DCC4;
+  color: #1E5631;
+}
 .award-intro p { color: var(--ink-soft); font-size: 13.5px; }
 .ribbon-dot { display: inline-block; width: 12px; height: 12px; border-radius: 50%; margin-right: 4px; }
 .ribbon-excellence { background: var(--tm-gold-dark); }
