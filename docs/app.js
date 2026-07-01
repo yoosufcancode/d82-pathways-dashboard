@@ -5,6 +5,19 @@ const LEVEL_COLORS = {
   level4: '#C9A227',
 };
 
+const DIVISION_COLORS = {
+  A: '#004165', B: '#772432', C: '#C9A227', D: '#12776F',
+  E: '#8E44AD', F: '#D9622B', G: '#2E7D32', H: '#C2185B', I: '#42586B',
+};
+function divColor(div) { return DIVISION_COLORS[div] || '#004165'; }
+
+function rankBadgeClass(rank) {
+  if (rank === 1) return 'gold';
+  if (rank === 2) return 'silver';
+  if (rank === 3) return 'bronze';
+  return 'plain';
+}
+
 let DATA = null;
 let MANIFEST = null;
 
@@ -146,20 +159,31 @@ function paintAreas(divFilter) {
   const content = document.getElementById('areas-content');
   const divs = divFilter === '__all__' ? DATA.divisions : DATA.divisions.filter(d => d.division === divFilter);
   content.innerHTML = divs.map(d => `
-    <div class="area-group-title">Division ${d.division}</div>
-    <table class="rank-table">
-      <thead><tr><th>Rank</th><th>Area</th><th>Level 1</th><th>Level 2</th><th>Level 3</th><th>Level 4+</th><th>Total</th><th>Clubs</th></tr></thead>
-      <tbody>
-        ${d.areas.map(a => `
-          <tr>
-            <td class="rank-num">${a.rank_in_division}</td>
-            <td>Area ${a.area}</td>
-            <td>${a.level1}</td><td>${a.level2}</td><td>${a.level3}</td><td>${a.level4}</td>
-            <td><b>${a.total}</b></td><td>${a.clubs.length}</td>
-          </tr>
-        `).join('')}
-      </tbody>
-    </table>
+    <div class="area-group-title" style="color:${divColor(d.division)}">
+      <span class="area-group-chip" style="background:${divColor(d.division)}">Div ${d.division}</span>
+      Division ${d.division}
+    </div>
+    <div class="area-card-grid">
+      ${d.areas.map(a => `
+        <div class="area-card" style="border-top-color:${divColor(d.division)}">
+          <div class="area-card-head">
+            <div class="rank-badge ${rankBadgeClass(a.rank_in_division)}">${a.rank_in_division}</div>
+            <div class="area-card-title">
+              Area ${a.area}
+              <span class="club-sub">${a.clubs.length} clubs &middot; district rank #${a.rank_in_district}</span>
+            </div>
+            <div class="area-card-total" style="color:${divColor(d.division)}">${a.total}</div>
+          </div>
+          ${stackBarHTML(a, 'stackbar stackbar-lg')}
+          <div class="area-card-metrics">
+            <span><i style="background:${LEVEL_COLORS.level1}"></i>L1 <b>${a.level1}</b></span>
+            <span><i style="background:${LEVEL_COLORS.level2}"></i>L2 <b>${a.level2}</b></span>
+            <span><i style="background:${LEVEL_COLORS.level3}"></i>L3 <b>${a.level3}</b></span>
+            <span><i style="background:${LEVEL_COLORS.level4}"></i>L4+ <b>${a.level4}</b></span>
+          </div>
+        </div>
+      `).join('')}
+    </div>
   `).join('');
 }
 
@@ -174,16 +198,19 @@ function paintClubs(query) {
   const maxTotal = DATA.club_leaderboard[0]?.total || 1;
   const rows = DATA.club_leaderboard.filter(c => c.club_name.toLowerCase().includes(query));
   container.innerHTML = rows.map(c => {
-    const widthPct = Math.max((c.total / maxTotal) * 100, 4);
+    const widthPct = Math.max((c.total / maxTotal) * 100, 6);
     return `
     <div class="club-row">
-      <div class="rank-num">${c.rank}</div>
+      <div class="rank-badge ${rankBadgeClass(c.rank)}">${c.rank}</div>
       <div>
         <div class="club-name">${c.club_name}</div>
-        <div class="club-sub">Div ${c.division} &middot; Area ${c.area} &middot; ${c.active_members} active members</div>
+        <div class="club-sub">
+          <span class="div-chip" style="background:${divColor(c.division)}">Div ${c.division}</span>
+          Area ${c.area} &middot; ${c.active_members} active members
+        </div>
       </div>
       <div class="club-total">${c.total}</div>
-      <div class="club-bar-wrap" style="width:${widthPct}%;min-width:60px;">
+      <div class="club-bar-wrap" style="width:${widthPct}%;min-width:70px;">
         ${['level1', 'level2', 'level3', 'level4'].map(k =>
           `<span style="width:${(c[k] / (c.total || 1)) * 100}%;background:${LEVEL_COLORS[k]}" title="${k}: ${c[k]}"></span>`
         ).join('')}
@@ -204,12 +231,12 @@ function renderAward() {
       <div class="award-badge ${tier}">${e.rank}</div>
       <div>
         <div class="club-name">${e.club_name}</div>
-        <div class="club-sub">Div ${e.division} &middot; Area ${e.area} &middot; L1 ${e.level1} / L3 ${e.level3}
-          ${e.ovation_recognized ? '<span class="award-ovation">Ovation 2027</span>' : ''}
+        <div class="club-sub">
+          <span class="div-chip" style="background:${divColor(e.division)}">Div ${e.division}</span>
+          Area ${e.area} &middot; L1 ${e.level1} / L3 ${e.level3}
         </div>
       </div>
-      <div></div>
-      <div class="award-date">Qualified<br><b>${fmtDate(e.qualifying_date)}</b></div>
+      <div>${e.ovation_recognized ? '<span class="award-ovation">Ovation 2027</span>' : ''}</div>
     </div>
   `).join('') || '<p class="dl-empty">No clubs have qualified yet.</p>';
 

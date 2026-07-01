@@ -161,6 +161,25 @@ def compute_award_qualifying_dates(history):
     return result
 
 
+RANK_METRICS = ["level1", "level2", "level3", "level4", "total"]
+
+
+def rank_dict(rows, id_fn, value_fn, tie_fn):
+    """Returns {id: rank} where rank 1 = highest value_fn, ties broken by tie_fn."""
+    ordered = sorted(rows, key=lambda r: (-value_fn(r), tie_fn(r)))
+    return {id_fn(r): i + 1 for i, r in enumerate(ordered)}
+
+
+def rank_fields(rank_maps, key):
+    return {
+        "rank_l1": rank_maps["level1"][key],
+        "rank_l2": rank_maps["level2"][key],
+        "rank_l3": rank_maps["level3"][key],
+        "rank_l4": rank_maps["level4"][key],
+        "rank_total": rank_maps["total"][key],
+    }
+
+
 def build_dashboard_json(clubs, snapshot_date, award_info):
     active_clubs = [c for c in clubs if c["status"] == "Active"]
 
@@ -175,6 +194,17 @@ def build_dashboard_json(clubs, snapshot_date, award_info):
 
     district_totals = totals(active_clubs)
     district_number = clubs[0]["district"] if clubs else ""
+
+    # District-wide per-level rank maps for clubs (used for "Rank in District" blocks)
+    club_value_fn = {
+        "level1": lambda r: r["level1"], "level2": lambda r: r["level2"],
+        "level3": lambda r: r["level3"], "level4": lambda r: r["level4"],
+        "total": lambda r: r["total_levels"],
+    }
+    club_rank_maps = {
+        metric: rank_dict(active_clubs, lambda r: r["club_number"], fn, lambda r: r["club_name"])
+        for metric, fn in club_value_fn.items()
+    }
 
     # Division breakdown
     divisions = {}
@@ -205,6 +235,7 @@ def build_dashboard_json(clubs, snapshot_date, award_info):
                         "total": r["total_levels"],
                         "active_members": r["active_members"],
                         "distinguished_status": r["distinguished_status"],
+                        **rank_fields(club_rank_maps, r["club_number"]),
                     }
                     for r in clubs_sorted
                 ],
@@ -223,6 +254,34 @@ def build_dashboard_json(clubs, snapshot_date, award_info):
     for i, d in enumerate(division_list, start=1):
         d["rank"] = i
 
+    # District-wide per-level ranks for areas (across all areas in the district)
+    all_areas = [a for d in division_list for a in d["areas"]]
+    area_value_fn = {
+        "level1": lambda a: a["level1"], "level2": lambda a: a["level2"],
+        "level3": lambda a: a["level3"], "level4": lambda a: a["level4"],
+        "total": lambda a: a["total"],
+    }
+    area_rank_maps = {
+        metric: rank_dict(all_areas, lambda a: id(a), fn, lambda a: a["area"])
+        for metric, fn in area_value_fn.items()
+    }
+    for a in all_areas:
+        a.update(rank_fields(area_rank_maps, id(a)))
+        a["rank_in_district"] = area_rank_maps["total"][id(a)]
+
+    # District-wide per-level ranks for divisions
+    division_value_fn = {
+        "level1": lambda d: d["level1"], "level2": lambda d: d["level2"],
+        "level3": lambda d: d["level3"], "level4": lambda d: d["level4"],
+        "total": lambda d: d["total"],
+    }
+    division_rank_maps = {
+        metric: rank_dict(division_list, lambda d: d["division"], fn, lambda d: d["division"])
+        for metric, fn in division_value_fn.items()
+    }
+    for d in division_list:
+        d.update(rank_fields(division_rank_maps, d["division"]))
+
     # Club leaderboard (district-wide)
     club_leaderboard = sorted(active_clubs, key=lambda r: r["total_levels"], reverse=True)
     club_leaderboard_out = []
@@ -240,6 +299,7 @@ def build_dashboard_json(clubs, snapshot_date, award_info):
             "total": r["total_levels"],
             "active_members": r["active_members"],
             "distinguished_status": r["distinguished_status"],
+            **rank_fields(club_rank_maps, r["club_number"]),
         })
 
     # Pathways Quality Award leaderboards

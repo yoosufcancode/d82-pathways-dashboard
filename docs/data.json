@@ -2,7 +2,7 @@
   "meta": {
     "district_number": "82",
     "snapshot_date": "2026-06-30",
-    "generated_at": "2026-07-01T10:27:38",
+    "generated_at": "2026-07-01T16:33:14",
     "total_active_clubs": 164,
     "total_clubs": 174
   },
@@ -40,7 +40,12 @@
               "level4": 20,
               "total": 84,
               "active_members": 94,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 1,
+              "rank_l2": 1,
+              "rank_l3": 1,
+              "rank_l4": 1,
+              "rank_total": 1
             },
             {
               "club_number": "01861319",
@@ -51,7 +56,12 @@
               "level4": 3,
               "total": 18,
               "active_members": 40,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 29,
+              "rank_l2": 21,
+              "rank_l3": 13,
+              "rank_l4": 29,
+              "rank_total": 25
             },
             {
               "club_number": "28678375",
@@ -62,7 +72,12 @@
               "level4": 1,
               "total": 7,
               "active_members": 14,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 44,
+              "rank_l2": 142,
+              "rank_l3": 103,
+              "rank_l4": 107,
+              "rank_total": 96
             },
             {
               "club_number": "00598998",
@@ -73,7 +88,12 @@
               "level4": 0,
               "total": 6,
               "active_members": 15,
-              "distinguished_status": "D"
+              "distinguished_status": "D",
+              "rank_l1": 98,
+              "rank_l2": 121,
+              "rank_l3": 113,
+              "rank_l4": 162,
+              "rank_total": 107
             },
             {
               "club_number": "01195101",
@@ -84,10 +104,21 @@
               "level4": 0,
               "total": 0,
               "active_members": 10,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 155,
+              "rank_l2": 155,
+              "rank_l3": 152,
+              "rank_l4": 153,
+              "rank_total": 160
             }
           ],
-          "rank_in_division": 1
+          "rank_in_division": 1,
+          "rank_l1": 1,
+          "rank_l2": 1,
+          "rank_l3": 1,
+          "rank_l4": 1,
+          "rank_total": 1,
+          "rank_in_district": 1
         },
         {
           "area": "04",
@@ -106,7 +137,12 @@
               "level4": 6,
               "total": 19,
               "active_members": 42,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 24,
+              "rank_l2": 15,
+              "rank_l3": 65,
+              "rank_l4": 4,
+              "rank_total": 13
             },
             {
               "club_number": "07392229",
@@ -117,7 +153,12 @@
               "level4": 5,
               "total": 19,
               "active_members": 20,
-              "distinguished_status": "P"
+              "distinguished_status": "P",
+              "rank_l1": 31,
+              "rank_l2": 72,
+              "rank_l3": 16,
+              "rank_l4": 12,
+              "rank_total": 17
             },
             {
               "club_number": "07988670",
@@ -128,7 +169,12 @@
               "level4": 4,
               "total": 15,
               "active_members": 29,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 38,
+              "rank_l2": 32,
+              "rank_l3": 54,
+              "rank_l4": 14,
+              "rank_total": 39
             },
             {
               "club_number": "28679323",
@@ -139,7 +185,12 @@
               "level4": 0,
               "total": 5,
               "active_members": 27,
-              "distinguished_status": "D"
+              "distinguished_status": "D",
+              "rank_l1": 73,
+              "rank_l2": 144,
+              "rank_l3": 104,
+              "rank_l4": 142,
+              "rank_total": 114
             },
             {
               "club_number": "01280859",
@@ -150,7 +201,12 @@
               "level4": 0,
               "total": 2,
               "active_members": 16,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 159,
+              "rank_l2": 159,
+              "rank_l3": 90,
+              "rank_l4": 156,
+              "rank_total": 139
             },
             {
               "club_number": "06650246",
@@ -161,10 +217,21 @@
               "level4": 1,
               "total": 2,
               "active_members": 8,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 131,
+              "rank_l2": 162,
+              "rank_l3": 161,
+              "rank_l4": 120,
+              "rank_total": 140
             }
           ],
-          "rank_in_division": 2
+          "rank_in_division": 2,
+          "rank_l1": 11,
+          "rank_l2": 18,
+          "rank_l3": 8,
+          "rank_l4": 3,
+          "rank_total": 6,
+          "rank_in_district": 6
         },
         {
           "area": "02",
@@ -183,7 +250,12 @@
               "level4": 5,
               "total": 17,
               "active_members": 12,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 43,
+              "rank_l2": 44,
+              "rank_l3": 26,
+              "rank_l4": 10,
+              "rank_total": 29
             },
             {
               "club_number": "07980809",
@@ -194,7 +266,12 @@
               "level4": 2,
               "total": 13,
               "active_members": 35,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 53,
+              "rank_l2": 76,
+              "rank_l3": 95,
+              "rank_l4": 90,
+              "rank_total": 62
             },
             {
               "club_number": "05663570",
@@ -205,7 +282,12 @@
               "level4": 1,
               "total": 3,
               "active_members": 9,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 130,
+              "rank_l2": 119,
+              "rank_l3": 157,
+              "rank_l4": 119,
+              "rank_total": 134
             },
             {
               "club_number": "28676942",
@@ -216,10 +298,21 @@
               "level4": 0,
               "total": 2,
               "active_members": 11,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 139,
+              "rank_l2": 132,
+              "rank_l3": 57,
+              "rank_l4": 128,
+              "rank_total": 138
             }
           ],
-          "rank_in_division": 3
+          "rank_in_division": 3,
+          "rank_l1": 29,
+          "rank_l2": 28,
+          "rank_l3": 22,
+          "rank_l4": 15,
+          "rank_total": 26,
+          "rank_in_district": 26
         },
         {
           "area": "01",
@@ -238,7 +331,12 @@
               "level4": 4,
               "total": 15,
               "active_members": 49,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 88,
+              "rank_l2": 65,
+              "rank_l3": 34,
+              "rank_l4": 18,
+              "rank_total": 45
             },
             {
               "club_number": "01290125",
@@ -249,7 +347,12 @@
               "level4": 3,
               "total": 13,
               "active_members": 41,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 77,
+              "rank_l2": 53,
+              "rank_l3": 73,
+              "rank_l4": 28,
+              "rank_total": 58
             },
             {
               "club_number": "05163369",
@@ -260,13 +363,29 @@
               "level4": 1,
               "total": 4,
               "active_members": 23,
-              "distinguished_status": "D"
+              "distinguished_status": "D",
+              "rank_l1": 112,
+              "rank_l2": 113,
+              "rank_l3": 143,
+              "rank_l4": 111,
+              "rank_total": 125
             }
           ],
-          "rank_in_division": 4
+          "rank_in_division": 4,
+          "rank_l1": 32,
+          "rank_l2": 27,
+          "rank_l3": 29,
+          "rank_l4": 12,
+          "rank_total": 32,
+          "rank_in_district": 32
         }
       ],
-      "rank": 1
+      "rank": 1,
+      "rank_l1": 1,
+      "rank_l2": 4,
+      "rank_l3": 1,
+      "rank_l4": 1,
+      "rank_total": 1
     },
     {
       "division": "F",
@@ -294,7 +413,12 @@
               "level4": 3,
               "total": 18,
               "active_members": 26,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 25,
+              "rank_l2": 16,
+              "rank_l3": 12,
+              "rank_l4": 24,
+              "rank_total": 22
             },
             {
               "club_number": "07846183",
@@ -305,7 +429,12 @@
               "level4": 2,
               "total": 18,
               "active_members": 26,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 12,
+              "rank_l2": 18,
+              "rank_l3": 30,
+              "rank_l4": 68,
+              "rank_total": 24
             },
             {
               "club_number": "01481554",
@@ -316,7 +445,12 @@
               "level4": 3,
               "total": 13,
               "active_members": 30,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 85,
+              "rank_l2": 59,
+              "rank_l3": 78,
+              "rank_l4": 30,
+              "rank_total": 59
             },
             {
               "club_number": "01553096",
@@ -327,7 +461,12 @@
               "level4": 2,
               "total": 10,
               "active_members": 47,
-              "distinguished_status": "P"
+              "distinguished_status": "P",
+              "rank_l1": 91,
+              "rank_l2": 106,
+              "rank_l3": 89,
+              "rank_l4": 82,
+              "rank_total": 86
             },
             {
               "club_number": "28678226",
@@ -338,10 +477,21 @@
               "level4": 0,
               "total": 6,
               "active_members": 20,
-              "distinguished_status": "D"
+              "distinguished_status": "D",
+              "rank_l1": 70,
+              "rank_l2": 94,
+              "rank_l3": 134,
+              "rank_l4": 136,
+              "rank_total": 103
             }
           ],
-          "rank_in_division": 1
+          "rank_in_division": 1,
+          "rank_l1": 3,
+          "rank_l2": 4,
+          "rank_l3": 6,
+          "rank_l4": 6,
+          "rank_total": 5,
+          "rank_in_district": 5
         },
         {
           "area": "02",
@@ -360,7 +510,12 @@
               "level4": 2,
               "total": 19,
               "active_members": 27,
-              "distinguished_status": "P"
+              "distinguished_status": "P",
+              "rank_l1": 7,
+              "rank_l2": 19,
+              "rank_l3": 32,
+              "rank_l4": 69,
+              "rank_total": 14
             },
             {
               "club_number": "05270893",
@@ -371,7 +526,12 @@
               "level4": 3,
               "total": 17,
               "active_members": 34,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 14,
+              "rank_l2": 62,
+              "rank_l3": 80,
+              "rank_l4": 32,
+              "rank_total": 31
             },
             {
               "club_number": "01355969",
@@ -382,7 +542,12 @@
               "level4": 2,
               "total": 13,
               "active_members": 31,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 34,
+              "rank_l2": 24,
+              "rank_l3": 44,
+              "rank_l4": 38,
+              "rank_total": 53
             },
             {
               "club_number": "04628720",
@@ -393,7 +558,12 @@
               "level4": 2,
               "total": 6,
               "active_members": 14,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 103,
+              "rank_l2": 163,
+              "rank_l3": 114,
+              "rank_l4": 93,
+              "rank_total": 108
             },
             {
               "club_number": "01504631",
@@ -404,10 +574,21 @@
               "level4": 0,
               "total": 5,
               "active_members": 22,
-              "distinguished_status": "D"
+              "distinguished_status": "D",
+              "rank_l1": 124,
+              "rank_l2": 45,
+              "rank_l3": 136,
+              "rank_l4": 137,
+              "rank_total": 113
             }
           ],
-          "rank_in_division": 2
+          "rank_in_division": 2,
+          "rank_l1": 4,
+          "rank_l2": 7,
+          "rank_l3": 16,
+          "rank_l4": 9,
+          "rank_total": 7,
+          "rank_in_district": 7
         },
         {
           "area": "03",
@@ -426,7 +607,12 @@
               "level4": 4,
               "total": 19,
               "active_members": 26,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 49,
+              "rank_l2": 20,
+              "rank_l3": 6,
+              "rank_l4": 17,
+              "rank_total": 15
             },
             {
               "club_number": "28675604",
@@ -437,7 +623,12 @@
               "level4": 2,
               "total": 15,
               "active_members": 22,
-              "distinguished_status": "P"
+              "distinguished_status": "P",
+              "rank_l1": 35,
+              "rank_l2": 25,
+              "rank_l3": 10,
+              "rank_l4": 39,
+              "rank_total": 37
             },
             {
               "club_number": "01357117",
@@ -448,7 +639,12 @@
               "level4": 2,
               "total": 13,
               "active_members": 33,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 71,
+              "rank_l2": 43,
+              "rank_l3": 24,
+              "rank_l4": 60,
+              "rank_total": 57
             },
             {
               "club_number": "07111975",
@@ -459,10 +655,21 @@
               "level4": 2,
               "total": 11,
               "active_members": 16,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 102,
+              "rank_l2": 88,
+              "rank_l3": 39,
+              "rank_l4": 92,
+              "rank_total": 82
             }
           ],
-          "rank_in_division": 3
+          "rank_in_division": 3,
+          "rank_l1": 16,
+          "rank_l2": 10,
+          "rank_l3": 3,
+          "rank_l4": 7,
+          "rank_total": 9,
+          "rank_in_district": 9
         },
         {
           "area": "04",
@@ -481,7 +688,12 @@
               "level4": 2,
               "total": 15,
               "active_members": 44,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 33,
+              "rank_l2": 80,
+              "rank_l3": 38,
+              "rank_l4": 91,
+              "rank_total": 47
             },
             {
               "club_number": "01244213",
@@ -492,7 +704,12 @@
               "level4": 3,
               "total": 13,
               "active_members": 33,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 89,
+              "rank_l2": 66,
+              "rank_l3": 85,
+              "rank_l4": 34,
+              "rank_total": 60
             },
             {
               "club_number": "07257255",
@@ -503,13 +720,29 @@
               "level4": 1,
               "total": 5,
               "active_members": 15,
-              "distinguished_status": "D"
+              "distinguished_status": "D",
+              "rank_l1": 119,
+              "rank_l2": 109,
+              "rank_l3": 49,
+              "rank_l4": 100,
+              "rank_total": 111
             }
           ],
-          "rank_in_division": 4
+          "rank_in_division": 4,
+          "rank_l1": 31,
+          "rank_l2": 30,
+          "rank_l3": 23,
+          "rank_l4": 28,
+          "rank_total": 30,
+          "rank_in_district": 30
         }
       ],
-      "rank": 2
+      "rank": 2,
+      "rank_l1": 3,
+      "rank_l2": 1,
+      "rank_l3": 2,
+      "rank_l4": 4,
+      "rank_total": 2
     },
     {
       "division": "A",
@@ -537,7 +770,12 @@
               "level4": 5,
               "total": 21,
               "active_members": 31,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 22,
+              "rank_l2": 14,
+              "rank_l3": 3,
+              "rank_l4": 8,
+              "rank_total": 5
             },
             {
               "club_number": "28679044",
@@ -548,7 +786,12 @@
               "level4": 5,
               "total": 19,
               "active_members": 27,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 40,
+              "rank_l2": 40,
+              "rank_l3": 5,
+              "rank_l4": 9,
+              "rank_total": 12
             },
             {
               "club_number": "03990626",
@@ -559,7 +802,12 @@
               "level4": 1,
               "total": 15,
               "active_members": 11,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 28,
+              "rank_l2": 9,
+              "rank_l3": 74,
+              "rank_l4": 112,
+              "rank_total": 44
             },
             {
               "club_number": "07156385",
@@ -570,7 +818,12 @@
               "level4": 1,
               "total": 8,
               "active_members": 8,
-              "distinguished_status": "D"
+              "distinguished_status": "D",
+              "rank_l1": 78,
+              "rank_l2": 101,
+              "rank_l3": 108,
+              "rank_l4": 113,
+              "rank_total": 93
             },
             {
               "club_number": "28677378",
@@ -581,7 +834,12 @@
               "level4": 2,
               "total": 8,
               "active_members": 10,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 100,
+              "rank_l2": 110,
+              "rank_l3": 64,
+              "rank_l4": 58,
+              "rank_total": 92
             },
             {
               "club_number": "28675642",
@@ -592,10 +850,21 @@
               "level4": 1,
               "total": 5,
               "active_members": 14,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 126,
+              "rank_l2": 104,
+              "rank_l3": 111,
+              "rank_l4": 115,
+              "rank_total": 116
             }
           ],
-          "rank_in_division": 1
+          "rank_in_division": 1,
+          "rank_l1": 5,
+          "rank_l2": 3,
+          "rank_l3": 2,
+          "rank_l4": 4,
+          "rank_total": 2,
+          "rank_in_district": 2
         },
         {
           "area": "01",
@@ -614,7 +883,12 @@
               "level4": 2,
               "total": 20,
               "active_members": 72,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 3,
+              "rank_l2": 23,
+              "rank_l3": 93,
+              "rank_l4": 88,
+              "rank_total": 10
             },
             {
               "club_number": "03414509",
@@ -625,7 +899,12 @@
               "level4": 3,
               "total": 14,
               "active_members": 25,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 48,
+              "rank_l2": 51,
+              "rank_l3": 71,
+              "rank_l4": 26,
+              "rank_total": 50
             },
             {
               "club_number": "04032159",
@@ -636,7 +915,12 @@
               "level4": 2,
               "total": 14,
               "active_members": 31,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 68,
+              "rank_l2": 5,
+              "rank_l3": 59,
+              "rank_l4": 52,
+              "rank_total": 48
             },
             {
               "club_number": "04703328",
@@ -647,7 +931,12 @@
               "level4": 1,
               "total": 8,
               "active_members": 20,
-              "distinguished_status": "S"
+              "distinguished_status": "S",
+              "rank_l1": 106,
+              "rank_l2": 85,
+              "rank_l3": 53,
+              "rank_l4": 102,
+              "rank_total": 90
             },
             {
               "club_number": "28678785",
@@ -658,10 +947,21 @@
               "level4": 0,
               "total": 1,
               "active_members": 11,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 128,
+              "rank_l2": 151,
+              "rank_l3": 148,
+              "rank_l4": 149,
+              "rank_total": 145
             }
           ],
-          "rank_in_division": 2
+          "rank_in_division": 2,
+          "rank_l1": 9,
+          "rank_l2": 5,
+          "rank_l3": 15,
+          "rank_l4": 13,
+          "rank_total": 10,
+          "rank_in_district": 10
         },
         {
           "area": "03",
@@ -680,7 +980,12 @@
               "level4": 4,
               "total": 22,
               "active_members": 26,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 4,
+              "rank_l2": 6,
+              "rank_l3": 61,
+              "rank_l4": 16,
+              "rank_total": 4
             },
             {
               "club_number": "01223622",
@@ -691,7 +996,12 @@
               "level4": 2,
               "total": 12,
               "active_members": 21,
-              "distinguished_status": "P"
+              "distinguished_status": "P",
+              "rank_l1": 82,
+              "rank_l2": 57,
+              "rank_l3": 77,
+              "rank_l4": 75,
+              "rank_total": 72
             },
             {
               "club_number": "02804733",
@@ -702,7 +1012,12 @@
               "level4": 2,
               "total": 6,
               "active_members": 19,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 108,
+              "rank_l2": 111,
+              "rank_l3": 102,
+              "rank_l4": 59,
+              "rank_total": 102
             },
             {
               "club_number": "01195211",
@@ -713,7 +1028,12 @@
               "level4": 0,
               "total": 1,
               "active_members": 17,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 120,
+              "rank_l2": 134,
+              "rank_l3": 125,
+              "rank_l4": 130,
+              "rank_total": 141
             },
             {
               "club_number": "07928099",
@@ -724,10 +1044,21 @@
               "level4": 0,
               "total": 0,
               "active_members": 9,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 151,
+              "rank_l2": 149,
+              "rank_l3": 147,
+              "rank_l4": 148,
+              "rank_total": 156
             }
           ],
-          "rank_in_division": 3
+          "rank_in_division": 3,
+          "rank_l1": 17,
+          "rank_l2": 22,
+          "rank_l3": 31,
+          "rank_l4": 16,
+          "rank_total": 20,
+          "rank_in_district": 20
         },
         {
           "area": "04",
@@ -746,7 +1077,12 @@
               "level4": 2,
               "total": 15,
               "active_members": 26,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 17,
+              "rank_l2": 34,
+              "rank_l3": 56,
+              "rank_l4": 48,
+              "rank_total": 40
             },
             {
               "club_number": "28676662",
@@ -757,7 +1093,12 @@
               "level4": 2,
               "total": 11,
               "active_members": 22,
-              "distinguished_status": "P"
+              "distinguished_status": "P",
+              "rank_l1": 60,
+              "rank_l2": 83,
+              "rank_l3": 47,
+              "rank_l4": 42,
+              "rank_total": 80
             },
             {
               "club_number": "01888115",
@@ -768,7 +1109,12 @@
               "level4": 0,
               "total": 4,
               "active_members": 26,
-              "distinguished_status": "D"
+              "distinguished_status": "D",
+              "rank_l1": 61,
+              "rank_l2": 129,
+              "rank_l3": 119,
+              "rank_l4": 125,
+              "rank_total": 120
             },
             {
               "club_number": "01880525",
@@ -779,7 +1125,12 @@
               "level4": 0,
               "total": 3,
               "active_members": 14,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 114,
+              "rank_l2": 115,
+              "rank_l3": 153,
+              "rank_l4": 154,
+              "rank_total": 131
             },
             {
               "club_number": "06488853",
@@ -790,13 +1141,29 @@
               "level4": 0,
               "total": 0,
               "active_members": 10,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 138,
+              "rank_l2": 131,
+              "rank_l3": 123,
+              "rank_l4": 127,
+              "rank_total": 148
             }
           ],
-          "rank_in_division": 4
+          "rank_in_division": 4,
+          "rank_l1": 18,
+          "rank_l2": 33,
+          "rank_l3": 33,
+          "rank_l4": 35,
+          "rank_total": 31,
+          "rank_in_district": 31
         }
       ],
-      "rank": 3
+      "rank": 3,
+      "rank_l1": 2,
+      "rank_l2": 3,
+      "rank_l3": 4,
+      "rank_l4": 3,
+      "rank_total": 3
     },
     {
       "division": "I",
@@ -824,7 +1191,12 @@
               "level4": 2,
               "total": 19,
               "active_members": 27,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 10,
+              "rank_l2": 7,
+              "rank_l3": 23,
+              "rank_l4": 54,
+              "rank_total": 11
             },
             {
               "club_number": "06602877",
@@ -835,7 +1207,12 @@
               "level4": 2,
               "total": 18,
               "active_members": 31,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 26,
+              "rank_l2": 3,
+              "rank_l3": 70,
+              "rank_l4": 67,
+              "rank_total": 23
             },
             {
               "club_number": "07794099",
@@ -846,7 +1223,12 @@
               "level4": 2,
               "total": 18,
               "active_members": 34,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 18,
+              "rank_l2": 37,
+              "rank_l3": 4,
+              "rank_l4": 51,
+              "rank_total": 19
             },
             {
               "club_number": "07966661",
@@ -857,10 +1239,21 @@
               "level4": 2,
               "total": 12,
               "active_members": 20,
-              "distinguished_status": "P"
+              "distinguished_status": "P",
+              "rank_l1": 86,
+              "rank_l2": 63,
+              "rank_l3": 83,
+              "rank_l4": 78,
+              "rank_total": 73
             }
           ],
-          "rank_in_division": 1
+          "rank_in_division": 1,
+          "rank_l1": 6,
+          "rank_l2": 2,
+          "rank_l3": 5,
+          "rank_l4": 17,
+          "rank_total": 4,
+          "rank_in_district": 4
         },
         {
           "area": "02",
@@ -879,7 +1272,12 @@
               "level4": 3,
               "total": 31,
               "active_members": 38,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 6,
+              "rank_l2": 2,
+              "rank_l3": 2,
+              "rank_l4": 33,
+              "rank_total": 2
             },
             {
               "club_number": "02321352",
@@ -890,7 +1288,12 @@
               "level4": 2,
               "total": 12,
               "active_members": 26,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 58,
+              "rank_l2": 26,
+              "rank_l3": 45,
+              "rank_l4": 40,
+              "rank_total": 64
             },
             {
               "club_number": "07959271",
@@ -901,10 +1304,21 @@
               "level4": 1,
               "total": 6,
               "active_members": 9,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 45,
+              "rank_l2": 145,
+              "rank_l3": 140,
+              "rank_l4": 108,
+              "rank_total": 104
             }
           ],
-          "rank_in_division": 2
+          "rank_in_division": 2,
+          "rank_l1": 14,
+          "rank_l2": 11,
+          "rank_l3": 12,
+          "rank_l4": 25,
+          "rank_total": 15,
+          "rank_in_district": 15
         },
         {
           "area": "01",
@@ -923,7 +1337,12 @@
               "level4": 2,
               "total": 13,
               "active_members": 20,
-              "distinguished_status": "P"
+              "distinguished_status": "P",
+              "rank_l1": 67,
+              "rank_l2": 35,
+              "rank_l3": 21,
+              "rank_l4": 49,
+              "rank_total": 55
             },
             {
               "club_number": "02302941",
@@ -934,7 +1353,12 @@
               "level4": 2,
               "total": 12,
               "active_members": 38,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 69,
+              "rank_l2": 42,
+              "rank_l3": 63,
+              "rank_l4": 57,
+              "rank_total": 67
             },
             {
               "club_number": "04903005",
@@ -945,7 +1369,12 @@
               "level4": 1,
               "total": 7,
               "active_members": 14,
-              "distinguished_status": "D"
+              "distinguished_status": "D",
+              "rank_l1": 107,
+              "rank_l2": 92,
+              "rank_l3": 55,
+              "rank_l4": 103,
+              "rank_total": 95
             },
             {
               "club_number": "07287138",
@@ -956,10 +1385,21 @@
               "level4": 0,
               "total": 7,
               "active_members": 13,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 113,
+              "rank_l2": 100,
+              "rank_l3": 31,
+              "rank_l4": 145,
+              "rank_total": 99
             }
           ],
-          "rank_in_division": 3
+          "rank_in_division": 3,
+          "rank_l1": 25,
+          "rank_l2": 19,
+          "rank_l3": 9,
+          "rank_l4": 31,
+          "rank_total": 23,
+          "rank_in_district": 23
         },
         {
           "area": "04",
@@ -978,7 +1418,12 @@
               "level4": 3,
               "total": 15,
               "active_members": 25,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 47,
+              "rank_l2": 17,
+              "rank_l3": 69,
+              "rank_l4": 25,
+              "rank_total": 42
             },
             {
               "club_number": "07232170",
@@ -989,7 +1434,12 @@
               "level4": 2,
               "total": 14,
               "active_members": 20,
-              "distinguished_status": "P"
+              "distinguished_status": "P",
+              "rank_l1": 46,
+              "rank_l2": 50,
+              "rank_l3": 29,
+              "rank_l4": 66,
+              "rank_total": 49
             },
             {
               "club_number": "07913101",
@@ -1000,7 +1450,12 @@
               "level4": 1,
               "total": 10,
               "active_members": 16,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 50,
+              "rank_l2": 105,
+              "rank_l3": 81,
+              "rank_l4": 116,
+              "rank_total": 85
             },
             {
               "club_number": "28679036",
@@ -1011,13 +1466,29 @@
               "level4": 0,
               "total": 0,
               "active_members": 8,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 142,
+              "rank_l2": 136,
+              "rank_l3": 129,
+              "rank_l4": 133,
+              "rank_total": 151
             }
           ],
-          "rank_in_division": 4
+          "rank_in_division": 4,
+          "rank_l1": 20,
+          "rank_l2": 24,
+          "rank_l3": 24,
+          "rank_l4": 29,
+          "rank_total": 24,
+          "rank_in_district": 24
         }
       ],
-      "rank": 4
+      "rank": 4,
+      "rank_l1": 5,
+      "rank_l2": 2,
+      "rank_l3": 3,
+      "rank_l4": 9,
+      "rank_total": 4
     },
     {
       "division": "H",
@@ -1045,7 +1516,12 @@
               "level4": 8,
               "total": 21,
               "active_members": 39,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 84,
+              "rank_l2": 58,
+              "rank_l3": 7,
+              "rank_l4": 2,
+              "rank_total": 6
             },
             {
               "club_number": "07856786",
@@ -1056,7 +1532,12 @@
               "level4": 7,
               "total": 21,
               "active_members": 25,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 51,
+              "rank_l2": 68,
+              "rank_l3": 9,
+              "rank_l4": 3,
+              "rank_total": 7
             },
             {
               "club_number": "01378886",
@@ -1067,7 +1548,12 @@
               "level4": 3,
               "total": 17,
               "active_members": 61,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 13,
+              "rank_l2": 60,
+              "rank_l3": 79,
+              "rank_l4": 31,
+              "rank_total": 30
             },
             {
               "club_number": "01055854",
@@ -1078,7 +1564,12 @@
               "level4": 5,
               "total": 11,
               "active_members": 21,
-              "distinguished_status": "S"
+              "distinguished_status": "S",
+              "rank_l1": 55,
+              "rank_l2": 123,
+              "rank_l3": 163,
+              "rank_l4": 13,
+              "rank_total": 83
             },
             {
               "club_number": "28679004",
@@ -1089,7 +1580,12 @@
               "level4": 0,
               "total": 0,
               "active_members": 42,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 146,
+              "rank_l2": 140,
+              "rank_l3": 137,
+              "rank_l4": 138,
+              "rank_total": 152
             },
             {
               "club_number": "28680382",
@@ -1100,10 +1596,21 @@
               "level4": 0,
               "total": 0,
               "active_members": 20,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 163,
+              "rank_l2": 164,
+              "rank_l3": 164,
+              "rank_l4": 163,
+              "rank_total": 164
             }
           ],
-          "rank_in_division": 1
+          "rank_in_division": 1,
+          "rank_l1": 10,
+          "rank_l2": 17,
+          "rank_l3": 4,
+          "rank_l4": 2,
+          "rank_total": 3,
+          "rank_in_district": 3
         },
         {
           "area": "01",
@@ -1122,7 +1629,12 @@
               "level4": 2,
               "total": 18,
               "active_members": 33,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 21,
+              "rank_l2": 11,
+              "rank_l3": 40,
+              "rank_l4": 94,
+              "rank_total": 26
             },
             {
               "club_number": "28678062",
@@ -1133,7 +1645,12 @@
               "level4": 0,
               "total": 10,
               "active_members": 33,
-              "distinguished_status": "S"
+              "distinguished_status": "S",
+              "rank_l1": 32,
+              "rank_l2": 78,
+              "rank_l3": 160,
+              "rank_l4": 161,
+              "rank_total": 87
             },
             {
               "club_number": "07390865",
@@ -1144,7 +1661,12 @@
               "level4": 1,
               "total": 7,
               "active_members": 20,
-              "distinguished_status": "S"
+              "distinguished_status": "S",
+              "rank_l1": 83,
+              "rank_l2": 103,
+              "rank_l3": 145,
+              "rank_l4": 114,
+              "rank_total": 100
             },
             {
               "club_number": "03200777",
@@ -1155,10 +1677,21 @@
               "level4": 2,
               "total": 5,
               "active_members": 11,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 115,
+              "rank_l2": 118,
+              "rank_l3": 156,
+              "rank_l4": 86,
+              "rank_total": 119
             }
           ],
-          "rank_in_division": 2
+          "rank_in_division": 2,
+          "rank_l1": 13,
+          "rank_l2": 15,
+          "rank_l3": 34,
+          "rank_l4": 32,
+          "rank_total": 21,
+          "rank_in_district": 21
         },
         {
           "area": "04",
@@ -1177,7 +1710,12 @@
               "level4": 2,
               "total": 12,
               "active_members": 25,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 93,
+              "rank_l2": 70,
+              "rank_l3": 91,
+              "rank_l4": 84,
+              "rank_total": 76
             },
             {
               "club_number": "05144557",
@@ -1188,7 +1726,12 @@
               "level4": 2,
               "total": 12,
               "active_members": 20,
-              "distinguished_status": "P"
+              "distinguished_status": "P",
+              "rank_l1": 79,
+              "rank_l2": 54,
+              "rank_l3": 75,
+              "rank_l4": 70,
+              "rank_total": 70
             },
             {
               "club_number": "07832471",
@@ -1199,7 +1742,12 @@
               "level4": 2,
               "total": 12,
               "active_members": 29,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 87,
+              "rank_l2": 64,
+              "rank_l3": 84,
+              "rank_l4": 79,
+              "rank_total": 74
             },
             {
               "club_number": "07975669",
@@ -1210,7 +1758,12 @@
               "level4": 0,
               "total": 0,
               "active_members": 8,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 140,
+              "rank_l2": 133,
+              "rank_l3": 124,
+              "rank_l4": 129,
+              "rank_total": 149
             },
             {
               "club_number": "28675349",
@@ -1221,10 +1774,21 @@
               "level4": 0,
               "total": 0,
               "active_members": 11,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 135,
+              "rank_l2": 128,
+              "rank_l3": 118,
+              "rank_l4": 124,
+              "rank_total": 147
             }
           ],
-          "rank_in_division": 3
+          "rank_in_division": 3,
+          "rank_l1": 28,
+          "rank_l2": 21,
+          "rank_l3": 28,
+          "rank_l4": 30,
+          "rank_total": 25,
+          "rank_in_district": 25
         },
         {
           "area": "03",
@@ -1243,7 +1807,12 @@
               "level4": 3,
               "total": 18,
               "active_members": 28,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 11,
+              "rank_l2": 48,
+              "rank_l3": 28,
+              "rank_l4": 23,
+              "rank_total": 21
             },
             {
               "club_number": "28675770",
@@ -1254,7 +1823,12 @@
               "level4": 2,
               "total": 12,
               "active_members": 29,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 94,
+              "rank_l2": 71,
+              "rank_l3": 92,
+              "rank_l4": 85,
+              "rank_total": 77
             },
             {
               "club_number": "07855253",
@@ -1265,7 +1839,12 @@
               "level4": 2,
               "total": 3,
               "active_members": 11,
-              "distinguished_status": "D"
+              "distinguished_status": "D",
+              "rank_l1": 134,
+              "rank_l2": 127,
+              "rank_l3": 101,
+              "rank_l4": 41,
+              "rank_total": 128
             },
             {
               "club_number": "00777976",
@@ -1276,13 +1855,29 @@
               "level4": 1,
               "total": 1,
               "active_members": 16,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 143,
+              "rank_l2": 137,
+              "rank_l3": 131,
+              "rank_l4": 104,
+              "rank_total": 142
             }
           ],
-          "rank_in_division": 4
+          "rank_in_division": 4,
+          "rank_l1": 27,
+          "rank_l2": 32,
+          "rank_l3": 26,
+          "rank_l4": 18,
+          "rank_total": 28,
+          "rank_in_district": 28
         }
       ],
-      "rank": 5
+      "rank": 5,
+      "rank_l1": 7,
+      "rank_l2": 7,
+      "rank_l3": 8,
+      "rank_l4": 2,
+      "rank_total": 5
     },
     {
       "division": "C",
@@ -1310,7 +1905,12 @@
               "level4": 4,
               "total": 18,
               "active_members": 28,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 16,
+              "rank_l2": 33,
+              "rank_l3": 20,
+              "rank_l4": 15,
+              "rank_total": 18
             },
             {
               "club_number": "06519630",
@@ -1321,7 +1921,12 @@
               "level4": 2,
               "total": 14,
               "active_members": 40,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 52,
+              "rank_l2": 69,
+              "rank_l3": 35,
+              "rank_l4": 83,
+              "rank_total": 51
             },
             {
               "club_number": "01016391",
@@ -1332,7 +1937,12 @@
               "level4": 2,
               "total": 13,
               "active_members": 20,
-              "distinguished_status": "P"
+              "distinguished_status": "P",
+              "rank_l1": 63,
+              "rank_l2": 29,
+              "rank_l3": 18,
+              "rank_l4": 45,
+              "rank_total": 54
             },
             {
               "club_number": "28678693",
@@ -1343,7 +1953,12 @@
               "level4": 0,
               "total": 8,
               "active_members": 20,
-              "distinguished_status": "D"
+              "distinguished_status": "D",
+              "rank_l1": 41,
+              "rank_l2": 87,
+              "rank_l3": 130,
+              "rank_l4": 134,
+              "rank_total": 91
             },
             {
               "club_number": "07484508",
@@ -1354,10 +1969,21 @@
               "level4": 1,
               "total": 7,
               "active_members": 20,
-              "distinguished_status": "S"
+              "distinguished_status": "S",
+              "rank_l1": 76,
+              "rank_l2": 99,
+              "rank_l3": 142,
+              "rank_l4": 110,
+              "rank_total": 98
             }
           ],
-          "rank_in_division": 1
+          "rank_in_division": 1,
+          "rank_l1": 7,
+          "rank_l2": 8,
+          "rank_l3": 14,
+          "rank_l4": 11,
+          "rank_total": 8,
+          "rank_in_district": 8
         },
         {
           "area": "02",
@@ -1376,7 +2002,12 @@
               "level4": 2,
               "total": 23,
               "active_members": 28,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 2,
+              "rank_l2": 41,
+              "rank_l3": 62,
+              "rank_l4": 55,
+              "rank_total": 3
             },
             {
               "club_number": "07471485",
@@ -1387,7 +2018,12 @@
               "level4": 2,
               "total": 16,
               "active_members": 38,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 9,
+              "rank_l2": 39,
+              "rank_l3": 60,
+              "rank_l4": 53,
+              "rank_total": 33
             },
             {
               "club_number": "07780371",
@@ -1398,7 +2034,12 @@
               "level4": 2,
               "total": 13,
               "active_members": 26,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 56,
+              "rank_l2": 12,
+              "rank_l3": 43,
+              "rank_l4": 37,
+              "rank_total": 52
             },
             {
               "club_number": "03835845",
@@ -1409,10 +2050,21 @@
               "level4": 0,
               "total": 4,
               "active_members": 22,
-              "distinguished_status": "D"
+              "distinguished_status": "D",
+              "rank_l1": 125,
+              "rank_l2": 112,
+              "rank_l3": 67,
+              "rank_l4": 141,
+              "rank_total": 123
             }
           ],
-          "rank_in_division": 2
+          "rank_in_division": 2,
+          "rank_l1": 2,
+          "rank_l2": 12,
+          "rank_l3": 17,
+          "rank_l4": 26,
+          "rank_total": 11,
+          "rank_in_district": 11
         },
         {
           "area": "03",
@@ -1431,7 +2083,12 @@
               "level4": 3,
               "total": 15,
               "active_members": 30,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 27,
+              "rank_l2": 52,
+              "rank_l3": 72,
+              "rank_l4": 27,
+              "rank_total": 43
             },
             {
               "club_number": "00002773",
@@ -1442,7 +2099,12 @@
               "level4": 2,
               "total": 12,
               "active_members": 27,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 90,
+              "rank_l2": 67,
+              "rank_l3": 86,
+              "rank_l4": 81,
+              "rank_total": 75
             },
             {
               "club_number": "07974483",
@@ -1453,7 +2115,12 @@
               "level4": 2,
               "total": 5,
               "active_members": 13,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 122,
+              "rank_l2": 93,
+              "rank_l3": 128,
+              "rank_l4": 56,
+              "rank_total": 112
             },
             {
               "club_number": "06588287",
@@ -1464,7 +2131,12 @@
               "level4": 0,
               "total": 3,
               "active_members": 11,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 101,
+              "rank_l2": 148,
+              "rank_l3": 146,
+              "rank_l4": 147,
+              "rank_total": 130
             },
             {
               "club_number": "28679963",
@@ -1475,10 +2147,21 @@
               "level4": 0,
               "total": 0,
               "active_members": 22,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 149,
+              "rank_l2": 147,
+              "rank_l3": 144,
+              "rank_l4": 146,
+              "rank_total": 155
             }
           ],
-          "rank_in_division": 3
+          "rank_in_division": 3,
+          "rank_l1": 22,
+          "rank_l2": 26,
+          "rank_l3": 32,
+          "rank_l4": 21,
+          "rank_total": 27,
+          "rank_in_district": 27
         },
         {
           "area": "01",
@@ -1497,7 +2180,12 @@
               "level4": 3,
               "total": 17,
               "active_members": 56,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 36,
+              "rank_l2": 13,
+              "rank_l3": 11,
+              "rank_l4": 20,
+              "rank_total": 27
             },
             {
               "club_number": "05477954",
@@ -1508,7 +2196,12 @@
               "level4": 0,
               "total": 5,
               "active_members": 13,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 109,
+              "rank_l2": 96,
+              "rank_l3": 105,
+              "rank_l4": 143,
+              "rank_total": 115
             },
             {
               "club_number": "01888017",
@@ -1519,7 +2212,12 @@
               "level4": 1,
               "total": 3,
               "active_members": 22,
-              "distinguished_status": "D"
+              "distinguished_status": "D",
+              "rank_l1": 158,
+              "rank_l2": 158,
+              "rank_l3": 88,
+              "rank_l4": 118,
+              "rank_total": 133
             },
             {
               "club_number": "07786269",
@@ -1530,13 +2228,29 @@
               "level4": 1,
               "total": 3,
               "active_members": 8,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 132,
+              "rank_l2": 122,
+              "rank_l3": 162,
+              "rank_l4": 121,
+              "rank_total": 136
             }
           ],
-          "rank_in_division": 4
+          "rank_in_division": 4,
+          "rank_l1": 33,
+          "rank_l2": 31,
+          "rank_l3": 19,
+          "rank_l4": 33,
+          "rank_total": 33,
+          "rank_in_district": 33
         }
       ],
-      "rank": 6
+      "rank": 6,
+      "rank_l1": 4,
+      "rank_l2": 5,
+      "rank_l3": 6,
+      "rank_l4": 8,
+      "rank_total": 6
     },
     {
       "division": "B",
@@ -1564,7 +2278,12 @@
               "level4": 2,
               "total": 16,
               "active_members": 31,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 19,
+              "rank_l2": 61,
+              "rank_l3": 33,
+              "rank_l4": 76,
+              "rank_total": 35
             },
             {
               "club_number": "07980472",
@@ -1575,7 +2294,12 @@
               "level4": 4,
               "total": 15,
               "active_members": 26,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 54,
+              "rank_l2": 79,
+              "rank_l3": 98,
+              "rank_l4": 19,
+              "rank_total": 46
             },
             {
               "club_number": "06547554",
@@ -1586,7 +2310,12 @@
               "level4": 2,
               "total": 13,
               "active_members": 21,
-              "distinguished_status": "P"
+              "distinguished_status": "P",
+              "rank_l1": 95,
+              "rank_l2": 73,
+              "rank_l3": 36,
+              "rank_l4": 87,
+              "rank_total": 61
             },
             {
               "club_number": "28679248",
@@ -1597,7 +2326,12 @@
               "level4": 0,
               "total": 6,
               "active_members": 20,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 57,
+              "rank_l2": 89,
+              "rank_l3": 117,
+              "rank_l4": 123,
+              "rank_total": 101
             },
             {
               "club_number": "28678629",
@@ -1608,10 +2342,21 @@
               "level4": 0,
               "total": 0,
               "active_members": 8,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 147,
+              "rank_l2": 141,
+              "rank_l3": 138,
+              "rank_l4": 139,
+              "rank_total": 153
             }
           ],
-          "rank_in_division": 1
+          "rank_in_division": 1,
+          "rank_l1": 12,
+          "rank_l2": 14,
+          "rank_l3": 18,
+          "rank_l4": 19,
+          "rank_total": 14,
+          "rank_in_district": 14
         },
         {
           "area": "02",
@@ -1630,7 +2375,12 @@
               "level4": 3,
               "total": 18,
               "active_members": 34,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 8,
+              "rank_l2": 38,
+              "rank_l3": 22,
+              "rank_l4": 22,
+              "rank_total": 20
             },
             {
               "club_number": "28675989",
@@ -1641,7 +2391,12 @@
               "level4": 2,
               "total": 16,
               "active_members": 25,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 15,
+              "rank_l2": 75,
+              "rank_l3": 94,
+              "rank_l4": 89,
+              "rank_total": 36
             },
             {
               "club_number": "28678112",
@@ -1652,7 +2407,12 @@
               "level4": 0,
               "total": 5,
               "active_members": 20,
-              "distinguished_status": "D"
+              "distinguished_status": "D",
+              "rank_l1": 92,
+              "rank_l2": 117,
+              "rank_l3": 155,
+              "rank_l4": 157,
+              "rank_total": 118
             },
             {
               "club_number": "06929313",
@@ -1663,7 +2423,12 @@
               "level4": 0,
               "total": 4,
               "active_members": 16,
-              "distinguished_status": "D"
+              "distinguished_status": "D",
+              "rank_l1": 75,
+              "rank_l2": 146,
+              "rank_l3": 141,
+              "rank_l4": 144,
+              "rank_total": 124
             },
             {
               "club_number": "28678673",
@@ -1674,10 +2439,21 @@
               "level4": 0,
               "total": 0,
               "active_members": 8,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 148,
+              "rank_l2": 143,
+              "rank_l3": 139,
+              "rank_l4": 140,
+              "rank_total": 154
             }
           ],
-          "rank_in_division": 2
+          "rank_in_division": 2,
+          "rank_l1": 8,
+          "rank_l2": 29,
+          "rank_l3": 30,
+          "rank_l4": 34,
+          "rank_total": 17,
+          "rank_in_district": 17
         },
         {
           "area": "01",
@@ -1696,7 +2472,12 @@
               "level4": 2,
               "total": 13,
               "active_members": 36,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 39,
+              "rank_l2": 36,
+              "rank_l3": 58,
+              "rank_l4": 50,
+              "rank_total": 56
             },
             {
               "club_number": "00918669",
@@ -1707,7 +2488,12 @@
               "level4": 2,
               "total": 12,
               "active_members": 26,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 62,
+              "rank_l2": 28,
+              "rank_l3": 50,
+              "rank_l4": 44,
+              "rank_total": 65
             },
             {
               "club_number": "28675430",
@@ -1718,7 +2504,12 @@
               "level4": 2,
               "total": 12,
               "active_members": 25,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 81,
+              "rank_l2": 56,
+              "rank_l3": 76,
+              "rank_l4": 74,
+              "rank_total": 71
             },
             {
               "club_number": "07225230",
@@ -1729,7 +2520,12 @@
               "level4": 2,
               "total": 4,
               "active_members": 14,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 164,
+              "rank_l2": 125,
+              "rank_l3": 115,
+              "rank_l4": 96,
+              "rank_total": 127
             },
             {
               "club_number": "28680158",
@@ -1740,10 +2536,21 @@
               "level4": 0,
               "total": 0,
               "active_members": 20,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 156,
+              "rank_l2": 157,
+              "rank_l3": 154,
+              "rank_l4": 155,
+              "rank_total": 161
             }
           ],
-          "rank_in_division": 3
+          "rank_in_division": 3,
+          "rank_l1": 23,
+          "rank_l2": 16,
+          "rank_l3": 20,
+          "rank_l4": 14,
+          "rank_total": 19,
+          "rank_in_district": 19
         },
         {
           "area": "03",
@@ -1762,7 +2569,12 @@
               "level4": 2,
               "total": 12,
               "active_members": 20,
-              "distinguished_status": "P"
+              "distinguished_status": "P",
+              "rank_l1": 117,
+              "rank_l2": 82,
+              "rank_l3": 17,
+              "rank_l4": 97,
+              "rank_total": 79
             },
             {
               "club_number": "06989204",
@@ -1773,7 +2585,12 @@
               "level4": 2,
               "total": 12,
               "active_members": 29,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 99,
+              "rank_l2": 81,
+              "rank_l3": 99,
+              "rank_l4": 95,
+              "rank_total": 78
             },
             {
               "club_number": "28678848",
@@ -1784,7 +2601,12 @@
               "level4": 0,
               "total": 7,
               "active_members": 20,
-              "distinguished_status": "D"
+              "distinguished_status": "D",
+              "rank_l1": 66,
+              "rank_l2": 84,
+              "rank_l3": 121,
+              "rank_l4": 126,
+              "rank_total": 94
             },
             {
               "club_number": "07792006",
@@ -1795,7 +2617,12 @@
               "level4": 2,
               "total": 2,
               "active_members": 20,
-              "distinguished_status": "D"
+              "distinguished_status": "D",
+              "rank_l1": 136,
+              "rank_l2": 130,
+              "rank_l3": 120,
+              "rank_l4": 43,
+              "rank_total": 137
             },
             {
               "club_number": "02568195",
@@ -1806,13 +2633,29 @@
               "level4": 0,
               "total": 1,
               "active_members": 11,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 123,
+              "rank_l2": 139,
+              "rank_l3": 133,
+              "rank_l4": 135,
+              "rank_total": 144
             }
           ],
-          "rank_in_division": 4
+          "rank_in_division": 4,
+          "rank_l1": 30,
+          "rank_l2": 23,
+          "rank_l3": 27,
+          "rank_l4": 27,
+          "rank_total": 29,
+          "rank_in_district": 29
         }
       ],
-      "rank": 7
+      "rank": 7,
+      "rank_l1": 6,
+      "rank_l2": 6,
+      "rank_l3": 9,
+      "rank_l4": 7,
+      "rank_total": 7
     },
     {
       "division": "E",
@@ -1840,7 +2683,12 @@
               "level4": 3,
               "total": 17,
               "active_members": 46,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 37,
+              "rank_l2": 4,
+              "rank_l3": 19,
+              "rank_l4": 21,
+              "rank_total": 28
             },
             {
               "club_number": "05505274",
@@ -1851,7 +2699,12 @@
               "level4": 2,
               "total": 15,
               "active_members": 28,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 23,
+              "rank_l2": 46,
+              "rank_l3": 27,
+              "rank_l4": 62,
+              "rank_total": 41
             },
             {
               "club_number": "04631334",
@@ -1862,7 +2715,12 @@
               "level4": 2,
               "total": 12,
               "active_members": 21,
-              "distinguished_status": "P"
+              "distinguished_status": "P",
+              "rank_l1": 64,
+              "rank_l2": 30,
+              "rank_l3": 51,
+              "rank_l4": 46,
+              "rank_total": 66
             },
             {
               "club_number": "06046112",
@@ -1873,7 +2731,12 @@
               "level4": 2,
               "total": 4,
               "active_members": 20,
-              "distinguished_status": "D"
+              "distinguished_status": "D",
+              "rank_l1": 150,
+              "rank_l2": 114,
+              "rank_l3": 109,
+              "rank_l4": 71,
+              "rank_total": 126
             },
             {
               "club_number": "28676071",
@@ -1884,10 +2747,21 @@
               "level4": 0,
               "total": 3,
               "active_members": 14,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 161,
+              "rank_l2": 120,
+              "rank_l3": 96,
+              "rank_l4": 159,
+              "rank_total": 135
             }
           ],
-          "rank_in_division": 1
+          "rank_in_division": 1,
+          "rank_l1": 19,
+          "rank_l2": 9,
+          "rank_l3": 7,
+          "rank_l4": 10,
+          "rank_total": 12,
+          "rank_in_district": 12
         },
         {
           "area": "03",
@@ -1906,7 +2780,12 @@
               "level4": 5,
               "total": 21,
               "active_members": 34,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 30,
+              "rank_l2": 10,
+              "rank_l3": 15,
+              "rank_l4": 11,
+              "rank_total": 8
             },
             {
               "club_number": "28678609",
@@ -1917,7 +2796,12 @@
               "level4": 2,
               "total": 12,
               "active_members": 23,
-              "distinguished_status": "P"
+              "distinguished_status": "P",
+              "rank_l1": 72,
+              "rank_l2": 47,
+              "rank_l3": 66,
+              "rank_l4": 63,
+              "rank_total": 68
             },
             {
               "club_number": "01982862",
@@ -1928,7 +2812,12 @@
               "level4": 0,
               "total": 6,
               "active_members": 11,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 116,
+              "rank_l2": 124,
+              "rank_l3": 41,
+              "rank_l4": 164,
+              "rank_total": 109
             },
             {
               "club_number": "02552549",
@@ -1939,10 +2828,21 @@
               "level4": 0,
               "total": 4,
               "active_members": 25,
-              "distinguished_status": "D"
+              "distinguished_status": "D",
+              "rank_l1": 121,
+              "rank_l2": 86,
+              "rank_l3": 126,
+              "rank_l4": 131,
+              "rank_total": 122
             }
           ],
-          "rank_in_division": 2
+          "rank_in_division": 2,
+          "rank_l1": 24,
+          "rank_l2": 13,
+          "rank_l3": 13,
+          "rank_l4": 22,
+          "rank_total": 18,
+          "rank_in_district": 18
         },
         {
           "area": "01",
@@ -1961,7 +2861,12 @@
               "level4": 2,
               "total": 20,
               "active_members": 35,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 5,
+              "rank_l2": 55,
+              "rank_l3": 14,
+              "rank_l4": 73,
+              "rank_total": 9
             },
             {
               "club_number": "00007595",
@@ -1972,7 +2877,12 @@
               "level4": 6,
               "total": 17,
               "active_members": 40,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 96,
+              "rank_l2": 74,
+              "rank_l3": 37,
+              "rank_l4": 5,
+              "rank_total": 32
             },
             {
               "club_number": "07229720",
@@ -1983,7 +2893,12 @@
               "level4": 1,
               "total": 3,
               "active_members": 15,
-              "distinguished_status": "D"
+              "distinguished_status": "D",
+              "rank_l1": 145,
+              "rank_l2": 95,
+              "rank_l3": 135,
+              "rank_l4": 106,
+              "rank_total": 129
             },
             {
               "club_number": "28678632",
@@ -1994,10 +2909,21 @@
               "level4": 0,
               "total": 0,
               "active_members": 20,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 133,
+              "rank_l2": 126,
+              "rank_l3": 116,
+              "rank_l4": 122,
+              "rank_total": 146
             }
           ],
-          "rank_in_division": 3
+          "rank_in_division": 3,
+          "rank_l1": 21,
+          "rank_l2": 25,
+          "rank_l3": 21,
+          "rank_l4": 8,
+          "rank_total": 22,
+          "rank_in_district": 22
         },
         {
           "area": "04",
@@ -2016,7 +2942,12 @@
               "level4": 2,
               "total": 9,
               "active_members": 30,
-              "distinguished_status": "S"
+              "distinguished_status": "S",
+              "rank_l1": 80,
+              "rank_l2": 102,
+              "rank_l3": 110,
+              "rank_l4": 72,
+              "rank_total": 89
             },
             {
               "club_number": "00861227",
@@ -2027,7 +2958,12 @@
               "level4": 2,
               "total": 4,
               "active_members": 20,
-              "distinguished_status": "D"
+              "distinguished_status": "D",
+              "rank_l1": 137,
+              "rank_l2": 91,
+              "rank_l3": 122,
+              "rank_l4": 47,
+              "rank_total": 121
             },
             {
               "club_number": "28675857",
@@ -2038,7 +2974,12 @@
               "level4": 0,
               "total": 0,
               "active_members": 9,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 162,
+              "rank_l2": 161,
+              "rank_l3": 159,
+              "rank_l4": 160,
+              "rank_total": 163
             },
             {
               "club_number": "28676097",
@@ -2049,13 +2990,29 @@
               "level4": 0,
               "total": 0,
               "active_members": 8,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 141,
+              "rank_l2": 135,
+              "rank_l3": 127,
+              "rank_l4": 132,
+              "rank_total": 150
             }
           ],
-          "rank_in_division": 4
+          "rank_in_division": 4,
+          "rank_l1": 36,
+          "rank_l2": 35,
+          "rank_l3": 36,
+          "rank_l4": 36,
+          "rank_total": 36,
+          "rank_in_district": 36
         }
       ],
-      "rank": 8
+      "rank": 8,
+      "rank_l1": 8,
+      "rank_l2": 8,
+      "rank_l3": 7,
+      "rank_l4": 6,
+      "rank_total": 8
     },
     {
       "division": "G",
@@ -2083,7 +3040,12 @@
               "level4": 2,
               "total": 16,
               "active_members": 73,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 42,
+              "rank_l2": 8,
+              "rank_l3": 25,
+              "rank_l4": 61,
+              "rank_total": 34
             },
             {
               "club_number": "07466745",
@@ -2094,7 +3056,12 @@
               "level4": 2,
               "total": 12,
               "active_members": 30,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 74,
+              "rank_l2": 49,
+              "rank_l3": 68,
+              "rank_l4": 65,
+              "rank_total": 69
             },
             {
               "club_number": "04559377",
@@ -2105,7 +3072,12 @@
               "level4": 1,
               "total": 11,
               "active_members": 29,
-              "distinguished_status": "P"
+              "distinguished_status": "P",
+              "rank_l1": 65,
+              "rank_l2": 31,
+              "rank_l3": 52,
+              "rank_l4": 101,
+              "rank_total": 81
             },
             {
               "club_number": "05756861",
@@ -2116,7 +3088,12 @@
               "level4": 1,
               "total": 6,
               "active_members": 23,
-              "distinguished_status": "D"
+              "distinguished_status": "D",
+              "rank_l1": 111,
+              "rank_l2": 98,
+              "rank_l3": 107,
+              "rank_l4": 109,
+              "rank_total": 105
             },
             {
               "club_number": "01317290",
@@ -2127,10 +3104,21 @@
               "level4": 1,
               "total": 5,
               "active_members": 15,
-              "distinguished_status": "D"
+              "distinguished_status": "D",
+              "rank_l1": 105,
+              "rank_l2": 108,
+              "rank_l3": 100,
+              "rank_l4": 99,
+              "rank_total": 110
             }
           ],
-          "rank_in_division": 1
+          "rank_in_division": 1,
+          "rank_l1": 15,
+          "rank_l2": 6,
+          "rank_l3": 11,
+          "rank_l4": 20,
+          "rank_total": 13,
+          "rank_in_district": 13
         },
         {
           "area": "02",
@@ -2149,7 +3137,12 @@
               "level4": 2,
               "total": 19,
               "active_members": 31,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 20,
+              "rank_l2": 22,
+              "rank_l3": 8,
+              "rank_l4": 80,
+              "rank_total": 16
             },
             {
               "club_number": "07794085",
@@ -2160,7 +3153,12 @@
               "level4": 3,
               "total": 13,
               "active_members": 27,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 97,
+              "rank_l2": 77,
+              "rank_l3": 97,
+              "rank_l4": 36,
+              "rank_total": 63
             },
             {
               "club_number": "07207259",
@@ -2171,7 +3169,12 @@
               "level4": 5,
               "total": 10,
               "active_members": 12,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 118,
+              "rank_l2": 90,
+              "rank_l3": 48,
+              "rank_l4": 7,
+              "rank_total": 84
             },
             {
               "club_number": "00649172",
@@ -2182,7 +3185,12 @@
               "level4": 1,
               "total": 3,
               "active_members": 20,
-              "distinguished_status": "D"
+              "distinguished_status": "D",
+              "rank_l1": 157,
+              "rank_l2": 116,
+              "rank_l3": 112,
+              "rank_l4": 117,
+              "rank_total": 132
             },
             {
               "club_number": "07538442",
@@ -2193,7 +3201,12 @@
               "level4": 1,
               "total": 1,
               "active_members": 14,
-              "distinguished_status": "D"
+              "distinguished_status": "D",
+              "rank_l1": 144,
+              "rank_l2": 138,
+              "rank_l3": 132,
+              "rank_l4": 105,
+              "rank_total": 143
             },
             {
               "club_number": "28676602",
@@ -2204,10 +3217,21 @@
               "level4": 0,
               "total": 0,
               "active_members": 8,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 160,
+              "rank_l2": 160,
+              "rank_l3": 158,
+              "rank_l4": 158,
+              "rank_total": 162
             }
           ],
-          "rank_in_division": 2
+          "rank_in_division": 2,
+          "rank_l1": 26,
+          "rank_l2": 20,
+          "rank_l3": 10,
+          "rank_l4": 5,
+          "rank_total": 16,
+          "rank_in_district": 16
         },
         {
           "area": "03",
@@ -2226,7 +3250,12 @@
               "level4": 5,
               "total": 15,
               "active_members": 25,
-              "distinguished_status": "M"
+              "distinguished_status": "M",
+              "rank_l1": 59,
+              "rank_l2": 27,
+              "rank_l3": 46,
+              "rank_l4": 6,
+              "rank_total": 38
             },
             {
               "club_number": "01223810",
@@ -2237,7 +3266,12 @@
               "level4": 2,
               "total": 7,
               "active_members": 9,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 110,
+              "rank_l2": 97,
+              "rank_l3": 106,
+              "rank_l4": 64,
+              "rank_total": 97
             },
             {
               "club_number": "07391111",
@@ -2248,7 +3282,12 @@
               "level4": 0,
               "total": 0,
               "active_members": 8,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 152,
+              "rank_l2": 152,
+              "rank_l3": 149,
+              "rank_l4": 150,
+              "rank_total": 157
             },
             {
               "club_number": "28676100",
@@ -2259,10 +3298,21 @@
               "level4": 0,
               "total": 0,
               "active_members": 8,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 153,
+              "rank_l2": 153,
+              "rank_l3": 150,
+              "rank_l4": 151,
+              "rank_total": 158
             }
           ],
-          "rank_in_division": 3
+          "rank_in_division": 3,
+          "rank_l1": 34,
+          "rank_l2": 34,
+          "rank_l3": 35,
+          "rank_l4": 23,
+          "rank_total": 34,
+          "rank_in_district": 34
         },
         {
           "area": "04",
@@ -2281,7 +3331,12 @@
               "level4": 2,
               "total": 10,
               "active_members": 17,
-              "distinguished_status": "S"
+              "distinguished_status": "S",
+              "rank_l1": 104,
+              "rank_l2": 107,
+              "rank_l3": 42,
+              "rank_l4": 98,
+              "rank_total": 88
             },
             {
               "club_number": "07901236",
@@ -2292,7 +3347,12 @@
               "level4": 3,
               "total": 6,
               "active_members": 9,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 129,
+              "rank_l2": 156,
+              "rank_l3": 87,
+              "rank_l4": 35,
+              "rank_total": 106
             },
             {
               "club_number": "04278308",
@@ -2303,7 +3363,12 @@
               "level4": 2,
               "total": 5,
               "active_members": 29,
-              "distinguished_status": "D"
+              "distinguished_status": "D",
+              "rank_l1": 127,
+              "rank_l2": 150,
+              "rank_l3": 82,
+              "rank_l4": 77,
+              "rank_total": 117
             },
             {
               "club_number": "04048942",
@@ -2314,13 +3379,29 @@
               "level4": 0,
               "total": 0,
               "active_members": 18,
-              "distinguished_status": ""
+              "distinguished_status": "",
+              "rank_l1": 154,
+              "rank_l2": 154,
+              "rank_l3": 151,
+              "rank_l4": 152,
+              "rank_total": 159
             }
           ],
-          "rank_in_division": 4
+          "rank_in_division": 4,
+          "rank_l1": 35,
+          "rank_l2": 36,
+          "rank_l3": 25,
+          "rank_l4": 24,
+          "rank_total": 35,
+          "rank_in_district": 35
         }
       ],
-      "rank": 9
+      "rank": 9,
+      "rank_l1": 9,
+      "rank_l2": 9,
+      "rank_l3": 5,
+      "rank_l4": 5,
+      "rank_total": 9
     }
   ],
   "club_leaderboard": [
@@ -2336,7 +3417,12 @@
       "level4": 20,
       "total": 84,
       "active_members": 94,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 1,
+      "rank_l2": 1,
+      "rank_l3": 1,
+      "rank_l4": 1,
+      "rank_total": 1
     },
     {
       "rank": 2,
@@ -2350,7 +3436,12 @@
       "level4": 3,
       "total": 31,
       "active_members": 38,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 6,
+      "rank_l2": 2,
+      "rank_l3": 2,
+      "rank_l4": 33,
+      "rank_total": 2
     },
     {
       "rank": 3,
@@ -2364,7 +3455,12 @@
       "level4": 2,
       "total": 23,
       "active_members": 28,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 2,
+      "rank_l2": 41,
+      "rank_l3": 62,
+      "rank_l4": 55,
+      "rank_total": 3
     },
     {
       "rank": 4,
@@ -2378,7 +3474,12 @@
       "level4": 4,
       "total": 22,
       "active_members": 26,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 4,
+      "rank_l2": 6,
+      "rank_l3": 61,
+      "rank_l4": 16,
+      "rank_total": 4
     },
     {
       "rank": 5,
@@ -2392,7 +3493,12 @@
       "level4": 5,
       "total": 21,
       "active_members": 31,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 22,
+      "rank_l2": 14,
+      "rank_l3": 3,
+      "rank_l4": 8,
+      "rank_total": 5
     },
     {
       "rank": 6,
@@ -2406,7 +3512,12 @@
       "level4": 5,
       "total": 21,
       "active_members": 34,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 30,
+      "rank_l2": 10,
+      "rank_l3": 15,
+      "rank_l4": 11,
+      "rank_total": 8
     },
     {
       "rank": 7,
@@ -2420,7 +3531,12 @@
       "level4": 8,
       "total": 21,
       "active_members": 39,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 84,
+      "rank_l2": 58,
+      "rank_l3": 7,
+      "rank_l4": 2,
+      "rank_total": 6
     },
     {
       "rank": 8,
@@ -2434,7 +3550,12 @@
       "level4": 7,
       "total": 21,
       "active_members": 25,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 51,
+      "rank_l2": 68,
+      "rank_l3": 9,
+      "rank_l4": 3,
+      "rank_total": 7
     },
     {
       "rank": 9,
@@ -2448,7 +3569,12 @@
       "level4": 2,
       "total": 20,
       "active_members": 72,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 3,
+      "rank_l2": 23,
+      "rank_l3": 93,
+      "rank_l4": 88,
+      "rank_total": 10
     },
     {
       "rank": 10,
@@ -2462,7 +3588,12 @@
       "level4": 2,
       "total": 20,
       "active_members": 35,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 5,
+      "rank_l2": 55,
+      "rank_l3": 14,
+      "rank_l4": 73,
+      "rank_total": 9
     },
     {
       "rank": 11,
@@ -2476,7 +3607,12 @@
       "level4": 5,
       "total": 19,
       "active_members": 27,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 40,
+      "rank_l2": 40,
+      "rank_l3": 5,
+      "rank_l4": 9,
+      "rank_total": 12
     },
     {
       "rank": 12,
@@ -2490,7 +3626,12 @@
       "level4": 6,
       "total": 19,
       "active_members": 42,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 24,
+      "rank_l2": 15,
+      "rank_l3": 65,
+      "rank_l4": 4,
+      "rank_total": 13
     },
     {
       "rank": 13,
@@ -2504,7 +3645,12 @@
       "level4": 5,
       "total": 19,
       "active_members": 20,
-      "distinguished_status": "P"
+      "distinguished_status": "P",
+      "rank_l1": 31,
+      "rank_l2": 72,
+      "rank_l3": 16,
+      "rank_l4": 12,
+      "rank_total": 17
     },
     {
       "rank": 14,
@@ -2518,7 +3664,12 @@
       "level4": 2,
       "total": 19,
       "active_members": 27,
-      "distinguished_status": "P"
+      "distinguished_status": "P",
+      "rank_l1": 7,
+      "rank_l2": 19,
+      "rank_l3": 32,
+      "rank_l4": 69,
+      "rank_total": 14
     },
     {
       "rank": 15,
@@ -2532,7 +3683,12 @@
       "level4": 4,
       "total": 19,
       "active_members": 26,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 49,
+      "rank_l2": 20,
+      "rank_l3": 6,
+      "rank_l4": 17,
+      "rank_total": 15
     },
     {
       "rank": 16,
@@ -2546,7 +3702,12 @@
       "level4": 2,
       "total": 19,
       "active_members": 31,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 20,
+      "rank_l2": 22,
+      "rank_l3": 8,
+      "rank_l4": 80,
+      "rank_total": 16
     },
     {
       "rank": 17,
@@ -2560,7 +3721,12 @@
       "level4": 2,
       "total": 19,
       "active_members": 27,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 10,
+      "rank_l2": 7,
+      "rank_l3": 23,
+      "rank_l4": 54,
+      "rank_total": 11
     },
     {
       "rank": 18,
@@ -2574,7 +3740,12 @@
       "level4": 3,
       "total": 18,
       "active_members": 34,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 8,
+      "rank_l2": 38,
+      "rank_l3": 22,
+      "rank_l4": 22,
+      "rank_total": 20
     },
     {
       "rank": 19,
@@ -2588,7 +3759,12 @@
       "level4": 4,
       "total": 18,
       "active_members": 28,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 16,
+      "rank_l2": 33,
+      "rank_l3": 20,
+      "rank_l4": 15,
+      "rank_total": 18
     },
     {
       "rank": 20,
@@ -2602,7 +3778,12 @@
       "level4": 3,
       "total": 18,
       "active_members": 40,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 29,
+      "rank_l2": 21,
+      "rank_l3": 13,
+      "rank_l4": 29,
+      "rank_total": 25
     },
     {
       "rank": 21,
@@ -2616,7 +3797,12 @@
       "level4": 3,
       "total": 18,
       "active_members": 26,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 25,
+      "rank_l2": 16,
+      "rank_l3": 12,
+      "rank_l4": 24,
+      "rank_total": 22
     },
     {
       "rank": 22,
@@ -2630,7 +3816,12 @@
       "level4": 2,
       "total": 18,
       "active_members": 26,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 12,
+      "rank_l2": 18,
+      "rank_l3": 30,
+      "rank_l4": 68,
+      "rank_total": 24
     },
     {
       "rank": 23,
@@ -2644,7 +3835,12 @@
       "level4": 2,
       "total": 18,
       "active_members": 33,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 21,
+      "rank_l2": 11,
+      "rank_l3": 40,
+      "rank_l4": 94,
+      "rank_total": 26
     },
     {
       "rank": 24,
@@ -2658,7 +3854,12 @@
       "level4": 3,
       "total": 18,
       "active_members": 28,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 11,
+      "rank_l2": 48,
+      "rank_l3": 28,
+      "rank_l4": 23,
+      "rank_total": 21
     },
     {
       "rank": 25,
@@ -2672,7 +3873,12 @@
       "level4": 2,
       "total": 18,
       "active_members": 31,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 26,
+      "rank_l2": 3,
+      "rank_l3": 70,
+      "rank_l4": 67,
+      "rank_total": 23
     },
     {
       "rank": 26,
@@ -2686,7 +3892,12 @@
       "level4": 2,
       "total": 18,
       "active_members": 34,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 18,
+      "rank_l2": 37,
+      "rank_l3": 4,
+      "rank_l4": 51,
+      "rank_total": 19
     },
     {
       "rank": 27,
@@ -2700,7 +3911,12 @@
       "level4": 3,
       "total": 17,
       "active_members": 56,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 36,
+      "rank_l2": 13,
+      "rank_l3": 11,
+      "rank_l4": 20,
+      "rank_total": 27
     },
     {
       "rank": 28,
@@ -2714,7 +3930,12 @@
       "level4": 5,
       "total": 17,
       "active_members": 12,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 43,
+      "rank_l2": 44,
+      "rank_l3": 26,
+      "rank_l4": 10,
+      "rank_total": 29
     },
     {
       "rank": 29,
@@ -2728,7 +3949,12 @@
       "level4": 6,
       "total": 17,
       "active_members": 40,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 96,
+      "rank_l2": 74,
+      "rank_l3": 37,
+      "rank_l4": 5,
+      "rank_total": 32
     },
     {
       "rank": 30,
@@ -2742,7 +3968,12 @@
       "level4": 3,
       "total": 17,
       "active_members": 46,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 37,
+      "rank_l2": 4,
+      "rank_l3": 19,
+      "rank_l4": 21,
+      "rank_total": 28
     },
     {
       "rank": 31,
@@ -2756,7 +3987,12 @@
       "level4": 3,
       "total": 17,
       "active_members": 34,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 14,
+      "rank_l2": 62,
+      "rank_l3": 80,
+      "rank_l4": 32,
+      "rank_total": 31
     },
     {
       "rank": 32,
@@ -2770,7 +4006,12 @@
       "level4": 3,
       "total": 17,
       "active_members": 61,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 13,
+      "rank_l2": 60,
+      "rank_l3": 79,
+      "rank_l4": 31,
+      "rank_total": 30
     },
     {
       "rank": 33,
@@ -2784,7 +4025,12 @@
       "level4": 2,
       "total": 16,
       "active_members": 25,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 15,
+      "rank_l2": 75,
+      "rank_l3": 94,
+      "rank_l4": 89,
+      "rank_total": 36
     },
     {
       "rank": 34,
@@ -2798,7 +4044,12 @@
       "level4": 2,
       "total": 16,
       "active_members": 31,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 19,
+      "rank_l2": 61,
+      "rank_l3": 33,
+      "rank_l4": 76,
+      "rank_total": 35
     },
     {
       "rank": 35,
@@ -2812,7 +4063,12 @@
       "level4": 2,
       "total": 16,
       "active_members": 38,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 9,
+      "rank_l2": 39,
+      "rank_l3": 60,
+      "rank_l4": 53,
+      "rank_total": 33
     },
     {
       "rank": 36,
@@ -2826,7 +4082,12 @@
       "level4": 2,
       "total": 16,
       "active_members": 73,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 42,
+      "rank_l2": 8,
+      "rank_l3": 25,
+      "rank_l4": 61,
+      "rank_total": 34
     },
     {
       "rank": 37,
@@ -2840,7 +4101,12 @@
       "level4": 1,
       "total": 15,
       "active_members": 11,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 28,
+      "rank_l2": 9,
+      "rank_l3": 74,
+      "rank_l4": 112,
+      "rank_total": 44
     },
     {
       "rank": 38,
@@ -2854,7 +4120,12 @@
       "level4": 2,
       "total": 15,
       "active_members": 26,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 17,
+      "rank_l2": 34,
+      "rank_l3": 56,
+      "rank_l4": 48,
+      "rank_total": 40
     },
     {
       "rank": 39,
@@ -2868,7 +4139,12 @@
       "level4": 4,
       "total": 15,
       "active_members": 26,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 54,
+      "rank_l2": 79,
+      "rank_l3": 98,
+      "rank_l4": 19,
+      "rank_total": 46
     },
     {
       "rank": 40,
@@ -2882,7 +4158,12 @@
       "level4": 3,
       "total": 15,
       "active_members": 30,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 27,
+      "rank_l2": 52,
+      "rank_l3": 72,
+      "rank_l4": 27,
+      "rank_total": 43
     },
     {
       "rank": 41,
@@ -2896,7 +4177,12 @@
       "level4": 4,
       "total": 15,
       "active_members": 49,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 88,
+      "rank_l2": 65,
+      "rank_l3": 34,
+      "rank_l4": 18,
+      "rank_total": 45
     },
     {
       "rank": 42,
@@ -2910,7 +4196,12 @@
       "level4": 4,
       "total": 15,
       "active_members": 29,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 38,
+      "rank_l2": 32,
+      "rank_l3": 54,
+      "rank_l4": 14,
+      "rank_total": 39
     },
     {
       "rank": 43,
@@ -2924,7 +4215,12 @@
       "level4": 2,
       "total": 15,
       "active_members": 28,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 23,
+      "rank_l2": 46,
+      "rank_l3": 27,
+      "rank_l4": 62,
+      "rank_total": 41
     },
     {
       "rank": 44,
@@ -2938,7 +4234,12 @@
       "level4": 2,
       "total": 15,
       "active_members": 22,
-      "distinguished_status": "P"
+      "distinguished_status": "P",
+      "rank_l1": 35,
+      "rank_l2": 25,
+      "rank_l3": 10,
+      "rank_l4": 39,
+      "rank_total": 37
     },
     {
       "rank": 45,
@@ -2952,7 +4253,12 @@
       "level4": 2,
       "total": 15,
       "active_members": 44,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 33,
+      "rank_l2": 80,
+      "rank_l3": 38,
+      "rank_l4": 91,
+      "rank_total": 47
     },
     {
       "rank": 46,
@@ -2966,7 +4272,12 @@
       "level4": 5,
       "total": 15,
       "active_members": 25,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 59,
+      "rank_l2": 27,
+      "rank_l3": 46,
+      "rank_l4": 6,
+      "rank_total": 38
     },
     {
       "rank": 47,
@@ -2980,7 +4291,12 @@
       "level4": 3,
       "total": 15,
       "active_members": 25,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 47,
+      "rank_l2": 17,
+      "rank_l3": 69,
+      "rank_l4": 25,
+      "rank_total": 42
     },
     {
       "rank": 48,
@@ -2994,7 +4310,12 @@
       "level4": 3,
       "total": 14,
       "active_members": 25,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 48,
+      "rank_l2": 51,
+      "rank_l3": 71,
+      "rank_l4": 26,
+      "rank_total": 50
     },
     {
       "rank": 49,
@@ -3008,7 +4329,12 @@
       "level4": 2,
       "total": 14,
       "active_members": 31,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 68,
+      "rank_l2": 5,
+      "rank_l3": 59,
+      "rank_l4": 52,
+      "rank_total": 48
     },
     {
       "rank": 50,
@@ -3022,7 +4348,12 @@
       "level4": 2,
       "total": 14,
       "active_members": 40,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 52,
+      "rank_l2": 69,
+      "rank_l3": 35,
+      "rank_l4": 83,
+      "rank_total": 51
     },
     {
       "rank": 51,
@@ -3036,7 +4367,12 @@
       "level4": 2,
       "total": 14,
       "active_members": 20,
-      "distinguished_status": "P"
+      "distinguished_status": "P",
+      "rank_l1": 46,
+      "rank_l2": 50,
+      "rank_l3": 29,
+      "rank_l4": 66,
+      "rank_total": 49
     },
     {
       "rank": 52,
@@ -3050,7 +4386,12 @@
       "level4": 2,
       "total": 13,
       "active_members": 36,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 39,
+      "rank_l2": 36,
+      "rank_l3": 58,
+      "rank_l4": 50,
+      "rank_total": 56
     },
     {
       "rank": 53,
@@ -3064,7 +4405,12 @@
       "level4": 2,
       "total": 13,
       "active_members": 21,
-      "distinguished_status": "P"
+      "distinguished_status": "P",
+      "rank_l1": 95,
+      "rank_l2": 73,
+      "rank_l3": 36,
+      "rank_l4": 87,
+      "rank_total": 61
     },
     {
       "rank": 54,
@@ -3078,7 +4424,12 @@
       "level4": 2,
       "total": 13,
       "active_members": 26,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 56,
+      "rank_l2": 12,
+      "rank_l3": 43,
+      "rank_l4": 37,
+      "rank_total": 52
     },
     {
       "rank": 55,
@@ -3092,7 +4443,12 @@
       "level4": 2,
       "total": 13,
       "active_members": 20,
-      "distinguished_status": "P"
+      "distinguished_status": "P",
+      "rank_l1": 63,
+      "rank_l2": 29,
+      "rank_l3": 18,
+      "rank_l4": 45,
+      "rank_total": 54
     },
     {
       "rank": 56,
@@ -3106,7 +4462,12 @@
       "level4": 3,
       "total": 13,
       "active_members": 41,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 77,
+      "rank_l2": 53,
+      "rank_l3": 73,
+      "rank_l4": 28,
+      "rank_total": 58
     },
     {
       "rank": 57,
@@ -3120,7 +4481,12 @@
       "level4": 2,
       "total": 13,
       "active_members": 35,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 53,
+      "rank_l2": 76,
+      "rank_l3": 95,
+      "rank_l4": 90,
+      "rank_total": 62
     },
     {
       "rank": 58,
@@ -3134,7 +4500,12 @@
       "level4": 3,
       "total": 13,
       "active_members": 30,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 85,
+      "rank_l2": 59,
+      "rank_l3": 78,
+      "rank_l4": 30,
+      "rank_total": 59
     },
     {
       "rank": 59,
@@ -3148,7 +4519,12 @@
       "level4": 2,
       "total": 13,
       "active_members": 31,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 34,
+      "rank_l2": 24,
+      "rank_l3": 44,
+      "rank_l4": 38,
+      "rank_total": 53
     },
     {
       "rank": 60,
@@ -3162,7 +4538,12 @@
       "level4": 2,
       "total": 13,
       "active_members": 33,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 71,
+      "rank_l2": 43,
+      "rank_l3": 24,
+      "rank_l4": 60,
+      "rank_total": 57
     },
     {
       "rank": 61,
@@ -3176,7 +4557,12 @@
       "level4": 3,
       "total": 13,
       "active_members": 33,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 89,
+      "rank_l2": 66,
+      "rank_l3": 85,
+      "rank_l4": 34,
+      "rank_total": 60
     },
     {
       "rank": 62,
@@ -3190,7 +4576,12 @@
       "level4": 3,
       "total": 13,
       "active_members": 27,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 97,
+      "rank_l2": 77,
+      "rank_l3": 97,
+      "rank_l4": 36,
+      "rank_total": 63
     },
     {
       "rank": 63,
@@ -3204,7 +4595,12 @@
       "level4": 2,
       "total": 13,
       "active_members": 20,
-      "distinguished_status": "P"
+      "distinguished_status": "P",
+      "rank_l1": 67,
+      "rank_l2": 35,
+      "rank_l3": 21,
+      "rank_l4": 49,
+      "rank_total": 55
     },
     {
       "rank": 64,
@@ -3218,7 +4614,12 @@
       "level4": 2,
       "total": 12,
       "active_members": 21,
-      "distinguished_status": "P"
+      "distinguished_status": "P",
+      "rank_l1": 82,
+      "rank_l2": 57,
+      "rank_l3": 77,
+      "rank_l4": 75,
+      "rank_total": 72
     },
     {
       "rank": 65,
@@ -3232,7 +4633,12 @@
       "level4": 2,
       "total": 12,
       "active_members": 26,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 62,
+      "rank_l2": 28,
+      "rank_l3": 50,
+      "rank_l4": 44,
+      "rank_total": 65
     },
     {
       "rank": 66,
@@ -3246,7 +4652,12 @@
       "level4": 2,
       "total": 12,
       "active_members": 25,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 81,
+      "rank_l2": 56,
+      "rank_l3": 76,
+      "rank_l4": 74,
+      "rank_total": 71
     },
     {
       "rank": 67,
@@ -3260,7 +4671,12 @@
       "level4": 2,
       "total": 12,
       "active_members": 20,
-      "distinguished_status": "P"
+      "distinguished_status": "P",
+      "rank_l1": 117,
+      "rank_l2": 82,
+      "rank_l3": 17,
+      "rank_l4": 97,
+      "rank_total": 79
     },
     {
       "rank": 68,
@@ -3274,7 +4690,12 @@
       "level4": 2,
       "total": 12,
       "active_members": 29,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 99,
+      "rank_l2": 81,
+      "rank_l3": 99,
+      "rank_l4": 95,
+      "rank_total": 78
     },
     {
       "rank": 69,
@@ -3288,7 +4709,12 @@
       "level4": 2,
       "total": 12,
       "active_members": 27,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 90,
+      "rank_l2": 67,
+      "rank_l3": 86,
+      "rank_l4": 81,
+      "rank_total": 75
     },
     {
       "rank": 70,
@@ -3302,7 +4728,12 @@
       "level4": 2,
       "total": 12,
       "active_members": 21,
-      "distinguished_status": "P"
+      "distinguished_status": "P",
+      "rank_l1": 64,
+      "rank_l2": 30,
+      "rank_l3": 51,
+      "rank_l4": 46,
+      "rank_total": 66
     },
     {
       "rank": 71,
@@ -3316,7 +4747,12 @@
       "level4": 2,
       "total": 12,
       "active_members": 23,
-      "distinguished_status": "P"
+      "distinguished_status": "P",
+      "rank_l1": 72,
+      "rank_l2": 47,
+      "rank_l3": 66,
+      "rank_l4": 63,
+      "rank_total": 68
     },
     {
       "rank": 72,
@@ -3330,7 +4766,12 @@
       "level4": 2,
       "total": 12,
       "active_members": 30,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 74,
+      "rank_l2": 49,
+      "rank_l3": 68,
+      "rank_l4": 65,
+      "rank_total": 69
     },
     {
       "rank": 73,
@@ -3344,7 +4785,12 @@
       "level4": 2,
       "total": 12,
       "active_members": 29,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 94,
+      "rank_l2": 71,
+      "rank_l3": 92,
+      "rank_l4": 85,
+      "rank_total": 77
     },
     {
       "rank": 74,
@@ -3358,7 +4804,12 @@
       "level4": 2,
       "total": 12,
       "active_members": 25,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 93,
+      "rank_l2": 70,
+      "rank_l3": 91,
+      "rank_l4": 84,
+      "rank_total": 76
     },
     {
       "rank": 75,
@@ -3372,7 +4823,12 @@
       "level4": 2,
       "total": 12,
       "active_members": 20,
-      "distinguished_status": "P"
+      "distinguished_status": "P",
+      "rank_l1": 79,
+      "rank_l2": 54,
+      "rank_l3": 75,
+      "rank_l4": 70,
+      "rank_total": 70
     },
     {
       "rank": 76,
@@ -3386,7 +4842,12 @@
       "level4": 2,
       "total": 12,
       "active_members": 29,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 87,
+      "rank_l2": 64,
+      "rank_l3": 84,
+      "rank_l4": 79,
+      "rank_total": 74
     },
     {
       "rank": 77,
@@ -3400,7 +4861,12 @@
       "level4": 2,
       "total": 12,
       "active_members": 38,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 69,
+      "rank_l2": 42,
+      "rank_l3": 63,
+      "rank_l4": 57,
+      "rank_total": 67
     },
     {
       "rank": 78,
@@ -3414,7 +4880,12 @@
       "level4": 2,
       "total": 12,
       "active_members": 26,
-      "distinguished_status": "M"
+      "distinguished_status": "M",
+      "rank_l1": 58,
+      "rank_l2": 26,
+      "rank_l3": 45,
+      "rank_l4": 40,
+      "rank_total": 64
     },
     {
       "rank": 79,
@@ -3428,7 +4899,12 @@
       "level4": 2,
       "total": 12,
       "active_members": 20,
-      "distinguished_status": "P"
+      "distinguished_status": "P",
+      "rank_l1": 86,
+      "rank_l2": 63,
+      "rank_l3": 83,
+      "rank_l4": 78,
+      "rank_total": 73
     },
     {
       "rank": 80,
@@ -3442,7 +4918,12 @@
       "level4": 2,
       "total": 11,
       "active_members": 22,
-      "distinguished_status": "P"
+      "distinguished_status": "P",
+      "rank_l1": 60,
+      "rank_l2": 83,
+      "rank_l3": 47,
+      "rank_l4": 42,
+      "rank_total": 80
     },
     {
       "rank": 81,
@@ -3456,7 +4937,12 @@
       "level4": 2,
       "total": 11,
       "active_members": 16,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 102,
+      "rank_l2": 88,
+      "rank_l3": 39,
+      "rank_l4": 92,
+      "rank_total": 82
     },
     {
       "rank": 82,
@@ -3470,7 +4956,12 @@
       "level4": 1,
       "total": 11,
       "active_members": 29,
-      "distinguished_status": "P"
+      "distinguished_status": "P",
+      "rank_l1": 65,
+      "rank_l2": 31,
+      "rank_l3": 52,
+      "rank_l4": 101,
+      "rank_total": 81
     },
     {
       "rank": 83,
@@ -3484,7 +4975,12 @@
       "level4": 5,
       "total": 11,
       "active_members": 21,
-      "distinguished_status": "S"
+      "distinguished_status": "S",
+      "rank_l1": 55,
+      "rank_l2": 123,
+      "rank_l3": 163,
+      "rank_l4": 13,
+      "rank_total": 83
     },
     {
       "rank": 84,
@@ -3498,7 +4994,12 @@
       "level4": 2,
       "total": 10,
       "active_members": 47,
-      "distinguished_status": "P"
+      "distinguished_status": "P",
+      "rank_l1": 91,
+      "rank_l2": 106,
+      "rank_l3": 89,
+      "rank_l4": 82,
+      "rank_total": 86
     },
     {
       "rank": 85,
@@ -3512,7 +5013,12 @@
       "level4": 5,
       "total": 10,
       "active_members": 12,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 118,
+      "rank_l2": 90,
+      "rank_l3": 48,
+      "rank_l4": 7,
+      "rank_total": 84
     },
     {
       "rank": 86,
@@ -3526,7 +5032,12 @@
       "level4": 2,
       "total": 10,
       "active_members": 17,
-      "distinguished_status": "S"
+      "distinguished_status": "S",
+      "rank_l1": 104,
+      "rank_l2": 107,
+      "rank_l3": 42,
+      "rank_l4": 98,
+      "rank_total": 88
     },
     {
       "rank": 87,
@@ -3540,7 +5051,12 @@
       "level4": 0,
       "total": 10,
       "active_members": 33,
-      "distinguished_status": "S"
+      "distinguished_status": "S",
+      "rank_l1": 32,
+      "rank_l2": 78,
+      "rank_l3": 160,
+      "rank_l4": 161,
+      "rank_total": 87
     },
     {
       "rank": 88,
@@ -3554,7 +5070,12 @@
       "level4": 1,
       "total": 10,
       "active_members": 16,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 50,
+      "rank_l2": 105,
+      "rank_l3": 81,
+      "rank_l4": 116,
+      "rank_total": 85
     },
     {
       "rank": 89,
@@ -3568,7 +5089,12 @@
       "level4": 2,
       "total": 9,
       "active_members": 30,
-      "distinguished_status": "S"
+      "distinguished_status": "S",
+      "rank_l1": 80,
+      "rank_l2": 102,
+      "rank_l3": 110,
+      "rank_l4": 72,
+      "rank_total": 89
     },
     {
       "rank": 90,
@@ -3582,7 +5108,12 @@
       "level4": 1,
       "total": 8,
       "active_members": 20,
-      "distinguished_status": "S"
+      "distinguished_status": "S",
+      "rank_l1": 106,
+      "rank_l2": 85,
+      "rank_l3": 53,
+      "rank_l4": 102,
+      "rank_total": 90
     },
     {
       "rank": 91,
@@ -3596,7 +5127,12 @@
       "level4": 1,
       "total": 8,
       "active_members": 8,
-      "distinguished_status": "D"
+      "distinguished_status": "D",
+      "rank_l1": 78,
+      "rank_l2": 101,
+      "rank_l3": 108,
+      "rank_l4": 113,
+      "rank_total": 93
     },
     {
       "rank": 92,
@@ -3610,7 +5146,12 @@
       "level4": 2,
       "total": 8,
       "active_members": 10,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 100,
+      "rank_l2": 110,
+      "rank_l3": 64,
+      "rank_l4": 58,
+      "rank_total": 92
     },
     {
       "rank": 93,
@@ -3624,7 +5165,12 @@
       "level4": 0,
       "total": 8,
       "active_members": 20,
-      "distinguished_status": "D"
+      "distinguished_status": "D",
+      "rank_l1": 41,
+      "rank_l2": 87,
+      "rank_l3": 130,
+      "rank_l4": 134,
+      "rank_total": 91
     },
     {
       "rank": 94,
@@ -3638,7 +5184,12 @@
       "level4": 0,
       "total": 7,
       "active_members": 20,
-      "distinguished_status": "D"
+      "distinguished_status": "D",
+      "rank_l1": 66,
+      "rank_l2": 84,
+      "rank_l3": 121,
+      "rank_l4": 126,
+      "rank_total": 94
     },
     {
       "rank": 95,
@@ -3652,7 +5203,12 @@
       "level4": 1,
       "total": 7,
       "active_members": 20,
-      "distinguished_status": "S"
+      "distinguished_status": "S",
+      "rank_l1": 76,
+      "rank_l2": 99,
+      "rank_l3": 142,
+      "rank_l4": 110,
+      "rank_total": 98
     },
     {
       "rank": 96,
@@ -3666,7 +5222,12 @@
       "level4": 1,
       "total": 7,
       "active_members": 14,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 44,
+      "rank_l2": 142,
+      "rank_l3": 103,
+      "rank_l4": 107,
+      "rank_total": 96
     },
     {
       "rank": 97,
@@ -3680,7 +5241,12 @@
       "level4": 2,
       "total": 7,
       "active_members": 9,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 110,
+      "rank_l2": 97,
+      "rank_l3": 106,
+      "rank_l4": 64,
+      "rank_total": 97
     },
     {
       "rank": 98,
@@ -3694,7 +5260,12 @@
       "level4": 1,
       "total": 7,
       "active_members": 20,
-      "distinguished_status": "S"
+      "distinguished_status": "S",
+      "rank_l1": 83,
+      "rank_l2": 103,
+      "rank_l3": 145,
+      "rank_l4": 114,
+      "rank_total": 100
     },
     {
       "rank": 99,
@@ -3708,7 +5279,12 @@
       "level4": 1,
       "total": 7,
       "active_members": 14,
-      "distinguished_status": "D"
+      "distinguished_status": "D",
+      "rank_l1": 107,
+      "rank_l2": 92,
+      "rank_l3": 55,
+      "rank_l4": 103,
+      "rank_total": 95
     },
     {
       "rank": 100,
@@ -3722,7 +5298,12 @@
       "level4": 0,
       "total": 7,
       "active_members": 13,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 113,
+      "rank_l2": 100,
+      "rank_l3": 31,
+      "rank_l4": 145,
+      "rank_total": 99
     },
     {
       "rank": 101,
@@ -3736,7 +5317,12 @@
       "level4": 2,
       "total": 6,
       "active_members": 19,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 108,
+      "rank_l2": 111,
+      "rank_l3": 102,
+      "rank_l4": 59,
+      "rank_total": 102
     },
     {
       "rank": 102,
@@ -3750,7 +5336,12 @@
       "level4": 0,
       "total": 6,
       "active_members": 20,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 57,
+      "rank_l2": 89,
+      "rank_l3": 117,
+      "rank_l4": 123,
+      "rank_total": 101
     },
     {
       "rank": 103,
@@ -3764,7 +5355,12 @@
       "level4": 0,
       "total": 6,
       "active_members": 15,
-      "distinguished_status": "D"
+      "distinguished_status": "D",
+      "rank_l1": 98,
+      "rank_l2": 121,
+      "rank_l3": 113,
+      "rank_l4": 162,
+      "rank_total": 107
     },
     {
       "rank": 104,
@@ -3778,7 +5374,12 @@
       "level4": 0,
       "total": 6,
       "active_members": 11,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 116,
+      "rank_l2": 124,
+      "rank_l3": 41,
+      "rank_l4": 164,
+      "rank_total": 109
     },
     {
       "rank": 105,
@@ -3792,7 +5393,12 @@
       "level4": 0,
       "total": 6,
       "active_members": 20,
-      "distinguished_status": "D"
+      "distinguished_status": "D",
+      "rank_l1": 70,
+      "rank_l2": 94,
+      "rank_l3": 134,
+      "rank_l4": 136,
+      "rank_total": 103
     },
     {
       "rank": 106,
@@ -3806,7 +5412,12 @@
       "level4": 2,
       "total": 6,
       "active_members": 14,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 103,
+      "rank_l2": 163,
+      "rank_l3": 114,
+      "rank_l4": 93,
+      "rank_total": 108
     },
     {
       "rank": 107,
@@ -3820,7 +5431,12 @@
       "level4": 1,
       "total": 6,
       "active_members": 23,
-      "distinguished_status": "D"
+      "distinguished_status": "D",
+      "rank_l1": 111,
+      "rank_l2": 98,
+      "rank_l3": 107,
+      "rank_l4": 109,
+      "rank_total": 105
     },
     {
       "rank": 108,
@@ -3834,7 +5450,12 @@
       "level4": 3,
       "total": 6,
       "active_members": 9,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 129,
+      "rank_l2": 156,
+      "rank_l3": 87,
+      "rank_l4": 35,
+      "rank_total": 106
     },
     {
       "rank": 109,
@@ -3848,7 +5469,12 @@
       "level4": 1,
       "total": 6,
       "active_members": 9,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 45,
+      "rank_l2": 145,
+      "rank_l3": 140,
+      "rank_l4": 108,
+      "rank_total": 104
     },
     {
       "rank": 110,
@@ -3862,7 +5488,12 @@
       "level4": 1,
       "total": 5,
       "active_members": 14,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 126,
+      "rank_l2": 104,
+      "rank_l3": 111,
+      "rank_l4": 115,
+      "rank_total": 116
     },
     {
       "rank": 111,
@@ -3876,7 +5507,12 @@
       "level4": 0,
       "total": 5,
       "active_members": 20,
-      "distinguished_status": "D"
+      "distinguished_status": "D",
+      "rank_l1": 92,
+      "rank_l2": 117,
+      "rank_l3": 155,
+      "rank_l4": 157,
+      "rank_total": 118
     },
     {
       "rank": 112,
@@ -3890,7 +5526,12 @@
       "level4": 0,
       "total": 5,
       "active_members": 13,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 109,
+      "rank_l2": 96,
+      "rank_l3": 105,
+      "rank_l4": 143,
+      "rank_total": 115
     },
     {
       "rank": 113,
@@ -3904,7 +5545,12 @@
       "level4": 2,
       "total": 5,
       "active_members": 13,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 122,
+      "rank_l2": 93,
+      "rank_l3": 128,
+      "rank_l4": 56,
+      "rank_total": 112
     },
     {
       "rank": 114,
@@ -3918,7 +5564,12 @@
       "level4": 0,
       "total": 5,
       "active_members": 27,
-      "distinguished_status": "D"
+      "distinguished_status": "D",
+      "rank_l1": 73,
+      "rank_l2": 144,
+      "rank_l3": 104,
+      "rank_l4": 142,
+      "rank_total": 114
     },
     {
       "rank": 115,
@@ -3932,7 +5583,12 @@
       "level4": 0,
       "total": 5,
       "active_members": 22,
-      "distinguished_status": "D"
+      "distinguished_status": "D",
+      "rank_l1": 124,
+      "rank_l2": 45,
+      "rank_l3": 136,
+      "rank_l4": 137,
+      "rank_total": 113
     },
     {
       "rank": 116,
@@ -3946,7 +5602,12 @@
       "level4": 1,
       "total": 5,
       "active_members": 15,
-      "distinguished_status": "D"
+      "distinguished_status": "D",
+      "rank_l1": 119,
+      "rank_l2": 109,
+      "rank_l3": 49,
+      "rank_l4": 100,
+      "rank_total": 111
     },
     {
       "rank": 117,
@@ -3960,7 +5621,12 @@
       "level4": 1,
       "total": 5,
       "active_members": 15,
-      "distinguished_status": "D"
+      "distinguished_status": "D",
+      "rank_l1": 105,
+      "rank_l2": 108,
+      "rank_l3": 100,
+      "rank_l4": 99,
+      "rank_total": 110
     },
     {
       "rank": 118,
@@ -3974,7 +5640,12 @@
       "level4": 2,
       "total": 5,
       "active_members": 29,
-      "distinguished_status": "D"
+      "distinguished_status": "D",
+      "rank_l1": 127,
+      "rank_l2": 150,
+      "rank_l3": 82,
+      "rank_l4": 77,
+      "rank_total": 117
     },
     {
       "rank": 119,
@@ -3988,7 +5659,12 @@
       "level4": 2,
       "total": 5,
       "active_members": 11,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 115,
+      "rank_l2": 118,
+      "rank_l3": 156,
+      "rank_l4": 86,
+      "rank_total": 119
     },
     {
       "rank": 120,
@@ -4002,7 +5678,12 @@
       "level4": 0,
       "total": 4,
       "active_members": 26,
-      "distinguished_status": "D"
+      "distinguished_status": "D",
+      "rank_l1": 61,
+      "rank_l2": 129,
+      "rank_l3": 119,
+      "rank_l4": 125,
+      "rank_total": 120
     },
     {
       "rank": 121,
@@ -4016,7 +5697,12 @@
       "level4": 2,
       "total": 4,
       "active_members": 14,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 164,
+      "rank_l2": 125,
+      "rank_l3": 115,
+      "rank_l4": 96,
+      "rank_total": 127
     },
     {
       "rank": 122,
@@ -4030,7 +5716,12 @@
       "level4": 0,
       "total": 4,
       "active_members": 16,
-      "distinguished_status": "D"
+      "distinguished_status": "D",
+      "rank_l1": 75,
+      "rank_l2": 146,
+      "rank_l3": 141,
+      "rank_l4": 144,
+      "rank_total": 124
     },
     {
       "rank": 123,
@@ -4044,7 +5735,12 @@
       "level4": 0,
       "total": 4,
       "active_members": 22,
-      "distinguished_status": "D"
+      "distinguished_status": "D",
+      "rank_l1": 125,
+      "rank_l2": 112,
+      "rank_l3": 67,
+      "rank_l4": 141,
+      "rank_total": 123
     },
     {
       "rank": 124,
@@ -4058,7 +5754,12 @@
       "level4": 1,
       "total": 4,
       "active_members": 23,
-      "distinguished_status": "D"
+      "distinguished_status": "D",
+      "rank_l1": 112,
+      "rank_l2": 113,
+      "rank_l3": 143,
+      "rank_l4": 111,
+      "rank_total": 125
     },
     {
       "rank": 125,
@@ -4072,7 +5773,12 @@
       "level4": 2,
       "total": 4,
       "active_members": 20,
-      "distinguished_status": "D"
+      "distinguished_status": "D",
+      "rank_l1": 150,
+      "rank_l2": 114,
+      "rank_l3": 109,
+      "rank_l4": 71,
+      "rank_total": 126
     },
     {
       "rank": 126,
@@ -4086,7 +5792,12 @@
       "level4": 0,
       "total": 4,
       "active_members": 25,
-      "distinguished_status": "D"
+      "distinguished_status": "D",
+      "rank_l1": 121,
+      "rank_l2": 86,
+      "rank_l3": 126,
+      "rank_l4": 131,
+      "rank_total": 122
     },
     {
       "rank": 127,
@@ -4100,7 +5811,12 @@
       "level4": 2,
       "total": 4,
       "active_members": 20,
-      "distinguished_status": "D"
+      "distinguished_status": "D",
+      "rank_l1": 137,
+      "rank_l2": 91,
+      "rank_l3": 122,
+      "rank_l4": 47,
+      "rank_total": 121
     },
     {
       "rank": 128,
@@ -4114,7 +5830,12 @@
       "level4": 0,
       "total": 3,
       "active_members": 14,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 114,
+      "rank_l2": 115,
+      "rank_l3": 153,
+      "rank_l4": 154,
+      "rank_total": 131
     },
     {
       "rank": 129,
@@ -4128,7 +5849,12 @@
       "level4": 1,
       "total": 3,
       "active_members": 22,
-      "distinguished_status": "D"
+      "distinguished_status": "D",
+      "rank_l1": 158,
+      "rank_l2": 158,
+      "rank_l3": 88,
+      "rank_l4": 118,
+      "rank_total": 133
     },
     {
       "rank": 130,
@@ -4142,7 +5868,12 @@
       "level4": 1,
       "total": 3,
       "active_members": 8,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 132,
+      "rank_l2": 122,
+      "rank_l3": 162,
+      "rank_l4": 121,
+      "rank_total": 136
     },
     {
       "rank": 131,
@@ -4156,7 +5887,12 @@
       "level4": 0,
       "total": 3,
       "active_members": 11,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 101,
+      "rank_l2": 148,
+      "rank_l3": 146,
+      "rank_l4": 147,
+      "rank_total": 130
     },
     {
       "rank": 132,
@@ -4170,7 +5906,12 @@
       "level4": 1,
       "total": 3,
       "active_members": 9,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 130,
+      "rank_l2": 119,
+      "rank_l3": 157,
+      "rank_l4": 119,
+      "rank_total": 134
     },
     {
       "rank": 133,
@@ -4184,7 +5925,12 @@
       "level4": 1,
       "total": 3,
       "active_members": 15,
-      "distinguished_status": "D"
+      "distinguished_status": "D",
+      "rank_l1": 145,
+      "rank_l2": 95,
+      "rank_l3": 135,
+      "rank_l4": 106,
+      "rank_total": 129
     },
     {
       "rank": 134,
@@ -4198,7 +5944,12 @@
       "level4": 0,
       "total": 3,
       "active_members": 14,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 161,
+      "rank_l2": 120,
+      "rank_l3": 96,
+      "rank_l4": 159,
+      "rank_total": 135
     },
     {
       "rank": 135,
@@ -4212,7 +5963,12 @@
       "level4": 1,
       "total": 3,
       "active_members": 20,
-      "distinguished_status": "D"
+      "distinguished_status": "D",
+      "rank_l1": 157,
+      "rank_l2": 116,
+      "rank_l3": 112,
+      "rank_l4": 117,
+      "rank_total": 132
     },
     {
       "rank": 136,
@@ -4226,7 +5982,12 @@
       "level4": 2,
       "total": 3,
       "active_members": 11,
-      "distinguished_status": "D"
+      "distinguished_status": "D",
+      "rank_l1": 134,
+      "rank_l2": 127,
+      "rank_l3": 101,
+      "rank_l4": 41,
+      "rank_total": 128
     },
     {
       "rank": 137,
@@ -4240,7 +6001,12 @@
       "level4": 2,
       "total": 2,
       "active_members": 20,
-      "distinguished_status": "D"
+      "distinguished_status": "D",
+      "rank_l1": 136,
+      "rank_l2": 130,
+      "rank_l3": 120,
+      "rank_l4": 43,
+      "rank_total": 137
     },
     {
       "rank": 138,
@@ -4254,7 +6020,12 @@
       "level4": 0,
       "total": 2,
       "active_members": 11,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 139,
+      "rank_l2": 132,
+      "rank_l3": 57,
+      "rank_l4": 128,
+      "rank_total": 138
     },
     {
       "rank": 139,
@@ -4268,7 +6039,12 @@
       "level4": 0,
       "total": 2,
       "active_members": 16,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 159,
+      "rank_l2": 159,
+      "rank_l3": 90,
+      "rank_l4": 156,
+      "rank_total": 139
     },
     {
       "rank": 140,
@@ -4282,7 +6058,12 @@
       "level4": 1,
       "total": 2,
       "active_members": 8,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 131,
+      "rank_l2": 162,
+      "rank_l3": 161,
+      "rank_l4": 120,
+      "rank_total": 140
     },
     {
       "rank": 141,
@@ -4296,7 +6077,12 @@
       "level4": 0,
       "total": 1,
       "active_members": 11,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 128,
+      "rank_l2": 151,
+      "rank_l3": 148,
+      "rank_l4": 149,
+      "rank_total": 145
     },
     {
       "rank": 142,
@@ -4310,7 +6096,12 @@
       "level4": 0,
       "total": 1,
       "active_members": 17,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 120,
+      "rank_l2": 134,
+      "rank_l3": 125,
+      "rank_l4": 130,
+      "rank_total": 141
     },
     {
       "rank": 143,
@@ -4324,7 +6115,12 @@
       "level4": 0,
       "total": 1,
       "active_members": 11,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 123,
+      "rank_l2": 139,
+      "rank_l3": 133,
+      "rank_l4": 135,
+      "rank_total": 144
     },
     {
       "rank": 144,
@@ -4338,7 +6134,12 @@
       "level4": 1,
       "total": 1,
       "active_members": 14,
-      "distinguished_status": "D"
+      "distinguished_status": "D",
+      "rank_l1": 144,
+      "rank_l2": 138,
+      "rank_l3": 132,
+      "rank_l4": 105,
+      "rank_total": 143
     },
     {
       "rank": 145,
@@ -4352,7 +6153,12 @@
       "level4": 1,
       "total": 1,
       "active_members": 16,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 143,
+      "rank_l2": 137,
+      "rank_l3": 131,
+      "rank_l4": 104,
+      "rank_total": 142
     },
     {
       "rank": 146,
@@ -4366,7 +6172,12 @@
       "level4": 0,
       "total": 0,
       "active_members": 9,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 151,
+      "rank_l2": 149,
+      "rank_l3": 147,
+      "rank_l4": 148,
+      "rank_total": 156
     },
     {
       "rank": 147,
@@ -4380,7 +6191,12 @@
       "level4": 0,
       "total": 0,
       "active_members": 10,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 138,
+      "rank_l2": 131,
+      "rank_l3": 123,
+      "rank_l4": 127,
+      "rank_total": 148
     },
     {
       "rank": 148,
@@ -4394,7 +6210,12 @@
       "level4": 0,
       "total": 0,
       "active_members": 20,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 156,
+      "rank_l2": 157,
+      "rank_l3": 154,
+      "rank_l4": 155,
+      "rank_total": 161
     },
     {
       "rank": 149,
@@ -4408,7 +6229,12 @@
       "level4": 0,
       "total": 0,
       "active_members": 8,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 148,
+      "rank_l2": 143,
+      "rank_l3": 139,
+      "rank_l4": 140,
+      "rank_total": 154
     },
     {
       "rank": 150,
@@ -4422,7 +6248,12 @@
       "level4": 0,
       "total": 0,
       "active_members": 8,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 147,
+      "rank_l2": 141,
+      "rank_l3": 138,
+      "rank_l4": 139,
+      "rank_total": 153
     },
     {
       "rank": 151,
@@ -4436,7 +6267,12 @@
       "level4": 0,
       "total": 0,
       "active_members": 22,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 149,
+      "rank_l2": 147,
+      "rank_l3": 144,
+      "rank_l4": 146,
+      "rank_total": 155
     },
     {
       "rank": 152,
@@ -4450,7 +6286,12 @@
       "level4": 0,
       "total": 0,
       "active_members": 10,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 155,
+      "rank_l2": 155,
+      "rank_l3": 152,
+      "rank_l4": 153,
+      "rank_total": 160
     },
     {
       "rank": 153,
@@ -4464,7 +6305,12 @@
       "level4": 0,
       "total": 0,
       "active_members": 20,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 133,
+      "rank_l2": 126,
+      "rank_l3": 116,
+      "rank_l4": 122,
+      "rank_total": 146
     },
     {
       "rank": 154,
@@ -4478,7 +6324,12 @@
       "level4": 0,
       "total": 0,
       "active_members": 9,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 162,
+      "rank_l2": 161,
+      "rank_l3": 159,
+      "rank_l4": 160,
+      "rank_total": 163
     },
     {
       "rank": 155,
@@ -4492,7 +6343,12 @@
       "level4": 0,
       "total": 0,
       "active_members": 8,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 141,
+      "rank_l2": 135,
+      "rank_l3": 127,
+      "rank_l4": 132,
+      "rank_total": 150
     },
     {
       "rank": 156,
@@ -4506,7 +6362,12 @@
       "level4": 0,
       "total": 0,
       "active_members": 8,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 160,
+      "rank_l2": 160,
+      "rank_l3": 158,
+      "rank_l4": 158,
+      "rank_total": 162
     },
     {
       "rank": 157,
@@ -4520,7 +6381,12 @@
       "level4": 0,
       "total": 0,
       "active_members": 8,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 152,
+      "rank_l2": 152,
+      "rank_l3": 149,
+      "rank_l4": 150,
+      "rank_total": 157
     },
     {
       "rank": 158,
@@ -4534,7 +6400,12 @@
       "level4": 0,
       "total": 0,
       "active_members": 8,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 153,
+      "rank_l2": 153,
+      "rank_l3": 150,
+      "rank_l4": 151,
+      "rank_total": 158
     },
     {
       "rank": 159,
@@ -4548,7 +6419,12 @@
       "level4": 0,
       "total": 0,
       "active_members": 18,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 154,
+      "rank_l2": 154,
+      "rank_l3": 151,
+      "rank_l4": 152,
+      "rank_total": 159
     },
     {
       "rank": 160,
@@ -4562,7 +6438,12 @@
       "level4": 0,
       "total": 0,
       "active_members": 42,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 146,
+      "rank_l2": 140,
+      "rank_l3": 137,
+      "rank_l4": 138,
+      "rank_total": 152
     },
     {
       "rank": 161,
@@ -4576,7 +6457,12 @@
       "level4": 0,
       "total": 0,
       "active_members": 20,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 163,
+      "rank_l2": 164,
+      "rank_l3": 164,
+      "rank_l4": 163,
+      "rank_total": 164
     },
     {
       "rank": 162,
@@ -4590,7 +6476,12 @@
       "level4": 0,
       "total": 0,
       "active_members": 8,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 140,
+      "rank_l2": 133,
+      "rank_l3": 124,
+      "rank_l4": 129,
+      "rank_total": 149
     },
     {
       "rank": 163,
@@ -4604,7 +6495,12 @@
       "level4": 0,
       "total": 0,
       "active_members": 11,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 135,
+      "rank_l2": 128,
+      "rank_l3": 118,
+      "rank_l4": 124,
+      "rank_total": 147
     },
     {
       "rank": 164,
@@ -4618,7 +6514,12 @@
       "level4": 0,
       "total": 0,
       "active_members": 8,
-      "distinguished_status": ""
+      "distinguished_status": "",
+      "rank_l1": 142,
+      "rank_l2": 136,
+      "rank_l3": 129,
+      "rank_l4": 133,
+      "rank_total": 151
     }
   ],
   "pathways_award": {
