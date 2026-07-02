@@ -297,6 +297,18 @@ main {
 
 .area-rank-table td { vertical-align: middle; }
 .area-rank-table .stackbar { width: 110px; margin: 0; }
+.area-row-toggle { cursor: pointer; }
+.area-row-toggle:hover td { background: #FAFBFB; }
+.area-chevron {
+  width: 18px; color: var(--tm-gray); font-size: 11px; text-align: center;
+}
+.area-row-toggle.open .area-chevron { color: var(--tm-blue); }
+.area-detail-row { display: none; }
+.area-detail-row.open { display: table-row; }
+.area-detail-row > td { padding: 10px 8px 16px 34px; background: #FAFBFB; border-bottom: 1px solid var(--border); }
+.area-club-table { font-size: 12.5px; background: #fff; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+.area-club-table th { font-size: 10px; padding: 6px 8px; }
+.area-club-table td { padding: 6px 8px; }
 
 
 .select {

@@ -182,6 +182,32 @@ function renderAreas() {
     DATA.divisions.map(d => `<option value="${d.division}">Division ${d.division}</option>`).join('');
   filter.onchange = () => paintAreas(filter.value);
   paintAreas('__all__');
+  const content = document.getElementById('areas-content');
+  content.addEventListener('click', (e) => {
+    const row = e.target.closest('.area-row-toggle');
+    if (!row) return;
+    const detail = row.nextElementSibling;
+    const opening = !row.classList.contains('open');
+    row.classList.toggle('open');
+    detail.classList.toggle('open', opening);
+    const chevron = row.querySelector('.area-chevron');
+    if (chevron) chevron.textContent = opening ? '▾' : '▸';
+  });
+}
+
+function clubDetailRowsHTML(clubs) {
+  return clubs.map(c => `
+    <tr>
+      <td class="rank-num">${c.rank_total}</td>
+      <td>
+        ${c.club_name}
+        ${dcpBadgeHTML(c.distinguished_status)}
+        <span class="club-sub">${c.active_members} active members</span>
+      </td>
+      <td>${c.level1}</td><td>${c.level2}</td><td>${c.level3}</td><td>${c.level4}</td>
+      <td><b>${c.total}</b></td>
+    </tr>
+  `).join('');
 }
 
 function paintAreas(divFilter) {
@@ -192,19 +218,30 @@ function paintAreas(divFilter) {
     <table class="rank-table area-rank-table">
       <thead>
         <tr>
-          <th>Rank</th><th>Area</th><th>Level 1</th><th>Level 2</th><th>Level 3</th><th>Level 4+</th>
+          <th></th><th>Rank</th><th>Area</th><th>Level 1</th><th>Level 2</th><th>Level 3</th><th>Level 4+</th>
           <th>Total</th><th>Composition</th><th>Clubs</th>
         </tr>
       </thead>
       <tbody>
         ${d.areas.map(a => `
-          <tr>
+          <tr class="area-row-toggle" data-area="${d.division}-${a.area}">
+            <td class="area-chevron">▸</td>
             <td class="rank-num">${a.rank_in_division}</td>
             <td><b>Area ${a.area}</b> <span class="club-sub">district rank #${a.rank_in_district}</span></td>
             <td>${a.level1}</td><td>${a.level2}</td><td>${a.level3}</td><td>${a.level4}</td>
             <td><b>${a.total}</b></td>
             <td>${stackBarHTML(a, 'stackbar')}</td>
             <td>${a.clubs.length}</td>
+          </tr>
+          <tr class="area-detail-row">
+            <td colspan="10">
+              <table class="rank-table area-club-table">
+                <thead>
+                  <tr><th>Rank</th><th>Club</th><th>Level 1</th><th>Level 2</th><th>Level 3</th><th>Level 4+</th><th>Total</th></tr>
+                </thead>
+                <tbody>${clubDetailRowsHTML(a.clubs)}</tbody>
+              </table>
+            </td>
           </tr>
         `).join('')}
       </tbody>
