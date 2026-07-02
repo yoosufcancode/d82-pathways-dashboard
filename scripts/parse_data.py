@@ -267,16 +267,14 @@ def dense_rank(sorted_rows, key_fn):
 
 
 def build_per_member_leaderboard(active_clubs):
-    """Ranks clubs by levels completed per active member. Ties broken by
-    (1) levels per member, then (2) Level 1 + Level 3 completions combined;
-    clubs tied on both share the same rank."""
-    rows = []
-    for c in active_clubs:
-        members = c["active_members"] or 0
-        ratio = round(c["total_levels"] / members, 3) if members > 0 else 0.0
-        rows.append({**c, "levels_per_member": ratio, "l1_l3_sum": c["level1"] + c["level3"]})
-
-    rows.sort(key=lambda r: (-r["levels_per_member"], -r["l1_l3_sum"], r["club_name"]))
+    """Ranks clubs by levels completed per active member (dense ranking, 1,2,2,3).
+    Ties broken by Level 1 + Level 3 completions combined; clubs tied on both
+    share the same rank. Expects active_clubs to already have 'levels_per_member'
+    and 'l1_l3_sum' set (see build_dashboard_json)."""
+    rows = sorted(
+        active_clubs,
+        key=lambda r: (-r["levels_per_member"], -r["l1_l3_sum"], r["club_name"]),
+    )
     ranks = dense_rank(rows, lambda r: (r["levels_per_member"], r["l1_l3_sum"]))
 
     out = []
@@ -315,15 +313,35 @@ def build_dashboard_json(clubs, snapshot_date, award_info):
     district_totals = totals(active_clubs)
     district_number = clubs[0]["district"] if clubs else ""
 
+    # Precompute per-member ratio and L1+L3 sum for every active club -- used
+    # both for the "Levels per Member" leaderboard and as tiebreakers for the
+    # "Total Levels" leaderboard/rank.
+    for c in active_clubs:
+        members = c["active_members"] or 0
+        c["levels_per_member"] = round(c["total_levels"] / members, 3) if members > 0 else 0.0
+        c["l1_l3_sum"] = c["level1"] + c["level3"]
+
     # District-wide per-level rank maps for clubs (used for "Rank in District" blocks)
     club_value_fn = {
         "level1": lambda r: r["level1"], "level2": lambda r: r["level2"],
         "level3": lambda r: r["level3"], "level4": lambda r: r["level4"],
-        "total": lambda r: r["total_levels"],
     }
     club_rank_maps = {
         metric: rank_dict(active_clubs, lambda r: r["club_number"], fn, lambda r: r["club_name"])
         for metric, fn in club_value_fn.items()
+    }
+
+    # Total Levels ranking uses dense ranking (1,2,2,3) with tiebreakers:
+    # (1) total levels completed, (2) levels per member, (3) Level 1 + Level 3 combined.
+    total_sorted = sorted(
+        active_clubs,
+        key=lambda r: (-r["total_levels"], -r["levels_per_member"], -r["l1_l3_sum"], r["club_name"]),
+    )
+    total_dense_ranks = dense_rank(
+        total_sorted, lambda r: (r["total_levels"], r["levels_per_member"], r["l1_l3_sum"])
+    )
+    club_rank_maps["total"] = {
+        r["club_number"]: rank for r, rank in zip(total_sorted, total_dense_ranks)
     }
 
     # Division breakdown
@@ -403,11 +421,10 @@ def build_dashboard_json(clubs, snapshot_date, award_info):
         d.update(rank_fields(division_rank_maps, d["division"]))
         d["rank"] = d["rank_total"]  # keep the single "rank" field consistent with rank_total everywhere
 
-    # Club leaderboard (district-wide) — same tie-break as club_rank_maps so
-    # "rank" and "rank_total" are always the same number for a given club
-    club_leaderboard = sorted(active_clubs, key=lambda r: (-r["total_levels"], r["club_name"]))
+    # Club leaderboard (district-wide) — same sort/tiebreak as club_rank_maps["total"]
+    # so "rank" and "rank_total" are always the same number for a given club
     club_leaderboard_out = []
-    for r in club_leaderboard:
+    for r in total_sorted:
         ranks = rank_fields(club_rank_maps, r["club_number"])
         club_leaderboard_out.append({
             "rank": ranks["rank_total"],
@@ -422,6 +439,8 @@ def build_dashboard_json(clubs, snapshot_date, award_info):
             "total": r["total_levels"],
             "active_members": r["active_members"],
             "distinguished_status": r["distinguished_status"],
+            "levels_per_member": r["levels_per_member"],
+            "l1_l3_sum": r["l1_l3_sum"],
             **ranks,
         })
 

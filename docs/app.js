@@ -333,6 +333,7 @@ function paintClubs(query) {
               <span><i style="background:${LEVEL_COLORS.level3}"></i>Level 3 <b>${c.level3}</b> <em>(district rank #${c.rank_l3})</em></span>
               <span><i style="background:${LEVEL_COLORS.level4}"></i>Level 4+/Path/DTM <b>${c.level4}</b> <em>(district rank #${c.rank_l4})</em></span>
               <span class="club-detail-dcp">DCP status: <b>${dcpLabel}</b></span>
+              <span class="club-detail-tiebreak">Tiebreakers &mdash; levels per member: <b>${c.levels_per_member}</b>, L1+L3 combined: <b>${c.l1_l3_sum}</b></span>
             </div>
           </div>
         </div>

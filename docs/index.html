@@ -106,11 +106,26 @@
 <template id="tpl-clubs">
   <section class="panel" data-panel="clubs">
     <div class="club-lb-banner">
-      <strong>Two leaderboards:</strong> <b>Total Levels</b> ranks by overall levels completed.
-      <b>Levels per Member</b> ranks by levels completed per active member &mdash; a fairer measure for
-      smaller clubs. Tiebreakers for Levels per Member: (1) levels completed per member, then
-      (2) combined Level&nbsp;1 + Level&nbsp;3 completions. Clubs tied on both share the same rank
-      (e.g. 1, 2, 2, 4).
+      <div class="club-lb-banner-title">Two Club Leaderboards</div>
+      <ol class="club-lb-banner-list">
+        <li>
+          <b>Total Levels</b> &mdash; ranks by total levels completed. When totals are tied, in order:
+          <ol type="a">
+            <li>Levels completed per active member</li>
+            <li>Combined Level&nbsp;1 + Level&nbsp;3 completions</li>
+          </ol>
+        </li>
+        <li>
+          <b>Levels per Member</b> &mdash; ranks by levels completed per active member, a fairer
+          measure for smaller clubs. When this ratio is tied:
+          <ol type="a">
+            <li>Combined Level&nbsp;1 + Level&nbsp;3 completions</li>
+          </ol>
+        </li>
+      </ol>
+      <div class="club-lb-banner-note">
+        Clubs tied on every tiebreaker above share the same rank (e.g. 1, 2, 2, 3 &mdash; not 1, 2, 2, 4).
+      </div>
     </div>
     <div class="card">
       <div class="card-header-row">
