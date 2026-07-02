@@ -1,17 +1,17 @@
 {
   "meta": {
     "district_number": "82",
-    "snapshot_date": "2026-06-05",
-    "generated_at": "2026-07-02T15:30:45",
+    "snapshot_date": "2026-05-24",
+    "generated_at": "2026-07-02T16:21:33",
     "total_active_clubs": 159,
     "total_clubs": 173
   },
   "district_totals": {
-    "level1": 589,
-    "level2": 415,
-    "level3": 249,
-    "level4": 284,
-    "total": 1537
+    "level1": 583,
+    "level2": 413,
+    "level3": 246,
+    "level4": 282,
+    "total": 1524
   },
   "divisions": [
     {
@@ -19,8 +19,8 @@
       "level1": 82,
       "level2": 51,
       "level3": 39,
-      "level4": 50,
-      "total": 222,
+      "level4": 49,
+      "total": 221,
       "club_count": 17,
       "areas": [
         {
@@ -57,11 +57,11 @@
               "total": 16,
               "active_members": 40,
               "distinguished_status": "M",
-              "rank_l1": 28,
+              "rank_l1": 27,
               "rank_l2": 16,
-              "rank_l3": 66,
+              "rank_l3": 64,
               "rank_l4": 27,
-              "rank_total": 28
+              "rank_total": 27
             },
             {
               "club_number": "28678375",
@@ -71,12 +71,12 @@
               "level3": 1,
               "level4": 1,
               "total": 6,
-              "active_members": 13,
+              "active_members": 12,
               "distinguished_status": "",
-              "rank_l1": 66,
+              "rank_l1": 65,
               "rank_l2": 140,
-              "rank_l3": 96,
-              "rank_l4": 101,
+              "rank_l3": 95,
+              "rank_l4": 100,
               "rank_total": 99
             },
             {
@@ -89,9 +89,9 @@
               "total": 6,
               "active_members": 8,
               "distinguished_status": "",
-              "rank_l1": 93,
+              "rank_l1": 92,
               "rank_l2": 120,
-              "rank_l3": 108,
+              "rank_l3": 107,
               "rank_l4": 157,
               "rank_total": 102
             },
@@ -125,8 +125,8 @@
           "level1": 19,
           "level2": 12,
           "level3": 11,
-          "level4": 13,
-          "total": 55,
+          "level4": 12,
+          "total": 54,
           "clubs": [
             {
               "club_number": "00614737",
@@ -134,15 +134,15 @@
               "level1": 6,
               "level2": 4,
               "level3": 2,
-              "level4": 6,
-              "total": 18,
+              "level4": 5,
+              "total": 17,
               "active_members": 42,
               "distinguished_status": "M",
-              "rank_l1": 23,
-              "rank_l2": 40,
-              "rank_l3": 53,
-              "rank_l4": 4,
-              "rank_total": 13
+              "rank_l1": 22,
+              "rank_l2": 39,
+              "rank_l3": 51,
+              "rank_l4": 8,
+              "rank_total": 20
             },
             {
               "club_number": "07392229",
@@ -155,10 +155,10 @@
               "active_members": 20,
               "distinguished_status": "P",
               "rank_l1": 30,
-              "rank_l2": 64,
+              "rank_l2": 63,
               "rank_l3": 8,
               "rank_l4": 34,
-              "rank_total": 24
+              "rank_total": 23
             },
             {
               "club_number": "07988670",
@@ -170,9 +170,9 @@
               "total": 15,
               "active_members": 29,
               "distinguished_status": "M",
-              "rank_l1": 36,
-              "rank_l2": 26,
-              "rank_l3": 38,
+              "rank_l1": 35,
+              "rank_l2": 25,
+              "rank_l3": 36,
               "rank_l4": 10,
               "rank_total": 30
             },
@@ -188,7 +188,7 @@
               "distinguished_status": "",
               "rank_l1": 105,
               "rank_l2": 142,
-              "rank_l3": 98,
+              "rank_l3": 97,
               "rank_l4": 137,
               "rank_total": 125
             },
@@ -204,13 +204,13 @@
               "distinguished_status": "",
               "rank_l1": 156,
               "rank_l2": 156,
-              "rank_l3": 79,
+              "rank_l3": 77,
               "rank_l4": 152,
               "rank_total": 134
             }
           ],
           "rank_in_division": 2,
-          "rank_l1": 13,
+          "rank_l1": 12,
           "rank_l2": 17,
           "rank_l3": 4,
           "rank_l4": 4,
@@ -236,7 +236,7 @@
               "active_members": 49,
               "distinguished_status": "M",
               "rank_l1": 83,
-              "rank_l2": 58,
+              "rank_l2": 57,
               "rank_l3": 20,
               "rank_l4": 13,
               "rank_total": 37
@@ -251,11 +251,11 @@
               "total": 13,
               "active_members": 41,
               "distinguished_status": "M",
-              "rank_l1": 72,
-              "rank_l2": 48,
-              "rank_l3": 62,
+              "rank_l1": 71,
+              "rank_l2": 47,
+              "rank_l3": 60,
               "rank_l4": 26,
-              "rank_total": 54
+              "rank_total": 53
             },
             {
               "club_number": "05163369",
@@ -270,13 +270,13 @@
               "rank_l1": 109,
               "rank_l2": 109,
               "rank_l3": 140,
-              "rank_l4": 105,
+              "rank_l4": 104,
               "rank_total": 118
             }
           ],
           "rank_in_division": 3,
-          "rank_l1": 29,
-          "rank_l2": 25,
+          "rank_l1": 28,
+          "rank_l2": 24,
           "rank_l3": 24,
           "rank_l4": 8,
           "rank_total": 27,
@@ -300,11 +300,11 @@
               "total": 16,
               "active_members": 9,
               "distinguished_status": "",
-              "rank_l1": 41,
-              "rank_l2": 38,
-              "rank_l3": 51,
-              "rank_l4": 8,
-              "rank_total": 26
+              "rank_l1": 40,
+              "rank_l2": 37,
+              "rank_l3": 49,
+              "rank_l4": 7,
+              "rank_total": 25
             },
             {
               "club_number": "07980809",
@@ -316,11 +316,11 @@
               "total": 12,
               "active_members": 35,
               "distinguished_status": "M",
-              "rank_l1": 91,
-              "rank_l2": 67,
-              "rank_l3": 85,
+              "rank_l1": 90,
+              "rank_l2": 66,
+              "rank_l3": 84,
               "rank_l4": 84,
-              "rank_total": 69
+              "rank_total": 68
             },
             {
               "club_number": "05663570",
@@ -335,7 +335,7 @@
               "rank_l1": 127,
               "rank_l2": 118,
               "rank_l3": 154,
-              "rank_l4": 114,
+              "rank_l4": 113,
               "rank_total": 129
             },
             {
@@ -356,12 +356,12 @@
             }
           ],
           "rank_in_division": 4,
-          "rank_l1": 30,
-          "rank_l2": 26,
+          "rank_l1": 29,
+          "rank_l2": 25,
           "rank_l3": 29,
           "rank_l4": 11,
-          "rank_total": 29,
-          "rank_in_district": 29
+          "rank_total": 28,
+          "rank_in_district": 28
         }
       ],
       "rank": 1,
@@ -373,11 +373,11 @@
     },
     {
       "division": "F",
-      "level1": 78,
+      "level1": 76,
       "level2": 54,
       "level3": 32,
       "level4": 34,
-      "total": 198,
+      "total": 196,
       "club_count": 17,
       "areas": [
         {
@@ -400,7 +400,7 @@
               "distinguished_status": "M",
               "rank_l1": 10,
               "rank_l2": 13,
-              "rank_l3": 59,
+              "rank_l3": 57,
               "rank_l4": 65,
               "rank_total": 21
             },
@@ -414,9 +414,9 @@
               "total": 15,
               "active_members": 26,
               "distinguished_status": "M",
-              "rank_l1": 25,
-              "rank_l2": 42,
-              "rank_l3": 55,
+              "rank_l1": 24,
+              "rank_l2": 41,
+              "rank_l3": 53,
               "rank_l4": 22,
               "rank_total": 35
             },
@@ -430,11 +430,11 @@
               "total": 13,
               "active_members": 30,
               "distinguished_status": "M",
-              "rank_l1": 80,
-              "rank_l2": 53,
-              "rank_l3": 69,
+              "rank_l1": 79,
+              "rank_l2": 52,
+              "rank_l3": 67,
               "rank_l4": 28,
-              "rank_total": 55
+              "rank_total": 54
             },
             {
               "club_number": "01553096",
@@ -448,9 +448,9 @@
               "distinguished_status": "S",
               "rank_l1": 99,
               "rank_l2": 114,
-              "rank_l3": 78,
+              "rank_l3": 76,
               "rank_l4": 78,
-              "rank_total": 90
+              "rank_total": 88
             },
             {
               "club_number": "28678226",
@@ -460,9 +460,9 @@
               "level3": 0,
               "level4": 0,
               "total": 5,
-              "active_members": 17,
+              "active_members": 16,
               "distinguished_status": "",
-              "rank_l1": 63,
+              "rank_l1": 62,
               "rank_l2": 105,
               "rank_l3": 131,
               "rank_l4": 132,
@@ -472,18 +472,18 @@
           "rank_in_division": 1,
           "rank_l1": 3,
           "rank_l2": 7,
-          "rank_l3": 8,
+          "rank_l3": 7,
           "rank_l4": 5,
           "rank_total": 6,
           "rank_in_district": 6
         },
         {
           "area": "02",
-          "level1": 25,
+          "level1": 24,
           "level2": 14,
           "level3": 8,
           "level4": 8,
-          "total": 55,
+          "total": 54,
           "clubs": [
             {
               "club_number": "28676698",
@@ -498,24 +498,24 @@
               "rank_l1": 7,
               "rank_l2": 14,
               "rank_l3": 17,
-              "rank_l4": 106,
-              "rank_total": 15
+              "rank_l4": 105,
+              "rank_total": 14
             },
             {
               "club_number": "05270893",
               "club_name": "PLC Toastmasters Club",
-              "level1": 8,
+              "level1": 7,
               "level2": 4,
               "level3": 2,
               "level4": 3,
-              "total": 17,
+              "total": 16,
               "active_members": 34,
               "distinguished_status": "M",
-              "rank_l1": 12,
-              "rank_l2": 55,
-              "rank_l3": 71,
+              "rank_l1": 17,
+              "rank_l2": 54,
+              "rank_l3": 69,
               "rank_l4": 30,
-              "rank_total": 23
+              "rank_total": 28
             },
             {
               "club_number": "01355969",
@@ -527,11 +527,11 @@
               "total": 13,
               "active_members": 31,
               "distinguished_status": "M",
-              "rank_l1": 33,
+              "rank_l1": 32,
               "rank_l2": 20,
-              "rank_l3": 30,
+              "rank_l3": 29,
               "rank_l4": 37,
-              "rank_total": 49
+              "rank_total": 48
             },
             {
               "club_number": "04628720",
@@ -545,7 +545,7 @@
               "distinguished_status": "",
               "rank_l1": 112,
               "rank_l2": 159,
-              "rank_l3": 109,
+              "rank_l3": 108,
               "rank_l4": 88,
               "rank_total": 111
             },
@@ -567,9 +567,9 @@
             }
           ],
           "rank_in_division": 2,
-          "rank_l1": 4,
+          "rank_l1": 6,
           "rank_l2": 10,
-          "rank_l3": 11,
+          "rank_l3": 9,
           "rank_l4": 12,
           "rank_total": 7,
           "rank_in_district": 7
@@ -592,11 +592,11 @@
               "total": 16,
               "active_members": 26,
               "distinguished_status": "M",
-              "rank_l1": 46,
+              "rank_l1": 45,
               "rank_l2": 15,
-              "rank_l3": 63,
+              "rank_l3": 61,
               "rank_l4": 12,
-              "rank_total": 27
+              "rank_total": 26
             },
             {
               "club_number": "28675604",
@@ -608,7 +608,7 @@
               "total": 14,
               "active_members": 21,
               "distinguished_status": "P",
-              "rank_l1": 34,
+              "rank_l1": 33,
               "rank_l2": 21,
               "rank_l3": 9,
               "rank_l4": 38,
@@ -624,9 +624,9 @@
               "total": 12,
               "active_members": 33,
               "distinguished_status": "M",
-              "rank_l1": 64,
-              "rank_l2": 36,
-              "rank_l3": 50,
+              "rank_l1": 63,
+              "rank_l2": 35,
+              "rank_l3": 48,
               "rank_l4": 57,
               "rank_total": 59
             },
@@ -642,9 +642,9 @@
               "distinguished_status": "",
               "rank_l1": 100,
               "rank_l2": 79,
-              "rank_l3": 25,
+              "rank_l3": 24,
               "rank_l4": 87,
-              "rank_total": 77
+              "rank_total": 76
             }
           ],
           "rank_in_division": 3,
@@ -657,11 +657,11 @@
         },
         {
           "area": "04",
-          "level1": 11,
+          "level1": 10,
           "level2": 9,
           "level3": 6,
           "level4": 6,
-          "total": 32,
+          "total": 31,
           "clubs": [
             {
               "club_number": "02541805",
@@ -673,27 +673,27 @@
               "total": 15,
               "active_members": 44,
               "distinguished_status": "M",
-              "rank_l1": 32,
-              "rank_l2": 70,
-              "rank_l3": 24,
+              "rank_l1": 31,
+              "rank_l2": 69,
+              "rank_l3": 23,
               "rank_l4": 86,
               "rank_total": 40
             },
             {
               "club_number": "01244213",
               "club_name": "Readers Toastmasters Club",
-              "level1": 4,
+              "level1": 3,
               "level2": 4,
               "level3": 1,
               "level4": 3,
-              "total": 12,
+              "total": 11,
               "active_members": 32,
-              "distinguished_status": "P",
-              "rank_l1": 84,
-              "rank_l2": 59,
-              "rank_l3": 106,
+              "distinguished_status": "S",
+              "rank_l1": 98,
+              "rank_l2": 58,
+              "rank_l3": 105,
               "rank_l4": 32,
-              "rank_total": 66
+              "rank_total": 75
             },
             {
               "club_number": "07257255",
@@ -707,22 +707,22 @@
               "distinguished_status": "",
               "rank_l1": 117,
               "rank_l2": 101,
-              "rank_l3": 35,
+              "rank_l3": 34,
               "rank_l4": 95,
               "rank_total": 106
             }
           ],
           "rank_in_division": 4,
-          "rank_l1": 28,
+          "rank_l1": 32,
           "rank_l2": 29,
           "rank_l3": 21,
           "rank_l4": 27,
-          "rank_total": 28,
-          "rank_in_district": 28
+          "rank_total": 29,
+          "rank_in_district": 29
         }
       ],
       "rank": 2,
-      "rank_l1": 2,
+      "rank_l1": 3,
       "rank_l2": 2,
       "rank_l3": 2,
       "rank_l4": 3,
@@ -731,10 +731,10 @@
     {
       "division": "A",
       "level1": 77,
-      "level2": 53,
+      "level2": 52,
       "level3": 28,
       "level4": 33,
-      "total": 191,
+      "total": 190,
       "club_count": 21,
       "areas": [
         {
@@ -755,11 +755,11 @@
               "total": 19,
               "active_members": 31,
               "distinguished_status": "M",
-              "rank_l1": 21,
-              "rank_l2": 11,
+              "rank_l1": 20,
+              "rank_l2": 10,
               "rank_l3": 10,
-              "rank_l4": 6,
-              "rank_total": 8
+              "rank_l4": 5,
+              "rank_total": 7
             },
             {
               "club_number": "28679044",
@@ -771,10 +771,10 @@
               "total": 19,
               "active_members": 27,
               "distinguished_status": "M",
-              "rank_l1": 38,
-              "rank_l2": 33,
+              "rank_l1": 37,
+              "rank_l2": 32,
               "rank_l3": 2,
-              "rank_l4": 7,
+              "rank_l4": 6,
               "rank_total": 9
             },
             {
@@ -787,10 +787,10 @@
               "total": 15,
               "active_members": 11,
               "distinguished_status": "",
-              "rank_l1": 27,
-              "rank_l2": 7,
-              "rank_l3": 64,
-              "rank_l4": 107,
+              "rank_l1": 26,
+              "rank_l2": 6,
+              "rank_l3": 62,
+              "rank_l4": 106,
               "rank_total": 36
             },
             {
@@ -803,11 +803,11 @@
               "total": 8,
               "active_members": 10,
               "distinguished_status": "",
-              "rank_l1": 97,
+              "rank_l1": 96,
               "rank_l2": 103,
-              "rank_l3": 49,
+              "rank_l3": 47,
               "rank_l4": 55,
-              "rank_total": 88
+              "rank_total": 86
             },
             {
               "club_number": "07156385",
@@ -819,11 +819,11 @@
               "total": 8,
               "active_members": 8,
               "distinguished_status": "D",
-              "rank_l1": 73,
+              "rank_l1": 72,
               "rank_l2": 92,
-              "rank_l3": 102,
-              "rank_l4": 108,
-              "rank_total": 89
+              "rank_l3": 101,
+              "rank_l4": 107,
+              "rank_total": 87
             },
             {
               "club_number": "28675642",
@@ -833,7 +833,7 @@
               "level3": 0,
               "level4": 0,
               "total": 2,
-              "active_members": 13,
+              "active_members": 12,
               "distinguished_status": "",
               "rank_l1": 124,
               "rank_l2": 111,
@@ -843,7 +843,7 @@
             }
           ],
           "rank_in_division": 1,
-          "rank_l1": 5,
+          "rank_l1": 4,
           "rank_l2": 3,
           "rank_l3": 2,
           "rank_l4": 3,
@@ -870,7 +870,7 @@
               "distinguished_status": "M",
               "rank_l1": 5,
               "rank_l2": 19,
-              "rank_l3": 82,
+              "rank_l3": 81,
               "rank_l4": 82,
               "rank_total": 11
             },
@@ -884,9 +884,9 @@
               "total": 14,
               "active_members": 23,
               "distinguished_status": "P",
-              "rank_l1": 44,
-              "rank_l2": 46,
-              "rank_l3": 60,
+              "rank_l1": 43,
+              "rank_l2": 45,
+              "rank_l3": 58,
               "rank_l4": 24,
               "rank_total": 44
             },
@@ -900,11 +900,11 @@
               "total": 13,
               "active_members": 31,
               "distinguished_status": "M",
-              "rank_l1": 61,
-              "rank_l2": 12,
-              "rank_l3": 43,
+              "rank_l1": 60,
+              "rank_l2": 11,
+              "rank_l3": 41,
               "rank_l4": 49,
-              "rank_total": 52
+              "rank_total": 51
             },
             {
               "club_number": "04703328",
@@ -919,7 +919,7 @@
               "rank_l1": 118,
               "rank_l2": 82,
               "rank_l3": 116,
-              "rank_l4": 97,
+              "rank_l4": 96,
               "rank_total": 113
             },
             {
@@ -950,26 +950,26 @@
         {
           "area": "03",
           "level1": 16,
-          "level2": 10,
+          "level2": 9,
           "level3": 5,
           "level4": 7,
-          "total": 38,
+          "total": 37,
           "clubs": [
             {
               "club_number": "01391757",
               "club_name": "Dialog Toastmasters Club",
               "level1": 9,
-              "level2": 6,
+              "level2": 5,
               "level3": 2,
               "level4": 3,
-              "total": 20,
+              "total": 19,
               "active_members": 26,
               "distinguished_status": "M",
               "rank_l1": 6,
-              "rank_l2": 4,
-              "rank_l3": 45,
+              "rank_l2": 12,
+              "rank_l3": 43,
               "rank_l4": 19,
-              "rank_total": 5
+              "rank_total": 8
             },
             {
               "club_number": "01223622",
@@ -981,11 +981,11 @@
               "total": 11,
               "active_members": 21,
               "distinguished_status": "P",
-              "rank_l1": 77,
+              "rank_l1": 76,
               "rank_l2": 78,
-              "rank_l3": 68,
+              "rank_l3": 66,
               "rank_l4": 71,
-              "rank_total": 76
+              "rank_total": 74
             },
             {
               "club_number": "02804733",
@@ -999,7 +999,7 @@
               "distinguished_status": "",
               "rank_l1": 104,
               "rank_l2": 104,
-              "rank_l3": 95,
+              "rank_l3": 94,
               "rank_l4": 56,
               "rank_total": 98
             },
@@ -1038,9 +1038,9 @@
           ],
           "rank_in_division": 3,
           "rank_l1": 17,
-          "rank_l2": 23,
+          "rank_l2": 27,
           "rank_l3": 27,
-          "rank_l4": 18,
+          "rank_l4": 17,
           "rank_total": 20,
           "rank_in_district": 20
         },
@@ -1062,9 +1062,9 @@
               "total": 15,
               "active_members": 26,
               "distinguished_status": "M",
-              "rank_l1": 15,
-              "rank_l2": 28,
-              "rank_l3": 40,
+              "rank_l1": 14,
+              "rank_l2": 27,
+              "rank_l3": 38,
               "rank_l4": 45,
               "rank_total": 31
             },
@@ -1078,11 +1078,11 @@
               "total": 11,
               "active_members": 22,
               "distinguished_status": "P",
-              "rank_l1": 54,
-              "rank_l2": 73,
-              "rank_l3": 33,
+              "rank_l1": 53,
+              "rank_l2": 72,
+              "rank_l3": 32,
               "rank_l4": 41,
-              "rank_total": 72
+              "rank_total": 71
             },
             {
               "club_number": "01888115",
@@ -1094,10 +1094,10 @@
               "total": 4,
               "active_members": 26,
               "distinguished_status": "D",
-              "rank_l1": 55,
+              "rank_l1": 54,
               "rank_l2": 128,
-              "rank_l3": 113,
-              "rank_l4": 119,
+              "rank_l3": 112,
+              "rank_l4": 118,
               "rank_total": 112
             },
             {
@@ -1143,7 +1143,7 @@
         }
       ],
       "rank": 3,
-      "rank_l1": 3,
+      "rank_l1": 2,
       "rank_l2": 3,
       "rank_l3": 3,
       "rank_l4": 4,
@@ -1151,11 +1151,11 @@
     },
     {
       "division": "I",
-      "level1": 68,
+      "level1": 67,
       "level2": 56,
       "level3": 28,
       "level4": 25,
-      "total": 177,
+      "total": 176,
       "club_count": 15,
       "areas": [
         {
@@ -1176,11 +1176,11 @@
               "total": 18,
               "active_members": 31,
               "distinguished_status": "M",
-              "rank_l1": 26,
+              "rank_l1": 25,
               "rank_l2": 3,
-              "rank_l3": 58,
+              "rank_l3": 56,
               "rank_l4": 64,
-              "rank_total": 14
+              "rank_total": 13
             },
             {
               "club_number": "06650357",
@@ -1192,11 +1192,11 @@
               "total": 17,
               "active_members": 27,
               "distinguished_status": "M",
-              "rank_l1": 17,
-              "rank_l2": 5,
-              "rank_l3": 46,
+              "rank_l1": 16,
+              "rank_l2": 4,
+              "rank_l3": 44,
               "rank_l4": 51,
-              "rank_total": 20
+              "rank_total": 19
             },
             {
               "club_number": "07794099",
@@ -1208,9 +1208,9 @@
               "total": 15,
               "active_members": 33,
               "distinguished_status": "M",
-              "rank_l1": 16,
-              "rank_l2": 30,
-              "rank_l3": 42,
+              "rank_l1": 15,
+              "rank_l2": 29,
+              "rank_l3": 40,
               "rank_l4": 48,
               "rank_total": 32
             },
@@ -1225,8 +1225,8 @@
               "active_members": 20,
               "distinguished_status": "P",
               "rank_l1": 81,
-              "rank_l2": 56,
-              "rank_l3": 73,
+              "rank_l2": 55,
+              "rank_l3": 71,
               "rank_l4": 74,
               "rank_total": 64
             }
@@ -1234,7 +1234,7 @@
           "rank_in_division": 1,
           "rank_l1": 8,
           "rank_l2": 1,
-          "rank_l3": 12,
+          "rank_l3": 11,
           "rank_l4": 13,
           "rank_total": 4,
           "rank_in_district": 4
@@ -1273,9 +1273,9 @@
               "total": 12,
               "active_members": 26,
               "distinguished_status": "M",
-              "rank_l1": 52,
+              "rank_l1": 51,
               "rank_l2": 22,
-              "rank_l3": 31,
+              "rank_l3": 30,
               "rank_l4": 39,
               "rank_total": 56
             },
@@ -1289,28 +1289,28 @@
               "total": 6,
               "active_members": 9,
               "distinguished_status": "",
-              "rank_l1": 42,
+              "rank_l1": 41,
               "rank_l2": 143,
               "rank_l3": 136,
-              "rank_l4": 102,
+              "rank_l4": 101,
               "rank_total": 100
             }
           ],
           "rank_in_division": 2,
-          "rank_l1": 11,
+          "rank_l1": 10,
           "rank_l2": 11,
           "rank_l3": 25,
           "rank_l4": 24,
-          "rank_total": 14,
-          "rank_in_district": 14
+          "rank_total": 13,
+          "rank_in_district": 13
         },
         {
           "area": "04",
-          "level1": 14,
+          "level1": 13,
           "level2": 10,
           "level3": 7,
           "level4": 6,
-          "total": 37,
+          "total": 36,
           "clubs": [
             {
               "club_number": "00822324",
@@ -1322,9 +1322,9 @@
               "total": 14,
               "active_members": 25,
               "distinguished_status": "M",
-              "rank_l1": 43,
-              "rank_l2": 45,
-              "rank_l3": 57,
+              "rank_l1": 42,
+              "rank_l2": 44,
+              "rank_l3": 55,
               "rank_l4": 23,
               "rank_total": 43
             },
@@ -1338,27 +1338,27 @@
               "total": 13,
               "active_members": 20,
               "distinguished_status": "P",
-              "rank_l1": 69,
-              "rank_l2": 44,
+              "rank_l1": 68,
+              "rank_l2": 43,
               "rank_l3": 15,
               "rank_l4": 63,
-              "rank_total": 53
+              "rank_total": 52
             },
             {
               "club_number": "07913101",
               "club_name": "Peradeniya University Toastmasters Club",
-              "level1": 5,
+              "level1": 4,
               "level2": 2,
               "level3": 2,
               "level4": 1,
-              "total": 10,
+              "total": 9,
               "active_members": 16,
               "distinguished_status": "",
-              "rank_l1": 47,
+              "rank_l1": 80,
               "rank_l2": 96,
-              "rank_l3": 72,
-              "rank_l4": 110,
-              "rank_total": 78
+              "rank_l3": 70,
+              "rank_l4": 109,
+              "rank_total": 82
             },
             {
               "club_number": "28679036",
@@ -1378,12 +1378,12 @@
             }
           ],
           "rank_in_division": 3,
-          "rank_l1": 21,
-          "rank_l2": 24,
-          "rank_l3": 18,
+          "rank_l1": 24,
+          "rank_l2": 23,
+          "rank_l3": 17,
           "rank_l4": 28,
-          "rank_total": 22,
-          "rank_in_district": 22
+          "rank_total": 23,
+          "rank_in_district": 23
         },
         {
           "area": "01",
@@ -1403,9 +1403,9 @@
               "total": 12,
               "active_members": 38,
               "distinguished_status": "M",
-              "rank_l1": 62,
-              "rank_l2": 35,
-              "rank_l3": 48,
+              "rank_l1": 61,
+              "rank_l2": 34,
+              "rank_l3": 46,
               "rank_l4": 54,
               "rank_total": 58
             },
@@ -1419,11 +1419,11 @@
               "total": 9,
               "active_members": 20,
               "distinguished_status": "S",
-              "rank_l1": 96,
+              "rank_l1": 95,
               "rank_l2": 85,
-              "rank_l3": 41,
+              "rank_l3": 39,
               "rank_l4": 46,
-              "rank_total": 82
+              "rank_total": 80
             },
             {
               "club_number": "07287138",
@@ -1439,7 +1439,7 @@
               "rank_l2": 91,
               "rank_l3": 16,
               "rank_l4": 140,
-              "rank_total": 95
+              "rank_total": 94
             },
             {
               "club_number": "04903005",
@@ -1453,15 +1453,15 @@
               "distinguished_status": "",
               "rank_l1": 103,
               "rank_l2": 84,
-              "rank_l3": 94,
-              "rank_l4": 98,
+              "rank_l3": 93,
+              "rank_l4": 97,
               "rank_total": 97
             }
           ],
           "rank_in_division": 4,
           "rank_l1": 27,
           "rank_l2": 21,
-          "rank_l3": 9,
+          "rank_l3": 8,
           "rank_l4": 30,
           "rank_total": 25,
           "rank_in_district": 25
@@ -1476,11 +1476,11 @@
     },
     {
       "division": "C",
-      "level1": 74,
+      "level1": 73,
       "level2": 47,
       "level3": 26,
       "level4": 27,
-      "total": 174,
+      "total": 173,
       "club_count": 18,
       "areas": [
         {
@@ -1501,11 +1501,11 @@
               "total": 17,
               "active_members": 27,
               "distinguished_status": "M",
-              "rank_l1": 14,
-              "rank_l2": 27,
-              "rank_l3": 39,
+              "rank_l1": 13,
+              "rank_l2": 26,
+              "rank_l3": 37,
               "rank_l4": 11,
-              "rank_total": 19
+              "rank_total": 18
             },
             {
               "club_number": "06519630",
@@ -1517,11 +1517,11 @@
               "total": 14,
               "active_members": 40,
               "distinguished_status": "M",
-              "rank_l1": 49,
-              "rank_l2": 62,
+              "rank_l1": 47,
+              "rank_l2": 61,
               "rank_l3": 22,
               "rank_l4": 79,
-              "rank_total": 47
+              "rank_total": 46
             },
             {
               "club_number": "01016391",
@@ -1533,11 +1533,11 @@
               "total": 13,
               "active_members": 20,
               "distinguished_status": "P",
-              "rank_l1": 57,
+              "rank_l1": 56,
               "rank_l2": 24,
               "rank_l3": 11,
               "rank_l4": 43,
-              "rank_total": 51
+              "rank_total": 50
             },
             {
               "club_number": "28678693",
@@ -1549,11 +1549,11 @@
               "total": 8,
               "active_members": 20,
               "distinguished_status": "D",
-              "rank_l1": 39,
+              "rank_l1": 38,
               "rank_l2": 77,
               "rank_l3": 127,
               "rank_l4": 129,
-              "rank_total": 87
+              "rank_total": 85
             },
             {
               "club_number": "07484508",
@@ -1565,42 +1565,42 @@
               "total": 7,
               "active_members": 20,
               "distinguished_status": "S",
-              "rank_l1": 71,
+              "rank_l1": 70,
               "rank_l2": 90,
               "rank_l3": 139,
-              "rank_l4": 104,
-              "rank_total": 94
+              "rank_l4": 103,
+              "rank_total": 93
             }
           ],
           "rank_in_division": 1,
-          "rank_l1": 6,
+          "rank_l1": 5,
           "rank_l2": 4,
-          "rank_l3": 14,
+          "rank_l3": 13,
           "rank_l4": 7,
           "rank_total": 5,
           "rank_in_district": 5
         },
         {
           "area": "02",
-          "level1": 28,
+          "level1": 27,
           "level2": 14,
           "level3": 7,
           "level4": 6,
-          "total": 55,
+          "total": 54,
           "clubs": [
             {
               "club_number": "28678621",
               "club_name": "ECU Sri Lanka Toastmasters Club",
-              "level1": 15,
+              "level1": 14,
               "level2": 4,
               "level3": 2,
               "level4": 2,
-              "total": 23,
+              "total": 22,
               "active_members": 28,
               "distinguished_status": "M",
               "rank_l1": 2,
-              "rank_l2": 34,
-              "rank_l3": 47,
+              "rank_l2": 33,
+              "rank_l3": 45,
               "rank_l4": 52,
               "rank_total": 3
             },
@@ -1615,10 +1615,10 @@
               "active_members": 38,
               "distinguished_status": "M",
               "rank_l1": 9,
-              "rank_l2": 32,
-              "rank_l3": 44,
+              "rank_l2": 31,
+              "rank_l3": 42,
               "rank_l4": 50,
-              "rank_total": 25
+              "rank_total": 24
             },
             {
               "club_number": "07780371",
@@ -1630,11 +1630,11 @@
               "total": 13,
               "active_members": 26,
               "distinguished_status": "M",
-              "rank_l1": 51,
-              "rank_l2": 9,
-              "rank_l3": 29,
+              "rank_l1": 50,
+              "rank_l2": 8,
+              "rank_l3": 28,
               "rank_l4": 36,
-              "rank_total": 48
+              "rank_total": 47
             },
             {
               "club_number": "03835845",
@@ -1648,7 +1648,7 @@
               "distinguished_status": "",
               "rank_l1": 123,
               "rank_l2": 107,
-              "rank_l3": 97,
+              "rank_l3": 96,
               "rank_l4": 136,
               "rank_total": 124
             }
@@ -1656,7 +1656,7 @@
           "rank_in_division": 2,
           "rank_l1": 2,
           "rank_l2": 12,
-          "rank_l3": 17,
+          "rank_l3": 16,
           "rank_l4": 25,
           "rank_total": 8,
           "rank_in_district": 8
@@ -1679,9 +1679,9 @@
               "total": 14,
               "active_members": 29,
               "distinguished_status": "M",
-              "rank_l1": 45,
-              "rank_l2": 47,
-              "rank_l3": 61,
+              "rank_l1": 44,
+              "rank_l2": 46,
+              "rank_l3": 59,
               "rank_l4": 25,
               "rank_total": 45
             },
@@ -1695,11 +1695,11 @@
               "total": 12,
               "active_members": 27,
               "distinguished_status": "M",
-              "rank_l1": 85,
-              "rank_l2": 60,
-              "rank_l3": 75,
+              "rank_l1": 84,
+              "rank_l2": 59,
+              "rank_l3": 73,
               "rank_l4": 77,
-              "rank_total": 67
+              "rank_total": 66
             },
             {
               "club_number": "07974483",
@@ -1727,7 +1727,7 @@
               "total": 3,
               "active_members": 11,
               "distinguished_status": "",
-              "rank_l1": 98,
+              "rank_l1": 97,
               "rank_l2": 146,
               "rank_l3": 143,
               "rank_l4": 142,
@@ -1751,10 +1751,10 @@
             }
           ],
           "rank_in_division": 3,
-          "rank_l1": 23,
+          "rank_l1": 22,
           "rank_l2": 28,
           "rank_l3": 30,
-          "rank_l4": 19,
+          "rank_l4": 18,
           "rank_total": 26,
           "rank_in_district": 26
         },
@@ -1776,11 +1776,11 @@
               "total": 17,
               "active_members": 56,
               "distinguished_status": "M",
-              "rank_l1": 35,
-              "rank_l2": 10,
+              "rank_l1": 34,
+              "rank_l2": 9,
               "rank_l3": 5,
               "rank_l4": 16,
-              "rank_total": 18
+              "rank_total": 17
             },
             {
               "club_number": "05477954",
@@ -1790,11 +1790,11 @@
               "level3": 1,
               "level4": 0,
               "total": 5,
-              "active_members": 13,
+              "active_members": 12,
               "distinguished_status": "",
               "rank_l1": 106,
               "rank_l2": 87,
-              "rank_l3": 99,
+              "rank_l3": 98,
               "rank_l4": 138,
               "rank_total": 108
             },
@@ -1810,8 +1810,8 @@
               "distinguished_status": "D",
               "rank_l1": 155,
               "rank_l2": 155,
-              "rank_l3": 77,
-              "rank_l4": 111,
+              "rank_l3": 75,
+              "rank_l4": 110,
               "rank_total": 128
             },
             {
@@ -1827,14 +1827,14 @@
               "rank_l1": 128,
               "rank_l2": 158,
               "rank_l3": 157,
-              "rank_l4": 115,
+              "rank_l4": 114,
               "rank_total": 135
             }
           ],
           "rank_in_division": 4,
           "rank_l1": 33,
           "rank_l2": 31,
-          "rank_l3": 16,
+          "rank_l3": 14,
           "rank_l4": 31,
           "rank_total": 32,
           "rank_in_district": 32
@@ -1843,17 +1843,17 @@
       "rank": 5,
       "rank_l1": 4,
       "rank_l2": 5,
-      "rank_l3": 6,
-      "rank_l4": 6,
+      "rank_l3": 5,
+      "rank_l4": 5,
       "rank_total": 5
     },
     {
       "division": "H",
-      "level1": 60,
+      "level1": 59,
       "level2": 39,
       "level3": 24,
       "level4": 39,
-      "total": 162,
+      "total": 161,
       "club_count": 18,
       "areas": [
         {
@@ -1874,8 +1874,8 @@
               "total": 21,
               "active_members": 25,
               "distinguished_status": "M",
-              "rank_l1": 48,
-              "rank_l2": 61,
+              "rank_l1": 46,
+              "rank_l2": 60,
               "rank_l3": 4,
               "rank_l4": 3,
               "rank_total": 4
@@ -1890,11 +1890,11 @@
               "total": 20,
               "active_members": 39,
               "distinguished_status": "M",
-              "rank_l1": 79,
-              "rank_l2": 52,
+              "rank_l1": 78,
+              "rank_l2": 51,
               "rank_l3": 7,
               "rank_l4": 2,
-              "rank_total": 7
+              "rank_total": 6
             },
             {
               "club_number": "01378886",
@@ -1907,8 +1907,8 @@
               "active_members": 60,
               "distinguished_status": "M",
               "rank_l1": 11,
-              "rank_l2": 54,
-              "rank_l3": 70,
+              "rank_l2": 53,
+              "rank_l3": 68,
               "rank_l4": 29,
               "rank_total": 22
             },
@@ -1946,7 +1946,7 @@
             }
           ],
           "rank_in_division": 1,
-          "rank_l1": 12,
+          "rank_l1": 11,
           "rank_l2": 14,
           "rank_l3": 3,
           "rank_l4": 1,
@@ -1955,11 +1955,11 @@
         },
         {
           "area": "01",
-          "level1": 19,
+          "level1": 18,
           "level2": 11,
           "level3": 3,
           "level4": 4,
-          "total": 37,
+          "total": 36,
           "clubs": [
             {
               "club_number": "01514977",
@@ -1971,27 +1971,11 @@
               "total": 18,
               "active_members": 33,
               "distinguished_status": "M",
-              "rank_l1": 20,
-              "rank_l2": 8,
-              "rank_l3": 26,
+              "rank_l1": 19,
+              "rank_l2": 7,
+              "rank_l3": 25,
               "rank_l4": 89,
-              "rank_total": 17
-            },
-            {
-              "club_number": "28678062",
-              "club_name": "United Tractors Toastmasters Club",
-              "level1": 6,
-              "level2": 2,
-              "level3": 0,
-              "level4": 0,
-              "total": 8,
-              "active_members": 32,
-              "distinguished_status": "D",
-              "rank_l1": 31,
-              "rank_l2": 98,
-              "rank_l3": 156,
-              "rank_l4": 156,
-              "rank_total": 91
+              "rank_total": 16
             },
             {
               "club_number": "07390865",
@@ -2003,10 +1987,26 @@
               "total": 7,
               "active_members": 20,
               "distinguished_status": "S",
-              "rank_l1": 78,
+              "rank_l1": 77,
               "rank_l2": 94,
               "rank_l3": 142,
-              "rank_l4": 109,
+              "rank_l4": 108,
+              "rank_total": 95
+            },
+            {
+              "club_number": "28678062",
+              "club_name": "United Tractors Toastmasters Club",
+              "level1": 5,
+              "level2": 2,
+              "level3": 0,
+              "level4": 0,
+              "total": 7,
+              "active_members": 32,
+              "distinguished_status": "D",
+              "rank_l1": 48,
+              "rank_l2": 98,
+              "rank_l3": 156,
+              "rank_l4": 156,
               "rank_total": 96
             },
             {
@@ -2022,12 +2022,12 @@
               "rank_l1": 111,
               "rank_l2": 116,
               "rank_l3": 153,
-              "rank_l4": 112,
+              "rank_l4": 111,
               "rank_total": 120
             }
           ],
           "rank_in_division": 2,
-          "rank_l1": 10,
+          "rank_l1": 13,
           "rank_l2": 19,
           "rank_l3": 34,
           "rank_l4": 34,
@@ -2052,9 +2052,9 @@
               "total": 12,
               "active_members": 20,
               "distinguished_status": "P",
-              "rank_l1": 74,
-              "rank_l2": 49,
-              "rank_l3": 65,
+              "rank_l1": 73,
+              "rank_l2": 48,
+              "rank_l3": 63,
               "rank_l4": 66,
               "rank_total": 62
             },
@@ -2069,8 +2069,8 @@
               "active_members": 29,
               "distinguished_status": "M",
               "rank_l1": 82,
-              "rank_l2": 57,
-              "rank_l3": 74,
+              "rank_l2": 56,
+              "rank_l3": 72,
               "rank_l4": 75,
               "rank_total": 65
             },
@@ -2084,11 +2084,11 @@
               "total": 12,
               "active_members": 25,
               "distinguished_status": "M",
-              "rank_l1": 87,
-              "rank_l2": 63,
-              "rank_l3": 80,
+              "rank_l1": 86,
+              "rank_l2": 62,
+              "rank_l3": 78,
               "rank_l4": 80,
-              "rank_total": 68
+              "rank_total": 67
             },
             {
               "club_number": "28675349",
@@ -2102,8 +2102,8 @@
               "distinguished_status": "",
               "rank_l1": 131,
               "rank_l2": 127,
-              "rank_l3": 112,
-              "rank_l4": 118,
+              "rank_l3": 111,
+              "rank_l4": 117,
               "rank_total": 143
             },
             {
@@ -2147,13 +2147,13 @@
               "level3": 1,
               "level4": 3,
               "total": 11,
-              "active_members": 27,
+              "active_members": 25,
               "distinguished_status": "S",
-              "rank_l1": 24,
+              "rank_l1": 23,
               "rank_l2": 108,
-              "rank_l3": 100,
+              "rank_l3": 99,
               "rank_l4": 21,
-              "rank_total": 75
+              "rank_total": 73
             },
             {
               "club_number": "28675770",
@@ -2165,11 +2165,11 @@
               "total": 10,
               "active_members": 29,
               "distinguished_status": "P",
-              "rank_l1": 88,
+              "rank_l1": 87,
               "rank_l2": 97,
-              "rank_l3": 81,
+              "rank_l3": 79,
               "rank_l4": 81,
-              "rank_total": 79
+              "rank_total": 77
             },
             {
               "club_number": "07855253",
@@ -2183,7 +2183,7 @@
               "distinguished_status": "",
               "rank_l1": 130,
               "rank_l2": 126,
-              "rank_l3": 92,
+              "rank_l3": 91,
               "rank_l4": 40,
               "rank_total": 122
             },
@@ -2200,12 +2200,12 @@
               "rank_l1": 139,
               "rank_l2": 136,
               "rank_l3": 128,
-              "rank_l4": 99,
+              "rank_l4": 98,
               "rank_total": 138
             }
           ],
           "rank_in_division": 4,
-          "rank_l1": 31,
+          "rank_l1": 30,
           "rank_l2": 35,
           "rank_l3": 31,
           "rank_l4": 14,
@@ -2216,17 +2216,17 @@
       "rank": 6,
       "rank_l1": 7,
       "rank_l2": 8,
-      "rank_l3": 8,
+      "rank_l3": 7,
       "rank_l4": 2,
       "rank_total": 6
     },
     {
       "division": "B",
-      "level1": 66,
+      "level1": 65,
       "level2": 40,
-      "level3": 21,
+      "level3": 20,
       "level4": 23,
-      "total": 150,
+      "total": 148,
       "club_count": 19,
       "areas": [
         {
@@ -2248,7 +2248,7 @@
               "active_members": 34,
               "distinguished_status": "M",
               "rank_l1": 8,
-              "rank_l2": 31,
+              "rank_l2": 30,
               "rank_l3": 12,
               "rank_l4": 18,
               "rank_total": 12
@@ -2263,9 +2263,9 @@
               "total": 16,
               "active_members": 25,
               "distinguished_status": "M",
-              "rank_l1": 13,
-              "rank_l2": 66,
-              "rank_l3": 84,
+              "rank_l1": 12,
+              "rank_l2": 65,
+              "rank_l3": 83,
               "rank_l4": 83,
               "rank_total": 29
             },
@@ -2279,7 +2279,7 @@
               "total": 5,
               "active_members": 20,
               "distinguished_status": "D",
-              "rank_l1": 86,
+              "rank_l1": 85,
               "rank_l2": 115,
               "rank_l3": 152,
               "rank_l4": 153,
@@ -2295,7 +2295,7 @@
               "total": 4,
               "active_members": 16,
               "distinguished_status": "D",
-              "rank_l1": 70,
+              "rank_l1": 69,
               "rank_l2": 144,
               "rank_l3": 137,
               "rank_l4": 139,
@@ -2320,7 +2320,7 @@
           ],
           "rank_in_division": 1,
           "rank_l1": 7,
-          "rank_l2": 27,
+          "rank_l2": 26,
           "rank_l3": 26,
           "rank_l4": 32,
           "rank_total": 15,
@@ -2328,11 +2328,11 @@
         },
         {
           "area": "04",
-          "level1": 19,
+          "level1": 18,
           "level2": 7,
-          "level3": 8,
+          "level3": 7,
           "level4": 7,
-          "total": 41,
+          "total": 39,
           "clubs": [
             {
               "club_number": "07980472",
@@ -2342,45 +2342,45 @@
               "level3": 2,
               "level4": 4,
               "total": 15,
-              "active_members": 26,
-              "distinguished_status": "M",
-              "rank_l1": 50,
-              "rank_l2": 69,
-              "rank_l3": 88,
+              "active_members": 24,
+              "distinguished_status": "P",
+              "rank_l1": 49,
+              "rank_l2": 68,
+              "rank_l3": 87,
               "rank_l4": 15,
               "rank_total": 39
             },
             {
               "club_number": "05477573",
               "club_name": "PIM Toastmasters",
-              "level1": 7,
+              "level1": 6,
               "level2": 2,
               "level3": 3,
               "level4": 2,
-              "total": 14,
+              "total": 13,
               "active_members": 30,
               "distinguished_status": "P",
-              "rank_l1": 18,
+              "rank_l1": 28,
               "rank_l2": 95,
               "rank_l3": 18,
               "rank_l4": 72,
-              "rank_total": 46
+              "rank_total": 55
             },
             {
               "club_number": "06547554",
               "club_name": "Synopsys Lanka Toastmasters Club",
               "level1": 4,
               "level2": 1,
-              "level3": 3,
+              "level3": 2,
               "level4": 1,
-              "total": 9,
+              "total": 8,
               "active_members": 21,
               "distinguished_status": "D",
-              "rank_l1": 89,
+              "rank_l1": 88,
               "rank_l2": 117,
-              "rank_l3": 23,
-              "rank_l4": 113,
-              "rank_total": 84
+              "rank_l3": 80,
+              "rank_l4": 112,
+              "rank_total": 89
             },
             {
               "club_number": "28679248",
@@ -2392,20 +2392,20 @@
               "total": 3,
               "active_members": 20,
               "distinguished_status": "",
-              "rank_l1": 95,
+              "rank_l1": 94,
               "rank_l2": 125,
-              "rank_l3": 111,
-              "rank_l4": 117,
+              "rank_l3": 110,
+              "rank_l4": 116,
               "rank_total": 121
             }
           ],
           "rank_in_division": 2,
           "rank_l1": 14,
           "rank_l2": 32,
-          "rank_l3": 15,
-          "rank_l4": 21,
-          "rank_total": 17,
-          "rank_in_district": 17
+          "rank_l3": 18,
+          "rank_l4": 20,
+          "rank_total": 18,
+          "rank_in_district": 18
         },
         {
           "area": "01",
@@ -2425,9 +2425,9 @@
               "total": 12,
               "active_members": 26,
               "distinguished_status": "M",
-              "rank_l1": 56,
+              "rank_l1": 55,
               "rank_l2": 23,
-              "rank_l3": 36,
+              "rank_l3": 35,
               "rank_l4": 42,
               "rank_total": 57
             },
@@ -2441,9 +2441,9 @@
               "total": 12,
               "active_members": 25,
               "distinguished_status": "M",
-              "rank_l1": 76,
-              "rank_l2": 51,
-              "rank_l3": 67,
+              "rank_l1": 75,
+              "rank_l2": 50,
+              "rank_l3": 65,
               "rank_l4": 70,
               "rank_total": 63
             },
@@ -2457,11 +2457,11 @@
               "total": 11,
               "active_members": 36,
               "distinguished_status": "P",
-              "rank_l1": 37,
-              "rank_l2": 29,
+              "rank_l1": 36,
+              "rank_l2": 28,
               "rank_l3": 120,
               "rank_l4": 47,
-              "rank_total": 74
+              "rank_total": 72
             },
             {
               "club_number": "07225230",
@@ -2497,12 +2497,12 @@
             }
           ],
           "rank_in_division": 3,
-          "rank_l1": 22,
+          "rank_l1": 21,
           "rank_l2": 13,
           "rank_l3": 28,
-          "rank_l4": 23,
-          "rank_total": 23,
-          "rank_in_district": 23
+          "rank_l4": 22,
+          "rank_total": 22,
+          "rank_in_district": 22
         },
         {
           "area": "03",
@@ -2522,11 +2522,11 @@
               "total": 12,
               "active_members": 29,
               "distinguished_status": "M",
-              "rank_l1": 94,
-              "rank_l2": 71,
-              "rank_l3": 89,
+              "rank_l1": 93,
+              "rank_l2": 70,
+              "rank_l3": 88,
               "rank_l4": 90,
-              "rank_total": 71
+              "rank_total": 70
             },
             {
               "club_number": "04859680",
@@ -2539,10 +2539,10 @@
               "active_members": 20,
               "distinguished_status": "P",
               "rank_l1": 115,
-              "rank_l2": 72,
-              "rank_l3": 90,
+              "rank_l2": 71,
+              "rank_l3": 89,
               "rank_l4": 91,
-              "rank_total": 80
+              "rank_total": 78
             },
             {
               "club_number": "28678848",
@@ -2554,11 +2554,11 @@
               "total": 7,
               "active_members": 17,
               "distinguished_status": "",
-              "rank_l1": 60,
+              "rank_l1": 59,
               "rank_l2": 75,
               "rank_l3": 115,
               "rank_l4": 121,
-              "rank_total": 92
+              "rank_total": 91
             },
             {
               "club_number": "07792006",
@@ -2572,7 +2572,7 @@
               "distinguished_status": "",
               "rank_l1": 132,
               "rank_l2": 129,
-              "rank_l3": 114,
+              "rank_l3": 113,
               "rank_l4": 94,
               "rank_total": 136
             },
@@ -2594,7 +2594,7 @@
             }
           ],
           "rank_in_division": 4,
-          "rank_l1": 32,
+          "rank_l1": 31,
           "rank_l2": 20,
           "rank_l3": 32,
           "rank_l4": 33,
@@ -2613,18 +2613,18 @@
       "division": "E",
       "level1": 45,
       "level2": 42,
-      "level3": 24,
+      "level3": 23,
       "level4": 25,
-      "total": 136,
+      "total": 135,
       "club_count": 17,
       "areas": [
         {
           "area": "02",
           "level1": 14,
           "level2": 15,
-          "level3": 9,
+          "level3": 8,
           "level4": 7,
-          "total": 45,
+          "total": 44,
           "clubs": [
             {
               "club_number": "05505274",
@@ -2636,8 +2636,8 @@
               "total": 15,
               "active_members": 27,
               "distinguished_status": "M",
-              "rank_l1": 22,
-              "rank_l2": 39,
+              "rank_l1": 21,
+              "rank_l2": 38,
               "rank_l3": 14,
               "rank_l4": 59,
               "rank_total": 33
@@ -2652,9 +2652,9 @@
               "total": 15,
               "active_members": 45,
               "distinguished_status": "M",
-              "rank_l1": 65,
-              "rank_l2": 6,
-              "rank_l3": 52,
+              "rank_l1": 64,
+              "rank_l2": 5,
+              "rank_l3": 50,
               "rank_l4": 20,
               "rank_total": 34
             },
@@ -2663,16 +2663,16 @@
               "club_name": "CBA Toastmasters Club",
               "level1": 4,
               "level2": 3,
-              "level3": 1,
+              "level3": 0,
               "level4": 0,
-              "total": 8,
+              "total": 7,
               "active_members": 21,
               "distinguished_status": "D",
-              "rank_l1": 58,
-              "rank_l2": 74,
-              "rank_l3": 93,
-              "rank_l4": 120,
-              "rank_total": 86
+              "rank_l1": 57,
+              "rank_l2": 73,
+              "rank_l3": 114,
+              "rank_l4": 119,
+              "rank_total": 90
             },
             {
               "club_number": "06046112",
@@ -2686,7 +2686,7 @@
               "distinguished_status": "D",
               "rank_l1": 146,
               "rank_l2": 110,
-              "rank_l3": 103,
+              "rank_l3": 102,
               "rank_l4": 67,
               "rank_total": 119
             },
@@ -2702,18 +2702,18 @@
               "distinguished_status": "",
               "rank_l1": 157,
               "rank_l2": 119,
-              "rank_l3": 86,
+              "rank_l3": 85,
               "rank_l4": 154,
               "rank_total": 130
             }
           ],
           "rank_in_division": 1,
           "rank_l1": 20,
-          "rank_l2": 9,
-          "rank_l3": 7,
-          "rank_l4": 16,
-          "rank_total": 13,
-          "rank_in_district": 13
+          "rank_l2": 8,
+          "rank_l3": 10,
+          "rank_l4": 15,
+          "rank_total": 14,
+          "rank_in_district": 14
         },
         {
           "area": "03",
@@ -2737,7 +2737,7 @@
               "rank_l2": 18,
               "rank_l3": 21,
               "rank_l4": 14,
-              "rank_total": 16
+              "rank_total": 15
             },
             {
               "club_number": "28678609",
@@ -2747,11 +2747,11 @@
               "level3": 2,
               "level4": 2,
               "total": 12,
-              "active_members": 23,
+              "active_members": 22,
               "distinguished_status": "P",
-              "rank_l1": 67,
-              "rank_l2": 41,
-              "rank_l3": 54,
+              "rank_l1": 66,
+              "rank_l2": 40,
+              "rank_l3": 52,
               "rank_l4": 60,
               "rank_total": 60
             },
@@ -2763,11 +2763,11 @@
               "level3": 3,
               "level4": 0,
               "total": 6,
-              "active_members": 11,
+              "active_members": 10,
               "distinguished_status": "",
               "rank_l1": 114,
               "rank_l2": 122,
-              "rank_l3": 27,
+              "rank_l3": 26,
               "rank_l4": 158,
               "rank_total": 104
             },
@@ -2789,12 +2789,12 @@
             }
           ],
           "rank_in_division": 2,
-          "rank_l1": 24,
+          "rank_l1": 23,
           "rank_l2": 15,
-          "rank_l3": 13,
+          "rank_l3": 12,
           "rank_l4": 26,
-          "rank_total": 18,
-          "rank_in_district": 18
+          "rank_total": 17,
+          "rank_in_district": 17
         },
         {
           "area": "01",
@@ -2815,10 +2815,10 @@
               "active_members": 35,
               "distinguished_status": "M",
               "rank_l1": 3,
-              "rank_l2": 50,
+              "rank_l2": 49,
               "rank_l3": 6,
               "rank_l4": 69,
-              "rank_total": 6
+              "rank_total": 5
             },
             {
               "club_number": "00007595",
@@ -2830,9 +2830,9 @@
               "total": 15,
               "active_members": 38,
               "distinguished_status": "M",
-              "rank_l1": 90,
-              "rank_l2": 65,
-              "rank_l3": 83,
+              "rank_l1": 89,
+              "rank_l2": 64,
+              "rank_l3": 82,
               "rank_l4": 9,
               "rank_total": 38
             },
@@ -2849,7 +2849,7 @@
               "rank_l1": 142,
               "rank_l2": 86,
               "rank_l3": 132,
-              "rank_l4": 100,
+              "rank_l4": 99,
               "rank_total": 123
             },
             {
@@ -2864,8 +2864,8 @@
               "distinguished_status": "",
               "rank_l1": 129,
               "rank_l2": 124,
-              "rank_l3": 110,
-              "rank_l4": 116,
+              "rank_l3": 109,
+              "rank_l4": 115,
               "rank_total": 142
             }
           ],
@@ -2895,11 +2895,11 @@
               "total": 9,
               "active_members": 30,
               "distinguished_status": "S",
-              "rank_l1": 75,
+              "rank_l1": 74,
               "rank_l2": 93,
-              "rank_l3": 104,
+              "rank_l3": 103,
               "rank_l4": 68,
-              "rank_total": 83
+              "rank_total": 81
             },
             {
               "club_number": "00861227",
@@ -2962,26 +2962,26 @@
       "rank": 8,
       "rank_l1": 8,
       "rank_l2": 6,
-      "rank_l3": 7,
+      "rank_l3": 8,
       "rank_l4": 7,
       "rank_total": 8
     },
     {
       "division": "G",
       "level1": 39,
-      "level2": 33,
-      "level3": 27,
-      "level4": 28,
-      "total": 127,
+      "level2": 32,
+      "level3": 26,
+      "level4": 27,
+      "total": 124,
       "club_count": 17,
       "areas": [
         {
           "area": "01",
           "level1": 17,
-          "level2": 15,
-          "level3": 8,
-          "level4": 7,
-          "total": 47,
+          "level2": 14,
+          "level3": 7,
+          "level4": 6,
+          "total": 44,
           "clubs": [
             {
               "club_number": "00642857",
@@ -2993,8 +2993,8 @@
               "total": 14,
               "active_members": 73,
               "distinguished_status": "M",
-              "rank_l1": 40,
-              "rank_l2": 37,
+              "rank_l1": 39,
+              "rank_l2": 36,
               "rank_l3": 13,
               "rank_l4": 58,
               "rank_total": 42
@@ -3009,9 +3009,9 @@
               "total": 12,
               "active_members": 29,
               "distinguished_status": "M",
-              "rank_l1": 68,
-              "rank_l2": 43,
-              "rank_l3": 56,
+              "rank_l1": 67,
+              "rank_l2": 42,
+              "rank_l3": 54,
               "rank_l4": 62,
               "rank_total": 61
             },
@@ -3019,17 +3019,17 @@
               "club_number": "04559377",
               "club_name": "CBL Foods Toastmasters Club",
               "level1": 4,
-              "level2": 4,
-              "level3": 2,
-              "level4": 1,
-              "total": 11,
+              "level2": 3,
+              "level3": 1,
+              "level4": 0,
+              "total": 8,
               "active_members": 29,
-              "distinguished_status": "P",
-              "rank_l1": 59,
-              "rank_l2": 25,
-              "rank_l3": 37,
-              "rank_l4": 96,
-              "rank_total": 73
+              "distinguished_status": "D",
+              "rank_l1": 58,
+              "rank_l2": 74,
+              "rank_l3": 92,
+              "rank_l4": 120,
+              "rank_total": 84
             },
             {
               "club_number": "01317290",
@@ -3043,7 +3043,7 @@
               "distinguished_status": "D",
               "rank_l1": 102,
               "rank_l2": 100,
-              "rank_l3": 91,
+              "rank_l3": 90,
               "rank_l4": 93,
               "rank_total": 105
             },
@@ -3060,15 +3060,15 @@
               "rank_l1": 108,
               "rank_l2": 89,
               "rank_l3": 138,
-              "rank_l4": 103,
+              "rank_l4": 102,
               "rank_total": 109
             }
           ],
           "rank_in_division": 1,
           "rank_l1": 15,
-          "rank_l2": 8,
-          "rank_l3": 10,
-          "rank_l4": 15,
+          "rank_l2": 9,
+          "rank_l3": 15,
+          "rank_l4": 23,
           "rank_total": 12,
           "rank_in_district": 12
         },
@@ -3090,7 +3090,7 @@
               "total": 19,
               "active_members": 31,
               "distinguished_status": "M",
-              "rank_l1": 19,
+              "rank_l1": 18,
               "rank_l2": 17,
               "rank_l3": 3,
               "rank_l4": 76,
@@ -3106,11 +3106,11 @@
               "total": 12,
               "active_members": 25,
               "distinguished_status": "M",
-              "rank_l1": 92,
-              "rank_l2": 68,
-              "rank_l3": 87,
+              "rank_l1": 91,
+              "rank_l2": 67,
+              "rank_l3": 86,
               "rank_l4": 85,
-              "rank_total": 70
+              "rank_total": 69
             },
             {
               "club_number": "07207259",
@@ -3124,9 +3124,9 @@
               "distinguished_status": "",
               "rank_l1": 116,
               "rank_l2": 81,
-              "rank_l3": 34,
+              "rank_l3": 33,
               "rank_l4": 17,
-              "rank_total": 85
+              "rank_total": 83
             },
             {
               "club_number": "00649172",
@@ -3140,7 +3140,7 @@
               "distinguished_status": "",
               "rank_l1": 154,
               "rank_l2": 113,
-              "rank_l3": 107,
+              "rank_l3": 106,
               "rank_l4": 151,
               "rank_total": 133
             },
@@ -3165,7 +3165,7 @@
           "rank_l1": 25,
           "rank_l2": 16,
           "rank_l3": 5,
-          "rank_l4": 17,
+          "rank_l4": 16,
           "rank_total": 16,
           "rank_in_district": 16
         },
@@ -3185,13 +3185,13 @@
               "level3": 2,
               "level4": 5,
               "total": 13,
-              "active_members": 24,
+              "active_members": 21,
               "distinguished_status": "P",
-              "rank_l1": 53,
+              "rank_l1": 52,
               "rank_l2": 80,
-              "rank_l3": 32,
-              "rank_l4": 5,
-              "rank_total": 50
+              "rank_l3": 31,
+              "rank_l4": 4,
+              "rank_total": 49
             },
             {
               "club_number": "01223810",
@@ -3205,9 +3205,9 @@
               "distinguished_status": "",
               "rank_l1": 107,
               "rank_l2": 88,
-              "rank_l3": 101,
+              "rank_l3": 100,
               "rank_l4": 61,
-              "rank_total": 93
+              "rank_total": 92
             },
             {
               "club_number": "28676100",
@@ -3230,7 +3230,7 @@
           "rank_l1": 34,
           "rank_l2": 33,
           "rank_l3": 35,
-          "rank_l4": 20,
+          "rank_l4": 19,
           "rank_total": 34,
           "rank_in_district": 34
         },
@@ -3254,9 +3254,9 @@
               "distinguished_status": "S",
               "rank_l1": 101,
               "rank_l2": 99,
-              "rank_l3": 28,
+              "rank_l3": 27,
               "rank_l4": 92,
-              "rank_total": 81
+              "rank_total": 79
             },
             {
               "club_number": "07901236",
@@ -3270,7 +3270,7 @@
               "distinguished_status": "",
               "rank_l1": 126,
               "rank_l2": 153,
-              "rank_l3": 76,
+              "rank_l3": 74,
               "rank_l4": 33,
               "rank_total": 101
             },
@@ -3286,7 +3286,7 @@
               "distinguished_status": "",
               "rank_l1": 148,
               "rank_l2": 148,
-              "rank_l3": 105,
+              "rank_l3": 104,
               "rank_l4": 73,
               "rank_total": 127
             },
@@ -3311,7 +3311,7 @@
           "rank_l1": 36,
           "rank_l2": 36,
           "rank_l3": 23,
-          "rank_l4": 22,
+          "rank_l4": 21,
           "rank_total": 35,
           "rank_in_district": 35
         }
@@ -3319,8 +3319,8 @@
       "rank": 9,
       "rank_l1": 9,
       "rank_l2": 9,
-      "rank_l3": 5,
-      "rank_l4": 5,
+      "rank_l3": 6,
+      "rank_l4": 6,
       "rank_total": 9
     }
   ],
@@ -3369,16 +3369,16 @@
       "club_name": "ECU Sri Lanka Toastmasters Club",
       "division": "C",
       "area": "02",
-      "level1": 15,
+      "level1": 14,
       "level2": 4,
       "level3": 2,
       "level4": 2,
-      "total": 23,
+      "total": 22,
       "active_members": 28,
       "distinguished_status": "M",
       "rank_l1": 2,
-      "rank_l2": 34,
-      "rank_l3": 47,
+      "rank_l2": 33,
+      "rank_l3": 45,
       "rank_l4": 52,
       "rank_total": 3
     },
@@ -3395,33 +3395,14 @@
       "total": 21,
       "active_members": 25,
       "distinguished_status": "M",
-      "rank_l1": 48,
-      "rank_l2": 61,
+      "rank_l1": 46,
+      "rank_l2": 60,
       "rank_l3": 4,
       "rank_l4": 3,
       "rank_total": 4
     },
     {
       "rank": 5,
-      "club_number": "01391757",
-      "club_name": "Dialog Toastmasters Club",
-      "division": "A",
-      "area": "03",
-      "level1": 9,
-      "level2": 6,
-      "level3": 2,
-      "level4": 3,
-      "total": 20,
-      "active_members": 26,
-      "distinguished_status": "M",
-      "rank_l1": 6,
-      "rank_l2": 4,
-      "rank_l3": 45,
-      "rank_l4": 19,
-      "rank_total": 5
-    },
-    {
-      "rank": 6,
       "club_number": "28677141",
       "club_name": "NHCO Toastmasters Club",
       "division": "E",
@@ -3434,13 +3415,13 @@
       "active_members": 35,
       "distinguished_status": "M",
       "rank_l1": 3,
-      "rank_l2": 50,
+      "rank_l2": 49,
       "rank_l3": 6,
       "rank_l4": 69,
-      "rank_total": 6
+      "rank_total": 5
     },
     {
-      "rank": 7,
+      "rank": 6,
       "club_number": "01818104",
       "club_name": "Negombo Toastmasters",
       "division": "H",
@@ -3452,14 +3433,14 @@
       "total": 20,
       "active_members": 39,
       "distinguished_status": "M",
-      "rank_l1": 79,
-      "rank_l2": 52,
+      "rank_l1": 78,
+      "rank_l2": 51,
       "rank_l3": 7,
       "rank_l4": 2,
-      "rank_total": 7
+      "rank_total": 6
     },
     {
-      "rank": 8,
+      "rank": 7,
       "club_number": "07986971",
       "club_name": "Baurs Toastmasters Club (BTC)",
       "division": "A",
@@ -3471,10 +3452,29 @@
       "total": 19,
       "active_members": 31,
       "distinguished_status": "M",
-      "rank_l1": 21,
-      "rank_l2": 11,
+      "rank_l1": 20,
+      "rank_l2": 10,
       "rank_l3": 10,
-      "rank_l4": 6,
+      "rank_l4": 5,
+      "rank_total": 7
+    },
+    {
+      "rank": 8,
+      "club_number": "01391757",
+      "club_name": "Dialog Toastmasters Club",
+      "division": "A",
+      "area": "03",
+      "level1": 9,
+      "level2": 5,
+      "level3": 2,
+      "level4": 3,
+      "total": 19,
+      "active_members": 26,
+      "distinguished_status": "M",
+      "rank_l1": 6,
+      "rank_l2": 12,
+      "rank_l3": 43,
+      "rank_l4": 19,
       "rank_total": 8
     },
     {
@@ -3490,10 +3490,10 @@
       "total": 19,
       "active_members": 27,
       "distinguished_status": "M",
-      "rank_l1": 38,
-      "rank_l2": 33,
+      "rank_l1": 37,
+      "rank_l2": 32,
       "rank_l3": 2,
-      "rank_l4": 7,
+      "rank_l4": 6,
       "rank_total": 9
     },
     {
@@ -3509,7 +3509,7 @@
       "total": 19,
       "active_members": 31,
       "distinguished_status": "M",
-      "rank_l1": 19,
+      "rank_l1": 18,
       "rank_l2": 17,
       "rank_l3": 3,
       "rank_l4": 76,
@@ -3530,7 +3530,7 @@
       "distinguished_status": "M",
       "rank_l1": 5,
       "rank_l2": 19,
-      "rank_l3": 82,
+      "rank_l3": 81,
       "rank_l4": 82,
       "rank_total": 11
     },
@@ -3548,32 +3548,13 @@
       "active_members": 34,
       "distinguished_status": "M",
       "rank_l1": 8,
-      "rank_l2": 31,
+      "rank_l2": 30,
       "rank_l3": 12,
       "rank_l4": 18,
       "rank_total": 12
     },
     {
       "rank": 13,
-      "club_number": "00614737",
-      "club_name": "IESL Toastmasters Club",
-      "division": "D",
-      "area": "04",
-      "level1": 6,
-      "level2": 4,
-      "level3": 2,
-      "level4": 6,
-      "total": 18,
-      "active_members": 42,
-      "distinguished_status": "M",
-      "rank_l1": 23,
-      "rank_l2": 40,
-      "rank_l3": 53,
-      "rank_l4": 4,
-      "rank_total": 13
-    },
-    {
-      "rank": 14,
       "club_number": "06602877",
       "club_name": "Kegalle Toastmasters Club",
       "division": "I",
@@ -3585,14 +3566,14 @@
       "total": 18,
       "active_members": 31,
       "distinguished_status": "M",
-      "rank_l1": 26,
+      "rank_l1": 25,
       "rank_l2": 3,
-      "rank_l3": 58,
+      "rank_l3": 56,
       "rank_l4": 64,
-      "rank_total": 14
+      "rank_total": 13
     },
     {
-      "rank": 15,
+      "rank": 14,
       "club_number": "28676698",
       "club_name": "Martin Bauer Hayleys Toastmasters Club",
       "division": "F",
@@ -3607,11 +3588,11 @@
       "rank_l1": 7,
       "rank_l2": 14,
       "rank_l3": 17,
-      "rank_l4": 106,
-      "rank_total": 15
+      "rank_l4": 105,
+      "rank_total": 14
     },
     {
-      "rank": 16,
+      "rank": 15,
       "club_number": "00630851",
       "club_name": "Smedley Toastmasters Club",
       "division": "E",
@@ -3627,10 +3608,10 @@
       "rank_l2": 18,
       "rank_l3": 21,
       "rank_l4": 14,
-      "rank_total": 16
+      "rank_total": 15
     },
     {
-      "rank": 17,
+      "rank": 16,
       "club_number": "01514977",
       "club_name": "Wattala Toastmasters Club",
       "division": "H",
@@ -3642,14 +3623,14 @@
       "total": 18,
       "active_members": 33,
       "distinguished_status": "M",
-      "rank_l1": 20,
-      "rank_l2": 8,
-      "rank_l3": 26,
+      "rank_l1": 19,
+      "rank_l2": 7,
+      "rank_l3": 25,
       "rank_l4": 89,
-      "rank_total": 17
+      "rank_total": 16
     },
     {
-      "rank": 18,
+      "rank": 17,
       "club_number": "03598897",
       "club_name": "Awakening Toastmasters",
       "division": "C",
@@ -3661,14 +3642,14 @@
       "total": 17,
       "active_members": 56,
       "distinguished_status": "M",
-      "rank_l1": 35,
-      "rank_l2": 10,
+      "rank_l1": 34,
+      "rank_l2": 9,
       "rank_l3": 5,
       "rank_l4": 16,
-      "rank_total": 18
+      "rank_total": 17
     },
     {
-      "rank": 19,
+      "rank": 18,
       "club_number": "01334805",
       "club_name": "CIPM Toastmasters Club",
       "division": "C",
@@ -3680,14 +3661,14 @@
       "total": 17,
       "active_members": 27,
       "distinguished_status": "M",
-      "rank_l1": 14,
-      "rank_l2": 27,
-      "rank_l3": 39,
+      "rank_l1": 13,
+      "rank_l2": 26,
+      "rank_l3": 37,
       "rank_l4": 11,
-      "rank_total": 19
+      "rank_total": 18
     },
     {
-      "rank": 20,
+      "rank": 19,
       "club_number": "06650357",
       "club_name": "Dowels Toastmasters Club",
       "division": "I",
@@ -3699,10 +3680,29 @@
       "total": 17,
       "active_members": 27,
       "distinguished_status": "M",
-      "rank_l1": 17,
-      "rank_l2": 5,
-      "rank_l3": 46,
+      "rank_l1": 16,
+      "rank_l2": 4,
+      "rank_l3": 44,
       "rank_l4": 51,
+      "rank_total": 19
+    },
+    {
+      "rank": 20,
+      "club_number": "00614737",
+      "club_name": "IESL Toastmasters Club",
+      "division": "D",
+      "area": "04",
+      "level1": 6,
+      "level2": 4,
+      "level3": 2,
+      "level4": 5,
+      "total": 17,
+      "active_members": 42,
+      "distinguished_status": "M",
+      "rank_l1": 22,
+      "rank_l2": 39,
+      "rank_l3": 51,
+      "rank_l4": 8,
       "rank_total": 20
     },
     {
@@ -3720,7 +3720,7 @@
       "distinguished_status": "M",
       "rank_l1": 10,
       "rank_l2": 13,
-      "rank_l3": 59,
+      "rank_l3": 57,
       "rank_l4": 65,
       "rank_total": 21
     },
@@ -3738,32 +3738,13 @@
       "active_members": 60,
       "distinguished_status": "M",
       "rank_l1": 11,
-      "rank_l2": 54,
-      "rank_l3": 70,
+      "rank_l2": 53,
+      "rank_l3": 68,
       "rank_l4": 29,
       "rank_total": 22
     },
     {
       "rank": 23,
-      "club_number": "05270893",
-      "club_name": "PLC Toastmasters Club",
-      "division": "F",
-      "area": "02",
-      "level1": 8,
-      "level2": 4,
-      "level3": 2,
-      "level4": 3,
-      "total": 17,
-      "active_members": 34,
-      "distinguished_status": "M",
-      "rank_l1": 12,
-      "rank_l2": 55,
-      "rank_l3": 71,
-      "rank_l4": 30,
-      "rank_total": 23
-    },
-    {
-      "rank": 24,
       "club_number": "07392229",
       "club_name": "Startup Colombo Toastmasters Club",
       "division": "D",
@@ -3776,13 +3757,13 @@
       "active_members": 20,
       "distinguished_status": "P",
       "rank_l1": 30,
-      "rank_l2": 64,
+      "rank_l2": 63,
       "rank_l3": 8,
       "rank_l4": 34,
-      "rank_total": 24
+      "rank_total": 23
     },
     {
-      "rank": 25,
+      "rank": 24,
       "club_number": "07471485",
       "club_name": "Dehiwala Toastmasters Club",
       "division": "C",
@@ -3795,13 +3776,13 @@
       "active_members": 38,
       "distinguished_status": "M",
       "rank_l1": 9,
-      "rank_l2": 32,
-      "rank_l3": 44,
+      "rank_l2": 31,
+      "rank_l3": 42,
       "rank_l4": 50,
-      "rank_total": 25
+      "rank_total": 24
     },
     {
-      "rank": 26,
+      "rank": 25,
       "club_number": "05231508",
       "club_name": "HSBC Global Service Centre",
       "division": "D",
@@ -3813,14 +3794,14 @@
       "total": 16,
       "active_members": 9,
       "distinguished_status": "",
-      "rank_l1": 41,
-      "rank_l2": 38,
-      "rank_l3": 51,
-      "rank_l4": 8,
-      "rank_total": 26
+      "rank_l1": 40,
+      "rank_l2": 37,
+      "rank_l3": 49,
+      "rank_l4": 7,
+      "rank_total": 25
     },
     {
-      "rank": 27,
+      "rank": 26,
       "club_number": "07390888",
       "club_name": "Matale Toastmasters Club",
       "division": "F",
@@ -3832,14 +3813,14 @@
       "total": 16,
       "active_members": 26,
       "distinguished_status": "M",
-      "rank_l1": 46,
+      "rank_l1": 45,
       "rank_l2": 15,
-      "rank_l3": 63,
+      "rank_l3": 61,
       "rank_l4": 12,
-      "rank_total": 27
+      "rank_total": 26
     },
     {
-      "rank": 28,
+      "rank": 27,
       "club_number": "01861319",
       "club_name": "Moratuwa Toastmasters",
       "division": "D",
@@ -3851,10 +3832,29 @@
       "total": 16,
       "active_members": 40,
       "distinguished_status": "M",
-      "rank_l1": 28,
+      "rank_l1": 27,
       "rank_l2": 16,
-      "rank_l3": 66,
+      "rank_l3": 64,
       "rank_l4": 27,
+      "rank_total": 27
+    },
+    {
+      "rank": 28,
+      "club_number": "05270893",
+      "club_name": "PLC Toastmasters Club",
+      "division": "F",
+      "area": "02",
+      "level1": 7,
+      "level2": 4,
+      "level3": 2,
+      "level4": 3,
+      "total": 16,
+      "active_members": 34,
+      "distinguished_status": "M",
+      "rank_l1": 17,
+      "rank_l2": 54,
+      "rank_l3": 69,
+      "rank_l4": 30,
       "rank_total": 28
     },
     {
@@ -3870,9 +3870,9 @@
       "total": 16,
       "active_members": 25,
       "distinguished_status": "M",
-      "rank_l1": 13,
-      "rank_l2": 66,
-      "rank_l3": 84,
+      "rank_l1": 12,
+      "rank_l2": 65,
+      "rank_l3": 83,
       "rank_l4": 83,
       "rank_total": 29
     },
@@ -3889,9 +3889,9 @@
       "total": 15,
       "active_members": 29,
       "distinguished_status": "M",
-      "rank_l1": 36,
-      "rank_l2": 26,
-      "rank_l3": 38,
+      "rank_l1": 35,
+      "rank_l2": 25,
+      "rank_l3": 36,
       "rank_l4": 10,
       "rank_total": 30
     },
@@ -3908,9 +3908,9 @@
       "total": 15,
       "active_members": 26,
       "distinguished_status": "M",
-      "rank_l1": 15,
-      "rank_l2": 28,
-      "rank_l3": 40,
+      "rank_l1": 14,
+      "rank_l2": 27,
+      "rank_l3": 38,
       "rank_l4": 45,
       "rank_total": 31
     },
@@ -3927,9 +3927,9 @@
       "total": 15,
       "active_members": 33,
       "distinguished_status": "M",
-      "rank_l1": 16,
-      "rank_l2": 30,
-      "rank_l3": 42,
+      "rank_l1": 15,
+      "rank_l2": 29,
+      "rank_l3": 40,
       "rank_l4": 48,
       "rank_total": 32
     },
@@ -3946,8 +3946,8 @@
       "total": 15,
       "active_members": 27,
       "distinguished_status": "M",
-      "rank_l1": 22,
-      "rank_l2": 39,
+      "rank_l1": 21,
+      "rank_l2": 38,
       "rank_l3": 14,
       "rank_l4": 59,
       "rank_total": 33
@@ -3965,9 +3965,9 @@
       "total": 15,
       "active_members": 45,
       "distinguished_status": "M",
-      "rank_l1": 65,
-      "rank_l2": 6,
-      "rank_l3": 52,
+      "rank_l1": 64,
+      "rank_l2": 5,
+      "rank_l3": 50,
       "rank_l4": 20,
       "rank_total": 34
     },
@@ -3984,9 +3984,9 @@
       "total": 15,
       "active_members": 26,
       "distinguished_status": "M",
-      "rank_l1": 25,
-      "rank_l2": 42,
-      "rank_l3": 55,
+      "rank_l1": 24,
+      "rank_l2": 41,
+      "rank_l3": 53,
       "rank_l4": 22,
       "rank_total": 35
     },
@@ -4003,10 +4003,10 @@
       "total": 15,
       "active_members": 11,
       "distinguished_status": "",
-      "rank_l1": 27,
-      "rank_l2": 7,
-      "rank_l3": 64,
-      "rank_l4": 107,
+      "rank_l1": 26,
+      "rank_l2": 6,
+      "rank_l3": 62,
+      "rank_l4": 106,
       "rank_total": 36
     },
     {
@@ -4023,7 +4023,7 @@
       "active_members": 49,
       "distinguished_status": "M",
       "rank_l1": 83,
-      "rank_l2": 58,
+      "rank_l2": 57,
       "rank_l3": 20,
       "rank_l4": 13,
       "rank_total": 37
@@ -4041,9 +4041,9 @@
       "total": 15,
       "active_members": 38,
       "distinguished_status": "M",
-      "rank_l1": 90,
-      "rank_l2": 65,
-      "rank_l3": 83,
+      "rank_l1": 89,
+      "rank_l2": 64,
+      "rank_l3": 82,
       "rank_l4": 9,
       "rank_total": 38
     },
@@ -4058,11 +4058,11 @@
       "level3": 2,
       "level4": 4,
       "total": 15,
-      "active_members": 26,
-      "distinguished_status": "M",
-      "rank_l1": 50,
-      "rank_l2": 69,
-      "rank_l3": 88,
+      "active_members": 24,
+      "distinguished_status": "P",
+      "rank_l1": 49,
+      "rank_l2": 68,
+      "rank_l3": 87,
       "rank_l4": 15,
       "rank_total": 39
     },
@@ -4079,9 +4079,9 @@
       "total": 15,
       "active_members": 44,
       "distinguished_status": "M",
-      "rank_l1": 32,
-      "rank_l2": 70,
-      "rank_l3": 24,
+      "rank_l1": 31,
+      "rank_l2": 69,
+      "rank_l3": 23,
       "rank_l4": 86,
       "rank_total": 40
     },
@@ -4098,7 +4098,7 @@
       "total": 14,
       "active_members": 21,
       "distinguished_status": "P",
-      "rank_l1": 34,
+      "rank_l1": 33,
       "rank_l2": 21,
       "rank_l3": 9,
       "rank_l4": 38,
@@ -4117,8 +4117,8 @@
       "total": 14,
       "active_members": 73,
       "distinguished_status": "M",
-      "rank_l1": 40,
-      "rank_l2": 37,
+      "rank_l1": 39,
+      "rank_l2": 36,
       "rank_l3": 13,
       "rank_l4": 58,
       "rank_total": 42
@@ -4136,9 +4136,9 @@
       "total": 14,
       "active_members": 25,
       "distinguished_status": "M",
-      "rank_l1": 43,
-      "rank_l2": 45,
-      "rank_l3": 57,
+      "rank_l1": 42,
+      "rank_l2": 44,
+      "rank_l3": 55,
       "rank_l4": 23,
       "rank_total": 43
     },
@@ -4155,9 +4155,9 @@
       "total": 14,
       "active_members": 23,
       "distinguished_status": "P",
-      "rank_l1": 44,
-      "rank_l2": 46,
-      "rank_l3": 60,
+      "rank_l1": 43,
+      "rank_l2": 45,
+      "rank_l3": 58,
       "rank_l4": 24,
       "rank_total": 44
     },
@@ -4174,33 +4174,14 @@
       "total": 14,
       "active_members": 29,
       "distinguished_status": "M",
-      "rank_l1": 45,
-      "rank_l2": 47,
-      "rank_l3": 61,
+      "rank_l1": 44,
+      "rank_l2": 46,
+      "rank_l3": 59,
       "rank_l4": 25,
       "rank_total": 45
     },
     {
       "rank": 46,
-      "club_number": "05477573",
-      "club_name": "PIM Toastmasters",
-      "division": "B",
-      "area": "04",
-      "level1": 7,
-      "level2": 2,
-      "level3": 3,
-      "level4": 2,
-      "total": 14,
-      "active_members": 30,
-      "distinguished_status": "P",
-      "rank_l1": 18,
-      "rank_l2": 95,
-      "rank_l3": 18,
-      "rank_l4": 72,
-      "rank_total": 46
-    },
-    {
-      "rank": 47,
       "club_number": "06519630",
       "club_name": "Sri Lanka Customs Toastmasters Club",
       "division": "C",
@@ -4212,14 +4193,14 @@
       "total": 14,
       "active_members": 40,
       "distinguished_status": "M",
-      "rank_l1": 49,
-      "rank_l2": 62,
+      "rank_l1": 47,
+      "rank_l2": 61,
       "rank_l3": 22,
       "rank_l4": 79,
-      "rank_total": 47
+      "rank_total": 46
     },
     {
-      "rank": 48,
+      "rank": 47,
       "club_number": "07780371",
       "club_name": "AATSL Emerging Toastmasters Club",
       "division": "C",
@@ -4231,14 +4212,14 @@
       "total": 13,
       "active_members": 26,
       "distinguished_status": "M",
-      "rank_l1": 51,
-      "rank_l2": 9,
-      "rank_l3": 29,
+      "rank_l1": 50,
+      "rank_l2": 8,
+      "rank_l3": 28,
       "rank_l4": 36,
-      "rank_total": 48
+      "rank_total": 47
     },
     {
-      "rank": 49,
+      "rank": 48,
       "club_number": "01355969",
       "club_name": "AATSL Toastmasters Club",
       "division": "F",
@@ -4250,14 +4231,14 @@
       "total": 13,
       "active_members": 31,
       "distinguished_status": "M",
-      "rank_l1": 33,
+      "rank_l1": 32,
       "rank_l2": 20,
-      "rank_l3": 30,
+      "rank_l3": 29,
       "rank_l4": 37,
-      "rank_total": 49
+      "rank_total": 48
     },
     {
-      "rank": 50,
+      "rank": 49,
       "club_number": "02549382",
       "club_name": "Anuradhapura Toastmasters Club",
       "division": "G",
@@ -4267,16 +4248,16 @@
       "level3": 2,
       "level4": 5,
       "total": 13,
-      "active_members": 24,
+      "active_members": 21,
       "distinguished_status": "P",
-      "rank_l1": 53,
+      "rank_l1": 52,
       "rank_l2": 80,
-      "rank_l3": 32,
-      "rank_l4": 5,
-      "rank_total": 50
+      "rank_l3": 31,
+      "rank_l4": 4,
+      "rank_total": 49
     },
     {
-      "rank": 51,
+      "rank": 50,
       "club_number": "01016391",
       "club_name": "Braybrooke Toastmasters Club",
       "division": "C",
@@ -4288,14 +4269,14 @@
       "total": 13,
       "active_members": 20,
       "distinguished_status": "P",
-      "rank_l1": 57,
+      "rank_l1": 56,
       "rank_l2": 24,
       "rank_l3": 11,
       "rank_l4": 43,
-      "rank_total": 51
+      "rank_total": 50
     },
     {
-      "rank": 52,
+      "rank": 51,
       "club_number": "04032159",
       "club_name": "Commercial Bank Toastmasters Club",
       "division": "A",
@@ -4307,14 +4288,14 @@
       "total": 13,
       "active_members": 31,
       "distinguished_status": "M",
-      "rank_l1": 61,
-      "rank_l2": 12,
-      "rank_l3": 43,
+      "rank_l1": 60,
+      "rank_l2": 11,
+      "rank_l3": 41,
       "rank_l4": 49,
-      "rank_total": 52
+      "rank_total": 51
     },
     {
-      "rank": 53,
+      "rank": 52,
       "club_number": "07232170",
       "club_name": "Kandy Lions Toastmasters Club",
       "division": "I",
@@ -4326,14 +4307,14 @@
       "total": 13,
       "active_members": 20,
       "distinguished_status": "P",
-      "rank_l1": 69,
-      "rank_l2": 44,
+      "rank_l1": 68,
+      "rank_l2": 43,
       "rank_l3": 15,
       "rank_l4": 63,
-      "rank_total": 53
+      "rank_total": 52
     },
     {
-      "rank": 54,
+      "rank": 53,
       "club_number": "01290125",
       "club_name": "Marketers Toastmasters Club",
       "division": "D",
@@ -4345,14 +4326,14 @@
       "total": 13,
       "active_members": 41,
       "distinguished_status": "M",
-      "rank_l1": 72,
-      "rank_l2": 48,
-      "rank_l3": 62,
+      "rank_l1": 71,
+      "rank_l2": 47,
+      "rank_l3": 60,
       "rank_l4": 26,
-      "rank_total": 54
+      "rank_total": 53
     },
     {
-      "rank": 55,
+      "rank": 54,
       "club_number": "01481554",
       "club_name": "Oasis Toastmasters",
       "division": "F",
@@ -4364,10 +4345,29 @@
       "total": 13,
       "active_members": 30,
       "distinguished_status": "M",
-      "rank_l1": 80,
-      "rank_l2": 53,
-      "rank_l3": 69,
+      "rank_l1": 79,
+      "rank_l2": 52,
+      "rank_l3": 67,
       "rank_l4": 28,
+      "rank_total": 54
+    },
+    {
+      "rank": 55,
+      "club_number": "05477573",
+      "club_name": "PIM Toastmasters",
+      "division": "B",
+      "area": "04",
+      "level1": 6,
+      "level2": 2,
+      "level3": 3,
+      "level4": 2,
+      "total": 13,
+      "active_members": 30,
+      "distinguished_status": "P",
+      "rank_l1": 28,
+      "rank_l2": 95,
+      "rank_l3": 18,
+      "rank_l4": 72,
       "rank_total": 55
     },
     {
@@ -4383,9 +4383,9 @@
       "total": 12,
       "active_members": 26,
       "distinguished_status": "M",
-      "rank_l1": 52,
+      "rank_l1": 51,
       "rank_l2": 22,
-      "rank_l3": 31,
+      "rank_l3": 30,
       "rank_l4": 39,
       "rank_total": 56
     },
@@ -4402,9 +4402,9 @@
       "total": 12,
       "active_members": 26,
       "distinguished_status": "M",
-      "rank_l1": 56,
+      "rank_l1": 55,
       "rank_l2": 23,
-      "rank_l3": 36,
+      "rank_l3": 35,
       "rank_l4": 42,
       "rank_total": 57
     },
@@ -4421,9 +4421,9 @@
       "total": 12,
       "active_members": 38,
       "distinguished_status": "M",
-      "rank_l1": 62,
-      "rank_l2": 35,
-      "rank_l3": 48,
+      "rank_l1": 61,
+      "rank_l2": 34,
+      "rank_l3": 46,
       "rank_l4": 54,
       "rank_total": 58
     },
@@ -4440,9 +4440,9 @@
       "total": 12,
       "active_members": 33,
       "distinguished_status": "M",
-      "rank_l1": 64,
-      "rank_l2": 36,
-      "rank_l3": 50,
+      "rank_l1": 63,
+      "rank_l2": 35,
+      "rank_l3": 48,
       "rank_l4": 57,
       "rank_total": 59
     },
@@ -4457,11 +4457,11 @@
       "level3": 2,
       "level4": 2,
       "total": 12,
-      "active_members": 23,
+      "active_members": 22,
       "distinguished_status": "P",
-      "rank_l1": 67,
-      "rank_l2": 41,
-      "rank_l3": 54,
+      "rank_l1": 66,
+      "rank_l2": 40,
+      "rank_l3": 52,
       "rank_l4": 60,
       "rank_total": 60
     },
@@ -4478,9 +4478,9 @@
       "total": 12,
       "active_members": 29,
       "distinguished_status": "M",
-      "rank_l1": 68,
-      "rank_l2": 43,
-      "rank_l3": 56,
+      "rank_l1": 67,
+      "rank_l2": 42,
+      "rank_l3": 54,
       "rank_l4": 62,
       "rank_total": 61
     },
@@ -4497,9 +4497,9 @@
       "total": 12,
       "active_members": 20,
       "distinguished_status": "P",
-      "rank_l1": 74,
-      "rank_l2": 49,
-      "rank_l3": 65,
+      "rank_l1": 73,
+      "rank_l2": 48,
+      "rank_l3": 63,
       "rank_l4": 66,
       "rank_total": 62
     },
@@ -4516,9 +4516,9 @@
       "total": 12,
       "active_members": 25,
       "distinguished_status": "M",
-      "rank_l1": 76,
-      "rank_l2": 51,
-      "rank_l3": 67,
+      "rank_l1": 75,
+      "rank_l2": 50,
+      "rank_l3": 65,
       "rank_l4": 70,
       "rank_total": 63
     },
@@ -4536,8 +4536,8 @@
       "active_members": 20,
       "distinguished_status": "P",
       "rank_l1": 81,
-      "rank_l2": 56,
-      "rank_l3": 73,
+      "rank_l2": 55,
+      "rank_l3": 71,
       "rank_l4": 74,
       "rank_total": 64
     },
@@ -4555,32 +4555,13 @@
       "active_members": 29,
       "distinguished_status": "M",
       "rank_l1": 82,
-      "rank_l2": 57,
-      "rank_l3": 74,
+      "rank_l2": 56,
+      "rank_l3": 72,
       "rank_l4": 75,
       "rank_total": 65
     },
     {
       "rank": 66,
-      "club_number": "01244213",
-      "club_name": "Readers Toastmasters Club",
-      "division": "F",
-      "area": "04",
-      "level1": 4,
-      "level2": 4,
-      "level3": 1,
-      "level4": 3,
-      "total": 12,
-      "active_members": 32,
-      "distinguished_status": "P",
-      "rank_l1": 84,
-      "rank_l2": 59,
-      "rank_l3": 106,
-      "rank_l4": 32,
-      "rank_total": 66
-    },
-    {
-      "rank": 67,
       "club_number": "00002773",
       "club_name": "Sampath Bank Toastmasters Club",
       "division": "C",
@@ -4592,14 +4573,14 @@
       "total": 12,
       "active_members": 27,
       "distinguished_status": "M",
-      "rank_l1": 85,
-      "rank_l2": 60,
-      "rank_l3": 75,
+      "rank_l1": 84,
+      "rank_l2": 59,
+      "rank_l3": 73,
       "rank_l4": 77,
-      "rank_total": 67
+      "rank_total": 66
     },
     {
-      "rank": 68,
+      "rank": 67,
       "club_number": "00007639",
       "club_name": "SriLankan Airlines Toastmasters Club",
       "division": "H",
@@ -4611,14 +4592,14 @@
       "total": 12,
       "active_members": 25,
       "distinguished_status": "M",
-      "rank_l1": 87,
-      "rank_l2": 63,
-      "rank_l3": 80,
+      "rank_l1": 86,
+      "rank_l2": 62,
+      "rank_l3": 78,
       "rank_l4": 80,
-      "rank_total": 68
+      "rank_total": 67
     },
     {
-      "rank": 69,
+      "rank": 68,
       "club_number": "07980809",
       "club_name": "Torrington Toastmasters Club",
       "division": "D",
@@ -4630,14 +4611,14 @@
       "total": 12,
       "active_members": 35,
       "distinguished_status": "M",
-      "rank_l1": 91,
-      "rank_l2": 67,
-      "rank_l3": 85,
+      "rank_l1": 90,
+      "rank_l2": 66,
+      "rank_l3": 84,
       "rank_l4": 84,
-      "rank_total": 69
+      "rank_total": 68
     },
     {
-      "rank": 70,
+      "rank": 69,
       "club_number": "07794085",
       "club_name": "UOC Toastmasters Club",
       "division": "G",
@@ -4649,14 +4630,14 @@
       "total": 12,
       "active_members": 25,
       "distinguished_status": "M",
-      "rank_l1": 92,
-      "rank_l2": 68,
-      "rank_l3": 87,
+      "rank_l1": 91,
+      "rank_l2": 67,
+      "rank_l3": 86,
       "rank_l4": 85,
-      "rank_total": 70
+      "rank_total": 69
     },
     {
-      "rank": 71,
+      "rank": 70,
       "club_number": "06989204",
       "club_name": "Wednesday 7 Toastmasters Club",
       "division": "B",
@@ -4668,14 +4649,14 @@
       "total": 12,
       "active_members": 29,
       "distinguished_status": "M",
-      "rank_l1": 94,
-      "rank_l2": 71,
-      "rank_l3": 89,
+      "rank_l1": 93,
+      "rank_l2": 70,
+      "rank_l3": 88,
       "rank_l4": 90,
-      "rank_total": 71
+      "rank_total": 70
     },
     {
-      "rank": 72,
+      "rank": 71,
       "club_number": "28676662",
       "club_name": "BOI Toastmasters Club",
       "division": "A",
@@ -4687,33 +4668,14 @@
       "total": 11,
       "active_members": 22,
       "distinguished_status": "P",
-      "rank_l1": 54,
-      "rank_l2": 73,
-      "rank_l3": 33,
+      "rank_l1": 53,
+      "rank_l2": 72,
+      "rank_l3": 32,
       "rank_l4": 41,
-      "rank_total": 72
+      "rank_total": 71
     },
     {
-      "rank": 73,
-      "club_number": "04559377",
-      "club_name": "CBL Foods Toastmasters Club",
-      "division": "G",
-      "area": "01",
-      "level1": 4,
-      "level2": 4,
-      "level3": 2,
-      "level4": 1,
-      "total": 11,
-      "active_members": 29,
-      "distinguished_status": "P",
-      "rank_l1": 59,
-      "rank_l2": 25,
-      "rank_l3": 37,
-      "rank_l4": 96,
-      "rank_total": 73
-    },
-    {
-      "rank": 74,
+      "rank": 72,
       "club_number": "07860947",
       "club_name": "Central Colombo Toastmasters Club",
       "division": "B",
@@ -4725,14 +4687,14 @@
       "total": 11,
       "active_members": 36,
       "distinguished_status": "P",
-      "rank_l1": 37,
-      "rank_l2": 29,
+      "rank_l1": 36,
+      "rank_l2": 28,
       "rank_l3": 120,
       "rank_l4": 47,
-      "rank_total": 74
+      "rank_total": 72
     },
     {
-      "rank": 75,
+      "rank": 73,
       "club_number": "06604478",
       "club_name": "Ja-Ela Toastmasters Club",
       "division": "H",
@@ -4742,16 +4704,16 @@
       "level3": 1,
       "level4": 3,
       "total": 11,
-      "active_members": 27,
+      "active_members": 25,
       "distinguished_status": "S",
-      "rank_l1": 24,
+      "rank_l1": 23,
       "rank_l2": 108,
-      "rank_l3": 100,
+      "rank_l3": 99,
       "rank_l4": 21,
-      "rank_total": 75
+      "rank_total": 73
     },
     {
-      "rank": 76,
+      "rank": 74,
       "club_number": "01223622",
       "club_name": "Nations Toastmasters",
       "division": "A",
@@ -4763,14 +4725,33 @@
       "total": 11,
       "active_members": 21,
       "distinguished_status": "P",
-      "rank_l1": 77,
+      "rank_l1": 76,
       "rank_l2": 78,
-      "rank_l3": 68,
+      "rank_l3": 66,
       "rank_l4": 71,
-      "rank_total": 76
+      "rank_total": 74
     },
     {
-      "rank": 77,
+      "rank": 75,
+      "club_number": "01244213",
+      "club_name": "Readers Toastmasters Club",
+      "division": "F",
+      "area": "04",
+      "level1": 3,
+      "level2": 4,
+      "level3": 1,
+      "level4": 3,
+      "total": 11,
+      "active_members": 32,
+      "distinguished_status": "S",
+      "rank_l1": 98,
+      "rank_l2": 58,
+      "rank_l3": 105,
+      "rank_l4": 32,
+      "rank_total": 75
+    },
+    {
+      "rank": 76,
       "club_number": "07111975",
       "club_name": "Voice Your Dream Toastmasters Club",
       "division": "F",
@@ -4784,31 +4765,12 @@
       "distinguished_status": "",
       "rank_l1": 100,
       "rank_l2": 79,
-      "rank_l3": 25,
+      "rank_l3": 24,
       "rank_l4": 87,
-      "rank_total": 77
+      "rank_total": 76
     },
     {
-      "rank": 78,
-      "club_number": "07913101",
-      "club_name": "Peradeniya University Toastmasters Club",
-      "division": "I",
-      "area": "04",
-      "level1": 5,
-      "level2": 2,
-      "level3": 2,
-      "level4": 1,
-      "total": 10,
-      "active_members": 16,
-      "distinguished_status": "",
-      "rank_l1": 47,
-      "rank_l2": 96,
-      "rank_l3": 72,
-      "rank_l4": 110,
-      "rank_total": 78
-    },
-    {
-      "rank": 79,
+      "rank": 77,
       "club_number": "28675770",
       "club_name": "Star Garments Toastmasters Club",
       "division": "H",
@@ -4820,14 +4782,14 @@
       "total": 10,
       "active_members": 29,
       "distinguished_status": "P",
-      "rank_l1": 88,
+      "rank_l1": 87,
       "rank_l2": 97,
-      "rank_l3": 81,
+      "rank_l3": 79,
       "rank_l4": 81,
-      "rank_total": 79
+      "rank_total": 77
     },
     {
-      "rank": 80,
+      "rank": 78,
       "club_number": "04859680",
       "club_name": "Zone24x7 Toastmasters Club",
       "division": "B",
@@ -4840,13 +4802,13 @@
       "active_members": 20,
       "distinguished_status": "P",
       "rank_l1": 115,
-      "rank_l2": 72,
-      "rank_l3": 90,
+      "rank_l2": 71,
+      "rank_l3": 89,
       "rank_l4": 91,
-      "rank_total": 80
+      "rank_total": 78
     },
     {
-      "rank": 81,
+      "rank": 79,
       "club_number": "07987754",
       "club_name": "hSenid Toastmasters Club",
       "division": "G",
@@ -4860,12 +4822,12 @@
       "distinguished_status": "S",
       "rank_l1": 101,
       "rank_l2": 99,
-      "rank_l3": 28,
+      "rank_l3": 27,
       "rank_l4": 92,
-      "rank_total": 81
+      "rank_total": 79
     },
     {
-      "rank": 82,
+      "rank": 80,
       "club_number": "07855572",
       "club_name": "Capital Toastmasters Club",
       "division": "I",
@@ -4877,14 +4839,14 @@
       "total": 9,
       "active_members": 20,
       "distinguished_status": "S",
-      "rank_l1": 96,
+      "rank_l1": 95,
       "rank_l2": 85,
-      "rank_l3": 41,
+      "rank_l3": 39,
       "rank_l4": 46,
-      "rank_total": 82
+      "rank_total": 80
     },
     {
-      "rank": 83,
+      "rank": 81,
       "club_number": "03578140",
       "club_name": "NDB Toastmasters",
       "division": "E",
@@ -4896,33 +4858,33 @@
       "total": 9,
       "active_members": 30,
       "distinguished_status": "S",
-      "rank_l1": 75,
+      "rank_l1": 74,
       "rank_l2": 93,
-      "rank_l3": 104,
+      "rank_l3": 103,
       "rank_l4": 68,
-      "rank_total": 83
+      "rank_total": 81
     },
     {
-      "rank": 84,
-      "club_number": "06547554",
-      "club_name": "Synopsys Lanka Toastmasters Club",
-      "division": "B",
+      "rank": 82,
+      "club_number": "07913101",
+      "club_name": "Peradeniya University Toastmasters Club",
+      "division": "I",
       "area": "04",
       "level1": 4,
-      "level2": 1,
-      "level3": 3,
+      "level2": 2,
+      "level3": 2,
       "level4": 1,
       "total": 9,
-      "active_members": 21,
-      "distinguished_status": "D",
-      "rank_l1": 89,
-      "rank_l2": 117,
-      "rank_l3": 23,
-      "rank_l4": 113,
-      "rank_total": 84
+      "active_members": 16,
+      "distinguished_status": "",
+      "rank_l1": 80,
+      "rank_l2": 96,
+      "rank_l3": 70,
+      "rank_l4": 109,
+      "rank_total": 82
     },
     {
-      "rank": 85,
+      "rank": 83,
       "club_number": "07207259",
       "club_name": "Battaramulla Toastmasters Club",
       "division": "G",
@@ -4936,31 +4898,31 @@
       "distinguished_status": "",
       "rank_l1": 116,
       "rank_l2": 81,
-      "rank_l3": 34,
+      "rank_l3": 33,
       "rank_l4": 17,
-      "rank_total": 85
+      "rank_total": 83
     },
     {
-      "rank": 86,
-      "club_number": "04631334",
-      "club_name": "CBA Toastmasters Club",
-      "division": "E",
-      "area": "02",
+      "rank": 84,
+      "club_number": "04559377",
+      "club_name": "CBL Foods Toastmasters Club",
+      "division": "G",
+      "area": "01",
       "level1": 4,
       "level2": 3,
       "level3": 1,
       "level4": 0,
       "total": 8,
-      "active_members": 21,
+      "active_members": 29,
       "distinguished_status": "D",
       "rank_l1": 58,
       "rank_l2": 74,
-      "rank_l3": 93,
+      "rank_l3": 92,
       "rank_l4": 120,
-      "rank_total": 86
+      "rank_total": 84
     },
     {
-      "rank": 87,
+      "rank": 85,
       "club_number": "28678693",
       "club_name": "Eswaran Brothers Toastmasters Club",
       "division": "C",
@@ -4972,14 +4934,14 @@
       "total": 8,
       "active_members": 20,
       "distinguished_status": "D",
-      "rank_l1": 39,
+      "rank_l1": 38,
       "rank_l2": 77,
       "rank_l3": 127,
       "rank_l4": 129,
-      "rank_total": 87
+      "rank_total": 85
     },
     {
-      "rank": 88,
+      "rank": 86,
       "club_number": "28677378",
       "club_name": "GTN Toastmasters Club",
       "division": "A",
@@ -4991,14 +4953,14 @@
       "total": 8,
       "active_members": 10,
       "distinguished_status": "",
-      "rank_l1": 97,
+      "rank_l1": 96,
       "rank_l2": 103,
-      "rank_l3": 49,
+      "rank_l3": 47,
       "rank_l4": 55,
-      "rank_total": 88
+      "rank_total": 86
     },
     {
-      "rank": 89,
+      "rank": 87,
       "club_number": "07156385",
       "club_name": "MillenniumIT ESP Toastmasters",
       "division": "A",
@@ -5010,14 +4972,14 @@
       "total": 8,
       "active_members": 8,
       "distinguished_status": "D",
-      "rank_l1": 73,
+      "rank_l1": 72,
       "rank_l2": 92,
-      "rank_l3": 102,
-      "rank_l4": 108,
-      "rank_total": 89
+      "rank_l3": 101,
+      "rank_l4": 107,
+      "rank_total": 87
     },
     {
-      "rank": 90,
+      "rank": 88,
       "club_number": "01553096",
       "club_name": "Siyane Toastmasters",
       "division": "F",
@@ -5031,31 +4993,50 @@
       "distinguished_status": "S",
       "rank_l1": 99,
       "rank_l2": 114,
-      "rank_l3": 78,
+      "rank_l3": 76,
       "rank_l4": 78,
+      "rank_total": 88
+    },
+    {
+      "rank": 89,
+      "club_number": "06547554",
+      "club_name": "Synopsys Lanka Toastmasters Club",
+      "division": "B",
+      "area": "04",
+      "level1": 4,
+      "level2": 1,
+      "level3": 2,
+      "level4": 1,
+      "total": 8,
+      "active_members": 21,
+      "distinguished_status": "D",
+      "rank_l1": 88,
+      "rank_l2": 117,
+      "rank_l3": 80,
+      "rank_l4": 112,
+      "rank_total": 89
+    },
+    {
+      "rank": 90,
+      "club_number": "04631334",
+      "club_name": "CBA Toastmasters Club",
+      "division": "E",
+      "area": "02",
+      "level1": 4,
+      "level2": 3,
+      "level3": 0,
+      "level4": 0,
+      "total": 7,
+      "active_members": 21,
+      "distinguished_status": "D",
+      "rank_l1": 57,
+      "rank_l2": 73,
+      "rank_l3": 114,
+      "rank_l4": 119,
       "rank_total": 90
     },
     {
       "rank": 91,
-      "club_number": "28678062",
-      "club_name": "United Tractors Toastmasters Club",
-      "division": "H",
-      "area": "01",
-      "level1": 6,
-      "level2": 2,
-      "level3": 0,
-      "level4": 0,
-      "total": 8,
-      "active_members": 32,
-      "distinguished_status": "D",
-      "rank_l1": 31,
-      "rank_l2": 98,
-      "rank_l3": 156,
-      "rank_l4": 156,
-      "rank_total": 91
-    },
-    {
-      "rank": 92,
       "club_number": "28678848",
       "club_name": "CEAT Sri Lanka Toastmasters Club",
       "division": "B",
@@ -5067,14 +5048,14 @@
       "total": 7,
       "active_members": 17,
       "distinguished_status": "",
-      "rank_l1": 60,
+      "rank_l1": 59,
       "rank_l2": 75,
       "rank_l3": 115,
       "rank_l4": 121,
-      "rank_total": 92
+      "rank_total": 91
     },
     {
-      "rank": 93,
+      "rank": 92,
       "club_number": "01223810",
       "club_name": "Jaffna Toastmasters Club (JTMC)",
       "division": "G",
@@ -5088,12 +5069,12 @@
       "distinguished_status": "",
       "rank_l1": 107,
       "rank_l2": 88,
-      "rank_l3": 101,
+      "rank_l3": 100,
       "rank_l4": 61,
-      "rank_total": 93
+      "rank_total": 92
     },
     {
-      "rank": 94,
+      "rank": 93,
       "club_number": "07484508",
       "club_name": "LOLC Toastmasters",
       "division": "C",
@@ -5105,14 +5086,14 @@
       "total": 7,
       "active_members": 20,
       "distinguished_status": "S",
-      "rank_l1": 71,
+      "rank_l1": 70,
       "rank_l2": 90,
       "rank_l3": 139,
-      "rank_l4": 104,
-      "rank_total": 94
+      "rank_l4": 103,
+      "rank_total": 93
     },
     {
-      "rank": 95,
+      "rank": 94,
       "club_number": "07287138",
       "club_name": "Maharagama Toastmasters",
       "division": "I",
@@ -5128,10 +5109,10 @@
       "rank_l2": 91,
       "rank_l3": 16,
       "rank_l4": 140,
-      "rank_total": 95
+      "rank_total": 94
     },
     {
-      "rank": 96,
+      "rank": 95,
       "club_number": "07390865",
       "club_name": "Negombo Speakers Forum",
       "division": "H",
@@ -5143,10 +5124,29 @@
       "total": 7,
       "active_members": 20,
       "distinguished_status": "S",
-      "rank_l1": 78,
+      "rank_l1": 77,
       "rank_l2": 94,
       "rank_l3": 142,
-      "rank_l4": 109,
+      "rank_l4": 108,
+      "rank_total": 95
+    },
+    {
+      "rank": 96,
+      "club_number": "28678062",
+      "club_name": "United Tractors Toastmasters Club",
+      "division": "H",
+      "area": "01",
+      "level1": 5,
+      "level2": 2,
+      "level3": 0,
+      "level4": 0,
+      "total": 7,
+      "active_members": 32,
+      "distinguished_status": "D",
+      "rank_l1": 48,
+      "rank_l2": 98,
+      "rank_l3": 156,
+      "rank_l4": 156,
       "rank_total": 96
     },
     {
@@ -5164,8 +5164,8 @@
       "distinguished_status": "",
       "rank_l1": 103,
       "rank_l2": 84,
-      "rank_l3": 94,
-      "rank_l4": 98,
+      "rank_l3": 93,
+      "rank_l4": 97,
       "rank_total": 97
     },
     {
@@ -5183,7 +5183,7 @@
       "distinguished_status": "",
       "rank_l1": 104,
       "rank_l2": 104,
-      "rank_l3": 95,
+      "rank_l3": 94,
       "rank_l4": 56,
       "rank_total": 98
     },
@@ -5198,12 +5198,12 @@
       "level3": 1,
       "level4": 1,
       "total": 6,
-      "active_members": 13,
+      "active_members": 12,
       "distinguished_status": "",
-      "rank_l1": 66,
+      "rank_l1": 65,
       "rank_l2": 140,
-      "rank_l3": 96,
-      "rank_l4": 101,
+      "rank_l3": 95,
+      "rank_l4": 100,
       "rank_total": 99
     },
     {
@@ -5219,10 +5219,10 @@
       "total": 6,
       "active_members": 9,
       "distinguished_status": "",
-      "rank_l1": 42,
+      "rank_l1": 41,
       "rank_l2": 143,
       "rank_l3": 136,
-      "rank_l4": 102,
+      "rank_l4": 101,
       "rank_total": 100
     },
     {
@@ -5240,7 +5240,7 @@
       "distinguished_status": "",
       "rank_l1": 126,
       "rank_l2": 153,
-      "rank_l3": 76,
+      "rank_l3": 74,
       "rank_l4": 33,
       "rank_total": 101
     },
@@ -5257,9 +5257,9 @@
       "total": 6,
       "active_members": 8,
       "distinguished_status": "",
-      "rank_l1": 93,
+      "rank_l1": 92,
       "rank_l2": 120,
-      "rank_l3": 108,
+      "rank_l3": 107,
       "rank_l4": 157,
       "rank_total": 102
     },
@@ -5293,11 +5293,11 @@
       "level3": 3,
       "level4": 0,
       "total": 6,
-      "active_members": 11,
+      "active_members": 10,
       "distinguished_status": "",
       "rank_l1": 114,
       "rank_l2": 122,
-      "rank_l3": 27,
+      "rank_l3": 26,
       "rank_l4": 158,
       "rank_total": 104
     },
@@ -5316,7 +5316,7 @@
       "distinguished_status": "D",
       "rank_l1": 102,
       "rank_l2": 100,
-      "rank_l3": 91,
+      "rank_l3": 90,
       "rank_l4": 93,
       "rank_total": 105
     },
@@ -5335,7 +5335,7 @@
       "distinguished_status": "",
       "rank_l1": 117,
       "rank_l2": 101,
-      "rank_l3": 35,
+      "rank_l3": 34,
       "rank_l4": 95,
       "rank_total": 106
     },
@@ -5350,9 +5350,9 @@
       "level3": 0,
       "level4": 0,
       "total": 5,
-      "active_members": 17,
+      "active_members": 16,
       "distinguished_status": "",
-      "rank_l1": 63,
+      "rank_l1": 62,
       "rank_l2": 105,
       "rank_l3": 131,
       "rank_l4": 132,
@@ -5369,11 +5369,11 @@
       "level3": 1,
       "level4": 0,
       "total": 5,
-      "active_members": 13,
+      "active_members": 12,
       "distinguished_status": "",
       "rank_l1": 106,
       "rank_l2": 87,
-      "rank_l3": 99,
+      "rank_l3": 98,
       "rank_l4": 138,
       "rank_total": 108
     },
@@ -5393,7 +5393,7 @@
       "rank_l1": 108,
       "rank_l2": 89,
       "rank_l3": 138,
-      "rank_l4": 103,
+      "rank_l4": 102,
       "rank_total": 109
     },
     {
@@ -5409,7 +5409,7 @@
       "total": 5,
       "active_members": 20,
       "distinguished_status": "D",
-      "rank_l1": 86,
+      "rank_l1": 85,
       "rank_l2": 115,
       "rank_l3": 152,
       "rank_l4": 153,
@@ -5430,7 +5430,7 @@
       "distinguished_status": "",
       "rank_l1": 112,
       "rank_l2": 159,
-      "rank_l3": 109,
+      "rank_l3": 108,
       "rank_l4": 88,
       "rank_total": 111
     },
@@ -5447,10 +5447,10 @@
       "total": 4,
       "active_members": 26,
       "distinguished_status": "D",
-      "rank_l1": 55,
+      "rank_l1": 54,
       "rank_l2": 128,
-      "rank_l3": 113,
-      "rank_l4": 119,
+      "rank_l3": 112,
+      "rank_l4": 118,
       "rank_total": 112
     },
     {
@@ -5469,7 +5469,7 @@
       "rank_l1": 118,
       "rank_l2": 82,
       "rank_l3": 116,
-      "rank_l4": 97,
+      "rank_l4": 96,
       "rank_total": 113
     },
     {
@@ -5542,7 +5542,7 @@
       "total": 4,
       "active_members": 16,
       "distinguished_status": "D",
-      "rank_l1": 70,
+      "rank_l1": 69,
       "rank_l2": 144,
       "rank_l3": 137,
       "rank_l4": 139,
@@ -5564,7 +5564,7 @@
       "rank_l1": 109,
       "rank_l2": 109,
       "rank_l3": 140,
-      "rank_l4": 105,
+      "rank_l4": 104,
       "rank_total": 118
     },
     {
@@ -5582,7 +5582,7 @@
       "distinguished_status": "D",
       "rank_l1": 146,
       "rank_l2": 110,
-      "rank_l3": 103,
+      "rank_l3": 102,
       "rank_l4": 67,
       "rank_total": 119
     },
@@ -5602,7 +5602,7 @@
       "rank_l1": 111,
       "rank_l2": 116,
       "rank_l3": 153,
-      "rank_l4": 112,
+      "rank_l4": 111,
       "rank_total": 120
     },
     {
@@ -5618,10 +5618,10 @@
       "total": 3,
       "active_members": 20,
       "distinguished_status": "",
-      "rank_l1": 95,
+      "rank_l1": 94,
       "rank_l2": 125,
-      "rank_l3": 111,
-      "rank_l4": 117,
+      "rank_l3": 110,
+      "rank_l4": 116,
       "rank_total": 121
     },
     {
@@ -5639,7 +5639,7 @@
       "distinguished_status": "",
       "rank_l1": 130,
       "rank_l2": 126,
-      "rank_l3": 92,
+      "rank_l3": 91,
       "rank_l4": 40,
       "rank_total": 122
     },
@@ -5659,7 +5659,7 @@
       "rank_l1": 142,
       "rank_l2": 86,
       "rank_l3": 132,
-      "rank_l4": 100,
+      "rank_l4": 99,
       "rank_total": 123
     },
     {
@@ -5677,7 +5677,7 @@
       "distinguished_status": "",
       "rank_l1": 123,
       "rank_l2": 107,
-      "rank_l3": 97,
+      "rank_l3": 96,
       "rank_l4": 136,
       "rank_total": 124
     },
@@ -5696,7 +5696,7 @@
       "distinguished_status": "",
       "rank_l1": 105,
       "rank_l2": 142,
-      "rank_l3": 98,
+      "rank_l3": 97,
       "rank_l4": 137,
       "rank_total": 125
     },
@@ -5713,7 +5713,7 @@
       "total": 3,
       "active_members": 11,
       "distinguished_status": "",
-      "rank_l1": 98,
+      "rank_l1": 97,
       "rank_l2": 146,
       "rank_l3": 143,
       "rank_l4": 142,
@@ -5734,7 +5734,7 @@
       "distinguished_status": "",
       "rank_l1": 148,
       "rank_l2": 148,
-      "rank_l3": 105,
+      "rank_l3": 104,
       "rank_l4": 73,
       "rank_total": 127
     },
@@ -5753,8 +5753,8 @@
       "distinguished_status": "D",
       "rank_l1": 155,
       "rank_l2": 155,
-      "rank_l3": 77,
-      "rank_l4": 111,
+      "rank_l3": 75,
+      "rank_l4": 110,
       "rank_total": 128
     },
     {
@@ -5773,7 +5773,7 @@
       "rank_l1": 127,
       "rank_l2": 118,
       "rank_l3": 154,
-      "rank_l4": 114,
+      "rank_l4": 113,
       "rank_total": 129
     },
     {
@@ -5791,7 +5791,7 @@
       "distinguished_status": "",
       "rank_l1": 157,
       "rank_l2": 119,
-      "rank_l3": 86,
+      "rank_l3": 85,
       "rank_l4": 154,
       "rank_total": 130
     },
@@ -5825,7 +5825,7 @@
       "level3": 0,
       "level4": 0,
       "total": 2,
-      "active_members": 13,
+      "active_members": 12,
       "distinguished_status": "",
       "rank_l1": 124,
       "rank_l2": 111,
@@ -5848,7 +5848,7 @@
       "distinguished_status": "",
       "rank_l1": 154,
       "rank_l2": 113,
-      "rank_l3": 107,
+      "rank_l3": 106,
       "rank_l4": 151,
       "rank_total": 133
     },
@@ -5867,7 +5867,7 @@
       "distinguished_status": "",
       "rank_l1": 156,
       "rank_l2": 156,
-      "rank_l3": 79,
+      "rank_l3": 77,
       "rank_l4": 152,
       "rank_total": 134
     },
@@ -5887,7 +5887,7 @@
       "rank_l1": 128,
       "rank_l2": 158,
       "rank_l3": 157,
-      "rank_l4": 115,
+      "rank_l4": 114,
       "rank_total": 135
     },
     {
@@ -5905,7 +5905,7 @@
       "distinguished_status": "",
       "rank_l1": 132,
       "rank_l2": 129,
-      "rank_l3": 114,
+      "rank_l3": 113,
       "rank_l4": 94,
       "rank_total": 136
     },
@@ -5944,7 +5944,7 @@
       "rank_l1": 139,
       "rank_l2": 136,
       "rank_l3": 128,
-      "rank_l4": 99,
+      "rank_l4": 98,
       "rank_total": 138
     },
     {
@@ -6019,8 +6019,8 @@
       "distinguished_status": "",
       "rank_l1": 129,
       "rank_l2": 124,
-      "rank_l3": 110,
-      "rank_l4": 116,
+      "rank_l3": 109,
+      "rank_l4": 115,
       "rank_total": 142
     },
     {
@@ -6038,8 +6038,8 @@
       "distinguished_status": "",
       "rank_l1": 131,
       "rank_l2": 127,
-      "rank_l3": 112,
-      "rank_l4": 118,
+      "rank_l3": 111,
+      "rank_l4": 117,
       "rank_total": 143
     },
     {
@@ -6356,7 +6356,7 @@
         "area": "03",
         "level1": 5,
         "level3": 4,
-        "qualifying_date": "2026-06-05",
+        "qualifying_date": "2026-05-24",
         "rank": 1,
         "ovation_recognized": true
       },
@@ -6367,7 +6367,7 @@
         "area": "01",
         "level1": 5,
         "level3": 4,
-        "qualifying_date": "2026-06-05",
+        "qualifying_date": "2026-05-24",
         "rank": 2,
         "ovation_recognized": true
       },
@@ -6378,7 +6378,7 @@
         "area": "02",
         "level1": 6,
         "level3": 5,
-        "qualifying_date": "2026-06-05",
+        "qualifying_date": "2026-05-24",
         "rank": 3,
         "ovation_recognized": true
       },
@@ -6389,7 +6389,7 @@
         "area": "04",
         "level1": 4,
         "level3": 3,
-        "qualifying_date": "2026-06-05",
+        "qualifying_date": "2026-05-24",
         "rank": 4,
         "ovation_recognized": true
       },
@@ -6400,7 +6400,7 @@
         "area": "02",
         "level1": 8,
         "level3": 3,
-        "qualifying_date": "2026-06-05",
+        "qualifying_date": "2026-05-24",
         "rank": 5,
         "ovation_recognized": true
       },
@@ -6411,7 +6411,7 @@
         "area": "02",
         "level1": 5,
         "level3": 5,
-        "qualifying_date": "2026-06-05",
+        "qualifying_date": "2026-05-24",
         "rank": 6,
         "ovation_recognized": true
       },
@@ -6422,7 +6422,7 @@
         "area": "01",
         "level1": 5,
         "level3": 3,
-        "qualifying_date": "2026-06-05",
+        "qualifying_date": "2026-05-24",
         "rank": 7,
         "ovation_recognized": true
       },
@@ -6433,7 +6433,7 @@
         "area": "02",
         "level1": 6,
         "level3": 3,
-        "qualifying_date": "2026-06-05",
+        "qualifying_date": "2026-05-24",
         "rank": 8,
         "ovation_recognized": true
       },
@@ -6444,7 +6444,7 @@
         "area": "03",
         "level1": 31,
         "level3": 16,
-        "qualifying_date": "2026-06-05",
+        "qualifying_date": "2026-05-24",
         "rank": 9,
         "ovation_recognized": true
       },
@@ -6455,7 +6455,7 @@
         "area": "04",
         "level1": 5,
         "level3": 3,
-        "qualifying_date": "2026-06-05",
+        "qualifying_date": "2026-05-24",
         "rank": 10,
         "ovation_recognized": true
       },
@@ -6466,7 +6466,7 @@
         "area": "02",
         "level1": 9,
         "level3": 3,
-        "qualifying_date": "2026-06-05",
+        "qualifying_date": "2026-05-24",
         "rank": 11,
         "ovation_recognized": true
       },
@@ -6477,7 +6477,7 @@
         "area": "01",
         "level1": 10,
         "level3": 4,
-        "qualifying_date": "2026-06-05",
+        "qualifying_date": "2026-05-24",
         "rank": 12,
         "ovation_recognized": true
       },
@@ -6488,7 +6488,7 @@
         "area": "02",
         "level1": 4,
         "level3": 5,
-        "qualifying_date": "2026-06-05",
+        "qualifying_date": "2026-05-24",
         "rank": 13,
         "ovation_recognized": true
       },
@@ -6499,7 +6499,7 @@
         "area": "04",
         "level1": 7,
         "level3": 3,
-        "qualifying_date": "2026-06-05",
+        "qualifying_date": "2026-05-24",
         "rank": 14,
         "ovation_recognized": true
       },
@@ -6510,7 +6510,7 @@
         "area": "02",
         "level1": 10,
         "level3": 7,
-        "qualifying_date": "2026-06-05",
+        "qualifying_date": "2026-05-24",
         "rank": 15,
         "ovation_recognized": true
       },
@@ -6521,7 +6521,7 @@
         "area": "02",
         "level1": 7,
         "level3": 5,
-        "qualifying_date": "2026-06-05",
+        "qualifying_date": "2026-05-24",
         "rank": 16,
         "ovation_recognized": true
       },
@@ -6532,7 +6532,7 @@
         "area": "01",
         "level1": 4,
         "level3": 3,
-        "qualifying_date": "2026-06-05",
+        "qualifying_date": "2026-05-24",
         "rank": 17,
         "ovation_recognized": true
       },
@@ -6543,7 +6543,7 @@
         "area": "02",
         "level1": 5,
         "level3": 5,
-        "qualifying_date": "2026-06-05",
+        "qualifying_date": "2026-05-24",
         "rank": 18,
         "ovation_recognized": true
       },
@@ -6554,7 +6554,7 @@
         "area": "03",
         "level1": 6,
         "level3": 4,
-        "qualifying_date": "2026-06-05",
+        "qualifying_date": "2026-05-24",
         "rank": 19,
         "ovation_recognized": true
       },
@@ -6565,7 +6565,7 @@
         "area": "04",
         "level1": 5,
         "level3": 3,
-        "qualifying_date": "2026-06-05",
+        "qualifying_date": "2026-05-24",
         "rank": 20,
         "ovation_recognized": true
       },
@@ -6576,19 +6576,8 @@
         "area": "04",
         "level1": 6,
         "level3": 4,
-        "qualifying_date": "2026-06-05",
+        "qualifying_date": "2026-05-24",
         "rank": 21,
-        "ovation_recognized": false
-      },
-      {
-        "club_number": "06547554",
-        "club_name": "Synopsys Lanka Toastmasters Club",
-        "division": "B",
-        "area": "04",
-        "level1": 4,
-        "level3": 3,
-        "qualifying_date": "2026-06-05",
-        "rank": 22,
         "ovation_recognized": false
       },
       {
@@ -6598,8 +6587,8 @@
         "area": "04",
         "level1": 6,
         "level3": 3,
-        "qualifying_date": "2026-06-05",
-        "rank": 23,
+        "qualifying_date": "2026-05-24",
+        "rank": 22,
         "ovation_recognized": false
       },
       {
@@ -6608,6 +6597,17 @@
         "division": "H",
         "area": "01",
         "level1": 7,
+        "level3": 3,
+        "qualifying_date": "2026-05-24",
+        "rank": 23,
+        "ovation_recognized": false
+      },
+      {
+        "club_number": "06547554",
+        "club_name": "Synopsys Lanka Toastmasters Club",
+        "division": "B",
+        "area": "04",
+        "level1": 4,
         "level3": 3,
         "qualifying_date": "2026-06-05",
         "rank": 24,
@@ -6765,7 +6765,7 @@
         "area": "02",
         "level1": 4,
         "level3": 2,
-        "qualifying_date": "2026-06-05",
+        "qualifying_date": "2026-05-24",
         "rank": 1
       },
       {
@@ -6775,7 +6775,7 @@
         "area": "02",
         "level1": 5,
         "level3": 2,
-        "qualifying_date": "2026-06-05",
+        "qualifying_date": "2026-05-24",
         "rank": 2
       },
       {
@@ -6785,7 +6785,7 @@
         "area": "02",
         "level1": 4,
         "level3": 2,
-        "qualifying_date": "2026-06-05",
+        "qualifying_date": "2026-05-24",
         "rank": 3
       },
       {
@@ -6795,7 +6795,7 @@
         "area": "03",
         "level1": 4,
         "level3": 2,
-        "qualifying_date": "2026-06-05",
+        "qualifying_date": "2026-05-24",
         "rank": 4
       },
       {
@@ -6805,7 +6805,7 @@
         "area": "04",
         "level1": 4,
         "level3": 2,
-        "qualifying_date": "2026-06-05",
+        "qualifying_date": "2026-05-24",
         "rank": 5
       },
       {
@@ -6815,18 +6815,8 @@
         "area": "01",
         "level1": 4,
         "level3": 2,
-        "qualifying_date": "2026-06-05",
+        "qualifying_date": "2026-05-24",
         "rank": 6
-      },
-      {
-        "club_number": "04559377",
-        "club_name": "CBL Foods Toastmasters Club",
-        "division": "G",
-        "area": "01",
-        "level1": 4,
-        "level3": 2,
-        "qualifying_date": "2026-06-05",
-        "rank": 7
       },
       {
         "club_number": "07988670",
@@ -6835,8 +6825,8 @@
         "area": "04",
         "level1": 5,
         "level3": 2,
-        "qualifying_date": "2026-06-05",
-        "rank": 8
+        "qualifying_date": "2026-05-24",
+        "rank": 7
       },
       {
         "club_number": "04839397",
@@ -6845,8 +6835,8 @@
         "area": "04",
         "level1": 7,
         "level3": 2,
-        "qualifying_date": "2026-06-05",
-        "rank": 9
+        "qualifying_date": "2026-05-24",
+        "rank": 8
       },
       {
         "club_number": "04032159",
@@ -6855,8 +6845,8 @@
         "area": "01",
         "level1": 4,
         "level3": 2,
-        "qualifying_date": "2026-06-05",
-        "rank": 10
+        "qualifying_date": "2026-05-24",
+        "rank": 9
       },
       {
         "club_number": "07471485",
@@ -6865,8 +6855,8 @@
         "area": "02",
         "level1": 8,
         "level3": 2,
-        "qualifying_date": "2026-06-05",
-        "rank": 11
+        "qualifying_date": "2026-05-24",
+        "rank": 10
       },
       {
         "club_number": "01391757",
@@ -6875,8 +6865,8 @@
         "area": "03",
         "level1": 10,
         "level3": 2,
-        "qualifying_date": "2026-06-05",
-        "rank": 12
+        "qualifying_date": "2026-05-24",
+        "rank": 11
       },
       {
         "club_number": "28678621",
@@ -6885,8 +6875,8 @@
         "area": "02",
         "level1": 15,
         "level3": 2,
-        "qualifying_date": "2026-06-05",
-        "rank": 13
+        "qualifying_date": "2026-05-24",
+        "rank": 12
       },
       {
         "club_number": "02302941",
@@ -6895,8 +6885,8 @@
         "area": "01",
         "level1": 4,
         "level3": 2,
-        "qualifying_date": "2026-06-05",
-        "rank": 14
+        "qualifying_date": "2026-05-24",
+        "rank": 13
       },
       {
         "club_number": "28677378",
@@ -6905,8 +6895,8 @@
         "area": "02",
         "level1": 3,
         "level3": 2,
-        "qualifying_date": "2026-06-05",
-        "rank": 15
+        "qualifying_date": "2026-05-24",
+        "rank": 14
       },
       {
         "club_number": "00614737",
@@ -6915,8 +6905,8 @@
         "area": "04",
         "level1": 6,
         "level3": 2,
-        "qualifying_date": "2026-06-05",
-        "rank": 16
+        "qualifying_date": "2026-05-24",
+        "rank": 15
       },
       {
         "club_number": "28678609",
@@ -6925,8 +6915,8 @@
         "area": "03",
         "level1": 4,
         "level3": 2,
-        "qualifying_date": "2026-06-05",
-        "rank": 17
+        "qualifying_date": "2026-05-24",
+        "rank": 16
       },
       {
         "club_number": "07466745",
@@ -6935,8 +6925,8 @@
         "area": "01",
         "level1": 4,
         "level3": 2,
-        "qualifying_date": "2026-06-05",
-        "rank": 18
+        "qualifying_date": "2026-05-24",
+        "rank": 17
       },
       {
         "club_number": "00822324",
@@ -6945,8 +6935,8 @@
         "area": "04",
         "level1": 5,
         "level3": 2,
-        "qualifying_date": "2026-06-05",
-        "rank": 19
+        "qualifying_date": "2026-05-24",
+        "rank": 18
       },
       {
         "club_number": "06602877",
@@ -6955,8 +6945,8 @@
         "area": "03",
         "level1": 6,
         "level3": 2,
-        "qualifying_date": "2026-06-05",
-        "rank": 20
+        "qualifying_date": "2026-05-24",
+        "rank": 19
       },
       {
         "club_number": "03414509",
@@ -6965,8 +6955,8 @@
         "area": "01",
         "level1": 5,
         "level3": 2,
-        "qualifying_date": "2026-06-05",
-        "rank": 21
+        "qualifying_date": "2026-05-24",
+        "rank": 20
       },
       {
         "club_number": "00636934",
@@ -6975,8 +6965,8 @@
         "area": "03",
         "level1": 6,
         "level3": 2,
-        "qualifying_date": "2026-06-05",
-        "rank": 22
+        "qualifying_date": "2026-05-24",
+        "rank": 21
       },
       {
         "club_number": "01290125",
@@ -6985,8 +6975,8 @@
         "area": "01",
         "level1": 4,
         "level3": 2,
-        "qualifying_date": "2026-06-05",
-        "rank": 23
+        "qualifying_date": "2026-05-24",
+        "rank": 22
       },
       {
         "club_number": "03990626",
@@ -6995,8 +6985,8 @@
         "area": "02",
         "level1": 6,
         "level3": 2,
-        "qualifying_date": "2026-06-05",
-        "rank": 24
+        "qualifying_date": "2026-05-24",
+        "rank": 23
       },
       {
         "club_number": "05144557",
@@ -7005,8 +6995,8 @@
         "area": "04",
         "level1": 4,
         "level3": 2,
-        "qualifying_date": "2026-06-05",
-        "rank": 25
+        "qualifying_date": "2026-05-24",
+        "rank": 24
       },
       {
         "club_number": "28675430",
@@ -7015,8 +7005,8 @@
         "area": "01",
         "level1": 4,
         "level3": 2,
-        "qualifying_date": "2026-06-05",
-        "rank": 26
+        "qualifying_date": "2026-05-24",
+        "rank": 25
       },
       {
         "club_number": "01223622",
@@ -7025,8 +7015,8 @@
         "area": "03",
         "level1": 4,
         "level3": 2,
-        "qualifying_date": "2026-06-05",
-        "rank": 27
+        "qualifying_date": "2026-05-24",
+        "rank": 26
       },
       {
         "club_number": "01481554",
@@ -7035,8 +7025,8 @@
         "area": "01",
         "level1": 4,
         "level3": 2,
-        "qualifying_date": "2026-06-05",
-        "rank": 28
+        "qualifying_date": "2026-05-24",
+        "rank": 27
       },
       {
         "club_number": "01378886",
@@ -7045,8 +7035,8 @@
         "area": "02",
         "level1": 8,
         "level3": 2,
-        "qualifying_date": "2026-06-05",
-        "rank": 29
+        "qualifying_date": "2026-05-24",
+        "rank": 28
       },
       {
         "club_number": "05270893",
@@ -7055,8 +7045,8 @@
         "area": "02",
         "level1": 8,
         "level3": 2,
-        "qualifying_date": "2026-06-05",
-        "rank": 30
+        "qualifying_date": "2026-05-24",
+        "rank": 29
       },
       {
         "club_number": "07913101",
@@ -7065,8 +7055,8 @@
         "area": "04",
         "level1": 5,
         "level3": 2,
-        "qualifying_date": "2026-06-05",
-        "rank": 31
+        "qualifying_date": "2026-05-24",
+        "rank": 30
       },
       {
         "club_number": "07966661",
@@ -7075,8 +7065,8 @@
         "area": "03",
         "level1": 4,
         "level3": 2,
-        "qualifying_date": "2026-06-05",
-        "rank": 32
+        "qualifying_date": "2026-05-24",
+        "rank": 31
       },
       {
         "club_number": "07832471",
@@ -7085,8 +7075,8 @@
         "area": "04",
         "level1": 4,
         "level3": 2,
-        "qualifying_date": "2026-06-05",
-        "rank": 33
+        "qualifying_date": "2026-05-24",
+        "rank": 32
       },
       {
         "club_number": "00002773",
@@ -7095,8 +7085,8 @@
         "area": "03",
         "level1": 4,
         "level3": 2,
-        "qualifying_date": "2026-06-05",
-        "rank": 34
+        "qualifying_date": "2026-05-24",
+        "rank": 33
       },
       {
         "club_number": "01553096",
@@ -7105,8 +7095,8 @@
         "area": "01",
         "level1": 4,
         "level3": 2,
-        "qualifying_date": "2026-06-05",
-        "rank": 35
+        "qualifying_date": "2026-05-24",
+        "rank": 34
       },
       {
         "club_number": "00007639",
@@ -7115,8 +7105,8 @@
         "area": "04",
         "level1": 4,
         "level3": 2,
-        "qualifying_date": "2026-06-05",
-        "rank": 36
+        "qualifying_date": "2026-05-24",
+        "rank": 35
       },
       {
         "club_number": "28675770",
@@ -7125,8 +7115,8 @@
         "area": "03",
         "level1": 4,
         "level3": 2,
-        "qualifying_date": "2026-06-05",
-        "rank": 37
+        "qualifying_date": "2026-05-24",
+        "rank": 36
       },
       {
         "club_number": "00005324",
@@ -7135,8 +7125,8 @@
         "area": "01",
         "level1": 11,
         "level3": 2,
-        "qualifying_date": "2026-06-05",
-        "rank": 38
+        "qualifying_date": "2026-05-24",
+        "rank": 37
       },
       {
         "club_number": "28675989",
@@ -7145,8 +7135,8 @@
         "area": "02",
         "level1": 8,
         "level3": 2,
-        "qualifying_date": "2026-06-05",
-        "rank": 39
+        "qualifying_date": "2026-05-24",
+        "rank": 38
       },
       {
         "club_number": "07980809",
@@ -7155,8 +7145,8 @@
         "area": "02",
         "level1": 5,
         "level3": 2,
-        "qualifying_date": "2026-06-05",
-        "rank": 40
+        "qualifying_date": "2026-05-24",
+        "rank": 39
       },
       {
         "club_number": "07794085",
@@ -7165,8 +7155,8 @@
         "area": "02",
         "level1": 4,
         "level3": 2,
-        "qualifying_date": "2026-06-05",
-        "rank": 41
+        "qualifying_date": "2026-05-24",
+        "rank": 40
       },
       {
         "club_number": "07980472",
@@ -7175,8 +7165,8 @@
         "area": "04",
         "level1": 5,
         "level3": 2,
-        "qualifying_date": "2026-06-05",
-        "rank": 42
+        "qualifying_date": "2026-05-24",
+        "rank": 41
       },
       {
         "club_number": "07111975",
@@ -7185,8 +7175,8 @@
         "area": "03",
         "level1": 3,
         "level3": 3,
-        "qualifying_date": "2026-06-05",
-        "rank": 43
+        "qualifying_date": "2026-05-24",
+        "rank": 42
       },
       {
         "club_number": "06989204",
@@ -7195,8 +7185,8 @@
         "area": "03",
         "level1": 4,
         "level3": 2,
-        "qualifying_date": "2026-06-05",
-        "rank": 44
+        "qualifying_date": "2026-05-24",
+        "rank": 43
       },
       {
         "club_number": "07987754",
@@ -7205,6 +7195,16 @@
         "area": "04",
         "level1": 3,
         "level3": 3,
+        "qualifying_date": "2026-05-24",
+        "rank": 44
+      },
+      {
+        "club_number": "04559377",
+        "club_name": "CBL Foods Toastmasters Club",
+        "division": "G",
+        "area": "01",
+        "level1": 4,
+        "level3": 2,
         "qualifying_date": "2026-06-05",
         "rank": 45
       },
@@ -7569,7 +7569,7 @@
         "club_name": "United Tractors Toastmasters Club",
         "division": "H",
         "area": "01",
-        "level1": 6,
+        "level1": 5,
         "level3": 0,
         "need_l1": 0,
         "need_l3": 2,
@@ -7748,7 +7748,7 @@
       "club_number": "28675642",
       "club_name": "People's Bank Toastmasters Club",
       "status": "Active",
-      "active_members": 13,
+      "active_members": 12,
       "goals_met": 2,
       "level1": 1,
       "level2": 1,
@@ -7831,10 +7831,10 @@
       "active_members": 26,
       "goals_met": 10,
       "level1": 9,
-      "level2": 6,
+      "level2": 5,
       "level3": 2,
       "level4": 3,
-      "total_levels": 20,
+      "total_levels": 19,
       "distinguished_status": "M"
     },
     {
@@ -8198,11 +8198,11 @@
       "status": "Active",
       "active_members": 30,
       "goals_met": 9,
-      "level1": 7,
+      "level1": 6,
       "level2": 2,
       "level3": 3,
       "level4": 2,
-      "total_levels": 14,
+      "total_levels": 13,
       "distinguished_status": "P"
     },
     {
@@ -8216,9 +8216,9 @@
       "goals_met": 6,
       "level1": 4,
       "level2": 1,
-      "level3": 3,
+      "level3": 2,
       "level4": 1,
-      "total_levels": 9,
+      "total_levels": 8,
       "distinguished_status": "D"
     },
     {
@@ -8228,14 +8228,14 @@
       "club_number": "07980472",
       "club_name": "Vavuniya Toastmasters Club",
       "status": "Active",
-      "active_members": 26,
+      "active_members": 24,
       "goals_met": 10,
       "level1": 5,
       "level2": 4,
       "level3": 2,
       "level4": 4,
       "total_levels": 15,
-      "distinguished_status": "M"
+      "distinguished_status": "P"
     },
     {
       "district": "82",
@@ -8308,7 +8308,7 @@
       "club_number": "05477954",
       "club_name": "Innovative Minds Toastmasters",
       "status": "Active",
-      "active_members": 13,
+      "active_members": 12,
       "goals_met": 5,
       "level1": 2,
       "level2": 2,
@@ -8406,11 +8406,11 @@
       "status": "Active",
       "active_members": 28,
       "goals_met": 10,
-      "level1": 15,
+      "level1": 14,
       "level2": 4,
       "level3": 2,
       "level4": 2,
-      "total_levels": 23,
+      "total_levels": 22,
       "distinguished_status": "M"
     },
     {
@@ -8772,7 +8772,7 @@
       "club_number": "28678375",
       "club_name": "IESL Ruhuna Toastmasters Club",
       "status": "Active",
-      "active_members": 13,
+      "active_members": 12,
       "goals_met": 6,
       "level1": 4,
       "level2": 0,
@@ -8793,8 +8793,8 @@
       "level1": 6,
       "level2": 4,
       "level3": 2,
-      "level4": 6,
-      "total_levels": 18,
+      "level4": 5,
+      "total_levels": 17,
       "distinguished_status": "M"
     },
     {
@@ -8968,9 +8968,9 @@
       "goals_met": 6,
       "level1": 4,
       "level2": 3,
-      "level3": 1,
+      "level3": 0,
       "level4": 0,
-      "total_levels": 8,
+      "total_levels": 7,
       "distinguished_status": "D"
     },
     {
@@ -9044,7 +9044,7 @@
       "club_number": "01982862",
       "club_name": "Word Blasters Toastmasters Club",
       "status": "Active",
-      "active_members": 11,
+      "active_members": 10,
       "goals_met": 4,
       "level1": 2,
       "level2": 1,
@@ -9076,7 +9076,7 @@
       "club_number": "28678609",
       "club_name": "IFS Toastmasters Club",
       "status": "Active",
-      "active_members": 23,
+      "active_members": 22,
       "goals_met": 10,
       "level1": 4,
       "level2": 4,
@@ -9220,7 +9220,7 @@
       "club_number": "28678226",
       "club_name": "Gampaha Professionals' Toastmasters Club",
       "status": "Active",
-      "active_members": 17,
+      "active_members": 16,
       "goals_met": 5,
       "level1": 4,
       "level2": 1,
@@ -9286,11 +9286,11 @@
       "status": "Active",
       "active_members": 34,
       "goals_met": 10,
-      "level1": 8,
+      "level1": 7,
       "level2": 4,
       "level3": 2,
       "level4": 3,
-      "total_levels": 17,
+      "total_levels": 16,
       "distinguished_status": "M"
     },
     {
@@ -9381,13 +9381,13 @@
       "club_name": "Readers Toastmasters Club",
       "status": "Active",
       "active_members": 32,
-      "goals_met": 9,
-      "level1": 4,
+      "goals_met": 8,
+      "level1": 3,
       "level2": 4,
       "level3": 1,
       "level4": 3,
-      "total_levels": 12,
-      "distinguished_status": "P"
+      "total_levels": 11,
+      "distinguished_status": "S"
     },
     {
       "district": "82",
@@ -9493,13 +9493,13 @@
       "club_name": "CBL Foods Toastmasters Club",
       "status": "Active",
       "active_members": 29,
-      "goals_met": 9,
+      "goals_met": 6,
       "level1": 4,
-      "level2": 4,
-      "level3": 2,
-      "level4": 1,
-      "total_levels": 11,
-      "distinguished_status": "P"
+      "level2": 3,
+      "level3": 1,
+      "level4": 0,
+      "total_levels": 8,
+      "distinguished_status": "D"
     },
     {
       "district": "82",
@@ -9652,7 +9652,7 @@
       "club_number": "02549382",
       "club_name": "Anuradhapura Toastmasters Club",
       "status": "Active",
-      "active_members": 24,
+      "active_members": 21,
       "goals_met": 9,
       "level1": 4,
       "level2": 2,
@@ -9684,7 +9684,7 @@
       "club_number": "07391111",
       "club_name": "Puttalam Toastmasters",
       "status": "Low",
-      "active_members": 5,
+      "active_members": 3,
       "goals_met": 0,
       "level1": 0,
       "level2": 0,
@@ -9846,11 +9846,11 @@
       "status": "Active",
       "active_members": 32,
       "goals_met": 6,
-      "level1": 6,
+      "level1": 5,
       "level2": 2,
       "level3": 0,
       "level4": 0,
-      "total_levels": 8,
+      "total_levels": 7,
       "distinguished_status": "D"
     },
     {
@@ -9956,7 +9956,7 @@
       "club_number": "06604478",
       "club_name": "Ja-Ela Toastmasters Club",
       "status": "Active",
-      "active_members": 27,
+      "active_members": 25,
       "goals_met": 7,
       "level1": 6,
       "level2": 1,
@@ -10358,11 +10358,11 @@
       "status": "Active",
       "active_members": 16,
       "goals_met": 8,
-      "level1": 5,
+      "level1": 4,
       "level2": 2,
       "level3": 2,
       "level4": 1,
-      "total_levels": 10,
+      "total_levels": 9,
       "distinguished_status": ""
     },
     {
