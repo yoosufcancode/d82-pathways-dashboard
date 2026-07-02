@@ -30,6 +30,38 @@ function rankBadgeClass(rank) {
   return 'plain';
 }
 
+/* ---------------- ANIMATION HELPERS ---------------- */
+function expandCollapsible(el) {
+  el.style.maxHeight = el.scrollHeight + 'px';
+}
+function collapseCollapsible(el) {
+  el.style.maxHeight = '0px';
+}
+function setCollapsible(el, opening) {
+  if (opening) expandCollapsible(el); else collapseCollapsible(el);
+}
+
+function animateNumber(el, target, duration = 850) {
+  const startTime = performance.now();
+  function tick(now) {
+    const progress = Math.min((now - startTime) / duration, 1);
+    const eased = 1 - Math.pow(1 - progress, 3); // easeOutCubic
+    el.textContent = Math.round(target * eased).toLocaleString();
+    if (progress < 1) requestAnimationFrame(tick);
+    else el.textContent = target.toLocaleString();
+  }
+  requestAnimationFrame(tick);
+}
+
+function positionTabIndicator(activeBtn) {
+  const indicator = document.getElementById('tab-indicator');
+  if (!indicator || !activeBtn) return;
+  const tabsRect = activeBtn.parentElement.getBoundingClientRect();
+  const btnRect = activeBtn.getBoundingClientRect();
+  indicator.style.width = btnRect.width + 'px';
+  indicator.style.left = (btnRect.left - tabsRect.left + activeBtn.parentElement.scrollLeft) + 'px';
+}
+
 let DATA = null;
 let MANIFEST = null;
 let AWARD_DATA = null;   // locked award_data.json, if present
@@ -86,12 +118,15 @@ function renderOverview() {
   const dt = DATA.district_totals;
   const kpiRow = document.getElementById('kpi-row');
   kpiRow.innerHTML = `
-    <div class="kpi l1"><div class="kpi-label">Level 1</div><div class="kpi-value">${dt.level1}</div></div>
-    <div class="kpi l2"><div class="kpi-label">Level 2</div><div class="kpi-value">${dt.level2}</div></div>
-    <div class="kpi l3"><div class="kpi-label">Level 3</div><div class="kpi-value">${dt.level3}</div></div>
-    <div class="kpi l4"><div class="kpi-label">Level 4+ / Path / DTM</div><div class="kpi-value">${dt.level4}</div></div>
-    <div class="kpi total"><div class="kpi-label">Total Levels</div><div class="kpi-value">${dt.total}</div></div>
+    <div class="kpi l1"><div class="kpi-label">Level 1</div><div class="kpi-value" data-target="${dt.level1}">0</div></div>
+    <div class="kpi l2"><div class="kpi-label">Level 2</div><div class="kpi-value" data-target="${dt.level2}">0</div></div>
+    <div class="kpi l3"><div class="kpi-label">Level 3</div><div class="kpi-value" data-target="${dt.level3}">0</div></div>
+    <div class="kpi l4"><div class="kpi-label">Level 4+ / Path / DTM</div><div class="kpi-value" data-target="${dt.level4}">0</div></div>
+    <div class="kpi total"><div class="kpi-label">Total Levels</div><div class="kpi-value" data-target="${dt.total}">0</div></div>
   `;
+  kpiRow.querySelectorAll('.kpi-value').forEach((el, i) => {
+    setTimeout(() => animateNumber(el, parseInt(el.dataset.target, 10)), i * 60);
+  });
 
   new Chart(document.getElementById('chart-district-levels'), {
     type: 'doughnut',
@@ -106,6 +141,7 @@ function renderOverview() {
     },
     options: {
       maintainAspectRatio: false,
+      animation: { duration: 900, easing: 'easeOutQuart' },
       plugins: { legend: { position: 'bottom', labels: { font: { family: 'Source Sans 3' } } } },
     },
   });
@@ -124,6 +160,7 @@ function renderOverview() {
     },
     options: {
       maintainAspectRatio: false,
+      animation: { duration: 900, easing: 'easeOutQuart' },
       scales: { x: { stacked: true }, y: { stacked: true } },
       plugins: { legend: { display: false } },
     },
@@ -171,7 +208,13 @@ function renderDivisions() {
   `).join('');
 
   container.querySelectorAll('.div-row-head').forEach(head => {
-    head.addEventListener('click', () => head.parentElement.classList.toggle('open'));
+    head.addEventListener('click', () => {
+      const row = head.parentElement;
+      const body = row.querySelector('.div-row-body');
+      const opening = !row.classList.contains('open');
+      row.classList.toggle('open', opening);
+      setCollapsible(body, opening);
+    });
   });
 }
 
@@ -186,12 +229,10 @@ function renderAreas() {
   content.addEventListener('click', (e) => {
     const row = e.target.closest('.area-row-toggle');
     if (!row) return;
-    const detail = row.nextElementSibling;
+    const inner = row.nextElementSibling.querySelector('.area-detail-inner');
     const opening = !row.classList.contains('open');
-    row.classList.toggle('open');
-    detail.classList.toggle('open', opening);
-    const chevron = row.querySelector('.area-chevron');
-    if (chevron) chevron.textContent = opening ? '▾' : '▸';
+    row.classList.toggle('open', opening);
+    setCollapsible(inner, opening);
   });
 }
 
@@ -225,7 +266,7 @@ function paintAreas(divFilter) {
       <tbody>
         ${d.areas.map(a => `
           <tr class="area-row-toggle" data-area="${d.division}-${a.area}">
-            <td class="area-chevron">▸</td>
+            <td><span class="chevron-icon">&#9656;</span></td>
             <td class="rank-num">${a.rank_in_division}</td>
             <td><b>Area ${a.area}</b> <span class="club-sub">district rank #${a.rank_in_district}</span></td>
             <td>${a.level1}</td><td>${a.level2}</td><td>${a.level3}</td><td>${a.level4}</td>
@@ -235,12 +276,14 @@ function paintAreas(divFilter) {
           </tr>
           <tr class="area-detail-row">
             <td colspan="10">
-              <table class="rank-table area-club-table">
-                <thead>
-                  <tr><th>Rank</th><th>Club</th><th>Level 1</th><th>Level 2</th><th>Level 3</th><th>Level 4+</th><th>Total</th></tr>
-                </thead>
-                <tbody>${clubDetailRowsHTML(a.clubs)}</tbody>
-              </table>
+              <div class="area-detail-inner">
+                <table class="rank-table area-club-table">
+                  <thead>
+                    <tr><th>Rank</th><th>Club</th><th>Level 1</th><th>Level 2</th><th>Level 3</th><th>Level 4+</th><th>Total</th></tr>
+                  </thead>
+                  <tbody>${clubDetailRowsHTML(a.clubs)}</tbody>
+                </table>
+              </div>
             </td>
           </tr>
         `).join('')}
@@ -258,7 +301,10 @@ function renderClubs() {
     const toggle = e.target.closest('.club-name-toggle');
     if (!toggle) return;
     const row = toggle.closest('.club-row');
-    row.classList.toggle('expanded');
+    const detail = row.querySelector('.club-detail');
+    const opening = !row.classList.contains('expanded');
+    row.classList.toggle('expanded', opening);
+    setCollapsible(detail, opening);
   });
 }
 
@@ -482,7 +528,9 @@ const PANEL_RENDERERS = {
 };
 
 function showTab(tab) {
+  const activeBtn = document.querySelector(`.tab[data-tab="${tab}"]`);
   document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.tab === tab));
+  positionTabIndicator(activeBtn);
   const app = document.getElementById('app');
   const tpl = document.getElementById('tpl-' + tab);
   app.innerHTML = '';
@@ -497,6 +545,9 @@ async function init() {
   document.getElementById('tabs').addEventListener('click', (e) => {
     const btn = e.target.closest('.tab');
     if (btn) showTab(btn.dataset.tab);
+  });
+  window.addEventListener('resize', () => {
+    positionTabIndicator(document.querySelector('.tab.active'));
   });
   showTab('overview');
 }
