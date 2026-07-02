@@ -250,6 +250,56 @@ def build_award_payload(clubs, active_clubs, award_info):
     }
 
 
+def dense_rank(sorted_rows, key_fn):
+    """Dense ranking (1,2,2,3,4,4,5): rows must already be sorted best-to-worst
+    by key_fn. Equal keys share the same rank; the next distinct key is only
+    one more than the previous rank (no gap left by ties)."""
+    ranks = []
+    prev_key = None
+    current_rank = 0
+    for row in sorted_rows:
+        k = key_fn(row)
+        if k != prev_key:
+            current_rank += 1
+        ranks.append(current_rank)
+        prev_key = k
+    return ranks
+
+
+def build_per_member_leaderboard(active_clubs):
+    """Ranks clubs by levels completed per active member. Ties broken by
+    (1) levels per member, then (2) Level 1 + Level 3 completions combined;
+    clubs tied on both share the same rank."""
+    rows = []
+    for c in active_clubs:
+        members = c["active_members"] or 0
+        ratio = round(c["total_levels"] / members, 3) if members > 0 else 0.0
+        rows.append({**c, "levels_per_member": ratio, "l1_l3_sum": c["level1"] + c["level3"]})
+
+    rows.sort(key=lambda r: (-r["levels_per_member"], -r["l1_l3_sum"], r["club_name"]))
+    ranks = dense_rank(rows, lambda r: (r["levels_per_member"], r["l1_l3_sum"]))
+
+    out = []
+    for r, rank in zip(rows, ranks):
+        out.append({
+            "rank": rank,
+            "club_number": r["club_number"],
+            "club_name": r["club_name"],
+            "division": r["division"],
+            "area": r["area"],
+            "level1": r["level1"],
+            "level2": r["level2"],
+            "level3": r["level3"],
+            "level4": r["level4"],
+            "total": r["total_levels"],
+            "active_members": r["active_members"],
+            "distinguished_status": r["distinguished_status"],
+            "levels_per_member": r["levels_per_member"],
+            "l1_l3_sum": r["l1_l3_sum"],
+        })
+    return out
+
+
 def build_dashboard_json(clubs, snapshot_date, award_info):
     active_clubs = [c for c in clubs if c["status"] == "Active"]
 
@@ -386,6 +436,7 @@ def build_dashboard_json(clubs, snapshot_date, award_info):
         "district_totals": district_totals,
         "divisions": division_list,
         "club_leaderboard": club_leaderboard_out,
+        "club_leaderboard_per_member": build_per_member_leaderboard(active_clubs),
         "pathways_award": build_award_payload(clubs, active_clubs, award_info),
         "all_clubs": clubs,
     }
