@@ -48,7 +48,7 @@ def main():
     history = update_history(history, clubs, snapshot_date)
     save_history(history)
 
-    award_info = compute_award_qualifying_dates(history)
+    award_info = compute_award_qualifying_dates(history, current_date=snapshot_date.isoformat())
     active_clubs = [c for c in clubs if c["status"] == "Active"]
     payload = build_award_payload(clubs, active_clubs, award_info)
     payload["locked"] = True

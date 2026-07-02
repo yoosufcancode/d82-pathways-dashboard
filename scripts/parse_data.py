@@ -125,9 +125,12 @@ def tier_for(level1, level3):
     return None
 
 
-def compute_award_qualifying_dates(history):
+def compute_award_qualifying_dates(history, current_date=None):
     """
-    For each club, determine its current tier (based on the latest snapshot)
+    For each club, determine its current tier (based on the snapshot for
+    current_date -- i.e. the CSV that was just processed, NOT necessarily
+    whichever snapshot happens to have the latest calendar date in history,
+    since users may legitimately backfill or re-process an older-dated file)
     and the earliest snapshot date at which that tier's thresholds were first
     met (this becomes the qualifying date used for ranking/recognition).
     Returns dict: club_number -> {"tier": ..., "qualifying_date": ...}
@@ -136,7 +139,10 @@ def compute_award_qualifying_dates(history):
     if not snapshots:
         return {}
 
-    latest = snapshots[-1]
+    if current_date is not None:
+        latest = next((s for s in snapshots if s["date"] == current_date), snapshots[-1])
+    else:
+        latest = snapshots[-1]
     result = {}
     for club_number, latest_info in latest["clubs"].items():
         current_tier = tier_for(latest_info["level1"], latest_info["level3"])
@@ -146,6 +152,8 @@ def compute_award_qualifying_dates(history):
             continue
         qualifying_date = latest["date"]
         for snap in snapshots:
+            if snap["date"] > latest["date"]:
+                continue  # never use a snapshot dated after the one being processed
             info = snap["clubs"].get(club_number)
             if not info:
                 continue
@@ -474,7 +482,7 @@ def main():
     history = update_history(history, clubs, snapshot_date)
     save_history(history)
 
-    award_info = compute_award_qualifying_dates(history)
+    award_info = compute_award_qualifying_dates(history, current_date=snapshot_date.isoformat())
     dashboard = build_dashboard_json(clubs, snapshot_date, award_info)
 
     DOCS_DIR.mkdir(parents=True, exist_ok=True)
