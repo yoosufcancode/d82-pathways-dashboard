@@ -7,8 +7,8 @@
     "F": "Division_F",
     "A": "Division_A",
     "I": "Division_I",
-    "H": "Division_H",
     "C": "Division_C",
+    "H": "Division_H",
     "B": "Division_B",
     "E": "Division_E",
     "G": "Division_G"
@@ -16,8 +16,8 @@
   "areas": {
     "D-03": "Division_D_Area_03",
     "D-04": "Division_D_Area_04",
-    "D-02": "Division_D_Area_02",
     "D-01": "Division_D_Area_01",
+    "D-02": "Division_D_Area_02",
     "F-01": "Division_F_Area_01",
     "F-02": "Division_F_Area_02",
     "F-03": "Division_F_Area_03",
@@ -28,18 +28,18 @@
     "A-04": "Division_A_Area_04",
     "I-03": "Division_I_Area_03",
     "I-02": "Division_I_Area_02",
-    "I-01": "Division_I_Area_01",
     "I-04": "Division_I_Area_04",
-    "H-02": "Division_H_Area_02",
-    "H-01": "Division_H_Area_01",
-    "H-04": "Division_H_Area_04",
-    "H-03": "Division_H_Area_03",
+    "I-01": "Division_I_Area_01",
     "C-04": "Division_C_Area_04",
     "C-02": "Division_C_Area_02",
     "C-03": "Division_C_Area_03",
     "C-01": "Division_C_Area_01",
-    "B-04": "Division_B_Area_04",
+    "H-02": "Division_H_Area_02",
+    "H-01": "Division_H_Area_01",
+    "H-04": "Division_H_Area_04",
+    "H-03": "Division_H_Area_03",
     "B-02": "Division_B_Area_02",
+    "B-04": "Division_B_Area_04",
     "B-01": "Division_B_Area_01",
     "B-03": "Division_B_Area_03",
     "E-02": "Division_E_Area_02",
@@ -112,11 +112,23 @@
       "area": "04",
       "club_name": "Sri Lanka Institute of Marketing Toastmasters Club"
     },
-    "06650246": {
-      "slug": "06650246_University_of_Colombo_Toastmasters_Club",
+    "00918672": {
+      "slug": "00918672_Ralph_Toastmasters_Club",
       "division": "D",
-      "area": "04",
-      "club_name": "University of Colombo Toastmasters Club"
+      "area": "01",
+      "club_name": "Ralph Toastmasters Club"
+    },
+    "01290125": {
+      "slug": "01290125_Marketers_Toastmasters_Club",
+      "division": "D",
+      "area": "01",
+      "club_name": "Marketers Toastmasters Club"
+    },
+    "05163369": {
+      "slug": "05163369_LSEG_Sri_Lanka_Toastmasters",
+      "division": "D",
+      "area": "01",
+      "club_name": "LSEG Sri Lanka Toastmasters"
     },
     "05231508": {
       "slug": "05231508_HSBC_Global_Service_Centre",
@@ -142,35 +154,17 @@
       "area": "02",
       "club_name": "Catalyst Toastmasters Club"
     },
-    "00918672": {
-      "slug": "00918672_Ralph_Toastmasters_Club",
-      "division": "D",
+    "07846183": {
+      "slug": "07846183_Kelaniya_Toastmasters_Club",
+      "division": "F",
       "area": "01",
-      "club_name": "Ralph Toastmasters Club"
-    },
-    "01290125": {
-      "slug": "01290125_Marketers_Toastmasters_Club",
-      "division": "D",
-      "area": "01",
-      "club_name": "Marketers Toastmasters Club"
-    },
-    "05163369": {
-      "slug": "05163369_LSEG_Sri_Lanka_Toastmasters",
-      "division": "D",
-      "area": "01",
-      "club_name": "LSEG Sri Lanka Toastmasters"
+      "club_name": "Kelaniya Toastmasters Club"
     },
     "06592577": {
       "slug": "06592577_Kadawatha_Toastmasters_Club",
       "division": "F",
       "area": "01",
       "club_name": "Kadawatha Toastmasters Club"
-    },
-    "07846183": {
-      "slug": "07846183_Kelaniya_Toastmasters_Club",
-      "division": "F",
-      "area": "01",
-      "club_name": "Kelaniya Toastmasters Club"
     },
     "01481554": {
       "slug": "01481554_Oasis_Toastmasters",
@@ -304,17 +298,17 @@
       "area": "01",
       "club_name": "The Colombo Toastmasters Club"
     },
-    "04032159": {
-      "slug": "04032159_Commercial_Bank_Toastmasters_Club",
-      "division": "A",
-      "area": "01",
-      "club_name": "Commercial Bank Toastmasters Club"
-    },
     "03414509": {
       "slug": "03414509_Lions_Toastmasters_Club",
       "division": "A",
       "area": "01",
       "club_name": "Lions Toastmasters Club"
+    },
+    "04032159": {
+      "slug": "04032159_Commercial_Bank_Toastmasters_Club",
+      "division": "A",
+      "area": "01",
+      "club_name": "Commercial Bank Toastmasters Club"
     },
     "04703328": {
       "slug": "04703328_CEB_Toastmasters_Club",
@@ -388,6 +382,12 @@
       "area": "04",
       "club_name": "Cargills Bank Toastmasters"
     },
+    "06602877": {
+      "slug": "06602877_Kegalle_Toastmasters_Club",
+      "division": "I",
+      "area": "03",
+      "club_name": "Kegalle Toastmasters Club"
+    },
     "06650357": {
       "slug": "06650357_Dowels_Toastmasters_Club",
       "division": "I",
@@ -399,12 +399,6 @@
       "division": "I",
       "area": "03",
       "club_name": "Central Link Toastmasters Club"
-    },
-    "06602877": {
-      "slug": "06602877_Kegalle_Toastmasters_Club",
-      "division": "I",
-      "area": "03",
-      "club_name": "Kegalle Toastmasters Club"
     },
     "07966661": {
       "slug": "07966661_Professionals_Beyond_Boundaries_Toastmasters_Club",
@@ -430,30 +424,6 @@
       "area": "02",
       "club_name": "Improvers Toastmasters Club"
     },
-    "07855572": {
-      "slug": "07855572_Capital_Toastmasters_Club",
-      "division": "I",
-      "area": "01",
-      "club_name": "Capital Toastmasters Club"
-    },
-    "02302941": {
-      "slug": "02302941_Expolanka_Toastmasters_Club",
-      "division": "I",
-      "area": "01",
-      "club_name": "Expolanka Toastmasters Club"
-    },
-    "04903005": {
-      "slug": "04903005_CMA_SRI_LANKA_TOASTMASTERS_CLUB",
-      "division": "I",
-      "area": "01",
-      "club_name": "CMA SRI LANKA TOASTMASTERS CLUB"
-    },
-    "07287138": {
-      "slug": "07287138_Maharagama_Toastmasters",
-      "division": "I",
-      "area": "01",
-      "club_name": "Maharagama Toastmasters"
-    },
     "00822324": {
       "slug": "00822324_Kandy_Toastmasters_Club",
       "division": "I",
@@ -478,119 +448,29 @@
       "area": "04",
       "club_name": "Esoft Uni Kandy Toastmasters Club"
     },
-    "01818104": {
-      "slug": "01818104_Negombo_Toastmasters",
-      "division": "H",
-      "area": "02",
-      "club_name": "Negombo Toastmasters"
-    },
-    "07856786": {
-      "slug": "07856786_Silvermill_Toastmasters_Club",
-      "division": "H",
-      "area": "02",
-      "club_name": "Silvermill Toastmasters Club"
-    },
-    "01378886": {
-      "slug": "01378886_Omega_Line",
-      "division": "H",
-      "area": "02",
-      "club_name": "Omega Line"
-    },
-    "01055854": {
-      "slug": "01055854_Wayamba_Toastmasters",
-      "division": "H",
-      "area": "02",
-      "club_name": "Wayamba Toastmasters"
-    },
-    "28679004": {
-      "slug": "28679004_IAB_Toastmasters_Club",
-      "division": "H",
-      "area": "02",
-      "club_name": "IAB Toastmasters Club"
-    },
-    "28680382": {
-      "slug": "28680382_Wennappuwa_Toastmasters_Club",
-      "division": "H",
-      "area": "02",
-      "club_name": "Wennappuwa Toastmasters Club"
-    },
-    "01514977": {
-      "slug": "01514977_Wattala_Toastmasters_Club",
-      "division": "H",
+    "02302941": {
+      "slug": "02302941_Expolanka_Toastmasters_Club",
+      "division": "I",
       "area": "01",
-      "club_name": "Wattala Toastmasters Club"
+      "club_name": "Expolanka Toastmasters Club"
     },
-    "28678062": {
-      "slug": "28678062_United_Tractors_Toastmasters_Club",
-      "division": "H",
+    "07855572": {
+      "slug": "07855572_Capital_Toastmasters_Club",
+      "division": "I",
       "area": "01",
-      "club_name": "United Tractors Toastmasters Club"
+      "club_name": "Capital Toastmasters Club"
     },
-    "07390865": {
-      "slug": "07390865_Negombo_Speakers_Forum",
-      "division": "H",
+    "07287138": {
+      "slug": "07287138_Maharagama_Toastmasters",
+      "division": "I",
       "area": "01",
-      "club_name": "Negombo Speakers Forum"
+      "club_name": "Maharagama Toastmasters"
     },
-    "03200777": {
-      "slug": "03200777_Sunday_Live_Speakers_Forum",
-      "division": "H",
+    "04903005": {
+      "slug": "04903005_CMA_SRI_LANKA_TOASTMASTERS_CLUB",
+      "division": "I",
       "area": "01",
-      "club_name": "Sunday Live Speakers Forum"
-    },
-    "05144557": {
-      "slug": "05144557_Minuwangoda_Toastmasters_Club",
-      "division": "H",
-      "area": "04",
-      "club_name": "Minuwangoda Toastmasters Club"
-    },
-    "07832471": {
-      "slug": "07832471_Ragama_Toastmasters_Club",
-      "division": "H",
-      "area": "04",
-      "club_name": "Ragama Toastmasters Club"
-    },
-    "00007639": {
-      "slug": "00007639_SriLankan_Airlines_Toastmasters_Club",
-      "division": "H",
-      "area": "04",
-      "club_name": "SriLankan Airlines Toastmasters Club"
-    },
-    "28675349": {
-      "slug": "28675349_Ansell_Textiles_Lanka_Toastmasters_Club",
-      "division": "H",
-      "area": "04",
-      "club_name": "Ansell Textiles Lanka Toastmasters Club"
-    },
-    "07975669": {
-      "slug": "07975669_Ceylon_Advanced_Toastmasters_Club",
-      "division": "H",
-      "area": "04",
-      "club_name": "Ceylon Advanced Toastmasters Club"
-    },
-    "06604478": {
-      "slug": "06604478_Ja_Ela_Toastmasters_Club",
-      "division": "H",
-      "area": "03",
-      "club_name": "Ja-Ela Toastmasters Club"
-    },
-    "28675770": {
-      "slug": "28675770_Star_Garments_Toastmasters_Club",
-      "division": "H",
-      "area": "03",
-      "club_name": "Star Garments Toastmasters Club"
-    },
-    "07855253": {
-      "slug": "07855253_Ampara_Toastmasters_Club",
-      "division": "H",
-      "area": "03",
-      "club_name": "Ampara Toastmasters Club"
-    },
-    "00777976": {
-      "slug": "00777976_FTZ_Toastmasters_Club",
-      "division": "H",
-      "area": "03",
-      "club_name": "FTZ Toastmasters Club"
+      "club_name": "CMA SRI LANKA TOASTMASTERS CLUB"
     },
     "01334805": {
       "slug": "01334805_CIPM_Toastmasters_Club",
@@ -700,35 +580,113 @@
       "area": "01",
       "club_name": "Versatile Toastmasters Club"
     },
-    "05477573": {
-      "slug": "05477573_PIM_Toastmasters",
-      "division": "B",
-      "area": "04",
-      "club_name": "PIM Toastmasters"
+    "07856786": {
+      "slug": "07856786_Silvermill_Toastmasters_Club",
+      "division": "H",
+      "area": "02",
+      "club_name": "Silvermill Toastmasters Club"
     },
-    "07980472": {
-      "slug": "07980472_Vavuniya_Toastmasters_Club",
-      "division": "B",
-      "area": "04",
-      "club_name": "Vavuniya Toastmasters Club"
+    "01818104": {
+      "slug": "01818104_Negombo_Toastmasters",
+      "division": "H",
+      "area": "02",
+      "club_name": "Negombo Toastmasters"
     },
-    "06547554": {
-      "slug": "06547554_Synopsys_Lanka_Toastmasters_Club",
-      "division": "B",
-      "area": "04",
-      "club_name": "Synopsys Lanka Toastmasters Club"
+    "01378886": {
+      "slug": "01378886_Omega_Line",
+      "division": "H",
+      "area": "02",
+      "club_name": "Omega Line"
     },
-    "28679248": {
-      "slug": "28679248_Abans_Toastmasters_Club",
-      "division": "B",
-      "area": "04",
-      "club_name": "Abans Toastmasters Club"
+    "01055854": {
+      "slug": "01055854_Wayamba_Toastmasters",
+      "division": "H",
+      "area": "02",
+      "club_name": "Wayamba Toastmasters"
     },
-    "28678629": {
-      "slug": "28678629_IESL_Kandurata_Chapter_Toastmasters_Club",
-      "division": "B",
+    "28679004": {
+      "slug": "28679004_IAB_Toastmasters_Club",
+      "division": "H",
+      "area": "02",
+      "club_name": "IAB Toastmasters Club"
+    },
+    "01514977": {
+      "slug": "01514977_Wattala_Toastmasters_Club",
+      "division": "H",
+      "area": "01",
+      "club_name": "Wattala Toastmasters Club"
+    },
+    "28678062": {
+      "slug": "28678062_United_Tractors_Toastmasters_Club",
+      "division": "H",
+      "area": "01",
+      "club_name": "United Tractors Toastmasters Club"
+    },
+    "07390865": {
+      "slug": "07390865_Negombo_Speakers_Forum",
+      "division": "H",
+      "area": "01",
+      "club_name": "Negombo Speakers Forum"
+    },
+    "03200777": {
+      "slug": "03200777_Sunday_Live_Speakers_Forum",
+      "division": "H",
+      "area": "01",
+      "club_name": "Sunday Live Speakers Forum"
+    },
+    "05144557": {
+      "slug": "05144557_Minuwangoda_Toastmasters_Club",
+      "division": "H",
       "area": "04",
-      "club_name": "IESL Kandurata Chapter Toastmasters Club"
+      "club_name": "Minuwangoda Toastmasters Club"
+    },
+    "07832471": {
+      "slug": "07832471_Ragama_Toastmasters_Club",
+      "division": "H",
+      "area": "04",
+      "club_name": "Ragama Toastmasters Club"
+    },
+    "00007639": {
+      "slug": "00007639_SriLankan_Airlines_Toastmasters_Club",
+      "division": "H",
+      "area": "04",
+      "club_name": "SriLankan Airlines Toastmasters Club"
+    },
+    "28675349": {
+      "slug": "28675349_Ansell_Textiles_Lanka_Toastmasters_Club",
+      "division": "H",
+      "area": "04",
+      "club_name": "Ansell Textiles Lanka Toastmasters Club"
+    },
+    "07975669": {
+      "slug": "07975669_Ceylon_Advanced_Toastmasters_Club",
+      "division": "H",
+      "area": "04",
+      "club_name": "Ceylon Advanced Toastmasters Club"
+    },
+    "06604478": {
+      "slug": "06604478_Ja_Ela_Toastmasters_Club",
+      "division": "H",
+      "area": "03",
+      "club_name": "Ja-Ela Toastmasters Club"
+    },
+    "28675770": {
+      "slug": "28675770_Star_Garments_Toastmasters_Club",
+      "division": "H",
+      "area": "03",
+      "club_name": "Star Garments Toastmasters Club"
+    },
+    "07855253": {
+      "slug": "07855253_Ampara_Toastmasters_Club",
+      "division": "H",
+      "area": "03",
+      "club_name": "Ampara Toastmasters Club"
+    },
+    "00777976": {
+      "slug": "00777976_FTZ_Toastmasters_Club",
+      "division": "H",
+      "area": "03",
+      "club_name": "FTZ Toastmasters Club"
     },
     "04091394": {
       "slug": "04091394_Ceylinco_Life_Toastmasters_Club",
@@ -760,11 +718,29 @@
       "area": "02",
       "club_name": "IESL Sabaragamuwa Toastmaster Club"
     },
-    "07860947": {
-      "slug": "07860947_Central_Colombo_Toastmasters_Club",
+    "07980472": {
+      "slug": "07980472_Vavuniya_Toastmasters_Club",
       "division": "B",
-      "area": "01",
-      "club_name": "Central Colombo Toastmasters Club"
+      "area": "04",
+      "club_name": "Vavuniya Toastmasters Club"
+    },
+    "05477573": {
+      "slug": "05477573_PIM_Toastmasters",
+      "division": "B",
+      "area": "04",
+      "club_name": "PIM Toastmasters"
+    },
+    "06547554": {
+      "slug": "06547554_Synopsys_Lanka_Toastmasters_Club",
+      "division": "B",
+      "area": "04",
+      "club_name": "Synopsys Lanka Toastmasters Club"
+    },
+    "28679248": {
+      "slug": "28679248_Abans_Toastmasters_Club",
+      "division": "B",
+      "area": "04",
+      "club_name": "Abans Toastmasters Club"
     },
     "00918669": {
       "slug": "00918669_Bcis_Toastmasters_Club",
@@ -777,6 +753,12 @@
       "division": "B",
       "area": "01",
       "club_name": "NTG Toastmasters Club"
+    },
+    "07860947": {
+      "slug": "07860947_Central_Colombo_Toastmasters_Club",
+      "division": "B",
+      "area": "01",
+      "club_name": "Central Colombo Toastmasters Club"
     },
     "07225230": {
       "slug": "07225230_Yarl_Paady_Toastmasters_Club",
@@ -820,17 +802,17 @@
       "area": "03",
       "club_name": "Fusion Toastmasters Club"
     },
-    "00698816": {
-      "slug": "00698816_CA_Sri_Lanka_Toastmasters_Club",
-      "division": "E",
-      "area": "02",
-      "club_name": "CA Sri Lanka Toastmasters Club"
-    },
     "05505274": {
       "slug": "05505274_Horana_Toastmasters_Club",
       "division": "E",
       "area": "02",
       "club_name": "Horana Toastmasters Club"
+    },
+    "00698816": {
+      "slug": "00698816_ICASL_Toastmasters_Club",
+      "division": "E",
+      "area": "02",
+      "club_name": "ICASL Toastmasters Club"
     },
     "04631334": {
       "slug": "04631334_CBA_Toastmasters_Club",
@@ -940,17 +922,17 @@
       "area": "01",
       "club_name": "CBL Foods Toastmasters Club"
     },
-    "05756861": {
-      "slug": "05756861_LNP_Toastmasters_Club",
-      "division": "G",
-      "area": "01",
-      "club_name": "LNP Toastmasters Club"
-    },
     "01317290": {
       "slug": "01317290_APIIT_Toastmasters",
       "division": "G",
       "area": "01",
       "club_name": "APIIT Toastmasters"
+    },
+    "05756861": {
+      "slug": "05756861_LNP_Toastmasters_Club",
+      "division": "G",
+      "area": "01",
+      "club_name": "LNP Toastmasters Club"
     },
     "05275304": {
       "slug": "05275304_Rajagiriya_Toastmasters_Club",
@@ -982,12 +964,6 @@
       "area": "02",
       "club_name": "Find Your Voice Toastmasters Club"
     },
-    "28676602": {
-      "slug": "28676602_TalkCrafters_Toastmasters_Club",
-      "division": "G",
-      "area": "02",
-      "club_name": "TalkCrafters Toastmasters Club"
-    },
     "02549382": {
       "slug": "02549382_Anuradhapura_Toastmasters_Club",
       "division": "G",
@@ -999,12 +975,6 @@
       "division": "G",
       "area": "03",
       "club_name": "Jaffna Toastmasters Club (JTMC)"
-    },
-    "07391111": {
-      "slug": "07391111_Puttalam_Toastmasters",
-      "division": "G",
-      "area": "03",
-      "club_name": "Puttalam Toastmasters"
     },
     "28676100": {
       "slug": "28676100_Rajarata_University_Toastmasters_Club",
