@@ -1,0 +1,220 @@
+====================================================================
+ DISTRICT 82 PATHWAYS DASHBOARD — HOW TO UPDATE IT
+====================================================================
+
+Your project folder (this is your "PROJECT FOLDER" referred to below):
+
+D:\This PC\Documents\Toastmasters\District 82 Pathways Chair 26-27\
+Pathways Momentum Award\Dashboard\d82-pathways-dashboard\tm-dashboard
+
+
+====================================================================
+ PART 1: YOUR NORMAL MONTHLY UPDATE (do this every month)
+====================================================================
+
+Use this whenever you have a new Club Performance CSV export and
+NOTHING has changed about the dashboard's design or features.
+
+STEP 1 — Get the new CSV
+-------------------------
+Export the latest Club Performance report from the Toastmasters
+Dashboard as a CSV. Save it into the "data" folder inside your
+project folder, e.g.:
+
+  ...\tm-dashboard\data\Club_Performance_30th_June.csv
+
+STEP 2 — Open Git Bash
+------------------------
+Start Menu -> type "Git Bash" -> open it.
+
+STEP 3 — Go to your project folder
+------------------------------------
+Copy-paste this exact line into Git Bash:
+
+cd "/d/This PC/Documents/Toastmasters/District 82 Pathways Chair 26-27/Pathways Momentum Award/Dashboard/d82-pathways-dashboard/tm-dashboard"
+
+Press Enter. Confirm it worked by typing:
+
+ls
+
+You should see folders named: scripts, docs, data
+
+STEP 4 — Run the update script
+---------------------------------
+Replace the filename below with your actual new CSV filename:
+
+./scripts/update_dashboard.sh data/Club_Performance_30th_June.csv
+
+Wait for it to finish. You should see a line like:
+
+  Generated district(1) + division(9) + area(36) + club(164) reports.
+
+STEP 5 — Push it live
+------------------------
+git add .
+git commit -m "Update dashboard: 2026-06-30"
+git push
+
+(Change the date in quotes to match your actual snapshot date —
+this is just a label for your own reference, it doesn't affect
+the dashboard.)
+
+STEP 6 — Check it worked
+---------------------------
+Open your live dashboard URL in a browser.
+Press Ctrl+Shift+R (hard refresh, not just F5).
+Look at the "Snapshot as of" pill top-right — it should show your
+new CSV's date.
+
+THAT'S IT. This is the ONLY thing you need to do most months.
+
+
+====================================================================
+ PART 2: BACKFILLING OLDER MONTHS (only if you have past CSVs
+ you never fed in, and want the Pathways Award dates to be accurate)
+====================================================================
+
+If you have several old CSVs sitting in your data folder (e.g. May
+9th, May 24th, May 30th) and you want the history to be accurate,
+feed them in OLDEST FIRST, one at a time, using parse_data.py
+directly (NOT update_dashboard.sh) — then run generate_exports.py
+once at the very end. Example:
+
+cd "/d/This PC/Documents/Toastmasters/District 82 Pathways Chair 26-27/Pathways Momentum Award/Dashboard/d82-pathways-dashboard/tm-dashboard"
+
+python3 scripts/parse_data.py data/Club_Performance_9th_May.csv
+python3 scripts/parse_data.py data/Club_Performance_24th_May.csv
+python3 scripts/parse_data.py data/Club_Performance_30th_May.csv
+python3 scripts/generate_exports.py
+
+git add .
+git commit -m "Backfill May snapshots"
+git push
+
+IMPORTANT: whichever CSV you feed in LAST is the one that becomes
+the "current" data shown on the live dashboard. Always feed your
+OLDEST file first and your NEWEST/most-recent file last.
+
+
+====================================================================
+ PART 3: WHEN CLAUDE SENDS YOU A ZIP FILE WITH DASHBOARD CHANGES
+====================================================================
+
+Sometimes Claude will give you a zip file with code changes (new
+features, bug fixes, design changes) rather than a data update.
+This needs a DIFFERENT process — read this carefully, this is
+where mistakes have happened before.
+
+THE GOLDEN RULE:
+-----------------
+When copying files from one of Claude's zips into your project,
+NEVER copy these two items, even if they're in the zip:
+
+  ✗ docs/data.json
+  ✗ docs/exports/   (the whole folder)
+
+These two contain CLAUDE'S OWN TEST DATA, not your real district
+data. If you copy them, your live dashboard will show Claude's
+test numbers instead of your real numbers.
+
+WHAT TO ACTUALLY COPY from Claude's zip:
+------------------------------------------
+  ✓ docs/app.js
+  ✓ docs/style.css
+  ✓ docs/index.html
+  ✓ docs/assets/         (folder, if present — logos etc.)
+  ✓ docs/vendor/         (folder, if present — library files)
+  ✓ scripts/*.py         (all Python files)
+  ✓ scripts/*.sh         (shell scripts)
+  ✓ scripts/requirements.txt
+  ✗ docs/data.json       <-- SKIP THIS
+  ✗ docs/exports/        <-- SKIP THIS (whole folder)
+  ✗ data/history.json    <-- SKIP THIS (this is YOUR accumulated
+                              history, don't let Claude's overwrite it)
+
+STEPS:
+------
+1. Download and unzip Claude's file (e.g. into your Downloads folder).
+
+2. Open Git Bash, go to your project folder (same cd command as
+   always, see Part 1 Step 3).
+
+3. Copy ONLY the safe files/folders listed above. Easiest way:
+   open the unzipped folder and your project folder side-by-side
+   in File Explorer, and manually drag over only the items marked
+   with a checkmark (✓) above. Do NOT drag over "data.json" or
+   the "exports" folder.
+
+4. Re-run your update using YOUR real, latest CSV so the site
+   regenerates using YOUR actual data with the new code:
+
+   ./scripts/update_dashboard.sh data/YOUR_LATEST_FILE.csv
+
+5. Push it live:
+
+   git add .
+   git commit -m "Apply dashboard update from Claude"
+   git push
+
+6. Hard refresh the live site (Ctrl+Shift+R) and check the
+   "Snapshot as of" date matches YOUR latest CSV, not some other
+   date. If it's wrong, STOP and don't trust the rest of the
+   update until this is fixed — it means data.json or exports/
+   got overwritten by mistake.
+
+
+====================================================================
+ PART 4: LOCKING THE PATHWAYS AWARD (do this once, in Jan 2027,
+ or whenever you have the final Dec 31, 2026 cutoff data)
+====================================================================
+
+Your regular monthly updates (Part 1) will keep running even after
+Dec 31, 2026 — but Pathways Award completions after that date must
+NOT count toward the award. To "freeze" the Award tab so it stops
+changing no matter how many more times you update the dashboard
+afterward:
+
+cd "/d/This PC/Documents/Toastmasters/District 82 Pathways Chair 26-27/Pathways Momentum Award/Dashboard/d82-pathways-dashboard/tm-dashboard"
+
+python3 scripts/build_award_snapshot.py data/YOUR_DEC31_FILE.csv
+
+git add docs/award_data.json data/history.json
+git commit -m "Lock official Pathways Quality Award result"
+git push
+
+After this, the Award tab always shows this locked, official result
+— it will not change even if you keep updating the regular monthly
+dashboard in January, February, etc. To undo/re-lock later (e.g.
+after a correction), just delete docs/award_data.json, commit, push
+to go back to live data, or re-run build_award_snapshot.py again to
+re-lock with corrected numbers.
+
+
+====================================================================
+ QUICK REFERENCE CHEAT SHEET
+====================================================================
+
+Normal monthly update:
+  ./scripts/update_dashboard.sh data/YOUR_NEW_FILE.csv
+  git add . && git commit -m "Update dashboard" && git push
+
+Backfilling multiple old files (oldest first):
+  python3 scripts/parse_data.py data/OLDEST_FILE.csv
+  python3 scripts/parse_data.py data/NEWER_FILE.csv
+  python3 scripts/parse_data.py data/NEWEST_FILE.csv
+  python3 scripts/generate_exports.py
+  git add . && git commit -m "Backfill" && git push
+
+After applying a code update from Claude, ALWAYS re-run:
+  ./scripts/update_dashboard.sh data/YOUR_LATEST_FILE.csv
+  git add . && git commit -m "Apply update" && git push
+
+Locking the Pathways Award (once, after Dec 31, 2026):
+  python3 scripts/build_award_snapshot.py data/DEC31_FILE.csv
+  git add docs/award_data.json data/history.json
+  git commit -m "Lock award result" && git push
+
+Always verify after pushing:
+  Open live site -> Ctrl+Shift+R -> check "Snapshot as of" date
+
+====================================================================
