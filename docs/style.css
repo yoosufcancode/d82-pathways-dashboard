@@ -255,13 +255,13 @@ main {
 .div-metric { text-align: right; color: var(--ink-soft); font-weight: 500; }
 .div-metric b { color: var(--ink); font-weight: 700; }
 .div-row-body {
-  max-height: 0;
-  overflow: hidden;
-  padding: 0 14px;
+  display: none;
   background: #FAFBFB;
-  transition: max-height .4s var(--ease), padding .4s var(--ease);
 }
-.div-row.open .div-row-body { padding: 6px 14px 16px; }
+.div-row.open .div-row-body { display: block; }
+.div-row-body-inner {
+  padding: 6px 14px 16px;
+}
 .div-row.open .chevron { transform: rotate(90deg); }
 .chevron { transition: transform .25s var(--ease); margin-left: auto; color: var(--tm-gray); display: inline-block; }
 
@@ -297,20 +297,20 @@ main {
 .club-name-toggle:hover { text-decoration: underline; color: var(--tm-blue); }
 .club-sub { color: var(--ink-soft); font-size: 11.5px; display: flex; align-items: center; }
 .club-detail {
-  max-height: 0;
-  overflow: hidden;
+  display: none;
+  margin-top: 0;
+  background: #FAFBFB;
+  border-radius: 8px;
+}
+.club-row.expanded .club-detail { display: block; margin-top: 8px; border: 1px solid var(--border); }
+.club-detail-inner {
   display: flex;
   flex-direction: column;
   gap: 4px;
   font-size: 11.5px;
   color: var(--ink-soft);
-  margin-top: 0;
-  padding: 0 12px;
-  background: #FAFBFB;
-  border-radius: 8px;
-  transition: max-height .35s var(--ease), margin-top .35s var(--ease), padding .35s var(--ease);
+  padding: 10px 12px;
 }
-.club-row.expanded .club-detail { margin-top: 8px; padding: 10px 12px; border: 1px solid var(--border); }
 .club-detail i { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: 5px; }
 .club-detail b { color: var(--ink); font-weight: 700; }
 .club-detail em { color: var(--ink-soft); font-style: normal; font-size: 10.5px; }
@@ -385,14 +385,14 @@ main {
 }
 .area-row-toggle.open .chevron-icon { color: var(--tm-blue); transform: rotate(90deg); }
 .area-detail-row > td { padding: 0; }
+.area-detail-row { display: none; }
+.area-row-toggle.open + .area-detail-row { display: table-row; }
 .area-detail-inner {
-  max-height: 0;
-  overflow: hidden;
-  padding: 0 8px 0 34px;
   background: #FAFBFB;
-  transition: max-height .35s var(--ease), padding .35s var(--ease);
 }
-.area-row-toggle.open + .area-detail-row .area-detail-inner { padding: 10px 8px 16px 34px; }
+.area-detail-inner-content {
+  padding: 10px 8px 16px 34px;
+}
 .area-club-table { font-size: 12.5px; background: #fff; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
 .area-club-table th { font-size: 10px; padding: 6px 8px; }
 .area-club-table td { padding: 6px 8px; }

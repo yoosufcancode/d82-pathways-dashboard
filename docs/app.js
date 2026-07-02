@@ -31,16 +31,6 @@ function rankBadgeClass(rank) {
 }
 
 /* ---------------- ANIMATION HELPERS ---------------- */
-function expandCollapsible(el) {
-  el.style.maxHeight = el.scrollHeight + 'px';
-}
-function collapseCollapsible(el) {
-  el.style.maxHeight = '0px';
-}
-function setCollapsible(el, opening) {
-  if (opening) expandCollapsible(el); else collapseCollapsible(el);
-}
-
 function animateNumber(el, target, duration = 850) {
   const startTime = performance.now();
   function tick(now) {
@@ -182,6 +172,7 @@ function renderDivisions() {
         <div class="div-metric">Total <b>${d.total}</b></div>
       </div>
       <div class="div-row-body">
+        <div class="div-row-body-inner">
         ${d.areas.map(a => `
           <div style="margin-bottom:14px;">
             <strong style="font-family:'Montserrat',sans-serif;font-size:13px;color:var(--tm-blue)">
@@ -203,18 +194,13 @@ function renderDivisions() {
             </table>
           </div>
         `).join('')}
+        </div>
       </div>
     </div>
   `).join('');
 
   container.querySelectorAll('.div-row-head').forEach(head => {
-    head.addEventListener('click', () => {
-      const row = head.parentElement;
-      const body = row.querySelector('.div-row-body');
-      const opening = !row.classList.contains('open');
-      row.classList.toggle('open', opening);
-      setCollapsible(body, opening);
-    });
+    head.addEventListener('click', () => head.parentElement.classList.toggle('open'));
   });
 }
 
@@ -229,10 +215,7 @@ function renderAreas() {
   content.addEventListener('click', (e) => {
     const row = e.target.closest('.area-row-toggle');
     if (!row) return;
-    const inner = row.nextElementSibling.querySelector('.area-detail-inner');
-    const opening = !row.classList.contains('open');
-    row.classList.toggle('open', opening);
-    setCollapsible(inner, opening);
+    row.classList.toggle('open');
   });
 }
 
@@ -277,12 +260,14 @@ function paintAreas(divFilter) {
           <tr class="area-detail-row">
             <td colspan="10">
               <div class="area-detail-inner">
-                <table class="rank-table area-club-table">
-                  <thead>
-                    <tr><th>Rank</th><th>Club</th><th>Level 1</th><th>Level 2</th><th>Level 3</th><th>Level 4+</th><th>Total</th></tr>
-                  </thead>
-                  <tbody>${clubDetailRowsHTML(a.clubs)}</tbody>
-                </table>
+                <div class="area-detail-inner-content">
+                  <table class="rank-table area-club-table">
+                    <thead>
+                      <tr><th>Rank</th><th>Club</th><th>Level 1</th><th>Level 2</th><th>Level 3</th><th>Level 4+</th><th>Total</th></tr>
+                    </thead>
+                    <tbody>${clubDetailRowsHTML(a.clubs)}</tbody>
+                  </table>
+                </div>
               </div>
             </td>
           </tr>
@@ -300,11 +285,7 @@ function renderClubs() {
   container.addEventListener('click', (e) => {
     const toggle = e.target.closest('.club-name-toggle');
     if (!toggle) return;
-    const row = toggle.closest('.club-row');
-    const detail = row.querySelector('.club-detail');
-    const opening = !row.classList.contains('expanded');
-    row.classList.toggle('expanded', opening);
-    setCollapsible(detail, opening);
+    toggle.closest('.club-row').classList.toggle('expanded');
   });
 }
 
@@ -328,11 +309,13 @@ function paintClubs(query) {
           Area ${c.area} &middot; ${c.active_members} active members
         </div>
         <div class="club-detail">
-          <span><i style="background:${LEVEL_COLORS.level1}"></i>Level 1 <b>${c.level1}</b> <em>(district rank #${c.rank_l1})</em></span>
-          <span><i style="background:${LEVEL_COLORS.level2}"></i>Level 2 <b>${c.level2}</b> <em>(district rank #${c.rank_l2})</em></span>
-          <span><i style="background:${LEVEL_COLORS.level3}"></i>Level 3 <b>${c.level3}</b> <em>(district rank #${c.rank_l3})</em></span>
-          <span><i style="background:${LEVEL_COLORS.level4}"></i>Level 4+/Path/DTM <b>${c.level4}</b> <em>(district rank #${c.rank_l4})</em></span>
-          <span class="club-detail-dcp">DCP status: <b>${dcpLabel}</b></span>
+          <div class="club-detail-inner">
+            <span><i style="background:${LEVEL_COLORS.level1}"></i>Level 1 <b>${c.level1}</b> <em>(district rank #${c.rank_l1})</em></span>
+            <span><i style="background:${LEVEL_COLORS.level2}"></i>Level 2 <b>${c.level2}</b> <em>(district rank #${c.rank_l2})</em></span>
+            <span><i style="background:${LEVEL_COLORS.level3}"></i>Level 3 <b>${c.level3}</b> <em>(district rank #${c.rank_l3})</em></span>
+            <span><i style="background:${LEVEL_COLORS.level4}"></i>Level 4+/Path/DTM <b>${c.level4}</b> <em>(district rank #${c.rank_l4})</em></span>
+            <span class="club-detail-dcp">DCP status: <b>${dcpLabel}</b></span>
+          </div>
         </div>
       </div>
       <div class="club-total">${c.total}</div>
