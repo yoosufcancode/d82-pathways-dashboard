@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="LOGO" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 255.1">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: Gotham-Black, Gotham;
+        font-size: 66.75px;
+        font-weight: 800;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: #004165;
+      }
+
+      .cls-4 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-5 {
+        fill: #772432;
+        font-family: Gotham-Bold, Gotham;
+        font-size: 28.45px;
+        font-weight: 700;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+
+      .cls-8 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        font-family: MyriadPro-SemiCn, 'Myriad Pro';
+        font-size: 32.98px;
+      }
+
+      .cls-9 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-10 {
+        letter-spacing: -.11em;
+      }
+
+      .cls-11 {
+        letter-spacing: 0em;
+      }
+
+      .cls-12 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-13 {
+        letter-spacing: -.09em;
+      }
+
+      .cls-14 {
+        letter-spacing: -.09em;
+      }
+
+      .cls-15 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-16 {
+        fill: #770c29;
+      }
+
+      .cls-16, .cls-17, .cls-18, .cls-19, .cls-20, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-17 {
+        fill: #a93439;
+      }
+
+      .cls-18 {
+        fill: #a4b7b9;
+      }
+
+      .cls-19 {
+        fill: #a9b2b1;
+      }
+
+      .cls-20 {
+        fill: #022a3a;
+      }
+
+      .cls-21 {
+        letter-spacing: -.07em;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect class="cls-18" x="118.49" y="187.66" width="45.21" height="1.43"/>
+    <rect class="cls-18" x="450.53" y="187.66" width="45.21" height="1.43"/>
+  </g>
+  <text class="cls-2" transform="translate(180.77 195.56) scale(1 .9)"><tspan class="cls-7" x="0" y="0">learning </tspan><tspan x="112.6" y="0">e</tspan><tspan class="cls-7" x="127.77" y="0">xperien</tspan><tspan class="cls-11" x="224.21" y="0">c</tspan><tspan class="cls-7" x="237.47" y="0">e </tspan></text>
+  <rect class="cls-20" x="191.44" y="49.96" width="26.33" height="14.66"/>
+  <rect class="cls-3" x="226.23" y="49.96" width="29.91" height="14.66"/>
+  <rect class="cls-16" x="266.86" y="49.96" width="34.59" height="14.66"/>
+  <rect class="cls-17" x="314.81" y="49.96" width="40.78" height="14.66"/>
+  <rect class="cls-19" x="371.53" y="49.96" width="51.25" height="14.66"/>
+  <text class="cls-1" transform="translate(113.06 161.06)"><tspan class="cls-21" x="0" y="0">P</tspan><tspan class="cls-14" x="40.25" y="0">A</tspan><tspan x="87.31" y="0">TH</tspan><tspan class="cls-13" x="182.16" y="0">W</tspan><tspan class="cls-10" x="250.71" y="0">A</tspan><tspan class="cls-15" x="296.44" y="0">Y</tspan><tspan x="342.36" y="0">S</tspan></text>
+  <text class="cls-5" transform="translate(188.04 104.47)"><tspan class="cls-9" x="0" y="0">T</tspan><tspan class="cls-4" x="17.7" y="0">O</tspan><tspan class="cls-8" x="40.71" y="0">A</tspan><tspan class="cls-12" x="63.02" y="0">S</tspan><tspan class="cls-6" x="80.91" y="0">TM</tspan><tspan class="cls-8" x="124.27" y="0">A</tspan><tspan class="cls-12" x="146.57" y="0">S</tspan><tspan class="cls-6" x="164.47" y="0">TERS</tspan></text>
+</svg>
