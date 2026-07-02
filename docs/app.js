@@ -413,17 +413,94 @@ function renderDownloads() {
       document.querySelectorAll('.role-tab').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       currentRole = btn.dataset.role;
+      closePreview();
       paintDownloadPicker();
     });
   });
+
+  const links = document.getElementById('download-links');
+  links.addEventListener('click', (e) => {
+    const btn = e.target.closest('.preview-btn');
+    if (!btn) return;
+    showPreview(btn.dataset.previewType, btn.dataset.previewPath);
+  });
+
+  document.getElementById('preview-pane').addEventListener('click', (e) => {
+    if (e.target.closest('#preview-close')) closePreview();
+  });
+
   paintDownloadPicker();
 }
 
 function downloadButtons(baseName, folder) {
+  const pdfPath = `exports/${folder}/${baseName}.pdf`;
+  const xlsxPath = `exports/${folder}/${baseName}.xlsx`;
   return `
-    <a class="dl-btn pdf" href="exports/${folder}/${baseName}.pdf" download>&#8681; PDF</a>
-    <a class="dl-btn xlsx" href="exports/${folder}/${baseName}.xlsx" download>&#8681; Excel</a>
+    <a class="dl-btn pdf" href="${pdfPath}" download>&#8681; Download PDF</a>
+    <button class="dl-btn preview-btn" data-preview-type="pdf" data-preview-path="${pdfPath}">&#128065; Preview PDF</button>
+    <a class="dl-btn xlsx" href="${xlsxPath}" download>&#8681; Download Excel</a>
+    <button class="dl-btn preview-btn" data-preview-type="xlsx" data-preview-path="${xlsxPath}">&#128065; Preview Excel</button>
   `;
+}
+
+async function showPreview(type, path) {
+  const pane = document.getElementById('preview-pane');
+  pane.classList.add('open');
+
+  if (type === 'pdf') {
+    pane.innerHTML = `
+      <div class="preview-pane-head">
+        <span>Preview &mdash; ${path.split('/').pop()}</span>
+        <button class="preview-close" id="preview-close">&times; Close preview</button>
+      </div>
+      <iframe class="preview-frame" src="${path}"></iframe>
+    `;
+  } else {
+    pane.innerHTML = `
+      <div class="preview-pane-head">
+        <span>Preview &mdash; ${path.split('/').pop()}</span>
+        <button class="preview-close" id="preview-close">&times; Close preview</button>
+      </div>
+      <div class="preview-loading">Loading spreadsheet preview&hellip;</div>
+    `;
+    try {
+      const res = await fetch(path);
+      const buf = await res.arrayBuffer();
+      const wb = XLSX.read(buf, { type: 'array' });
+      const sheetTabs = wb.SheetNames.map((name, i) =>
+        `<button class="preview-sheet-tab ${i === 0 ? 'active' : ''}" data-sheet="${name}">${name}</button>`
+      ).join('');
+      const firstSheetHTML = XLSX.utils.sheet_to_html(wb.Sheets[wb.SheetNames[0]], { id: 'preview-xlsx-table' });
+      pane.innerHTML = `
+        <div class="preview-pane-head">
+          <span>Preview &mdash; ${path.split('/').pop()}</span>
+          <button class="preview-close" id="preview-close">&times; Close preview</button>
+        </div>
+        ${wb.SheetNames.length > 1 ? `<div class="preview-sheet-tabs">${sheetTabs}</div>` : ''}
+        <div class="preview-xlsx-wrap">${firstSheetHTML}</div>
+      `;
+      pane.querySelectorAll('.preview-sheet-tab').forEach(tab => {
+        tab.addEventListener('click', () => {
+          pane.querySelectorAll('.preview-sheet-tab').forEach(t => t.classList.remove('active'));
+          tab.classList.add('active');
+          const html = XLSX.utils.sheet_to_html(wb.Sheets[tab.dataset.sheet], { id: 'preview-xlsx-table' });
+          pane.querySelector('.preview-xlsx-wrap').innerHTML = html;
+        });
+      });
+    } catch (err) {
+      pane.querySelector('.preview-loading')?.replaceWith(
+        Object.assign(document.createElement('p'), { className: 'dl-empty', textContent: 'Could not load preview for this file.' })
+      );
+    }
+  }
+
+  pane.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+function closePreview() {
+  const pane = document.getElementById('preview-pane');
+  pane.classList.remove('open');
+  pane.innerHTML = '';
 }
 
 function paintDownloadPicker() {
@@ -442,6 +519,7 @@ function paintDownloadPicker() {
     </select>`;
     const sel = document.getElementById('pick-division');
     const update = () => {
+      closePreview();
       links.innerHTML = downloadButtons(MANIFEST.divisions[sel.value], 'division');
     };
     sel.onchange = update;
@@ -466,6 +544,7 @@ function paintDownloadPicker() {
       updateLinks();
     };
     const updateLinks = () => {
+      closePreview();
       const key = `${divSel.value}-${areaSel.value}`;
       links.innerHTML = downloadButtons(MANIFEST.areas[key], 'area');
     };
@@ -488,6 +567,7 @@ function paintDownloadPicker() {
         </div>`).join('');
       results.querySelectorAll('[data-club]').forEach(row => {
         row.addEventListener('click', () => {
+          closePreview();
           const info = MANIFEST.clubs[row.dataset.club];
           links.innerHTML = downloadButtons(info.slug, 'club');
         });

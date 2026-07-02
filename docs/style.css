@@ -495,7 +495,54 @@ main {
 .dl-btn:active { transform: translateY(0) scale(.97); }
 .dl-btn.pdf { background: var(--tm-maroon); color: #fff; border-color: var(--tm-maroon); }
 .dl-btn.xlsx { background: #fff; color: var(--tm-blue); border-color: var(--tm-blue); }
+.dl-btn.preview-btn {
+  background: #fff; color: var(--ink-soft); border-color: var(--border);
+  font-weight: 600;
+}
+.dl-btn.preview-btn:hover { color: var(--tm-blue); border-color: var(--tm-blue); }
 .dl-empty { color: var(--ink-soft); font-size: 13px; }
+
+/* preview pane */
+.preview-pane {
+  display: none;
+  margin-top: 18px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #fff;
+}
+.preview-pane.open { display: block; animation: panelIn .3s var(--ease); }
+.preview-pane-head {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 10px 16px;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 12.5px;
+  color: var(--tm-blue);
+}
+.preview-close {
+  background: none; border: none; cursor: pointer;
+  font-family: 'Source Sans 3', sans-serif; font-size: 12.5px; font-weight: 600;
+  color: var(--ink-soft); padding: 4px 8px; border-radius: 6px;
+  transition: background .15s var(--ease), color .15s var(--ease);
+}
+.preview-close:hover { background: rgba(0,0,0,0.06); color: var(--tm-maroon); }
+.preview-frame { width: 100%; height: 640px; border: none; display: block; }
+.preview-loading { padding: 40px; text-align: center; color: var(--ink-soft); font-family: 'Montserrat', sans-serif; }
+.preview-sheet-tabs { display: flex; gap: 4px; padding: 8px 12px 0; background: var(--bg); border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+.preview-sheet-tab {
+  background: #fff; border: 1px solid var(--border); border-bottom: none;
+  border-radius: 6px 6px 0 0; padding: 6px 12px; font-size: 12px; font-family: 'Montserrat', sans-serif;
+  font-weight: 600; color: var(--ink-soft); cursor: pointer;
+}
+.preview-sheet-tab.active { color: var(--tm-blue); background: #fff; border-color: var(--tm-blue); }
+.preview-xlsx-wrap { max-height: 560px; overflow: auto; padding: 4px; }
+.preview-xlsx-wrap table {
+  border-collapse: collapse; font-size: 12px; font-family: 'Source Sans 3', sans-serif; width: 100%;
+}
+.preview-xlsx-wrap td {
+  border: 1px solid var(--border); padding: 5px 9px; white-space: nowrap; color: var(--ink);
+}
 
 footer.site-footer {
   text-align: center; color: var(--ink-soft); font-size: 12px; padding: 30px 0 50px;

@@ -158,7 +158,7 @@
     <div class="card">
       <h2>Officer Breakdown Downloads</h2>
       <p class="card-sub" style="margin-bottom:16px;display:block;">
-        Pick your role and unit to download a ready-to-send PDF or Excel summary.
+        Pick your role and unit, preview the report right here, then download the PDF or Excel when you're ready.
       </p>
       <div class="download-role-tabs" id="download-role-tabs">
         <button class="role-tab active" data-role="district">District Director</button>
@@ -168,11 +168,13 @@
       </div>
       <div id="download-picker" class="download-picker"></div>
       <div id="download-links" class="download-links"></div>
+      <div id="preview-pane" class="preview-pane"></div>
     </div>
   </section>
 </template>
 
 <script src="vendor/chart.umd.js"></script>
+<script src="vendor/xlsx.full.min.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
