@@ -1,0 +1,14 @@
+Open GitBash
+
+cd "/d/This PC/Documents/Toastmasters/District 82 Pathways Chair 26-27/Pathways Momentum Award/Dashboard/d82-pathways-dashboard/tm-dashboard"
+
+
+Run Update with new file
+./scripts/update_dashboard.sh data/Club_Performance_30th_May.csv
+
+git add .
+git commit -m "Update dashboard: 2026-05-30"
+git push
+
+
+./scripts/update_dashboard.sh data/Club_Performance_24th_May.csv
