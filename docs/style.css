@@ -279,6 +279,24 @@ main {
 .rank-num { font-weight: 700; color: var(--tm-blue); width: 30px; }
 
 /* club leaderboard bars */
+.club-lb-banner {
+  background: #EAF1F5;
+  border: 1px solid #C7DCE6;
+  color: #1E4A5F;
+  border-radius: var(--radius);
+  padding: 12px 18px;
+  font-size: 12.5px;
+  line-height: 1.55;
+}
+.club-lb-tabs { display: flex; gap: 8px; margin-bottom: 14px; }
+.club-lb-tab {
+  font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 12.5px;
+  padding: 7px 14px; border-radius: 999px; border: 1px solid var(--border);
+  background: #fff; cursor: pointer; color: var(--ink-soft);
+  transition: background .2s var(--ease), color .2s var(--ease), border-color .2s var(--ease), transform .15s var(--ease);
+}
+.club-lb-tab:hover { transform: translateY(-1px); border-color: var(--tm-blue); color: var(--tm-blue); }
+.club-lb-tab.active { background: var(--tm-blue); border-color: var(--tm-blue); color: #fff; }
 .club-row {
   display: grid;
   grid-template-columns: 38px 1fr 60px 240px;

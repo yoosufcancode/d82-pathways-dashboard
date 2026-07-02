@@ -278,6 +278,8 @@ function paintAreas(divFilter) {
 }
 
 /* ---------------- CLUBS ---------------- */
+let clubLeaderboardMode = 'total';
+
 function renderClubs() {
   paintClubs('');
   document.getElementById('club-search').oninput = (e) => paintClubs(e.target.value.toLowerCase());
@@ -287,14 +289,68 @@ function renderClubs() {
     if (!toggle) return;
     toggle.closest('.club-row').classList.toggle('expanded');
   });
+
+  const subtitle = document.getElementById('club-lb-subtitle');
+  document.querySelectorAll('.club-lb-tab').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.club-lb-tab').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      clubLeaderboardMode = btn.dataset.mode;
+      subtitle.textContent = clubLeaderboardMode === 'total'
+        ? "District-wide, ranked by total levels completed · click a club name for its full breakdown"
+        : "District-wide, ranked by levels completed per active member · click a club name for its full breakdown";
+      paintClubs(document.getElementById('club-search').value.toLowerCase());
+    });
+  });
 }
 
 function paintClubs(query) {
   const container = document.getElementById('club-leaderboard');
-  const maxTotal = DATA.club_leaderboard[0]?.total || 1;
-  const rows = DATA.club_leaderboard.filter(c => c.club_name.toLowerCase().includes(query));
+  const source = clubLeaderboardMode === 'total' ? DATA.club_leaderboard : DATA.club_leaderboard_per_member;
+  const rows = source.filter(c => c.club_name.toLowerCase().includes(query));
+
+  if (clubLeaderboardMode === 'total') {
+    const maxTotal = DATA.club_leaderboard[0]?.total || 1;
+    container.innerHTML = rows.map(c => {
+      const widthPct = Math.max((c.total / maxTotal) * 100, 6);
+      const dcpLabel = DCP_STATUS_LABELS[(c.distinguished_status || '').trim().toUpperCase()] || 'Not yet Distinguished';
+      return `
+      <div class="club-row" data-club="${c.club_number}">
+        <div class="rank-badge ${rankBadgeClass(c.rank)}">${c.rank}</div>
+        <div>
+          <div class="club-name-line">
+            <span class="club-name club-name-toggle">${c.club_name}</span>
+            ${dcpBadgeHTML(c.distinguished_status)}
+          </div>
+          <div class="club-sub">
+            <span class="div-chip" style="background:${divColor(c.division)}">Div ${c.division}</span>
+            Area ${c.area} &middot; ${c.active_members} active members
+          </div>
+          <div class="club-detail">
+            <div class="club-detail-inner">
+              <span><i style="background:${LEVEL_COLORS.level1}"></i>Level 1 <b>${c.level1}</b> <em>(district rank #${c.rank_l1})</em></span>
+              <span><i style="background:${LEVEL_COLORS.level2}"></i>Level 2 <b>${c.level2}</b> <em>(district rank #${c.rank_l2})</em></span>
+              <span><i style="background:${LEVEL_COLORS.level3}"></i>Level 3 <b>${c.level3}</b> <em>(district rank #${c.rank_l3})</em></span>
+              <span><i style="background:${LEVEL_COLORS.level4}"></i>Level 4+/Path/DTM <b>${c.level4}</b> <em>(district rank #${c.rank_l4})</em></span>
+              <span class="club-detail-dcp">DCP status: <b>${dcpLabel}</b></span>
+            </div>
+          </div>
+        </div>
+        <div class="club-total">${c.total}</div>
+        <div class="club-bar-wrap" style="width:${widthPct}%;min-width:70px;">
+          ${['level1', 'level2', 'level3', 'level4'].map(k =>
+            `<span style="width:${(c[k] / (c.total || 1)) * 100}%;background:${LEVEL_COLORS[k]}" title="${k}: ${c[k]}"></span>`
+          ).join('')}
+        </div>
+      </div>`;
+    }).join('') || '<p class="dl-empty">No clubs match your search.</p>';
+    return;
+  }
+
+  // Levels per Member mode
+  const maxRatio = DATA.club_leaderboard_per_member[0]?.levels_per_member || 1;
   container.innerHTML = rows.map(c => {
-    const widthPct = Math.max((c.total / maxTotal) * 100, 6);
+    const widthPct = Math.max((c.levels_per_member / (maxRatio || 1)) * 100, 6);
     const dcpLabel = DCP_STATUS_LABELS[(c.distinguished_status || '').trim().toUpperCase()] || 'Not yet Distinguished';
     return `
     <div class="club-row" data-club="${c.club_number}">
@@ -310,19 +366,19 @@ function paintClubs(query) {
         </div>
         <div class="club-detail">
           <div class="club-detail-inner">
-            <span><i style="background:${LEVEL_COLORS.level1}"></i>Level 1 <b>${c.level1}</b> <em>(district rank #${c.rank_l1})</em></span>
-            <span><i style="background:${LEVEL_COLORS.level2}"></i>Level 2 <b>${c.level2}</b> <em>(district rank #${c.rank_l2})</em></span>
-            <span><i style="background:${LEVEL_COLORS.level3}"></i>Level 3 <b>${c.level3}</b> <em>(district rank #${c.rank_l3})</em></span>
-            <span><i style="background:${LEVEL_COLORS.level4}"></i>Level 4+/Path/DTM <b>${c.level4}</b> <em>(district rank #${c.rank_l4})</em></span>
+            <span><b>${c.levels_per_member}</b> levels per member &mdash; ${c.total} total levels &divide; ${c.active_members} active members</span>
+            <span>Tiebreaker &mdash; Level 1 + Level 3 combined: <b>${c.l1_l3_sum}</b> (L1 ${c.level1} + L3 ${c.level3})</span>
+            <span><i style="background:${LEVEL_COLORS.level1}"></i>Level 1 <b>${c.level1}</b></span>
+            <span><i style="background:${LEVEL_COLORS.level2}"></i>Level 2 <b>${c.level2}</b></span>
+            <span><i style="background:${LEVEL_COLORS.level3}"></i>Level 3 <b>${c.level3}</b></span>
+            <span><i style="background:${LEVEL_COLORS.level4}"></i>Level 4+/Path/DTM <b>${c.level4}</b></span>
             <span class="club-detail-dcp">DCP status: <b>${dcpLabel}</b></span>
           </div>
         </div>
       </div>
-      <div class="club-total">${c.total}</div>
+      <div class="club-total">${c.levels_per_member}</div>
       <div class="club-bar-wrap" style="width:${widthPct}%;min-width:70px;">
-        ${['level1', 'level2', 'level3', 'level4'].map(k =>
-          `<span style="width:${(c[k] / (c.total || 1)) * 100}%;background:${LEVEL_COLORS[k]}" title="${k}: ${c[k]}"></span>`
-        ).join('')}
+        <span style="width:100%;background:${LEVEL_COLORS.level1}"></span>
       </div>
     </div>`;
   }).join('') || '<p class="dl-empty">No clubs match your search.</p>';

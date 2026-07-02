@@ -105,10 +105,21 @@
 
 <template id="tpl-clubs">
   <section class="panel" data-panel="clubs">
+    <div class="club-lb-banner">
+      <strong>Two leaderboards:</strong> <b>Total Levels</b> ranks by overall levels completed.
+      <b>Levels per Member</b> ranks by levels completed per active member &mdash; a fairer measure for
+      smaller clubs. Tiebreakers for Levels per Member: (1) levels completed per member, then
+      (2) combined Level&nbsp;1 + Level&nbsp;3 completions. Clubs tied on both share the same rank
+      (e.g. 1, 2, 2, 4).
+    </div>
     <div class="card">
       <div class="card-header-row">
-        <h2>Club Leaderboard <span class="card-sub">District-wide, ranked by total levels completed &middot; click a club name for its full breakdown</span></h2>
+        <h2>Club Leaderboard <span class="card-sub" id="club-lb-subtitle">District-wide, ranked by total levels completed &middot; click a club name for its full breakdown</span></h2>
         <input type="search" id="club-search" class="select" placeholder="Search club name&hellip;">
+      </div>
+      <div class="club-lb-tabs" id="club-lb-tabs">
+        <button class="club-lb-tab active" data-mode="total">Total Levels</button>
+        <button class="club-lb-tab" data-mode="per_member">Levels per Member</button>
       </div>
       <p class="legend-note">
         <span class="swatch swatch-l1"></span>Level 1
