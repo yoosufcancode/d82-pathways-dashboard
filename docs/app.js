@@ -11,6 +11,18 @@ const DIVISION_COLORS = {
 };
 function divColor(div) { return DIVISION_COLORS[div] || '#004165'; }
 
+const DCP_STATUS_LABELS = {
+  D: 'Distinguished',
+  S: 'Select Distinguished',
+  P: "President's Distinguished",
+  M: 'Smedley Distinguished',
+};
+function dcpBadgeHTML(status) {
+  const code = (status || '').trim().toUpperCase();
+  if (!code || !DCP_STATUS_LABELS[code]) return '';
+  return `<span class="dcp-badge dcp-${code}" title="${DCP_STATUS_LABELS[code]}">${code}</span>`;
+}
+
 function rankBadgeClass(rank) {
   if (rank === 1) return 'gold';
   if (rank === 2) return 'silver';
@@ -177,27 +189,26 @@ function paintAreas(divFilter) {
   const divs = divFilter === '__all__' ? DATA.divisions : DATA.divisions.filter(d => d.division === divFilter);
   content.innerHTML = divs.map(d => `
     <div class="area-group-title">Division ${d.division}</div>
-    <div class="area-card-grid">
-      ${d.areas.map(a => `
-        <div class="area-card">
-          <div class="area-card-head">
-            <div class="rank-badge ${rankBadgeClass(a.rank_in_division)}">${a.rank_in_division}</div>
-            <div class="area-card-title">
-              Area ${a.area}
-              <span class="club-sub">${a.clubs.length} clubs &middot; district rank #${a.rank_in_district}</span>
-            </div>
-            <div class="area-card-total">${a.total}</div>
-          </div>
-          ${stackBarHTML(a, 'stackbar stackbar-lg')}
-          <div class="area-card-metrics">
-            <span><i style="background:${LEVEL_COLORS.level1}"></i>L1 <b>${a.level1}</b></span>
-            <span><i style="background:${LEVEL_COLORS.level2}"></i>L2 <b>${a.level2}</b></span>
-            <span><i style="background:${LEVEL_COLORS.level3}"></i>L3 <b>${a.level3}</b></span>
-            <span><i style="background:${LEVEL_COLORS.level4}"></i>L4+ <b>${a.level4}</b></span>
-          </div>
-        </div>
-      `).join('')}
-    </div>
+    <table class="rank-table area-rank-table">
+      <thead>
+        <tr>
+          <th>Rank</th><th>Area</th><th>Level 1</th><th>Level 2</th><th>Level 3</th><th>Level 4+</th>
+          <th>Total</th><th>Composition</th><th>Clubs</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${d.areas.map(a => `
+          <tr>
+            <td class="rank-num">${a.rank_in_division}</td>
+            <td><b>Area ${a.area}</b> <span class="club-sub">district rank #${a.rank_in_district}</span></td>
+            <td>${a.level1}</td><td>${a.level2}</td><td>${a.level3}</td><td>${a.level4}</td>
+            <td><b>${a.total}</b></td>
+            <td>${stackBarHTML(a, 'stackbar')}</td>
+            <td>${a.clubs.length}</td>
+          </tr>
+        `).join('')}
+      </tbody>
+    </table>
   `).join('');
 }
 
@@ -205,6 +216,13 @@ function paintAreas(divFilter) {
 function renderClubs() {
   paintClubs('');
   document.getElementById('club-search').oninput = (e) => paintClubs(e.target.value.toLowerCase());
+  const container = document.getElementById('club-leaderboard');
+  container.addEventListener('click', (e) => {
+    const toggle = e.target.closest('.club-name-toggle');
+    if (!toggle) return;
+    const row = toggle.closest('.club-row');
+    row.classList.toggle('expanded');
+  });
 }
 
 function paintClubs(query) {
@@ -213,14 +231,25 @@ function paintClubs(query) {
   const rows = DATA.club_leaderboard.filter(c => c.club_name.toLowerCase().includes(query));
   container.innerHTML = rows.map(c => {
     const widthPct = Math.max((c.total / maxTotal) * 100, 6);
+    const dcpLabel = DCP_STATUS_LABELS[(c.distinguished_status || '').trim().toUpperCase()] || 'Not yet Distinguished';
     return `
-    <div class="club-row">
+    <div class="club-row" data-club="${c.club_number}">
       <div class="rank-badge ${rankBadgeClass(c.rank)}">${c.rank}</div>
       <div>
-        <div class="club-name">${c.club_name}</div>
+        <div class="club-name-line">
+          <span class="club-name club-name-toggle">${c.club_name}</span>
+          ${dcpBadgeHTML(c.distinguished_status)}
+        </div>
         <div class="club-sub">
           <span class="div-chip" style="background:${divColor(c.division)}">Div ${c.division}</span>
           Area ${c.area} &middot; ${c.active_members} active members
+        </div>
+        <div class="club-detail">
+          <span><i style="background:${LEVEL_COLORS.level1}"></i>Level 1 <b>${c.level1}</b> <em>(district rank #${c.rank_l1})</em></span>
+          <span><i style="background:${LEVEL_COLORS.level2}"></i>Level 2 <b>${c.level2}</b> <em>(district rank #${c.rank_l2})</em></span>
+          <span><i style="background:${LEVEL_COLORS.level3}"></i>Level 3 <b>${c.level3}</b> <em>(district rank #${c.rank_l3})</em></span>
+          <span><i style="background:${LEVEL_COLORS.level4}"></i>Level 4+/Path/DTM <b>${c.level4}</b> <em>(district rank #${c.rank_l4})</em></span>
+          <span class="club-detail-dcp">DCP status: <b>${dcpLabel}</b></span>
         </div>
       </div>
       <div class="club-total">${c.total}</div>
