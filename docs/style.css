@@ -269,6 +269,7 @@ main {
 .stackbar > span { display: block; height: 100%; }
 
 /* generic ranked table */
+.table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 .rank-table { width: 100%; border-collapse: collapse; font-size: 13px; }
 .rank-table th {
   text-align: left; font-family: 'Montserrat', sans-serif; font-size: 11px; text-transform: uppercase;
@@ -578,4 +579,66 @@ main {
 
 footer.site-footer {
   text-align: center; color: var(--ink-soft); font-size: 12px; padding: 30px 0 50px;
+}
+
+/* ---------------- Phone optimizations ---------------- */
+@media (max-width: 640px) {
+  .topbar-inner { padding: 12px 14px 10px; gap: 10px; }
+  .brand { gap: 10px; }
+  .brand-logo { height: 32px; }
+  .brand-divider { height: 28px; }
+  .brand-text h1 { font-size: 16px; }
+  .eyebrow { font-size: 9.5px; }
+
+  .meta-pills { width: 100%; gap: 8px; }
+  .pill { min-width: 0; flex: 1 1 0; padding: 6px 10px; }
+  .pill-label { font-size: 9px; }
+  .pill-value { font-size: 12.5px; }
+
+  .tabs { padding: 0 10px; gap: 2px; }
+  .tab { padding: 10px 10px; font-size: 12.5px; }
+
+  main { padding: 16px 12px 60px; }
+  .card { padding: 14px 14px; }
+  .card h2 { font-size: 14.5px; }
+
+  .kpi-row { gap: 10px; }
+  .kpi { padding: 12px 12px; }
+  .kpi-value { font-size: 22px; margin-top: 2px; }
+  .kpi-label { font-size: 10px; }
+
+  .chart-wrap { height: 220px; }
+
+  /* Division accordion header: wrap into rank+name row, then metric chips */
+  .div-row-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 10px;
+    padding: 10px 12px;
+  }
+  .div-name { flex: 1 1 auto; min-width: 60%; }
+  .div-metric { flex: 0 1 auto; font-size: 11px; text-align: left; }
+
+  /* Tables: shrink padding and drop decorative columns so data stays visible without a hidden scroll */
+  .rank-table th, .rank-table td { padding: 6px 5px; }
+  .rank-table { font-size: 12px; }
+  .col-hide-mobile { display: none; }
+  .div-name .club-sub, .area-rank-table .club-sub { display: block; }
+
+  /* Club leaderboard row: stack the level bar under the name/total line */
+  .club-row {
+    grid-template-columns: 32px 1fr 46px;
+    column-gap: 8px;
+    row-gap: 6px;
+    padding: 10px 6px;
+  }
+  .club-total { font-size: 14px; }
+  .club-bar-wrap {
+    grid-column: 1 / -1;
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .preview-frame { height: 420px; }
 }

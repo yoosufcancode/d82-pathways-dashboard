@@ -180,6 +180,7 @@ function renderDivisions() {
             </strong>
             <span class="club-sub">Total ${a.total} &middot; L1 ${a.level1} &middot; L2 ${a.level2} &middot; L3 ${a.level3} &middot; L4+ ${a.level4}</span>
             ${stackBarHTML(a, 'stackbar')}
+            <div class="table-scroll">
             <table class="rank-table" style="margin-top:6px;">
               <tbody>
               ${a.clubs.map((c, i) => `
@@ -192,6 +193,7 @@ function renderDivisions() {
               `).join('')}
               </tbody>
             </table>
+            </div>
           </div>
         `).join('')}
         </div>
@@ -239,11 +241,12 @@ function paintAreas(divFilter) {
   const divs = divFilter === '__all__' ? DATA.divisions : DATA.divisions.filter(d => d.division === divFilter);
   content.innerHTML = divs.map(d => `
     <div class="area-group-title">Division ${d.division}</div>
+    <div class="table-scroll">
     <table class="rank-table area-rank-table">
       <thead>
         <tr>
           <th></th><th>Rank</th><th>Area</th><th>Level 1</th><th>Level 2</th><th>Level 3</th><th>Level 4+</th>
-          <th>Total</th><th>Composition</th><th>Clubs</th>
+          <th>Total</th><th class="col-hide-mobile">Composition</th><th class="col-hide-mobile">Clubs</th>
         </tr>
       </thead>
       <tbody>
@@ -254,19 +257,21 @@ function paintAreas(divFilter) {
             <td><b>Area ${a.area}</b> <span class="club-sub">district rank #${a.rank_in_district}</span></td>
             <td>${a.level1}</td><td>${a.level2}</td><td>${a.level3}</td><td>${a.level4}</td>
             <td><b>${a.total}</b></td>
-            <td>${stackBarHTML(a, 'stackbar')}</td>
-            <td>${a.clubs.length}</td>
+            <td class="col-hide-mobile">${stackBarHTML(a, 'stackbar')}</td>
+            <td class="col-hide-mobile">${a.clubs.length}</td>
           </tr>
           <tr class="area-detail-row">
             <td colspan="10">
               <div class="area-detail-inner">
                 <div class="area-detail-inner-content">
+                  <div class="table-scroll">
                   <table class="rank-table area-club-table">
                     <thead>
                       <tr><th>Rank</th><th>Club</th><th>Level 1</th><th>Level 2</th><th>Level 3</th><th>Level 4+</th><th>Total</th></tr>
                     </thead>
                     <tbody>${clubDetailRowsHTML(a.clubs)}</tbody>
                   </table>
+                  </div>
                 </div>
               </div>
             </td>
@@ -274,6 +279,7 @@ function paintAreas(divFilter) {
         `).join('')}
       </tbody>
     </table>
+    </div>
   `).join('');
 }
 
@@ -441,6 +447,7 @@ function renderAward() {
     closeSection.innerHTML = `
       <div class="card">
         <h2>Clubs Close to Star <span class="card-sub">${close.length} clubs nearest to qualifying — a head start list, not a guarantee</span></h2>
+        <div class="table-scroll">
         <table class="rank-table">
           <thead><tr><th>Rank</th><th>Club</th><th>Div-Area</th><th>Level 1</th><th>Level 3</th><th>Still Needs</th></tr></thead>
           <tbody>
@@ -456,6 +463,7 @@ function renderAward() {
             `).join('')}
           </tbody>
         </table>
+        </div>
       </div>
     `;
   }
@@ -612,7 +620,7 @@ function paintDownloadPicker() {
   }
 
   if (currentRole === 'club') {
-    picker.innerHTML = `<input type="search" id="pick-club" class="select" style="width:320px;" placeholder="Type a club name&hellip;">
+    picker.innerHTML = `<input type="search" id="pick-club" class="select" style="width:100%;max-width:320px;" placeholder="Type a club name&hellip;">
       <div id="pick-club-results" style="margin-top:8px;max-height:220px;overflow:auto;"></div>`;
     const input = document.getElementById('pick-club');
     const results = document.getElementById('pick-club-results');
