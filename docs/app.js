@@ -245,7 +245,7 @@ function paintAreas(divFilter) {
     <table class="rank-table area-rank-table">
       <thead>
         <tr>
-          <th></th><th>Rank</th><th>Area</th><th>Level 1</th><th>Level 2</th><th>Level 3</th><th>Level 4+</th>
+          <th></th><th>Position</th><th>Area</th><th>Level 1</th><th>Level 2</th><th>Level 3</th><th>Level 4+</th>
           <th>Total</th><th class="col-hide-mobile">Composition</th><th class="col-hide-mobile">Clubs</th>
         </tr>
       </thead>
@@ -254,7 +254,7 @@ function paintAreas(divFilter) {
           <tr class="area-row-toggle" data-area="${d.division}-${a.area}">
             <td><span class="chevron-icon">&#9656;</span></td>
             <td class="rank-num">${a.rank_in_division}</td>
-            <td><b>Area ${a.area}</b> <span class="club-sub">district rank #${a.rank_in_district}</span></td>
+            <td><b>Area ${a.area}</b> <span class="club-sub">district position #${a.rank_in_district}</span></td>
             <td>${a.level1}</td><td>${a.level2}</td><td>${a.level3}</td><td>${a.level4}</td>
             <td><b>${a.total}</b></td>
             <td class="col-hide-mobile">${stackBarHTML(a, 'stackbar')}</td>
@@ -267,7 +267,7 @@ function paintAreas(divFilter) {
                   <div class="table-scroll">
                   <table class="rank-table area-club-table">
                     <thead>
-                      <tr><th>Rank</th><th>Club</th><th>Level 1</th><th>Level 2</th><th>Level 3</th><th>Level 4+</th><th>Total</th></tr>
+                      <tr><th>Position</th><th>Club</th><th>Level 1</th><th>Level 2</th><th>Level 3</th><th>Level 4+</th><th>Total</th></tr>
                     </thead>
                     <tbody>${clubDetailRowsHTML(a.clubs)}</tbody>
                   </table>
@@ -303,8 +303,8 @@ function renderClubs() {
       btn.classList.add('active');
       clubLeaderboardMode = btn.dataset.mode;
       subtitle.textContent = clubLeaderboardMode === 'total'
-        ? "District-wide, ranked by total levels completed · click a club name for its full breakdown"
-        : "District-wide, ranked by levels completed per active member · click a club name for its full breakdown";
+        ? "District-wide performance, measured by total levels completed · click a club name for its full breakdown"
+        : "District-wide performance, measured by levels completed per active member · click a club name for its full breakdown";
       paintClubs(document.getElementById('club-search').value.toLowerCase());
     });
   });
@@ -334,10 +334,10 @@ function paintClubs(query) {
           </div>
           <div class="club-detail">
             <div class="club-detail-inner">
-              <span><i style="background:${LEVEL_COLORS.level1}"></i>Level 1 <b>${c.level1}</b> <em>(district rank #${c.rank_l1})</em></span>
-              <span><i style="background:${LEVEL_COLORS.level2}"></i>Level 2 <b>${c.level2}</b> <em>(district rank #${c.rank_l2})</em></span>
-              <span><i style="background:${LEVEL_COLORS.level3}"></i>Level 3 <b>${c.level3}</b> <em>(district rank #${c.rank_l3})</em></span>
-              <span><i style="background:${LEVEL_COLORS.level4}"></i>Level 4+/Path/DTM <b>${c.level4}</b> <em>(district rank #${c.rank_l4})</em></span>
+              <span><i style="background:${LEVEL_COLORS.level1}"></i>Level 1 <b>${c.level1}</b> <em>(district position #${c.rank_l1})</em></span>
+              <span><i style="background:${LEVEL_COLORS.level2}"></i>Level 2 <b>${c.level2}</b> <em>(district position #${c.rank_l2})</em></span>
+              <span><i style="background:${LEVEL_COLORS.level3}"></i>Level 3 <b>${c.level3}</b> <em>(district position #${c.rank_l3})</em></span>
+              <span><i style="background:${LEVEL_COLORS.level4}"></i>Level 4+/Path/DTM <b>${c.level4}</b> <em>(district position #${c.rank_l4})</em></span>
               <span class="club-detail-dcp">DCP status: <b>${dcpLabel}</b></span>
               <span class="club-detail-tiebreak">Tiebreakers &mdash; levels per member: <b>${c.levels_per_member}</b>, L1+L3 combined: <b>${c.l1_l3_sum}</b></span>
             </div>
@@ -449,7 +449,7 @@ function renderAward() {
         <h2>Clubs Close to Star <span class="card-sub">${close.length} clubs nearest to qualifying — a head start list, not a guarantee</span></h2>
         <div class="table-scroll">
         <table class="rank-table">
-          <thead><tr><th>Rank</th><th>Club</th><th>Div-Area</th><th>Level 1</th><th>Level 3</th><th>Still Needs</th></tr></thead>
+          <thead><tr><th>Position</th><th>Club</th><th>Div-Area</th><th>Level 1</th><th>Level 3</th><th>Still Needs</th></tr></thead>
           <tbody>
             ${close.map(c => `
               <tr>
