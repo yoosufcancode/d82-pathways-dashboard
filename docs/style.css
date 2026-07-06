@@ -626,6 +626,28 @@ footer.site-footer {
   .col-hide-mobile { display: none; }
   .div-name .club-sub, .area-rank-table .club-sub { display: block; }
 
+  /* table-layout:auto redistributes any unspecified width across ALL columns
+     (ignoring our hints), so names get squeezed evenly with the digit columns.
+     Force fixed layout + percentages so the name/area column actually keeps its share. */
+  .area-rank-table, .area-club-table { table-layout: fixed; width: 100%; }
+
+  .area-rank-table th:nth-child(1), .area-rank-table td:nth-child(1) { width: 5%; }
+  .area-rank-table th:nth-child(2), .area-rank-table td:nth-child(2) { width: 9%; }
+  .area-rank-table th:nth-child(3), .area-rank-table td:nth-child(3) { width: 33%; }
+  .area-rank-table th:nth-child(4), .area-rank-table td:nth-child(4),
+  .area-rank-table th:nth-child(5), .area-rank-table td:nth-child(5),
+  .area-rank-table th:nth-child(6), .area-rank-table td:nth-child(6),
+  .area-rank-table th:nth-child(7), .area-rank-table td:nth-child(7) { width: 10%; }
+  .area-rank-table th:nth-child(8), .area-rank-table td:nth-child(8) { width: 13%; }
+
+  .area-club-table th:nth-child(1), .area-club-table td:nth-child(1) { width: 8%; }
+  .area-club-table th:nth-child(2), .area-club-table td:nth-child(2) { width: 38%; }
+  .area-club-table th:nth-child(3), .area-club-table td:nth-child(3),
+  .area-club-table th:nth-child(4), .area-club-table td:nth-child(4),
+  .area-club-table th:nth-child(5), .area-club-table td:nth-child(5),
+  .area-club-table th:nth-child(6), .area-club-table td:nth-child(6) { width: 10%; }
+  .area-club-table th:nth-child(7), .area-club-table td:nth-child(7) { width: 14%; }
+
   /* Club leaderboard row: stack the level bar under the name/total line */
   .club-row {
     grid-template-columns: 32px 1fr 46px;
