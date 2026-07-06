@@ -106,6 +106,21 @@ function stackBarHTML(obj, heightClass) {
 /* ---------------- OVERVIEW ---------------- */
 function renderOverview() {
   const dt = DATA.district_totals;
+  const meta = DATA.meta;
+
+  const note = document.getElementById('district-summary-note');
+  note.textContent = `As of ${fmtDate(meta.snapshot_date)}, District ${meta.district_number}'s ` +
+    `${meta.total_active_clubs.toLocaleString()} active clubs (of ${meta.total_clubs.toLocaleString()} chartered) ` +
+    `across ${DATA.divisions.length} divisions have completed ${dt.total.toLocaleString()} Pathways levels.`;
+
+  const statsRow = document.getElementById('district-summary-stats');
+  statsRow.innerHTML = `
+    <div class="mini-stat"><div class="mini-stat-label">Active Clubs</div><div class="mini-stat-value">${meta.total_active_clubs.toLocaleString()}</div></div>
+    <div class="mini-stat"><div class="mini-stat-label">Chartered Clubs</div><div class="mini-stat-value">${meta.total_clubs.toLocaleString()}</div></div>
+    <div class="mini-stat"><div class="mini-stat-label">Divisions</div><div class="mini-stat-value">${DATA.divisions.length}</div></div>
+    <div class="mini-stat"><div class="mini-stat-label">Snapshot Date</div><div class="mini-stat-value">${fmtDate(meta.snapshot_date)}</div></div>
+  `;
+
   const kpiRow = document.getElementById('kpi-row');
   kpiRow.innerHTML = `
     <div class="kpi l1"><div class="kpi-label">Level 1</div><div class="kpi-value" data-target="${dt.level1}">0</div></div>

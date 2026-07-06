@@ -217,6 +217,14 @@ main {
 
 .chart-wrap { position: relative; height: 280px; }
 
+.district-summary-note { font-size: 14px; color: var(--ink); line-height: 1.5; margin-bottom: 16px; }
+
+.mini-stat-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 16px; }
+@media (max-width: 900px) { .mini-stat-row { grid-template-columns: repeat(2, 1fr); } }
+.mini-stat { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 12px 14px; }
+.mini-stat-label { font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-soft); }
+.mini-stat-value { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 20px; margin-top: 3px; font-variant-numeric: tabular-nums; color: var(--tm-blue); }
+
 .legend-note { font-size: 12.5px; color: var(--ink-soft); display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
 .swatch { width: 12px; height: 12px; border-radius: 3px; display: inline-block; margin-left: 10px; }
 .legend-note .swatch:first-child { margin-left: 0; }
