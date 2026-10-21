@@ -124,7 +124,7 @@ function renderOverview() {
   const kpiRow = document.getElementById('kpi-row');
   kpiRow.innerHTML = `
     <div class="kpi l1"><div class="kpi-label">Level 1</div><div class="kpi-value" data-target="${dt.level1}">0</div></div>
-    <div class="kpi l2"><div class="kpi-label">Level 2</div><div class="kpi-value" data-target="${dt.level2}">0</div></div>
+    <div class="kpi l2"><div class="kpi-label">Level 2 / Online Meeting Mastery</div><div class="kpi-value" data-target="${dt.level2}">0</div></div>
     <div class="kpi l3"><div class="kpi-label">Level 3</div><div class="kpi-value" data-target="${dt.level3}">0</div></div>
     <div class="kpi l4"><div class="kpi-label">Level 4+ / Path / DTM</div><div class="kpi-value" data-target="${dt.level4}">0</div></div>
     <div class="kpi total"><div class="kpi-label">Total Levels</div><div class="kpi-value" data-target="${dt.total}">0</div></div>
@@ -136,7 +136,7 @@ function renderOverview() {
   new Chart(document.getElementById('chart-district-levels'), {
     type: 'doughnut',
     data: {
-      labels: ['Level 1', 'Level 2', 'Level 3', 'Level 4+/Path/DTM'],
+      labels: ['Level 1', 'Level 2 / OMM', 'Level 3', 'Level 4+/Path/DTM'],
       datasets: [{
         data: [dt.level1, dt.level2, dt.level3, dt.level4],
         backgroundColor: [LEVEL_COLORS.level1, LEVEL_COLORS.level2, LEVEL_COLORS.level3, LEVEL_COLORS.level4],
@@ -158,7 +158,7 @@ function renderOverview() {
       labels: divs.map(d => 'Div ' + d.division),
       datasets: [
         { label: 'Level 1', data: divs.map(d => d.level1), backgroundColor: LEVEL_COLORS.level1, stack: 's' },
-        { label: 'Level 2', data: divs.map(d => d.level2), backgroundColor: LEVEL_COLORS.level2, stack: 's' },
+        { label: 'Level 2 / OMM', data: divs.map(d => d.level2), backgroundColor: LEVEL_COLORS.level2, stack: 's' },
         { label: 'Level 3', data: divs.map(d => d.level3), backgroundColor: LEVEL_COLORS.level3, stack: 's' },
         { label: 'Level 4+', data: divs.map(d => d.level4), backgroundColor: LEVEL_COLORS.level4, stack: 's' },
       ],
@@ -181,7 +181,7 @@ function renderDivisions() {
         <div class="div-rank">${d.rank}</div>
         <div class="div-name">Division ${d.division} <span class="club-sub">(${d.club_count} clubs)</span></div>
         <div class="div-metric">L1 <b>${d.level1}</b></div>
-        <div class="div-metric">L2 <b>${d.level2}</b></div>
+        <div class="div-metric">L2/OMM <b>${d.level2}</b></div>
         <div class="div-metric">L3 <b>${d.level3}</b></div>
         <div class="div-metric">L4+ <b>${d.level4}</b></div>
         <div class="div-metric">Total <b>${d.total}</b></div>
@@ -193,7 +193,7 @@ function renderDivisions() {
             <strong style="font-family:'Montserrat',sans-serif;font-size:13px;color:var(--tm-blue)">
               #${a.rank_in_division} Area ${a.area}
             </strong>
-            <span class="club-sub">Total ${a.total} &middot; L1 ${a.level1} &middot; L2 ${a.level2} &middot; L3 ${a.level3} &middot; L4+ ${a.level4}</span>
+            <span class="club-sub">Total ${a.total} &middot; L1 ${a.level1} &middot; L2/OMM ${a.level2} &middot; L3 ${a.level3} &middot; L4+ ${a.level4}</span>
             ${stackBarHTML(a, 'stackbar')}
             <div class="table-scroll">
             <table class="rank-table" style="margin-top:6px;">
@@ -260,7 +260,7 @@ function paintAreas(divFilter) {
     <table class="rank-table area-rank-table">
       <thead>
         <tr>
-          <th></th><th>Position</th><th>Area</th><th>Level 1</th><th>Level 2</th><th>Level 3</th><th>Level 4+</th>
+          <th></th><th>Position</th><th>Area</th><th>Level 1</th><th>Level 2 / OMM</th><th>Level 3</th><th>Level 4+</th>
           <th>Total</th><th class="col-hide-mobile">Composition</th><th class="col-hide-mobile">Clubs</th>
         </tr>
       </thead>
@@ -282,7 +282,7 @@ function paintAreas(divFilter) {
                   <div class="table-scroll">
                   <table class="rank-table area-club-table">
                     <thead>
-                      <tr><th>Position</th><th>Club</th><th>Level 1</th><th>Level 2</th><th>Level 3</th><th>Level 4+</th><th>Total</th></tr>
+                      <tr><th>Position</th><th>Club</th><th>Level 1</th><th>Level 2 / OMM</th><th>Level 3</th><th>Level 4+</th><th>Total</th></tr>
                     </thead>
                     <tbody>${clubDetailRowsHTML(a.clubs)}</tbody>
                   </table>
@@ -350,7 +350,7 @@ function paintClubs(query) {
           <div class="club-detail">
             <div class="club-detail-inner">
               <span><i style="background:${LEVEL_COLORS.level1}"></i>Level 1 <b>${c.level1}</b> <em>(district position #${c.rank_l1})</em></span>
-              <span><i style="background:${LEVEL_COLORS.level2}"></i>Level 2 <b>${c.level2}</b> <em>(district position #${c.rank_l2})</em></span>
+              <span><i style="background:${LEVEL_COLORS.level2}"></i>Level 2 / OMM <b>${c.level2}</b> <em>(district position #${c.rank_l2})</em></span>
               <span><i style="background:${LEVEL_COLORS.level3}"></i>Level 3 <b>${c.level3}</b> <em>(district position #${c.rank_l3})</em></span>
               <span><i style="background:${LEVEL_COLORS.level4}"></i>Level 4+/Path/DTM <b>${c.level4}</b> <em>(district position #${c.rank_l4})</em></span>
               <span class="club-detail-dcp">DCP status: <b>${dcpLabel}</b></span>
@@ -391,7 +391,7 @@ function paintClubs(query) {
             <span><b>${c.levels_per_member}</b> levels per member &mdash; ${c.total} total levels &divide; ${c.active_members} active members</span>
             <span>Tiebreaker &mdash; Level 1 + Level 3 combined: <b>${c.l1_l3_sum}</b> (L1 ${c.level1} + L3 ${c.level3})</span>
             <span><i style="background:${LEVEL_COLORS.level1}"></i>Level 1 <b>${c.level1}</b></span>
-            <span><i style="background:${LEVEL_COLORS.level2}"></i>Level 2 <b>${c.level2}</b></span>
+            <span><i style="background:${LEVEL_COLORS.level2}"></i>Level 2 / OMM <b>${c.level2}</b></span>
             <span><i style="background:${LEVEL_COLORS.level3}"></i>Level 3 <b>${c.level3}</b></span>
             <span><i style="background:${LEVEL_COLORS.level4}"></i>Level 4+/Path/DTM <b>${c.level4}</b></span>
             <span class="club-detail-dcp">DCP status: <b>${dcpLabel}</b></span>

@@ -14,12 +14,14 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from report_builder import render_report
 from branding import LEVEL_LABELS
 
+L2_NOTE = ("Level 2 / OMM: from 2026-27, Toastmasters counts Online Meeting Mastery exploration completions toward the same DCP goals as Level 2 and reports them as one number, so the two can't be shown separately.")
+
 ROOT = Path(__file__).resolve().parent.parent
 DOCS_DIR = ROOT / "docs"
 DATA_JSON = DOCS_DIR / "data.json"
 EXPORTS_DIR = DOCS_DIR / "exports"
 
-LEVEL_HEADERS = ["Level 1", "Level 2", "Level 3", "Level 4+/Path/DTM", "Total"]
+LEVEL_HEADERS = ["Level 1", "Level 2 / OMM", "Level 3", "Level 4+/Path/DTM", "Total"]
 
 
 def slugify(s):
@@ -99,20 +101,20 @@ def build_district_report(data):
         {
             "type": "table",
             "heading": "District-Wide Level Totals",
-            "headers": ["Level 1", "Level 2", "Level 3", "Level 4+/Path/DTM", "Total"],
+            "headers": ["Level 1", "Level 2 / OMM", "Level 3", "Level 4+/Path/DTM", "Total"],
             "rows": [[dt["level1"], dt["level2"], dt["level3"], dt["level4"], dt["total"]]],
-            "note": f"Across {meta['total_active_clubs']} active clubs (of {meta['total_clubs']} total).",
+            "note": f"Across {meta['total_active_clubs']} active clubs (of {meta['total_clubs']} total). " + L2_NOTE,
         },
         {
             "type": "table",
             "heading": "Division Leaderboard (Total Levels Completed)",
-            "headers": ["Rank", "Division", "Level 1", "Level 2", "Level 3", "Level 4+", "Total", "# Clubs"],
+            "headers": ["Rank", "Division", "Level 1", "Level 2 / OMM", "Level 3", "Level 4+", "Total", "# Clubs"],
             "rows": div_rows,
         },
         {
             "type": "table",
             "heading": "Club Leaderboard — District-Wide",
-            "headers": ["Rank", "Club", "Div-Area", "Level 1", "Level 2", "Level 3", "Level 4+", "Total"],
+            "headers": ["Rank", "Club", "Div-Area", "Level 1", "Level 2 / OMM", "Level 3", "Level 4+", "Total"],
             "rows": district_leaderboard_rows(data["club_leaderboard"]),
         },
         {
@@ -162,26 +164,27 @@ def build_division_report(data, div):
         {
             "type": "table",
             "heading": f"Division {div['division']} — Level Totals (District Rank #{div['rank']} of {len(data['divisions'])})",
-            "headers": ["Level 1", "Level 2", "Level 3", "Level 4+/Path/DTM", "Total"],
+            "headers": ["Level 1", "Level 2 / OMM", "Level 3", "Level 4+/Path/DTM", "Total"],
             "rows": [[div["level1"], div["level2"], div["level3"], div["level4"], div["total"]]],
+            "note": L2_NOTE,
         },
         {
             "type": "table",
             "heading": "District-Wide Standing — Rank Among All Divisions",
-            "headers": ["Level 1 Rank", "Level 2 Rank", "Level 3 Rank", "Level 4+ Rank", "Total Levels Rank"],
+            "headers": ["Level 1 Rank", "Level 2 / OMM Rank", "Level 3 Rank", "Level 4+ Rank", "Total Levels Rank"],
             "rows": [rank_summary_row(div)],
             "note": f"Out of {len(data['divisions'])} divisions in the district.",
         },
         {
             "type": "table",
             "heading": "Area Leaderboard (within Division)",
-            "headers": ["Rank", "Area", "Level 1", "Level 2", "Level 3", "Level 4+", "Total", "# Clubs"],
+            "headers": ["Rank", "Area", "Level 1", "Level 2 / OMM", "Level 3", "Level 4+", "Total", "# Clubs"],
             "rows": area_rows,
         },
         {
             "type": "table",
             "heading": "Club Leaderboard (within Division)",
-            "headers": ["Rank", "Club", "Area", "Level 1", "Level 2", "Level 3", "Level 4+", "Total"],
+            "headers": ["Rank", "Club", "Area", "Level 1", "Level 2 / OMM", "Level 3", "Level 4+", "Total"],
             "rows": club_rows,
         },
         {
@@ -221,20 +224,21 @@ def build_area_report(data, div, area):
         {
             "type": "table",
             "heading": f"Area {area['area']} — Level Totals (Division Rank #{area['rank_in_division']} of {len(div['areas'])})",
-            "headers": ["Level 1", "Level 2", "Level 3", "Level 4+/Path/DTM", "Total"],
+            "headers": ["Level 1", "Level 2 / OMM", "Level 3", "Level 4+/Path/DTM", "Total"],
             "rows": [[area["level1"], area["level2"], area["level3"], area["level4"], area["total"]]],
+            "note": L2_NOTE,
         },
         {
             "type": "table",
             "heading": "District-Wide Standing — Rank Among All Areas",
-            "headers": ["Level 1 Rank", "Level 2 Rank", "Level 3 Rank", "Level 4+ Rank", "Total Levels Rank"],
+            "headers": ["Level 1 Rank", "Level 2 / OMM Rank", "Level 3 Rank", "Level 4+ Rank", "Total Levels Rank"],
             "rows": [rank_summary_row(area)],
             "note": f"Out of {sum(len(d['areas']) for d in data['divisions'])} areas in the district.",
         },
         {
             "type": "table",
             "heading": "Club Leaderboard (within Area)",
-            "headers": ["Rank", "Club", "Level 1", "Level 2", "Level 3", "Level 4+", "Total", "Active Members"],
+            "headers": ["Rank", "Club", "Level 1", "Level 2 / OMM", "Level 3", "Level 4+", "Total", "Active Members"],
             "rows": club_rows,
         },
         {
@@ -279,13 +283,14 @@ def build_club_report(data, div, area, club):
         {
             "type": "table",
             "heading": "Level Completions",
-            "headers": ["Level 1", "Level 2", "Level 3", "Level 4+/Path/DTM", "Total"],
+            "headers": ["Level 1", "Level 2 / OMM", "Level 3", "Level 4+/Path/DTM", "Total"],
             "rows": [[club["level1"], club["level2"], club["level3"], club["level4"], club["total"]]],
+            "note": L2_NOTE,
         },
         {
             "type": "table",
             "heading": "District Rank by Completion Type",
-            "headers": ["Level 1 Rank", "Level 2 Rank", "Level 3 Rank", "Level 4+ Rank", "Total Levels Rank"],
+            "headers": ["Level 1 Rank", "Level 2 / OMM Rank", "Level 3 Rank", "Level 4+ Rank", "Total Levels Rank"],
             "rows": [rank_summary_row(club_lb)],
             "note": f"Out of {data['meta']['total_active_clubs']} active clubs district-wide.",
         },

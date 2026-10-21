@@ -15,7 +15,7 @@ LEVEL_COLORS_HEX = {
 
 LEVEL_LABELS = {
     "level1": "Level 1",
-    "level2": "Level 2",
+    "level2": "Level 2 / Online Meeting Mastery",
     "level3": "Level 3",
     "level4": "Level 4+ / Path / DTM",
 }
