@@ -125,6 +125,13 @@ def tier_for(level1, level3):
     return None
 
 
+def program_year_start(date_str):
+    """'2026-10-21' -> '2026-07-01'; '2026-03-05' -> '2025-07-01'."""
+    yyyy, mm = int(date_str[:4]), int(date_str[5:7])
+    start_year = yyyy if mm >= 7 else yyyy - 1
+    return f"{start_year}-07-01"
+
+
 def compute_award_qualifying_dates(history, current_date=None):
     """
     For each club, determine its current tier (based on the snapshot for
@@ -143,6 +150,13 @@ def compute_award_qualifying_dates(history, current_date=None):
         latest = next((s for s in snapshots if s["date"] == current_date), snapshots[-1])
     else:
         latest = snapshots[-1]
+
+    # Only compare against snapshots from the same Toastmasters program year
+    # (July 1 to June 30). Level counts reset each July, and history.json keeps
+    # older years, so without this a club that qualifies this year would pick
+    # up a qualifying date from last year.
+    year_start = program_year_start(latest["date"])
+    snapshots = [s for s in snapshots if s["date"] >= year_start]
     result = {}
     for club_number, latest_info in latest["clubs"].items():
         current_tier = tier_for(latest_info["level1"], latest_info["level3"])
