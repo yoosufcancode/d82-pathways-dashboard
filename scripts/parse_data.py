@@ -24,6 +24,41 @@ STAR_L1, STAR_L3 = 3, 2
 EXCELLENCE_L1, EXCELLENCE_L3 = 4, 3
 
 
+# TI renames columns between program years. Each level column lists every
+# header name it has used; the first one found in the CSV is used.
+# 2026-27 renamed "Level 2s" to "Level 2s or EOM".
+COLUMN_NAMES = {
+    "level1": ["Level 1s"],
+    "level2": ["Level 2s", "Level 2s or EOM"],
+    "add_level2": ["Add. Level 2s", "Add. Level 2s or EOM"],
+    "level3": ["Level 3s"],
+    "level4": ["Level 4s, Path Completions, or DTM Awards"],
+    "add_level4": ["Add. Level 4s, Path Completions, or DTM award"],
+}
+
+
+def resolve_columns(fieldnames, path):
+    """Map each level column to the header actually present in this CSV.
+    Stops with a clear error if one is missing, instead of silently
+    counting it as 0."""
+    present = [f.strip() for f in fieldnames]
+    resolved, missing = {}, []
+    for key, options in COLUMN_NAMES.items():
+        match = next((o for o in options if o in present), None)
+        if match is None:
+            missing.append(f"{key} (expected one of: {', '.join(options)})")
+        else:
+            resolved[key] = match
+    if missing:
+        raise ValueError(
+            f"\n\nSTOPPED: {path} is missing expected column(s):\n  - "
+            + "\n  - ".join(missing)
+            + "\n\nTI may have renamed a column. Nothing was changed. "
+            "Check the CSV header with: head -1 <file>\n"
+        )
+    return resolved
+
+
 def parse_csv(path):
     """Returns (clubs: list[dict], snapshot_date: date)"""
     with open(path, newline="", encoding="utf-8-sig") as f:
@@ -41,6 +76,7 @@ def parse_csv(path):
     # Drop footer line(s) that don't start with a quoted field structure
     data_lines = [ln for ln in lines if ln.strip().startswith('"')]
     reader = csv.DictReader(data_lines)
+    cols = resolve_columns(reader.fieldnames or [], path)
 
     clubs = []
     for row in reader:
@@ -57,12 +93,10 @@ def parse_csv(path):
             except ValueError:
                 return 0
 
-        level1 = num("Level 1s")
-        level2 = num("Level 2s") + num("Add. Level 2s")
-        level3 = num("Level 3s")
-        level4 = num("Level 4s, Path Completions, or DTM Awards") + num(
-            "Add. Level 4s, Path Completions, or DTM award"
-        )
+        level1 = num(cols["level1"])
+        level2 = num(cols["level2"]) + num(cols["add_level2"])
+        level3 = num(cols["level3"])
+        level4 = num(cols["level4"]) + num(cols["add_level4"])
         total = level1 + level2 + level3 + level4
 
         clubs.append({
